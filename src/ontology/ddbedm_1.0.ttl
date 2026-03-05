@@ -1,0 +1,683 @@
+@prefix : <http://www.deutsche-digitale-bibliothek.de/edm/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix crm: <http://www.cidoc-crm.org/rdfs/cidoc-crm#> .
+@prefix ddb: <http://www.deutsche-digitale-bibliothek.de/edm/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://www.deutsche-digitale-bibliothek.de/edm/> .
+
+<http://deutsche-digitale-bibliothek.de/edm/> rdf:type owl:Ontology ;
+                                               owl:versionIRI <http://deutsche-digitale-bibliothek.de/edm/> ;
+                                               dc:description "The DDB-EDM is an extension of the implemented the Europeana Mapping Guidelines described in 2013. Implementation details are presented at the International Conference on Dublic Core and Metadata Applications in 2014 (Rühle et al., 2014). See https://dcpapers-data.dublincore.org/articles/dc-2014/952136503/files/dcmi-952136503.pdf"@en ;
+                                               dc:title "Deutsche Digitale Bibliothek - Europeana Data Model (DDB-EDM)"@en ;
+                                               dcterms:issued "2014-10-08"@en ;
+                                               vann:preferredNamespacePrefix "ddb"@en ;
+                                               vann:preferredNamespaceUri ddb: ;
+                                               skos:note """All definitions relation to EDM are extracted from v5.2.7 described in https://pro.europeana.eu/files/Europeana_Professional/Share_your_data/Technical_requirements/EDM_Documentation/EDM_Definition_v5.2.7_042016.pdf.
+
+Equivalence class definitions referring to ABC Harmony and DOLCE are not included."""@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/provenance
+dcterms:provenance rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty ;
+                              rdfs:isDefinedBy <https://vocab.org/vann/#preferredNamespacePrefix> ;
+                              rdfs:label "vann:preferredNamespacePrefix"@en .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty ;
+                           rdfs:isDefinedBy <https://vocab.org/vann/#preferredNamespaceUri> ;
+                           rdfs:label "vann:preferredNamespaceUri"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/dataProvider
+edm:dataProvider rdf:type owl:AnnotationProperty ;
+                 rdfs:label "edm:dataProvider"@en ;
+                 rdfs:subPropertyOf dcterms:provenance ;
+                 rdfs:range edm:Agent .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+skos:example rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+skos:notation rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#note
+skos:note rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#scopeNote
+skos:scopeNote rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+dc:contributor rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf edm:hasMet .
+
+
+###  http://purl.org/dc/elements/1.1/coverage
+dc:coverage rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf edm:hasMet .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf edm:hasMet .
+
+
+###  http://purl.org/dc/elements/1.1/date
+dc:date rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf edm:hasMet .
+
+
+###  http://purl.org/dc/elements/1.1/format
+dc:format rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf edm:hasType .
+
+
+###  http://purl.org/dc/elements/1.1/language
+dc:language rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf edm:hasType .
+
+
+###  http://purl.org/dc/elements/1.1/publisher
+dc:publisher rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf edm:hasMet .
+
+
+###  http://purl.org/dc/elements/1.1/relation
+dc:relation rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf edm:isRelatedTo .
+
+
+###  http://purl.org/dc/elements/1.1/subject
+dc:subject rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf edm:isRelatedTo .
+
+
+###  http://purl.org/dc/elements/1.1/type
+dc:type rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf edm:hasType .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf dc:date .
+
+
+###  http://purl.org/dc/terms/date
+dcterms:date rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf dc:date .
+
+
+###  http://purl.org/dc/terms/extent
+dcterms:extent rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf dc:format .
+
+
+###  http://purl.org/dc/terms/hasPart
+dcterms:hasPart rdf:type owl:ObjectProperty ;
+                owl:inverseOf dcterms:isPartOf .
+
+
+###  http://purl.org/dc/terms/isPartOf
+dcterms:isPartOf rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf dc:date ,
+                                  dcterms:date .
+
+
+###  http://purl.org/dc/terms/language
+dcterms:language rdf:type owl:ObjectProperty ;
+                 rdfs:domain edm:ProvidedCHO ;
+                 rdfs:range dcterms:LinguisticSystem .
+
+
+###  http://purl.org/dc/terms/medium
+dcterms:medium rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf dc:format ;
+               rdfs:domain dcterms:PhysicalResource ;
+               rdfs:range dcterms:PhysicalMedium .
+
+
+###  http://purl.org/dc/terms/rights
+dcterms:rights rdf:type owl:ObjectProperty ;
+               rdfs:domain edm:WebResource ;
+               rdfs:range dcterms:RightsStatement .
+
+
+###  http://purl.org/dc/terms/spatial
+dcterms:spatial rdf:type owl:ObjectProperty ;
+                rdfs:label "dcterms:spatial"@en .
+
+
+###  http://purl.org/dc/terms/subject
+dcterms:subject rdf:type owl:ObjectProperty ;
+                rdfs:domain edm:ProvidedCHO ;
+                rdfs:range [ rdf:type owl:Class ;
+                             owl:unionOf ( edm:Agent
+                                           edm:Place
+                                           edm:TimeSpan
+                                         )
+                           ] ;
+                rdfs:label "dcterms:subject"@en .
+
+
+###  http://purl.org/dc/terms/temporal
+dcterms:temporal rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf dc:coverage ;
+                 rdfs:range dcterms:PeriodOfTime .
+
+
+###  http://www.cidoc-crm.org/rdfs/cidoc-crm#P11_had_participant
+crm:P11_had_participant rdf:type owl:ObjectProperty ;
+                        rdfs:domain edm:Event ;
+                        rdfs:range edm:Agent ;
+                        rdfs:label "crm:P11_had_participant"@en .
+
+
+###  http://www.cidoc-crm.org/rdfs/cidoc-crm#P129_is_about
+crm:P129_is_about rdf:type owl:ObjectProperty ;
+                  rdfs:label "crm:P129_is_about"@en .
+
+
+###  http://www.deutsche-digitale-bibliothek.de/edm/aggregator
+ddb:aggregator rdf:type owl:ObjectProperty ;
+               rdfs:domain ore:Aggregation ;
+               rdfs:range edm:Agent ;
+               rdfs:label "ddb:aggregator"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/aggregatedCHO
+edm:aggregatedCHO rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf dc:subject ,
+                                     crm:P129_is_about ,
+                                     ore:aggregates ;
+                  rdfs:domain ore:Aggregation ;
+                  rdfs:range edm:ProvidedCHO ;
+                  rdfs:label "edm:aggregatedCHO"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/currentLocation
+edm:currentLocation rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf dcterms:spatial ;
+                    rdfs:domain edm:ProvidedCHO ;
+                    rdfs:range edm:Place ;
+                    rdfs:label "edm:currentLocation"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/happenedAt
+edm:happenedAt rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf dc:relation ;
+               rdfs:label "edm:happenedAt"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/hasMet
+edm:hasMet rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf dc:relation ;
+           rdfs:label "edm:hasMet"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/hasType
+edm:hasType rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf edm:isRelatedTo .
+
+
+###  http://www.europeana.eu/schemas/edm/hasView
+edm:hasView rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf ore:aggregates ;
+            rdfs:label "edm:hasView"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/isNextInSequence
+edm:isNextInSequence rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf dc:relation ;
+                     rdfs:label "edm:isNextInSequence"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/isRelatedTo
+edm:isRelatedTo rdf:type owl:ObjectProperty ;
+                rdfs:label "edm:isRelatedTo"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/isShownAt
+edm:isShownAt rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf edm:hasView ;
+              rdfs:label "edm:isShownAt"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/isShownBy
+edm:isShownBy rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf edm:hasView ;
+              rdfs:label "edm:isShownBy"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/object
+edm:object rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf edm:hasView ;
+           rdfs:label "edm:object"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/occurredAt
+edm:occurredAt rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf dc:relation ;
+               rdfs:domain edm:Event ;
+               rdfs:range edm:TimeSpan ;
+               rdfs:label "edm:occurredAt"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/provider
+edm:provider rdf:type owl:ObjectProperty ;
+             rdfs:range edm:Agent ;
+             rdfs:label "edm:provider"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/rights
+edm:rights rdf:type owl:ObjectProperty ;
+           rdfs:label "edm:rights"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/wasPresentAt
+edm:wasPresentAt rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf dc:relation ;
+                 rdfs:domain [ rdf:type owl:Class ;
+                               owl:unionOf ( edm:Agent
+                                             edm:InformationResource
+                                             edm:PhysicalThing
+                                           )
+                             ] ;
+                 rdfs:range edm:Event ;
+                 rdfs:label "edm:wasPresentAt"@en .
+
+
+###  http://www.openarchives.org/ore/terms/aggregates
+ore:aggregates rdf:type owl:ObjectProperty ;
+               rdfs:label "ore:aggregates"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/date
+dc:date rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/elements/1.1/format
+dc:format rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/elements/1.1/language
+dc:language rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/elements/1.1/subject
+dc:subject rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/elements/1.1/type
+dc:type rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/terms/alternative
+dcterms:alternative rdf:type owl:DatatypeProperty ;
+                    rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/bibliographicCitation
+dcterms:bibliographicCitation rdf:type owl:DatatypeProperty ;
+                              rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:DatatypeProperty ;
+                rdfs:range rdfs:Literal .
+
+
+###  http://purl.org/dc/terms/date
+dcterms:date rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/terms/extent
+dcterms:extent rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:DatatypeProperty .
+
+
+###  http://www.cidoc-crm.org/rdfs/cidoc-crm#P79_beginning_is_qualified_by
+crm:P79_beginning_is_qualified_by rdf:type owl:DatatypeProperty ;
+                                  rdfs:subPropertyOf edm:begin ;
+                                  rdfs:label "crm:P79_beginning_is_qualified_by"@en .
+
+
+###  http://www.cidoc-crm.org/rdfs/cidoc-crm#P80_end_is_qualified_by
+crm:P80_end_is_qualified_by rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf edm:end ;
+                            rdfs:label "crm:enP80_end_is_qualified_by"@en .
+
+
+###  http://www.deutsche-digitale-bibliothek.de/edm/aggregationEntity
+ddb:aggregationEntity rdf:type owl:DatatypeProperty ;
+                      rdfs:domain edm:ProvidedCHO ;
+                      dc:description "This data property is used to distinguish between hierarchical levels with proper descriptions and levels without such descriptions (e.g. an issue that is only identified by the number)."@en ;
+                      rdfs:label "ddb:aggregationEntity"@en .
+
+
+###  http://www.deutsche-digitale-bibliothek.de/edm/hierarchyPosition
+ddb:hierarchyPosition rdf:type owl:DatatypeProperty ;
+                      rdfs:domain edm:ProvidedCHO ;
+                      dc:description "This data property is used to describe the order of an edm:ProvidedCHO or edm:PhysicalThing in a hierarchy."@en ;
+                      rdfs:label "ddb:hierarchyPosition"@en .
+
+
+###  http://www.deutsche-digitale-bibliothek.de/edm/hierarchyType
+ddb:hierarchyType rdf:type owl:DatatypeProperty ;
+                  rdfs:domain edm:ProvidedCHO ;
+                  dc:description "This data property is used to describe the object type of an edm:ProvidedCHO or edm:PhysicalThing as part of a hierarchy (e.g. journal, volume, article, illustration). Values used here are based on a vocabulary published at http://ddb.vocnet.org/hierarchietyp/."@en ;
+                  rdfs:label "ddb:hierarchyType"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/begin
+edm:begin rdf:type owl:DatatypeProperty ;
+          rdfs:label "edm:begin"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/end
+edm:end rdf:type owl:DatatypeProperty ;
+        rdfs:label "edm:end"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/hasType
+edm:hasType rdf:type owl:DatatypeProperty .
+
+
+###  http://www.europeana.eu/schemas/edm/type
+edm:type rdf:type owl:DatatypeProperty ;
+         rdfs:range [ rdf:type rdfs:Datatype ;
+                      owl:oneOf [ rdf:type rdf:List ;
+                                  rdf:first "3D" ;
+                                  rdf:rest [ rdf:type rdf:List ;
+                                             rdf:first "IMAGE" ;
+                                             rdf:rest [ rdf:type rdf:List ;
+                                                        rdf:first "SOUND" ;
+                                                        rdf:rest [ rdf:type rdf:List ;
+                                                                   rdf:first "TEXT" ;
+                                                                   rdf:rest [ rdf:type rdf:List ;
+                                                                              rdf:first "VIDEO" ;
+                                                                              rdf:rest rdf:nil
+                                                                            ]
+                                                                 ]
+                                                      ]
+                                           ]
+                                ]
+                    ] ;
+         rdfs:label "edm:type"@en .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#lat
+geo:lat rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#long
+geo:long rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://iflastandards.info/ns/fr/frbr/frbroo/F1_Work
+frbroo:F1_Work rdf:type owl:Class ;
+               rdfs:label "frbroo:F1_Work"@en .
+
+
+###  http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression
+frbroo:F2_Expression rdf:type owl:Class ;
+                     rdfs:label "frbroo:F2_Expression"@en .
+
+
+###  http://iflastandards.info/ns/fr/frbr/frbroo/F3_Manifestation_Product_Type
+frbroo:F3_Manifestation_Product_Type rdf:type owl:Class ;
+                                     rdfs:label "frbroo:F3_Manifestation_Product_Type"@en .
+
+
+###  http://iflastandards.info/ns/fr/frbr/frbroo/F4_Manifestation_Singleton
+frbroo:F4_Manifestation_Singleton rdf:type owl:Class ;
+                                  rdfs:label "frbroo:F4_Manifestation_Singleton"@en .
+
+
+###  http://iflastandards.info/ns/fr/frbr/frbroo/F8_Event
+frbroo:F8_Event rdf:type owl:Class ;
+                rdfs:label "frbroo:F8_Event"@en .
+
+
+###  http://iflastandards.info/ns/fr/frbr/frbroo/F9_Place
+frbroo:F9_Place rdf:type owl:Class ;
+                owl:equivalentClass edm:Place ;
+                rdfs:label "frbroo:F9_Place"@en .
+
+
+###  http://purl.org/dc/terms/LinguisticSystem
+dcterms:LinguisticSystem rdf:type owl:Class .
+
+
+###  http://purl.org/dc/terms/LocationPeriodOrJurisdiction
+dcterms:LocationPeriodOrJurisdiction rdf:type owl:Class .
+
+
+###  http://purl.org/dc/terms/PeriodOfTime
+dcterms:PeriodOfTime rdf:type owl:Class ;
+                     rdfs:subClassOf dcterms:LocationPeriodOrJurisdiction .
+
+
+###  http://purl.org/dc/terms/PhysicalMedium
+dcterms:PhysicalMedium rdf:type owl:Class .
+
+
+###  http://purl.org/dc/terms/PhysicalResource
+dcterms:PhysicalResource rdf:type owl:Class .
+
+
+###  http://purl.org/dc/terms/ProvenanceStatement
+dcterms:ProvenanceStatement rdf:type owl:Class .
+
+
+###  http://purl.org/dc/terms/RightsStatement
+dcterms:RightsStatement rdf:type owl:Class .
+
+
+###  http://purl.org/vocab/frbr/core#Event
+frbr:Event rdf:type owl:Class ;
+           rdfs:label "frbr:Event"@en .
+
+
+###  http://purl.org/vocab/frbr/core#Expression
+frbr:Expression rdf:type owl:Class ;
+                rdfs:label "frbr:Expression"@en .
+
+
+###  http://purl.org/vocab/frbr/core#Manifestation
+frbr:Manifestation rdf:type owl:Class ;
+                   rdfs:label "frbr:Manifestation"@en .
+
+
+###  http://purl.org/vocab/frbr/core#Work
+frbr:Work rdf:type owl:Class ;
+          rdfs:label "frbr:Work"@en .
+
+
+###  http://www.cidoc-crm.org/rdfs/cidoc-crm#E39_Actor
+crm:E39_Actor rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/rdfs/cidoc-crm#E4_Period
+crm:E4_Period rdf:type owl:Class ;
+              rdfs:label "crm:E4_Period"@en .
+
+
+###  http://www.cidoc-crm.org/rdfs/cidoc-crm#E52_Time-Span
+crm:E52_Time-Span rdf:type owl:Class ;
+                  owl:equivalentClass edm:TimeSpan .
+
+
+###  http://www.cidoc-crm.org/rdfs/cidoc-crm#E53_Place
+crm:E53_Place rdf:type owl:Class ;
+              owl:equivalentClass edm:Place .
+
+
+###  http://www.cidoc-crm.org/rdfs/cidoc-crm#E89_Propositional_Object
+crm:E89_Propositional_Object rdf:type owl:Class .
+
+
+###  http://www.europeana.eu/schemas/edm/Agent
+edm:Agent rdf:type owl:Class ;
+          rdfs:label "edm:Agent"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/Event
+edm:Event rdf:type owl:Class ;
+          rdfs:label "edm:Event"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/InformationResource
+edm:InformationResource rdf:type owl:Class ;
+                        owl:equivalentClass [ rdf:type owl:Class ;
+                                              owl:unionOf ( frbroo:F1_Work
+                                                            frbroo:F2_Expression
+                                                            frbroo:F3_Manifestation_Product_Type
+                                                            frbroo:F4_Manifestation_Singleton
+                                                          )
+                                            ] ,
+                                            [ rdf:type owl:Class ;
+                                              owl:unionOf ( frbr:Expression
+                                                            frbr:Manifestation
+                                                            frbr:Work
+                                                          )
+                                            ] ;
+                        dc:description "An information resource is a resource whose essential characteristics can be conveyed in a single message. It can be associated with a URI, it can have a representation, for example: a text is an InformationResource."@en ;
+                        rdfs:comment "This class is the domain of edm:wasPresentAt, edm:isRepresentationOf, and the range of edm:realizes"@en ;
+                        rdfs:label "edm:InformationResource"@en ;
+                        skos:example "The text of a book; a digital object; a musical score."@en .
+
+
+###  http://www.europeana.eu/schemas/edm/NonInformationResource
+edm:NonInformationResource rdf:type owl:Class ;
+                           dc:description "All resources that are not information resources."@en ;
+                           rdfs:comment "This class serves as an extension point for contextualization classes, which are all sub-classes of edm:NonInformationResource."@en ;
+                           rdfs:label "edm:NonInformationResource"@en ;
+                           skos:example "People, places, physical things are all non-information resources"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/PhysicalThing
+edm:PhysicalThing rdf:type owl:Class ;
+                  rdfs:label "edm:PhysicalThing"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/Place
+edm:Place rdf:type owl:Class ;
+          rdfs:subClassOf edm:NonInformationResource ;
+          rdfs:label "edm:Place"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/ProvidedCHO
+edm:ProvidedCHO rdf:type owl:Class ;
+                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                  owl:onProperty [ owl:inverseOf edm:aggregatedCHO
+                                                 ] ;
+                                  owl:cardinality "1"^^xsd:nonNegativeInteger
+                                ] ;
+                rdfs:label "edm:ProvidedCHO"@en ;
+                skos:example "Mona Lisa, Winged Victory of Samothrace"@en ;
+                skos:note "This class has been mostly motivated by the need to assign a type to the “central node” in the EDM pattern, during the ingestion process, related to the XML expression of EDM at that stage. It was especially intended to fit the cases where edm:PhysicalThing  cannot be used as the type of the resource standing for the real-world object (independently of any specific data contributor perspective)."@en ;
+                skos:scopeNote "Rationale: This class is the range of edm:aggregatedCHO. A resource of type ProvidedCHO can be the subject of statements using edm:isRelatedTo or any more specific property."@en .
+
+
+###  http://www.europeana.eu/schemas/edm/TimeSpan
+edm:TimeSpan rdf:type owl:Class ;
+             rdfs:subClassOf edm:NonInformationResource ;
+             rdfs:label "edm:TimeSpan"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/WebResource
+edm:WebResource rdf:type owl:Class ;
+                rdfs:label "edm:WebResource"@en .
+
+
+###  http://www.openarchives.org/ore/terms/Aggregation
+ore:Aggregation rdf:type owl:Class ;
+                rdfs:label "ore:Aggregation"@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class ;
+             rdfs:subClassOf edm:NonInformationResource .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+dc:subject rdfs:label "dc:subject"@en .
+
+
+dc:type rdfs:label "dc:type"@en .
+
+
+edm:hasType rdfs:comment """This property and its subproperties were originally defined as object properties in EDM v5.2.4.
+
+From EDM Definition v5.2.7:
+edm:hasMet allows for querying historical relationships without specifying simultaneous correlations to other things, such as the specific constellations of people and things at a particular event. It allows for “who, when, where, what” queries, without specifying if the “who” matches the “when”, such as a (fictitious) object made by Praxiteles and found in 1865. In addition, it supports the integration of all properties used within the descriptions contributed by content providers to Europeana that capture the notion of meeting in the sense outlined above, such as dc:creator, dc:publisher, dc:contributor, dc:date. To this end, any such properties should be declared to be a (direct or indirect) sub-property of edm:hasMet."""@en ;
+            rdfs:label "edm:hasType"@en .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,672 @@
+<http://purl.obolibrary.org/obo/ddbedm/ddbedm-full.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.obolibrary.org/obo/ddbedm/ddbedm-full.owl> <http://www.w3.org/2002/07/owl#versionIRI> <http://purl.obolibrary.org/obo/ddbedm/releases/2026-03-09/ddbedm-full.owl> .
+<http://purl.obolibrary.org/obo/ddbedm/ddbedm-full.owl> <http://purl.org/dc/terms/description> "The DDB-EDM is an extension of the implemented the Europeana Mapping Guidelines  described in 2013. Implementation details are presented at the International Conference  on Dublin Core and Metadata Applications in 2014 (Rühle et al., 2014).  See https://dcpapers-data.dublincore.org/articles/dc-2014/952136503/files/dcmi-952136503.pdf"@en .
+<http://purl.obolibrary.org/obo/ddbedm/ddbedm-full.owl> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://purl.obolibrary.org/obo/ddbedm/ddbedm-full.owl> <http://purl.org/dc/terms/title> "Deutsche Digitale Bibliothek Europeana Data Model"@en .
+<http://purl.obolibrary.org/obo/ddbedm/ddbedm-full.owl> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.deutsche-digitale-bibliothek.de/edm/> .
+<http://purl.obolibrary.org/obo/ddbedm/ddbedm-full.owl> <http://purl.org/vocab/vann/preferredNamespaceUri> "ddb"@en .
+<http://purl.obolibrary.org/obo/ddbedm/ddbedm-full.owl> <http://www.w3.org/2002/07/owl#versionInfo> "2026-03-09" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:issued"@en .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2004/02/skos/core#definition> "Date of formal issuance of the resource."@en .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.org/vann/#preferredNamespacePrefix> .
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/2000/01/rdf-schema#label> "vann:preferredNamespacePrefix"@en .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#note
+<http://www.w3.org/2004/02/skos/core#note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#scopeNote
+<http://www.w3.org/2004/02/skos/core#scopeNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.europeana.eu/schemas/edm/hasMet> .
+# 
+# http://purl.org/dc/elements/1.1/coverage
+<http://purl.org/dc/elements/1.1/coverage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/elements/1.1/coverage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.europeana.eu/schemas/edm/hasMet> .
+<http://purl.org/dc/elements/1.1/coverage> <http://www.w3.org/2000/01/rdf-schema#comment> "Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods may be used in preference to numeric identifiers such as sets of coordinates or date ranges. Because coverage is so broadly defined, it is preferable to use the more specific subproperties Temporal Coverage and Spatial Coverage."@en .
+<http://purl.org/dc/elements/1.1/coverage> <http://www.w3.org/2000/01/rdf-schema#label> "dc:coverage"@en .
+<http://purl.org/dc/elements/1.1/coverage> <http://www.w3.org/2004/02/skos/core#definition> "The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant."@en .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.europeana.eu/schemas/edm/hasMet> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.europeana.eu/schemas/edm/hasMet> .
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/2000/01/rdf-schema#comment> "Date may be used to express temporal information at any level of granularity. Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [ISO 8601-1] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [W3CDTF] or the Extended Date/Time Format Specification [EDTF]. If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a '/' (slash) character. Either the start or end date may be missing."@en .
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/2000/01/rdf-schema#label> "dc:date"@en .
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/2004/02/skos/core#definition> "A point or period of time associated with an event in the lifecycle of the resource."@en .
+# 
+# http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.europeana.eu/schemas/edm/hasMet> .
+# 
+# http://purl.org/dc/elements/1.1/relation
+<http://purl.org/dc/elements/1.1/relation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/elements/1.1/relation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.europeana.eu/schemas/edm/isRelatedTo> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/2000/01/rdf-schema#comment> "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights. Recommended practice is to refer to a rights statement with a URI. If this is not possible or feasible, a literal value (name, label, or short text) may be provided."@en .
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/2000/01/rdf-schema#label> "dc:rights"@en .
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/2004/02/skos/core#definition> "Information about rights held in and over the resource."@en .
+# 
+# http://purl.org/dc/elements/1.1/subject
+<http://purl.org/dc/elements/1.1/subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/elements/1.1/subject> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.europeana.eu/schemas/edm/isRelatedTo> .
+<http://purl.org/dc/elements/1.1/subject> <http://www.w3.org/2000/01/rdf-schema#label> "dc:subject"@en .
+# 
+# http://purl.org/dc/terms/date
+<http://purl.org/dc/terms/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/date> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/date> .
+<http://purl.org/dc/terms/date> <http://www.w3.org/2000/01/rdf-schema#comment> "Date may be used to express temporal information at any level of granularity. Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [ISO 8601-1] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [W3CDTF] or the Extended Date/Time Format Specification [EDTF]. If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a '/' (slash) character. Either the start or end date may be missing."@en .
+<http://purl.org/dc/terms/date> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:date"@en .
+<http://purl.org/dc/terms/date> <http://www.w3.org/2004/02/skos/core#definition> "A point or period of time associated with an event in the lifecycle of the resource."@en .
+# 
+# http://purl.org/dc/terms/hasPart
+<http://purl.org/dc/terms/hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:hasPart"@en .
+# 
+# http://purl.org/dc/terms/isPartOf
+<http://purl.org/dc/terms/isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/dc/terms/language
+<http://purl.org/dc/terms/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/language> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.europeana.eu/schemas/edm/ProvidedCHO> .
+<http://purl.org/dc/terms/language> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/LinguisticSystem> .
+<http://purl.org/dc/terms/language> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:language"@en .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/rights> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/rights> .
+<http://purl.org/dc/terms/rights> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.europeana.eu/schemas/edm/WebResource> .
+<http://purl.org/dc/terms/rights> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/RightsStatement> .
+<http://purl.org/dc/terms/rights> <http://www.w3.org/2000/01/rdf-schema#comment> "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights. Recommended practice is to refer to a rights statement with a URI. If this is not possible or feasible, a literal value (name, label, or short text) may be provided."@en .
+<http://purl.org/dc/terms/rights> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:rights"@en .
+<http://purl.org/dc/terms/rights> <http://www.w3.org/2004/02/skos/core#definition> "Information about rights held in and over the resource."@en .
+# 
+# http://purl.org/dc/terms/subject
+<http://purl.org/dc/terms/subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/subject> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/subject> .
+<http://purl.org/dc/terms/subject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.europeana.eu/schemas/edm/ProvidedCHO> .
+<http://purl.org/dc/terms/subject> <http://www.w3.org/2000/01/rdf-schema#comment> "Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary."@en .
+<http://purl.org/dc/terms/subject> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:subject"@en .
+<http://purl.org/dc/terms/subject> <http://www.w3.org/2004/02/skos/core#definition> "A topic of the resource."@en .
+# 
+# http://www.cidoc-crm.org/rdfs/cidoc-crm#P11_had_participant
+<http://www.cidoc-crm.org/rdfs/cidoc-crm#P11_had_participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cidoc-crm.org/rdfs/cidoc-crm#P11_had_participant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.europeana.eu/schemas/edm/Event> .
+<http://www.cidoc-crm.org/rdfs/cidoc-crm#P11_had_participant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.europeana.eu/schemas/edm/Agent> .
+<http://www.cidoc-crm.org/rdfs/cidoc-crm#P11_had_participant> <http://www.w3.org/2000/01/rdf-schema#label> "crm:P11_had_participant"@en .
+<http://www.cidoc-crm.org/rdfs/cidoc-crm#P11_had_participant> <http://www.w3.org/2004/02/skos/core#definition> "with edm:Event as domain and edm:Agent as range, used to describe that there is a relation between an event and an agent (e. g. the creation event and the creator)."@en .
+# 
+# http://www.cidoc-crm.org/rdfs/cidoc-crm#P129_is_about
+<http://www.cidoc-crm.org/rdfs/cidoc-crm#P129_is_about> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.europeana.eu/schemas/edm/aggregatedCHO
+<http://www.europeana.eu/schemas/edm/aggregatedCHO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.europeana.eu/schemas/edm/aggregatedCHO> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/subject> .
+<http://www.europeana.eu/schemas/edm/aggregatedCHO> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/rdfs/cidoc-crm#P129_is_about> .
+<http://www.europeana.eu/schemas/edm/aggregatedCHO> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.openarchives.org/ore/terms/aggregates> .
+<http://www.europeana.eu/schemas/edm/aggregatedCHO> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.openarchives.org/ore/terms/Aggregation> .
+<http://www.europeana.eu/schemas/edm/aggregatedCHO> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.europeana.eu/schemas/edm/ProvidedCHO> .
+<http://www.europeana.eu/schemas/edm/aggregatedCHO> <http://www.w3.org/2000/01/rdf-schema#label> "edm:aggregatedCHO"@en .
+# 
+# http://www.europeana.eu/schemas/edm/happenedAt
+<http://www.europeana.eu/schemas/edm/happenedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.europeana.eu/schemas/edm/happenedAt> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/relation> .
+<http://www.europeana.eu/schemas/edm/happenedAt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.europeana.eu/schemas/edm/Event> .
+<http://www.europeana.eu/schemas/edm/happenedAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.europeana.eu/schemas/edm/Place> .
+<http://www.europeana.eu/schemas/edm/happenedAt> <http://www.w3.org/2000/01/rdf-schema#label> "edm:happenedAt"@en .
+# 
+# http://www.europeana.eu/schemas/edm/hasMet
+<http://www.europeana.eu/schemas/edm/hasMet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.europeana.eu/schemas/edm/hasMet> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/relation> .
+<http://www.europeana.eu/schemas/edm/hasMet> <http://www.w3.org/2000/01/rdf-schema#label> "edm:hasMet"@en .
+# 
+# http://www.europeana.eu/schemas/edm/isNextInSequence
+<http://www.europeana.eu/schemas/edm/isNextInSequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.europeana.eu/schemas/edm/isNextInSequence> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/relation> .
+<http://www.europeana.eu/schemas/edm/isNextInSequence> <http://www.w3.org/2000/01/rdf-schema#label> "Is Next In Sequence Of"@en .
+<http://www.europeana.eu/schemas/edm/isNextInSequence> <http://www.w3.org/2000/01/rdf-schema#label> "edm:isNextInSequence"@en .
+# 
+# http://www.europeana.eu/schemas/edm/isRelatedTo
+<http://www.europeana.eu/schemas/edm/isRelatedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.europeana.eu/schemas/edm/isRelatedTo> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid3 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.europeana.eu/schemas/edm/ProvidedCHO> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.openarchives.org/ore/terms/proxyFor> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.openarchives.org/ore/terms/Proxy> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.europeana.eu/schemas/edm/ProvidedCHO> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.europeana.eu/schemas/edm/isRelatedTo> <http://www.w3.org/2000/01/rdf-schema#label> "edm:isRelatedTo"@en .
+# 
+# http://www.europeana.eu/schemas/edm/occurredAt
+<http://www.europeana.eu/schemas/edm/occurredAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.europeana.eu/schemas/edm/occurredAt> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/relation> .
+<http://www.europeana.eu/schemas/edm/occurredAt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.europeana.eu/schemas/edm/Event> .
+<http://www.europeana.eu/schemas/edm/occurredAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.europeana.eu/schemas/edm/TimeSpan> .
+<http://www.europeana.eu/schemas/edm/occurredAt> <http://www.w3.org/2000/01/rdf-schema#label> "edm:occurredAt"@en .
+# 
+# http://www.europeana.eu/schemas/edm/provider
+<http://www.europeana.eu/schemas/edm/provider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.europeana.eu/schemas/edm/provider> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.europeana.eu/schemas/edm/Agent> .
+<http://www.europeana.eu/schemas/edm/provider> <http://www.w3.org/2000/01/rdf-schema#label> "edm:provider"@en .
+# 
+# http://www.europeana.eu/schemas/edm/rights
+<http://www.europeana.eu/schemas/edm/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.europeana.eu/schemas/edm/rights> <http://www.w3.org/2000/01/rdf-schema#label> "edm:rights"@en .
+# 
+# http://www.europeana.eu/schemas/edm/wasPresentAt
+<http://www.europeana.eu/schemas/edm/wasPresentAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.europeana.eu/schemas/edm/wasPresentAt> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/relation> .
+<http://www.europeana.eu/schemas/edm/wasPresentAt> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#unionOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.europeana.eu/schemas/edm/PhysicalThing> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.europeana.eu/schemas/edm/InformationResource> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.europeana.eu/schemas/edm/Agent> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.europeana.eu/schemas/edm/wasPresentAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.europeana.eu/schemas/edm/Event> .
+<http://www.europeana.eu/schemas/edm/wasPresentAt> <http://www.w3.org/2000/01/rdf-schema#label> "edm:wasPresentAt"@en .
+# 
+# http://www.openarchives.org/ore/terms/aggregates
+<http://www.openarchives.org/ore/terms/aggregates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.openarchives.org/ore/terms/aggregates> <http://www.w3.org/2000/01/rdf-schema#label> "ore:aggregates"@en .
+# 
+# http://www.openarchives.org/ore/terms/proxyFor
+<http://www.openarchives.org/ore/terms/proxyFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/alternative
+<http://purl.org/dc/terms/alternative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/alternative> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:alternative"@en .
+<http://purl.org/dc/terms/alternative> <http://www.w3.org/2004/02/skos/core#definition> "An alternative name for the resource."@en .
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/2000/01/rdf-schema#comment> "Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible."@en .
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:bibliographicCitation"@en .
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/2004/02/skos/core#definition> "A bibliographic reference for the resource."@en .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#comment> "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:created"@en .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2004/02/skos/core#definition> "Date of creation of the resource."@en .
+# 
+# http://purl.org/dc/terms/extent
+<http://purl.org/dc/terms/extent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/extent> <http://www.w3.org/2000/01/rdf-schema#comment> "Recommended practice is to specify the file size in megabytes and duration in ISO 8601 format."@en .
+<http://purl.org/dc/terms/extent> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:extent"@en .
+<http://purl.org/dc/terms/extent> <http://www.w3.org/2004/02/skos/core#definition> "The size or duration of the resource."@en .
+# 
+# http://www.deutsche-digitale-bibliothek.de/edm/aggregationEntity
+<http://www.deutsche-digitale-bibliothek.de/edm/aggregationEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.deutsche-digitale-bibliothek.de/edm/aggregationEntity> <http://www.w3.org/2000/01/rdf-schema#label> "ddb:aggregationEntity"@en .
+<http://www.deutsche-digitale-bibliothek.de/edm/aggregationEntity> <http://www.w3.org/2004/02/skos/core#definition> "with edm:ProvidedCHO as domain and a literal value as range, used to distinguish between hierarchical levels with proper descriptions and levels without such descriptions (e.g. an issue that is only identified by the number)."@en .
+# 
+# http://www.deutsche-digitale-bibliothek.de/edm/hierarchyPosition
+<http://www.deutsche-digitale-bibliothek.de/edm/hierarchyPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.deutsche-digitale-bibliothek.de/edm/hierarchyPosition> <http://www.w3.org/2000/01/rdf-schema#label> "ddb:hierarchyPosition"@en .
+<http://www.deutsche-digitale-bibliothek.de/edm/hierarchyPosition> <http://www.w3.org/2004/02/skos/core#definition> "With edm:ProvidedCHO as domain and a literal value as range,\nused to describe the order of an edm:ProvidedCHO or edm:PhysicalThing in a hierarchy"@en .
+# 
+# http://www.deutsche-digitale-bibliothek.de/edm/hierarchyType
+<http://www.deutsche-digitale-bibliothek.de/edm/hierarchyType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.deutsche-digitale-bibliothek.de/edm/hierarchyType> <http://www.w3.org/2000/01/rdf-schema#label> "ddb:hierarchyType"@en .
+<http://www.deutsche-digitale-bibliothek.de/edm/hierarchyType> <http://www.w3.org/2004/02/skos/core#definition> "This data property is used to describe the object type of an edm:ProvidedCHO or edm:PhysicalThing as part of a hierarchy (e.g. journal, volume, article, illustration). Values used here are based on a vocabulary published at http://ddb.vocnet.org/hierarchietyp/."@en .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#lat
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/2000/01/rdf-schema#label> "geo:long"@en .
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/2004/02/skos/core#definition> "Longitude"@en .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#long
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/2000/01/rdf-schema#label> "geo:lat"@en .
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/2004/02/skos/core#definition> "Latitude"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F1_Work
+<http://iflastandards.info/ns/fr/frbr/frbroo/F1_Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F1_Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/rdfs/cidoc-crm#E89_Propositional_Object> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F1_Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/InformationResource> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression
+<http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/rdfs/cidoc-crm#E89_Propositional_Object> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/InformationResource> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F3_Manifestation_Product_Type
+<http://iflastandards.info/ns/fr/frbr/frbroo/F3_Manifestation_Product_Type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F3_Manifestation_Product_Type> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/rdfs/cidoc-crm#E89_Propositional_Object> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F3_Manifestation_Product_Type> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/InformationResource> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F4_Manifestation_Singleton
+<http://iflastandards.info/ns/fr/frbr/frbroo/F4_Manifestation_Singleton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F4_Manifestation_Singleton> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/rdfs/cidoc-crm#E89_Propositional_Object> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F4_Manifestation_Singleton> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/InformationResource> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F8_Event
+<http://iflastandards.info/ns/fr/frbr/frbroo/F8_Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F8_Event> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.europeana.eu/schemas/edm/Event> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F8_Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F9_Place
+<http://iflastandards.info/ns/fr/frbr/frbroo/F9_Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F9_Place> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.europeana.eu/schemas/edm/Place> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F9_Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+# 
+# http://metadata.net/harmony/abc#Place
+<http://metadata.net/harmony/abc#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://metadata.net/harmony/abc#Place> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.europeana.eu/schemas/edm/Place> .
+<http://metadata.net/harmony/abc#Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+# 
+# http://metadata.net/harmony/abc#Temporality
+<http://metadata.net/harmony/abc#Temporality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://metadata.net/harmony/abc#Temporality> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.europeana.eu/schemas/edm/Event> .
+<http://metadata.net/harmony/abc#Temporality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+# 
+# http://metadata.net/harmony/abc#Time
+<http://metadata.net/harmony/abc#Time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://metadata.net/harmony/abc#Time> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.europeana.eu/schemas/edm/TimeSpan> .
+<http://metadata.net/harmony/abc#Time> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/PeriodOfTime> .
+<http://metadata.net/harmony/abc#Time> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+# 
+# http://purl.org/dc/terms/LinguisticSystem
+<http://purl.org/dc/terms/LinguisticSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/LinguisticSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Written, spoken, sign, and computer languages are linguistic systems."@en .
+<http://purl.org/dc/terms/LinguisticSystem> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:LinguisticSystem"@en .
+<http://purl.org/dc/terms/LinguisticSystem> <http://www.w3.org/2004/02/skos/core#definition> "A system of signs, symbols, sounds, gestures, or rules used in communication."@en .
+# 
+# http://purl.org/dc/terms/PeriodOfTime
+<http://purl.org/dc/terms/PeriodOfTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/dc/terms/PhysicalMedium
+<http://purl.org/dc/terms/PhysicalMedium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/PhysicalMedium> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:PhysicalMedium"@en .
+<http://purl.org/dc/terms/PhysicalMedium> <http://www.w3.org/2004/02/skos/core#definition> "A physical material or carrier."@en .
+<http://purl.org/dc/terms/PhysicalMedium> <http://www.w3.org/2004/02/skos/core#example> "Examples include paper, canvas, or DVD."@en .
+# 
+# http://purl.org/dc/terms/PhysicalResource
+<http://purl.org/dc/terms/PhysicalResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/PhysicalResource> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:PhysicalResource"@en .
+<http://purl.org/dc/terms/PhysicalResource> <http://www.w3.org/2004/02/skos/core#definition> "A material thing."@en .
+# 
+# http://purl.org/dc/terms/ProvenanceStatement
+<http://purl.org/dc/terms/ProvenanceStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/ProvenanceStatement> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:ProvenanceStatement"@en .
+<http://purl.org/dc/terms/ProvenanceStatement> <http://www.w3.org/2004/02/skos/core#definition> "Any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation."@en .
+# 
+# http://purl.org/dc/terms/RightsStatement
+<http://purl.org/dc/terms/RightsStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/RightsStatement> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:RightsStatement"@en .
+<http://purl.org/dc/terms/RightsStatement> <http://www.w3.org/2004/02/skos/core#definition> "A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights."@en .
+# 
+# http://purl.org/vocab/frbr/core#Event
+<http://purl.org/vocab/frbr/core#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#Event> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.europeana.eu/schemas/edm/Event> .
+<http://purl.org/vocab/frbr/core#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+# 
+# http://purl.org/vocab/frbr/core#Expression
+<http://purl.org/vocab/frbr/core#Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/rdfs/cidoc-crm#E89_Propositional_Object> .
+<http://purl.org/vocab/frbr/core#Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/InformationResource> .
+# 
+# http://purl.org/vocab/frbr/core#Manifestation
+<http://purl.org/vocab/frbr/core#Manifestation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#Manifestation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/rdfs/cidoc-crm#E89_Propositional_Object> .
+<http://purl.org/vocab/frbr/core#Manifestation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/InformationResource> .
+# 
+# http://purl.org/vocab/frbr/core#Place
+<http://purl.org/vocab/frbr/core#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#Place> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.europeana.eu/schemas/edm/Place> .
+<http://purl.org/vocab/frbr/core#Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+# 
+# http://purl.org/vocab/frbr/core#Work
+<http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/rdfs/cidoc-crm#E89_Propositional_Object> .
+<http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/InformationResource> .
+# 
+# http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cidoc-crm.org/rdfs/cidoc-crm#E18_Physical_Thing
+<http://www.cidoc-crm.org/rdfs/cidoc-crm#E18_Physical_Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cidoc-crm.org/rdfs/cidoc-crm#E18_Physical_Thing> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.europeana.eu/schemas/edm/PhysicalThing> .
+<http://www.cidoc-crm.org/rdfs/cidoc-crm#E18_Physical_Thing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+# 
+# http://www.cidoc-crm.org/rdfs/cidoc-crm#E39_Actor
+<http://www.cidoc-crm.org/rdfs/cidoc-crm#E39_Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cidoc-crm.org/rdfs/cidoc-crm#E39_Actor> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.europeana.eu/schemas/edm/Agent> .
+<http://www.cidoc-crm.org/rdfs/cidoc-crm#E39_Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+# 
+# http://www.cidoc-crm.org/rdfs/cidoc-crm#E4_Period
+<http://www.cidoc-crm.org/rdfs/cidoc-crm#E4_Period> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cidoc-crm.org/rdfs/cidoc-crm#E4_Period> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.europeana.eu/schemas/edm/Event> .
+<http://www.cidoc-crm.org/rdfs/cidoc-crm#E4_Period> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+# 
+# http://www.cidoc-crm.org/rdfs/cidoc-crm#E52_Time-Span
+<http://www.cidoc-crm.org/rdfs/cidoc-crm#E52_Time-Span> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cidoc-crm.org/rdfs/cidoc-crm#E52_Time-Span> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.europeana.eu/schemas/edm/TimeSpan> .
+<http://www.cidoc-crm.org/rdfs/cidoc-crm#E52_Time-Span> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/PeriodOfTime> .
+<http://www.cidoc-crm.org/rdfs/cidoc-crm#E52_Time-Span> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+# 
+# http://www.cidoc-crm.org/rdfs/cidoc-crm#E53_Place
+<http://www.cidoc-crm.org/rdfs/cidoc-crm#E53_Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cidoc-crm.org/rdfs/cidoc-crm#E53_Place> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.europeana.eu/schemas/edm/Place> .
+<http://www.cidoc-crm.org/rdfs/cidoc-crm#E53_Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+# 
+# http://www.cidoc-crm.org/rdfs/cidoc-crm#E89_Propositional_Object
+<http://www.cidoc-crm.org/rdfs/cidoc-crm#E89_Propositional_Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cidoc-crm.org/rdfs/cidoc-crm#E89_Propositional_Object> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.europeana.eu/schemas/edm/InformationResource> .
+# 
+# http://www.europeana.eu/schemas/edm/Agent
+<http://www.europeana.eu/schemas/edm/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.europeana.eu/schemas/edm/Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+<http://www.europeana.eu/schemas/edm/Agent> <http://www.w3.org/2000/01/rdf-schema#label> "edm:Agent"@en .
+<http://www.europeana.eu/schemas/edm/Agent> <http://www.w3.org/2004/02/skos/core#example> "Leonardo da Vinci, the British Museum, W3C"@en .
+<http://www.europeana.eu/schemas/edm/Agent> <http://www.w3.org/2004/02/skos/core#example> "Leonardo da Vinci, the British Museum, W3C" .
+<http://www.europeana.eu/schemas/edm/Agent> <http://www.w3.org/2004/02/skos/core#scopeNote> "Rationale: This class is a domain of edm:wasPresentAt"@en .
+<http://www.europeana.eu/schemas/edm/Agent> <http://www.w3.org/2004/02/skos/core#scopeNote> "Rationale: This class is a domain of edm:wasPresentAt" .
+# 
+# http://www.europeana.eu/schemas/edm/EuropeanaAggregation
+<http://www.europeana.eu/schemas/edm/EuropeanaAggregation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.europeana.eu/schemas/edm/EuropeanaAggregation> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.europeana.eu/schemas/edm/aggregatedCHO> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.europeana.eu/schemas/edm/EuropeanaAggregation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/EuropeanaObject> .
+<http://www.europeana.eu/schemas/edm/EuropeanaAggregation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.openarchives.org/ore/terms/Aggregation> .
+<http://www.europeana.eu/schemas/edm/EuropeanaAggregation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.europeana.eu/schemas/edm/aggregatedCHO> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.europeana.eu/schemas/edm/EuropeanaAggregation> <http://www.w3.org/2000/01/rdf-schema#label> "Europeana Aggregation" .
+<http://www.europeana.eu/schemas/edm/EuropeanaAggregation> <http://www.w3.org/2004/02/skos/core#example> "The 56th issue of \"Le Temps\" is a (different) Cultural Heritage Object represented in Europeana by another EuropeanaAggregation instance"@en .
+<http://www.europeana.eu/schemas/edm/EuropeanaAggregation> <http://www.w3.org/2004/02/skos/core#example> "The journal \"Le Temps\" is a Cultural Heritage Object represented in Europeana by one EuropeanaAggregation instance"@en .
+<http://www.europeana.eu/schemas/edm/EuropeanaAggregation> <http://www.w3.org/2004/02/skos/core#example> "The painting Mona Lisa is a Cultural Heritage Object represented in Europeana by one EuropeanaAggregation instance"@en .
+<http://www.europeana.eu/schemas/edm/EuropeanaAggregation> <http://www.w3.org/2004/02/skos/core#note> "An instance of EuropeanaAggregation is created at ingestion time for each different Cultural Heritage Object recognized by Europeana. Such instance is associated to the Cultural Heritage Object that it is about, by the property edm:aggregatedCHO"@en .
+<http://www.europeana.eu/schemas/edm/EuropeanaAggregation> <http://www.w3.org/2004/02/skos/core#scopeNote> "Obligation and Occurence: The relation between the Cultural Heritage Objects represented in Europeana and the instances of the class EuropeanaAggregation is one-to-one, in the data maintained by Europeana: every Cultural Heritage Object is represented by an instance of EuropeanaAggregation, and every instance of EuropeanaAggregation represent a Cultural Heritage Object."@en .
+<http://www.europeana.eu/schemas/edm/EuropeanaAggregation> <http://www.w3.org/2004/02/skos/core#scopeNote> "Rationale: This class is used in Europeana to gather in a single conceptual unit all the information about a Cultural Heritage Object, necessary for all operations on these objects."@en .
+# 
+# http://www.europeana.eu/schemas/edm/EuropeanaObject
+<http://www.europeana.eu/schemas/edm/EuropeanaObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.europeana.eu/schemas/edm/EuropeanaObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/WebResource> .
+<http://www.europeana.eu/schemas/edm/EuropeanaObject> <http://www.w3.org/2000/01/rdf-schema#label> "Europeana Object"@en .
+<http://www.europeana.eu/schemas/edm/EuropeanaObject> <http://www.w3.org/2004/02/skos/core#example> "An annotation created by a user through the Europeana portal"@en .
+<http://www.europeana.eu/schemas/edm/EuropeanaObject> <http://www.w3.org/2004/02/skos/core#example> "Any content created by the users through the service made available by Europeana for that purpose"@en .
+<http://www.europeana.eu/schemas/edm/EuropeanaObject> <http://www.w3.org/2004/02/skos/core#example> "Any instance of the class EuropeanaAggregation"@en .
+<http://www.europeana.eu/schemas/edm/EuropeanaObject> <http://www.w3.org/2004/02/skos/core#scopeNote> "Rationale: This class is used to tag objects that are the result of activity of Europeana, and, as such, objects on which Europeana holds rights"@en .
+# 
+# http://www.europeana.eu/schemas/edm/Event
+<http://www.europeana.eu/schemas/edm/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.europeana.eu/schemas/edm/Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+<http://www.europeana.eu/schemas/edm/Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.europeana.eu/schemas/edm/happenedAt> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.europeana.eu/schemas/edm/Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.europeana.eu/schemas/edm/happenedAt> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.europeana.eu/schemas/edm/Event> <http://www.w3.org/2000/01/rdf-schema#label> "edm:Event"@en .
+<http://www.europeana.eu/schemas/edm/Event> <http://www.w3.org/2004/02/skos/core#example> "The 2nd World War, the act of painting Mona Lisa, the change of custody of Mona Lisa."@en .
+<http://www.europeana.eu/schemas/edm/Event> <http://www.w3.org/2004/02/skos/core#example> "the 2nd World War"@en .
+<http://www.europeana.eu/schemas/edm/Event> <http://www.w3.org/2004/02/skos/core#example> "the act of painting Mona Lisa"@en .
+<http://www.europeana.eu/schemas/edm/Event> <http://www.w3.org/2004/02/skos/core#example> "the change of custody of Mona Lisa"@en .
+<http://www.europeana.eu/schemas/edm/Event> <http://www.w3.org/2004/02/skos/core#note> "Events are identified either by the content provider or by Europeana enrichment at ingestion time"@en .
+<http://www.europeana.eu/schemas/edm/Event> <http://www.w3.org/2004/02/skos/core#scopeNote> "Rationale:This class is a domain of edm:happenedAt and the domain of edm:occurredAt"@en .
+# 
+# http://www.europeana.eu/schemas/edm/InformationResource
+<http://www.europeana.eu/schemas/edm/InformationResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.europeana.eu/schemas/edm/InformationResource> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#unionOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://iflastandards.info/ns/fr/frbr/frbroo/F4_Manifestation_Singleton> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://iflastandards.info/ns/fr/frbr/frbroo/F3_Manifestation_Product_Type> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://iflastandards.info/ns/fr/frbr/frbroo/F1_Work> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.europeana.eu/schemas/edm/InformationResource> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#unionOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Manifestation> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.europeana.eu/schemas/edm/InformationResource> <http://www.w3.org/2000/01/rdf-schema#label> "edm:InformationResource"@en .
+# 
+# http://www.europeana.eu/schemas/edm/NonInformationResource
+<http://www.europeana.eu/schemas/edm/NonInformationResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.europeana.eu/schemas/edm/NonInformationResource> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#complementOf> <http://www.europeana.eu/schemas/edm/InformationResource> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.europeana.eu/schemas/edm/NonInformationResource> <http://www.w3.org/2000/01/rdf-schema#label> "edm:NonInformationResource"@en .
+# 
+# http://www.europeana.eu/schemas/edm/PhysicalThing
+<http://www.europeana.eu/schemas/edm/PhysicalThing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.europeana.eu/schemas/edm/PhysicalThing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+<http://www.europeana.eu/schemas/edm/PhysicalThing> <http://www.w3.org/2000/01/rdf-schema#label> "edm:PhysicalThing"@en .
+# 
+# http://www.europeana.eu/schemas/edm/Place
+<http://www.europeana.eu/schemas/edm/Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.europeana.eu/schemas/edm/Place> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#space-region> .
+<http://www.europeana.eu/schemas/edm/Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+<http://www.europeana.eu/schemas/edm/Place> <http://www.w3.org/2000/01/rdf-schema#label> "edm:Place"@en .
+# 
+# http://www.europeana.eu/schemas/edm/ProvidedCHO
+<http://www.europeana.eu/schemas/edm/ProvidedCHO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.europeana.eu/schemas/edm/ProvidedCHO> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#inverseOf> <http://www.europeana.eu/schemas/edm/aggregatedCHO> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.europeana.eu/schemas/edm/ProvidedCHO> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#inverseOf> <http://www.europeana.eu/schemas/edm/aggregatedCHO> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.europeana.eu/schemas/edm/ProvidedCHO> <http://www.w3.org/2000/01/rdf-schema#label> "edm:ProvidedCHO"@en .
+<http://www.europeana.eu/schemas/edm/ProvidedCHO> <http://www.w3.org/2004/02/skos/core#example> "Mona Lisa, Winged Victory of Samothrace"@en .
+<http://www.europeana.eu/schemas/edm/ProvidedCHO> <http://www.w3.org/2004/02/skos/core#note> "This class has been mostly motivated by the need to assign a type to the “central node” in the EDM pattern, during the ingestion process, related to the XML expression of EDM at that stage. It was especially intended to fit the cases where edm:PhysicalThing  cannot be used as the type of the resource standing for the real-world object (independently of any specific data contributor perspective)."@en .
+<http://www.europeana.eu/schemas/edm/ProvidedCHO> <http://www.w3.org/2004/02/skos/core#scopeNote> "Rationale: This class is the range of edm:aggregatedCHO. A resource of type ProvidedCHO can be the subject of statements using edm:isRelatedTo or any more specific property."@en .
+# 
+# http://www.europeana.eu/schemas/edm/TimeSpan
+<http://www.europeana.eu/schemas/edm/TimeSpan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.europeana.eu/schemas/edm/TimeSpan> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval> .
+<http://www.europeana.eu/schemas/edm/TimeSpan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/PeriodOfTime> .
+<http://www.europeana.eu/schemas/edm/TimeSpan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+<http://www.europeana.eu/schemas/edm/TimeSpan> <http://www.w3.org/2000/01/rdf-schema#label> "edm:TimeSpan"@en .
+# 
+# http://www.europeana.eu/schemas/edm/WebResource
+<http://www.europeana.eu/schemas/edm/WebResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.europeana.eu/schemas/edm/WebResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/rdfs/cidoc-crm#E89_Propositional_Object> .
+<http://www.europeana.eu/schemas/edm/WebResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/InformationResource> .
+<http://www.europeana.eu/schemas/edm/WebResource> <http://www.w3.org/2000/01/rdf-schema#label> "edm:WebResource"@en .
+# 
+# http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#space-region
+<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#space-region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#space-region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+# 
+# http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval
+<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/PeriodOfTime> .
+<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+# 
+# http://www.openarchives.org/ore/terms/Aggregation
+<http://www.openarchives.org/ore/terms/Aggregation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.openarchives.org/ore/terms/Aggregation> <http://www.w3.org/2000/01/rdf-schema#label> "ore:Aggregation"@en .
+# 
+# http://www.openarchives.org/ore/terms/Proxy
+<http://www.openarchives.org/ore/terms/Proxy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "skos:Concept"@en .
+# 
+# http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://europeana.eu
+<http://europeana.eu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://europeana.eu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+# 
+# http://data.semanticweb.org/person/antoine-isaac
+<http://data.semanticweb.org/person/antoine-isaac> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.semanticweb.org/person/antoine-isaac> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+# 
+# http://www.europeana.eu/schemas/edm/
+<http://www.europeana.eu/schemas/edm/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.europeana.eu/schemas/edm/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .
+<http://www.europeana.eu/schemas/edm/> <http://purl.org/dc/elements/1.1/contributor> <http://www.ibi.hu-berlin.de/institut/personen/iwanowa> .
+<http://www.europeana.eu/schemas/edm/> <http://purl.org/dc/elements/1.1/contributor> <http://www.ics.forth.gr/isl/people/people_individual.jsp?Person_ID=2> .
+<http://www.europeana.eu/schemas/edm/> <http://purl.org/dc/elements/1.1/contributor> <http://www.image.ece.ntua.gr/~ndroso/> .
+<http://www.europeana.eu/schemas/edm/> <http://purl.org/dc/elements/1.1/contributor> <http://www.image.ntua.gr/~tzouvaras/> .
+<http://www.europeana.eu/schemas/edm/> <http://purl.org/dc/elements/1.1/contributor> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://www.europeana.eu/schemas/edm/> <http://purl.org/dc/elements/1.1/contributor> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.europeana.eu/schemas/edm/> <http://purl.org/dc/elements/1.1/creator> <http://data.semanticweb.org/person/antoine-isaac> .
+<http://www.europeana.eu/schemas/edm/> <http://purl.org/dc/elements/1.1/publisher> <http://europeana.eu> .
+# 
+# http://www.ibi.hu-berlin.de/institut/personen/iwanowa
+<http://www.ibi.hu-berlin.de/institut/personen/iwanowa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ibi.hu-berlin.de/institut/personen/iwanowa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+# 
+# http://www.ics.forth.gr/isl/people/people_individual.jsp?Person_ID=2
+<http://www.ics.forth.gr/isl/people/people_individual.jsp?Person_ID=2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ics.forth.gr/isl/people/people_individual.jsp?Person_ID=2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+# 
+# http://www.image.ece.ntua.gr/~ndroso/
+<http://www.image.ece.ntua.gr/~ndroso/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.image.ece.ntua.gr/~ndroso/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+# 
+# http://www.image.ntua.gr/~tzouvaras/
+<http://www.image.ntua.gr/~tzouvaras/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.image.ntua.gr/~tzouvaras/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:description"@en .
+# 
+<http://purl.org/dc/terms/license> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:license"@en .
+# 
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:title"@en .
+# 
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://vocab.org/vann/#preferredNamespaceUri> .
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/2000/01/rdf-schema#label> "vann:preferredNamespaceUri"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

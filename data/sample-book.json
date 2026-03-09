@@ -1,0 +1,302 @@
+{
+    "5BDZJCHYHRIGUR2HGCEJHKJVJ67DKXAU": {
+        "ore:Aggregation": {
+            "edm:aggregatedCHO": "http://www.deutsche-digitale-bibliothek.de/item/5BDZJCHYHRIGUR2HGCEJHKJVJ67DKXAU",
+            "edm:dataProvider": [
+                "Deutsche Nationalbibliothek",
+                "http://www.deutsche-digitale-bibliothek.de/organization/2Q37XY5KXJNJE5MV6SWP3UKKZ6RSBLK5"
+            ],
+            "edm:isShownAt": "http://d-nb.info/1070325295",
+            "edm:provider": "Deutsche Digitale Bibliothek",
+            "edm:rights": "http://rightsstatements.org/vocab/InC/1.0/",
+            "dcterms:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "id": "http://d-nb.info/DE-101/1070325295"
+        },
+        "edm:WebResource": {
+            "edm:rights": "http://rightsstatements.org/vocab/InC/1.0/",
+            "dc:type": "http://ddb.vocnet.org/medientyp/mt001",
+            "dcterms:rights": "http://www.deutsche-digitale-bibliothek.de/lizenzen/rv-fz/",
+            "id": "http://d-nb.info/1070325295"
+        },
+        "skos:Concept": [
+            {
+                "skos:notation": "mediatype_001",
+                "id": "http://ddb.vocnet.org/medientyp/mt001"
+            },
+            {
+                "skos:notation": "sec_02",
+                "id": "http://ddb.vocnet.org/sparte/sparte002"
+            },
+            {
+                "skos:prefLabel": {
+                    "lang": "ger",
+                    "text": "Monografie"
+                },
+                "id": "R2ARVR7OGLVUEWCKUW3HJGAKBHMRKIV7"
+            },
+            {
+                "skos:prefLabel": "Münchener Räterepublik <rswk-swf>",
+                "id": "http://d-nb.info/gnd/4075073-5"
+            },
+            {
+                "skos:prefLabel": "Weimarer Republik",
+                "id": "http://d-nb.info/gnd/4065109-5"
+            },
+            {
+                "skos:prefLabel": {
+                    "lang": "ger",
+                    "text": "(Produktform)Hardback"
+                },
+                "id": "5D6RFSCOCZVVAQ33Z7LWV3GT7BNNCJX7"
+            },
+            {
+                "skos:prefLabel": {
+                    "lang": "ger",
+                    "text": "(VLB-WN)1947: Hardcover, Softcover / Sachbücher/Geschichte/20. Jahrhundert (bis 1945)"
+                },
+                "id": "EC52LU3UBCCBIWKUCFY77DKVHKDKCHZQ"
+            },
+            {
+                "skos:prefLabel": {
+                    "lang": "ger",
+                    "text": "(BISAC Subject Heading)HIS014000"
+                },
+                "id": "GFQFN7OYJ46CCQEOKTF7N2HK4ZZPN5AX"
+            },
+            {
+                "skos:prefLabel": {
+                    "lang": "ger",
+                    "text": "(Produktgruppe)99470: NONBOOK/Sachbücher/Geschichte/20. Jahrhundert (bis 1945)"
+                },
+                "id": "D63RROVSDLMWSRZB42ABT2GAXQRQR7DB"
+            },
+            {
+                "skos:prefLabel": {
+                    "lang": "ger",
+                    "text": "Tagebuch"
+                },
+                "id": "7ZKDZRVRJT6YQS7OB2EM6SSARN5OLTWM"
+            },
+            {
+                "skos:prefLabel": {
+                    "lang": "ger",
+                    "text": "Erlebnisbericht"
+                },
+                "id": "MFAU56NCIZFJ32BWRC3MZAHQOIN7GTVY"
+            },
+            {
+                "skos:prefLabel": {
+                    "lang": "ger",
+                    "text": "Tagebuch 1919"
+                },
+                "id": "2ZEDHXZ7WK3QIKIWGOQCHDLXINOHAV7K"
+            },
+            {
+                "skos:prefLabel": {
+                    "lang": "ger",
+                    "text": "Erlebnisbericht"
+                },
+                "id": "244ACEEGU2O3MQGOZFGOYH243MF2ODO3"
+            }
+        ],
+        "edm:Agent": [
+            {
+                "skos:prefLabel": "Deutsche Nationalbibliothek",
+                "rdf:type": "http://ddb.vocnet.org/sparte/sparte002",
+                "id": "2Q37XY5KXJNJE5MV6SWP3UKKZ6RSBLK5"
+            },
+            {
+                "skos:prefLabel": "Victor Klemperer",
+                "id": "http://d-nb.info/gnd/11856319X"
+            },
+            {
+                "skos:prefLabel": "Victor Klemperer",
+                "edm:wasPresentAt": "QEYYBZSRJBGF6ID247TILJ5P3SOHITHF",
+                "id": "http://d-nb.info/gnd/11856319X"
+            },
+            {
+                "skos:prefLabel": "Wolfram Wette",
+                "edm:wasPresentAt": "QEYYBZSRJBGF6ID247TILJ5P3SOHITHF",
+                "id": "http://d-nb.info/gnd/123176743"
+            },
+            {
+                "skos:prefLabel": "Aufbau-Verlag",
+                "edm:wasPresentAt": "QEYYBZSRJBGF6ID247TILJ5P3SOHITHF",
+                "id": "http://d-nb.info/gnd/5058957-X"
+            }
+        ],
+        "edm:ProvidedCHO": {
+            "edm:currentLocation": "V3GUD6CDMBTPBVAMQFRJCKBXZ5VAJ7NG",
+            "edm:hasType": "R2ARVR7OGLVUEWCKUW3HJGAKBHMRKIV7",
+            "edm:hasMet": [
+                "NSHNAXEEOXDPA6KOVRTJUA6OSTSNM4AD",
+                "QEYYBZSRJBGF6ID247TILJ5P3SOHITHF"
+            ],
+            "edm:type": "SOUND",
+            "dc:contributor": [
+                {
+                    "lang": "zxx",
+                    "text": "Wette, Wolfram"
+                },
+                {
+                    "lang": "zxx",
+                    "text": "Aufbau-Verlag"
+                }
+            ],
+            "dc:creator": {
+                "lang": "zxx",
+                "text": "Klemperer, Victor"
+            },
+            "dc:description": {
+                "lang": "ger",
+                "text": "1. Aufl."
+            },
+            "dc:identifier": [
+                "978-3-351-03598-3",
+                "3-351-03598-5",
+                "(DE-599)DNB1070325295",
+                "(OCoLC)908644600"
+            ],
+            "dc:language": "ger",
+            "dc:type": {
+                "lang": "ger",
+                "text": "Monografie"
+            },
+            "dc:subject": [
+                "Münchener Räterepublik <rswk-swf>",
+                "Weimarer Republik",
+                {
+                    "lang": "ger",
+                    "text": "(Produktform)Hardback"
+                },
+                {
+                    "lang": "ger",
+                    "text": "(VLB-WN)1947: Hardcover, Softcover / Sachbücher/Geschichte/20. Jahrhundert (bis 1945)"
+                },
+                {
+                    "lang": "ger",
+                    "text": "(BISAC Subject Heading)HIS014000"
+                },
+                {
+                    "lang": "ger",
+                    "text": "(Produktgruppe)99470: NONBOOK/Sachbücher/Geschichte/20. Jahrhundert (bis 1945)"
+                },
+                {
+                    "lang": "ger",
+                    "text": "Tagebuch"
+                },
+                {
+                    "lang": "ger",
+                    "text": "Erlebnisbericht"
+                },
+                {
+                    "lang": "ger",
+                    "text": "Tagebuch 1919"
+                },
+                {
+                    "lang": "ger",
+                    "text": "Erlebnisbericht"
+                },
+                {
+                    "lang": "ger",
+                    "text": "München"
+                },
+                "Klemperer, Victor"
+            ],
+            "dc:title": {
+                "lang": "ger",
+                "text": "Man möchte immer weinen und lachen in einem :Revolutionstagebuch 1919"
+            },
+            "dcterms:language": "http://id.loc.gov/vocabulary/iso639-2/ger",
+            "dcterms:subject": [
+                "http://d-nb.info/gnd/4075073-5",
+                "http://d-nb.info/gnd/4065109-5",
+                "5D6RFSCOCZVVAQ33Z7LWV3GT7BNNCJX7",
+                "EC52LU3UBCCBIWKUCFY77DKVHKDKCHZQ",
+                "GFQFN7OYJ46CCQEOKTF7N2HK4ZZPN5AX",
+                "D63RROVSDLMWSRZB42ABT2GAXQRQR7DB",
+                "7ZKDZRVRJT6YQS7OB2EM6SSARN5OLTWM",
+                "MFAU56NCIZFJ32BWRC3MZAHQOIN7GTVY",
+                "2ZEDHXZ7WK3QIKIWGOQCHDLXINOHAV7K",
+                "244ACEEGU2O3MQGOZFGOYH243MF2ODO3",
+                "TVU7YQATM62XZVPYGTISZTHAGENOL5IQ",
+                "http://d-nb.info/gnd/11856319X"
+            ],
+            "dcterms:extent": "263, [16] S.",
+            "dcterms:issued": "2015",
+            "ddb:hierarchyType": "htype_021",
+            "ddb:aggregationEntity": "false",
+            "ddb:hierarchyPosition": "-1",
+            "id": "5BDZJCHYHRIGUR2HGCEJHKJVJ67DKXAU"
+        },
+        "edm:Place": [
+            {
+                "skos:prefLabel": "München",
+                "id": "TVU7YQATM62XZVPYGTISZTHAGENOL5IQ"
+            },
+            {
+                "wgs84_pos:lat": "50.13104",
+                "wgs84_pos:long": "8.68375",
+                "skos:prefLabel": {
+                    "lang": "ger",
+                    "text": "Deutsche Nationalbibliothek"
+                },
+                "id": "V3GUD6CDMBTPBVAMQFRJCKBXZ5VAJ7NG"
+            }
+        ],
+        "dcterms:LinguisticSystem": {
+            "rdf:value": "ger",
+            "id": "http://id.loc.gov/vocabulary/iso639-2/ger"
+        },
+        "edm:Event": [
+            {
+                "edm:hasType": "http://terminology.lido-schema.org/lido00228",
+                "edm:occuredAt": "NUWSKM7DQ4RSM3VDEKDILSHRM5YH4YFB",
+                "id": "NSHNAXEEOXDPA6KOVRTJUA6OSTSNM4AD"
+            },
+            {
+                "edm:hasType": "http://terminology.lido-schema.org/lido00012",
+                "crm:P11_had_participant": [
+                    "http://d-nb.info/gnd/11856319X",
+                    "http://d-nb.info/gnd/123176743",
+                    "http://d-nb.info/gnd/5058957-X"
+                ],
+                "id": "QEYYBZSRJBGF6ID247TILJ5P3SOHITHF"
+            }
+        ],
+        "edm:TimeSpan": {
+            "edm:begin": "2015",
+            "edm:end": "2015",
+            "id": "NUWSKM7DQ4RSM3VDEKDILSHRM5YH4YFB"
+        },
+        "View": {
+            "Beteiligte Personen und Organisationen": "Aufbau-Verlag",
+            "Dokumenttyp": "Monografie",
+            "Ausgabe": "1. Aufl.",
+            "Sprache": "Deutsch",
+            "Umfang": "263, [16] S.",
+            "Thema": "Klemperer, Victor <rswk-swf>; Münchener Räterepublik <rswk-swf>; Weimarer Republik; München; Tagebuch; Tagebuch 1919; Erlebnisbericht",
+            "ISBN": "978-3-351-03598-3",
+            "Identifier": "1070325295",
+            "Inhaltsverzeichnis": "https://d-nb.info/1070325295/04",
+            "Digitalisat im Angebot der Bibliothek": "Inhaltsverzeichnis"
+        },
+        "Prov": {
+            "item-id": "5BDZJCHYHRIGUR2HGCEJHKJVJ67DKXAU",
+            "dataset-id": "8759509967988451nsnl",
+            "dataset-label": "Gesamtlieferung (TOC) - MARC",
+            "revision-id": "36",
+            "ingest-date": "2022-02-04T10:02:45+0100",
+            "cortex-type": "Kultur",
+            "mapping-version": "2.50",
+            "source-type": "http://www.loc.gov/MARC21/slim/",
+            "provider": {
+                "name": "Deutsche Nationalbibliothek",
+                "uri": "http://www.dnb.de",
+                "id": "00012008",
+                "ddbid": "2Q37XY5KXJNJE5MV6SWP3UKKZ6RSBLK5",
+                "isil": "http://ld.zdb-services.de/resource/organisations/DE-101"
+            }
+        }
+    }
+}

@@ -1,0 +1,1014 @@
+{
+    "lido-source": {
+        "lido:lido": {
+            "@xmlns:lido": "http://www.lido-schema.org",
+            "@xmlns:xalan": "http://xml.apache.org/xalan",
+            "lido:lidoRecID": {
+                "@lido:source": "https://hessen.museum-digital.de/index.php?t=institution&instnr=1",
+                "@lido:type": "local",
+                "#text": "DE-MUS-046417/2400"
+            },
+            "lido:category": null,
+            "lido:descriptiveMetadata": {
+                "@xml:lang": "de",
+                "lido:objectClassificationWrap": {
+                    "lido:objectWorkTypeWrap": {
+                        "lido:objectWorkType": {
+                            "lido:term": {
+                                "@lido:addedSearchTerm": "no",
+                                "@xml:lang": "de",
+                                "#text": "Malerei"
+                            }
+                        }
+                    },
+                    "lido:classificationWrap": {
+                        "lido:classification": {
+                            "lido:conceptID": {
+                                "@lido:source": "local",
+                                "@lido:type": "collection_id",
+                                "#text": "1"
+                            },
+                            "lido:term": {
+                                "@lido:addedSearchTerm": "no",
+                                "@xml:lang": "de",
+                                "#text": "Kunstsammlung"
+                            }
+                        }
+                    }
+                },
+                "lido:objectIdentificationWrap": {
+                    "lido:titleWrap": {
+                        "lido:titleSet": {
+                            "lido:appellationValue": {
+                                "@lido:pref": "preferred",
+                                "#text": "Gretchen in der Kirche. Illustrationen zu Goethes Faust"
+                            }
+                        }
+                    },
+                    "lido:inscriptionsWrap": {
+                        "lido:inscriptions": {
+                            "lido:inscriptionDescription": {
+                                "lido:descriptiveNoteValue": "In der Darstellung unten links signiert &quot;E Schlemony&quot;, Bildunterschrift mit Bleistift: &quot;Gretchen in der Kirche!&quot;."
+                            }
+                        }
+                    },
+                    "lido:repositoryWrap": {
+                        "lido:repositorySet": {
+                            "@lido:type": "current",
+                            "lido:repositoryName": {
+                                "lido:legalBodyID": {
+                                    "@lido:type": "isil",
+                                    "#text": "DE-MUS-046417"
+                                },
+                                "lido:legalBodyName": {
+                                    "lido:appellationValue": [
+                                        {
+                                            "@xml:lang": "de",
+                                            "#text": "Freies Deutsches Hochstift / Frankfurter Goethe-Museum"
+                                        },
+                                        {
+                                            "@xml:lang": "id",
+                                            "#text": "Frankfurter Goethe-Haus / Freies Deutsches Hochstift"
+                                        },
+                                        {
+                                            "@xml:lang": "en",
+                                            "#text": "Frankfurter Goethe-Haus / Freies Deutsches Hochstift"
+                                        }
+                                    ]
+                                },
+                                "lido:legalBodyWeblink": "https://www.goethehaus-frankfurt.de"
+                            },
+                            "lido:workID": {
+                                "@lido:type": "inventory number",
+                                "#text": "III-15808c"
+                            },
+                            "lido:repositoryLocation": {
+                                "lido:namePlaceSet": {
+                                    "lido:appellationValue": [
+                                        "Frankfurt am Main",
+                                        {
+                                            "@xml:lang": "de",
+                                            "#text": "Frankfurt am Main"
+                                        },
+                                        {
+                                            "@xml:lang": "id",
+                                            "#text": "Frankfurt am Main"
+                                        },
+                                        {
+                                            "@xml:lang": "en",
+                                            "#text": "Frankfurt am Main"
+                                        }
+                                    ]
+                                },
+                                "lido:gml": null
+                            }
+                        }
+                    },
+                    "lido:objectDescriptionWrap": {
+                        "lido:objectDescriptionSet": {
+                            "lido:descriptiveNoteValue": "Gretchen in der Kirche. Illustrationen zu Goethes Faust Illustrierte Textstelle: Faust - Der Tragödie erster Teil, Dom",
+                            "lido:sourceDescriptiveNote": [
+                                {
+                                    "@xml:lang": "de",
+                                    "#text": "Freies Deutsches Hochstift / Frankfurter Goethe-Museum"
+                                },
+                                {
+                                    "@xml:lang": "id",
+                                    "#text": "Frankfurter Goethe-Haus / Freies Deutsches Hochstift"
+                                },
+                                {
+                                    "@xml:lang": "en",
+                                    "#text": "Frankfurter Goethe-Haus / Freies Deutsches Hochstift"
+                                }
+                            ]
+                        }
+                    },
+                    "lido:objectMeasurementsWrap": {
+                        "lido:objectMeasurementsSet": {
+                            "lido:displayObjectMeasurements": "Blatt: 24,6 x 16,1 cm - Darstellung: 21,7 x 15,4 cm",
+                            "lido:objectMeasurements": {
+                                "lido:measurementsSet": {
+                                    "lido:measurementType": "Stempelstellung",
+                                    "lido:measurementUnit": "Clock",
+                                    "lido:measurementValue": "0"
+                                }
+                            }
+                        }
+                    }
+                },
+                "lido:eventWrap": {
+                    "lido:eventSet": [
+                        {
+                            "lido:displayEvent": "Hergestellt",
+                            "lido:event": {
+                                "lido:eventID": {
+                                    "@lido:type": "local",
+                                    "#text": "17970"
+                                },
+                                "lido:eventType": {
+                                    "lido:term": {
+                                        "@lido:addedSearchTerm": "no",
+                                        "#text": "Hergestellt"
+                                    }
+                                },
+                                "lido:eventName": {
+                                    "lido:appellationValue": "Hergestellt --- Objekt 2400"
+                                },
+                                "lido:eventActor": {
+                                    "lido:displayActorInRole": "E. Schlemoy",
+                                    "lido:actorInRole": {
+                                        "lido:actor": {
+                                            "lido:actorID": {
+                                                "@lido:source": "md:term",
+                                                "@lido:type": "uri",
+                                                "#text": "https://term.museum-digital.de/md-de/persinst/13744"
+                                            },
+                                            "lido:nameActorSet": {
+                                                "lido:appellationValue": "Schlemoy, E."
+                                            },
+                                            "lido:vitalDatesActor": {
+                                                "lido:earliestDate": null,
+                                                "lido:latestDate": null
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "lido:event": {
+                                "lido:eventType": {
+                                    "lido:term": "Event (non-specified)"
+                                },
+                                "lido:eventMaterialsTech": {
+                                    "lido:displayMaterialsTech": "Aquarell, weiß gehöht"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "lido:objectRelationWrap": {
+                    "lido:subjectWrap": {
+                        "lido:subjectSet": [
+                            {
+                                "lido:subject": {
+                                    "lido:subjectActor": {
+                                        "lido:displayActor": "Gretchen (Figur in Goethes Faust)",
+                                        "lido:actor": {
+                                            "lido:actorID": [
+                                                {
+                                                    "@lido:source": "gnd",
+                                                    "@lido:type": "uri",
+                                                    "#text": "http://d-nb.info/gnd/11904627X"
+                                                },
+                                                {
+                                                    "@lido:source": "iconclass",
+                                                    "@lido:type": "uri",
+                                                    "#text": "http://iconclass.org/rkd/82AA%28GRETCHEN%29/"
+                                                },
+                                                {
+                                                    "@lido:source": "md:term",
+                                                    "@lido:type": "uri",
+                                                    "#text": "https://term.museum-digital.de/md-de/persinst/13231"
+                                                }
+                                            ],
+                                            "lido:nameActorSet": {
+                                                "lido:appellationValue": [
+                                                    "Gretchen (Figur in Goethes Faust)",
+                                                    "Gretchen (Figur in Goethes Faust)"
+                                                ]
+                                            },
+                                            "lido:vitalDatesActor": {
+                                                "lido:earliestDate": null,
+                                                "lido:latestDate": null
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "lido:subject": {
+                                    "lido:subjectActor": {
+                                        "lido:displayActor": "Mephistopheles",
+                                        "lido:actor": {
+                                            "lido:actorID": [
+                                                {
+                                                    "@lido:source": "Wikipedia",
+                                                    "@lido:type": "uri",
+                                                    "#text": "https://de.wikipedia.org/wiki/Mephistopheles"
+                                                },
+                                                {
+                                                    "@lido:source": "gnd",
+                                                    "@lido:type": "uri",
+                                                    "#text": "https://d-nb.info/gnd/119060760"
+                                                },
+                                                {
+                                                    "@lido:source": "viaf",
+                                                    "@lido:type": "uri",
+                                                    "#text": "https://viaf.org/viaf/151480411"
+                                                },
+                                                {
+                                                    "@lido:source": "loc",
+                                                    "@lido:type": "uri",
+                                                    "#text": "http://id.loc.gov/authorities/names/no2018059940"
+                                                },
+                                                {
+                                                    "@lido:source": "wikidata",
+                                                    "@lido:type": "uri",
+                                                    "#text": "https://www.wikidata.org/wiki/Q272805"
+                                                },
+                                                {
+                                                    "@lido:source": "iconclass",
+                                                    "@lido:type": "uri",
+                                                    "#text": "http://iconclass.org/rkd/82A(Mephisto)"
+                                                },
+                                                {
+                                                    "@lido:source": "md:term",
+                                                    "@lido:type": "uri",
+                                                    "#text": "https://term.museum-digital.de/md-de/persinst/13243"
+                                                }
+                                            ],
+                                            "lido:nameActorSet": {
+                                                "lido:appellationValue": [
+                                                    "Mephistopheles",
+                                                    "مفستوفيليس",
+                                                    "Mephistopheles",
+                                                    "Mephistopheles",
+                                                    "Μεφιστοφελής",
+                                                    "Mephistopheles",
+                                                    "Mefistófeles",
+                                                    "مفیستوفل",
+                                                    "Mefistofeles",
+                                                    "Méphistophélès",
+                                                    "Mephistopheles",
+                                                    "Mephistopheles",
+                                                    "Mefistofele",
+                                                    "メフィストフェレス",
+                                                    "მეფისტოფელი",
+                                                    "메피스토펠레스",
+                                                    "Mephistopheles",
+                                                    "Mefistofeles",
+                                                    "Mefistófeles",
+                                                    "Мефистофель",
+                                                    "Mefistofeles",
+                                                    "เมฟิสโตเฟเลส",
+                                                    "Mephistopheles",
+                                                    "Mephistopheles",
+                                                    "Mephistopheles",
+                                                    "梅菲斯托費勒斯"
+                                                ]
+                                            },
+                                            "lido:vitalDatesActor": {
+                                                "lido:earliestDate": null,
+                                                "lido:latestDate": null
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "lido:subject": {
+                                    "lido:subjectConcept": {
+                                        "lido:conceptID": [
+                                            {
+                                                "@lido:source": "Wikipedia",
+                                                "@lido:type": "uri",
+                                                "#text": "https://de.wikipedia.org/wiki/Malerei"
+                                            },
+                                            {
+                                                "@lido:source": "gnd",
+                                                "@lido:type": "uri",
+                                                "#text": "https://d-nb.info/gnd/4037220-0"
+                                            },
+                                            {
+                                                "@lido:source": "lcsh",
+                                                "@lido:type": "uri",
+                                                "#text": "http://id.loc.gov/authorities/subjects/sh85096661"
+                                            },
+                                            {
+                                                "@lido:source": "aat",
+                                                "@lido:type": "uri",
+                                                "#text": "http://vocab.getty.edu/aat/300054216"
+                                            },
+                                            {
+                                                "@lido:source": "oberbegriffsdatei",
+                                                "@lido:type": "uri",
+                                                "#text": "https://term.museum-digital.de/oberbegriffsdatei/tag/7140"
+                                            },
+                                            {
+                                                "@lido:source": "wikidata",
+                                                "@lido:type": "uri",
+                                                "#text": "https://www.wikidata.org/wiki/Q11629"
+                                            },
+                                            {
+                                                "@lido:source": "iconclass",
+                                                "@lido:type": "uri",
+                                                "#text": "http://iconclass.org/rkd/48C51/"
+                                            },
+                                            {
+                                                "@lido:source": "md:term",
+                                                "@lido:type": "uri",
+                                                "#text": "https://term.museum-digital.de/md-de/tag/106"
+                                            }
+                                        ],
+                                        "lido:term": [
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "#text": "Malerei"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "ar",
+                                                "#text": "تصوير"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "bn",
+                                                "#text": "চিত্রকলার শিল্প"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "cs",
+                                                "#text": "Malířství"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "da",
+                                                "#text": "Malerkunst"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "de",
+                                                "#text": "Malerei"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "el",
+                                                "#text": "ζωγραφική"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "en",
+                                                "#text": "Art of painting"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "es",
+                                                "#text": "Pintura"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "fa",
+                                                "#text": "نقاشی"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "fi",
+                                                "#text": "Maalaustaide"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "fr",
+                                                "#text": "Peinture"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "he",
+                                                "#text": "ציור"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "hi",
+                                                "#text": "चित्रकला"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "hu",
+                                                "#text": "festőművészet"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "id",
+                                                "#text": "Lukisan"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "it",
+                                                "#text": "Pittura"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "ja",
+                                                "#text": "絵画"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "ka",
+                                                "#text": "ფერწერა"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "ko",
+                                                "#text": "회화"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "nl",
+                                                "#text": "Schilderkunst"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "pl",
+                                                "#text": "Malarstwo"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "pt",
+                                                "#text": "Pintura"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "ro",
+                                                "#text": "pictură"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "ru",
+                                                "#text": "живопись"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "sv",
+                                                "#text": "Målarkonst"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "sw",
+                                                "#text": "Uchoraji"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "ta",
+                                                "#text": "ஓவியக் கலை"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "th",
+                                                "#text": "จิตรกรรม"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "tl",
+                                                "#text": "Pagpinta"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "tr",
+                                                "#text": "Resim"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "ur",
+                                                "#text": "نقاشی"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "vi",
+                                                "#text": "hội họa"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "zh",
+                                                "#text": "绘画"
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "lido:subject": {
+                                    "lido:subjectConcept": {
+                                        "lido:conceptID": [
+                                            {
+                                                "@lido:source": "Wikipedia",
+                                                "@lido:type": "uri",
+                                                "#text": "https://de.wikipedia.org/wiki/Faust._Eine_Trag%C3%B6die."
+                                            },
+                                            {
+                                                "@lido:source": "gnd",
+                                                "@lido:type": "uri",
+                                                "#text": "https://d-nb.info/gnd/4099197-0"
+                                            },
+                                            {
+                                                "@lido:source": "wikidata",
+                                                "@lido:type": "uri",
+                                                "#text": "https://www.wikidata.org/w/index.php?search=&search=Q677859"
+                                            },
+                                            {
+                                                "@lido:source": "md:term",
+                                                "@lido:type": "uri",
+                                                "#text": "https://term.museum-digital.de/md-de/tag/12883"
+                                            }
+                                        ],
+                                        "lido:term": [
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "#text": "Faust I"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "cs",
+                                                "#text": "Faust. Prvý díl tragédie"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "da",
+                                                "#text": "Faust I"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "de",
+                                                "#text": "Faust. Eine Tragödie."
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "en",
+                                                "#text": "Faust: The First Part of the Tragedy"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "fr",
+                                                "#text": "Faust. Une tragédie"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "ja",
+                                                "#text": "ファウスト 第一部"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "ru",
+                                                "#text": "Фауст. Часть 1"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "zh",
+                                                "#text": "浮士德I"
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "lido:subject": {
+                                    "lido:subjectConcept": {
+                                        "lido:conceptID": [
+                                            {
+                                                "@lido:source": "Wikipedia",
+                                                "@lido:type": "uri",
+                                                "#text": "https://de.wikipedia.org/wiki/Drama"
+                                            },
+                                            {
+                                                "@lido:source": "gnd",
+                                                "@lido:type": "uri",
+                                                "#text": "http://d-nb.info/gnd/4012899-4"
+                                            },
+                                            {
+                                                "@lido:source": "lcsh",
+                                                "@lido:type": "uri",
+                                                "#text": "http://id.loc.gov/authorities/subjects/sh85039316"
+                                            },
+                                            {
+                                                "@lido:source": "wikidata",
+                                                "@lido:type": "uri",
+                                                "#text": "https://www.wikidata.org/wiki/Q25372"
+                                            },
+                                            {
+                                                "@lido:source": "aat",
+                                                "@lido:type": "uri",
+                                                "#text": "http://vocab.getty.edu/aat/300417554"
+                                            },
+                                            {
+                                                "@lido:source": "md:term",
+                                                "@lido:type": "uri",
+                                                "#text": "https://term.museum-digital.de/md-de/tag/13625"
+                                            }
+                                        ],
+                                        "lido:term": [
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "#text": "Drama"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "ar",
+                                                "#text": "دراما"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "bn",
+                                                "#text": "নাটক"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "cs",
+                                                "#text": "Drama"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "da",
+                                                "#text": "Drama"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "de",
+                                                "#text": "Drama"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "el",
+                                                "#text": "δράμα"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "en",
+                                                "#text": "Drama"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "es",
+                                                "#text": "Drama"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "fa",
+                                                "#text": "دراما"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "fi",
+                                                "#text": "Draama"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "fr",
+                                                "#text": "Forme dramatique"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "he",
+                                                "#text": "דרמה"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "hi",
+                                                "#text": "नाटक"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "hu",
+                                                "#text": "dráma"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "id",
+                                                "#text": "Drama"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "it",
+                                                "#text": "Dramma"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "ja",
+                                                "#text": "ドラマ"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "ka",
+                                                "#text": "დრამა"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "ko",
+                                                "#text": "드라마"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "nl",
+                                                "#text": "Drama"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "pl",
+                                                "#text": "Dramat"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "pt",
+                                                "#text": "Drama"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "ro",
+                                                "#text": "dramă"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "ru",
+                                                "#text": "драматическая форма"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "sv",
+                                                "#text": "Dramatik"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "ta",
+                                                "#text": "நாடகம்"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "th",
+                                                "#text": "นาฏกรรม"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "tl",
+                                                "#text": "Drama"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "tr",
+                                                "#text": "Drama"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "ur",
+                                                "#text": "ڈراما"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "vi",
+                                                "#text": "kịch"
+                                            },
+                                            {
+                                                "@lido:addedSearchTerm": "no",
+                                                "@xml:lang": "zh",
+                                                "#text": "戏剧"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "lido:relatedWorksWrap": {
+                        "lido:relatedWorkSet": [
+                            {
+                                "lido:relatedWork": {
+                                    "lido:displayObject": "Gehört zur gleichen Serie: Mephistopholes und die Geister beim schlafenden Faust in der Studierstube. Illustrationen zu Goethes Faust",
+                                    "lido:object": {
+                                        "lido:objectWebResource": "https://hessen.museum-digital.de/index.php?t=objekt&oges=2172",
+                                        "lido:objectID": {
+                                            "@lido:type": "local",
+                                            "#text": "DE-MUS-046417/2172"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "lido:relatedWork": {
+                                    "lido:displayObject": "[Aukt. Kat. Winterberg], 2012: Aukt. Kat. Winterberg, Auktion 84, S. 59., Abb. 353",
+                                    "lido:object": {
+                                        "lido:objectWebResource": "http://kvk.ubka.uni-karlsruhe.de/hylib-bin/kvk/nph-kvk2.cgi?maske=kvk-last&lang=de&title=KIT-Bibliothek%3A+Karlsruher+Virtueller+Katalog+KVK+%3A+Ergebnisanzeige&head=http%3A%2F%2Fwww.ubka.uni-karlsruhe.de%2Fkvk%2Fkvk%2Fkvk-kit-head-de-2010-11-08.html&header=http%3A%2F%2Fwww.ubka.uni-karlsruhe.de%2Fkvk%2Fkvk%2Fkvk-kit-header-de-showEmbeddedFullTitle.html&spacer=http%3A%2F%2Fwww.ubka.uni-karlsruhe.de%2Fkvk%2Fkvk%2Fkvk-kit-spacer-de-2010-11-08.html&footer=http%3A%2F%2Fwww.ubka.uni-karlsruhe.de%2Fkvk%2Fkvk%2Fkvk-kit-footer-de-2010-11-08.html&css=none&input-charset=utf-8&kvk-session=6EWCRZGA&ALL=auktionskatalog+winterberg+auktion+84&Timeout=120&TI=&PY=&AU=&SB=&CI=&SS=&ST=&PU=&disableEmbeddedFullTitle=1&VERBUENDE=&kataloge=SWB&kataloge=BVB&kataloge=NRW&kataloge=HEBIS&kataloge=HEBIS_RETRO&kataloge=KOBV_SOLR&kataloge=GBV&kataloge=DDB&kataloge=STABI_BERLIN&kataloge=ZDB",
+                                        "lido:objectID": {
+                                            "@lido:source": "dnb",
+                                            "@lido:type": "local",
+                                            "#text": "DE-MUS-046417/"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "lido:administrativeMetadata": {
+                "@xml:lang": "de",
+                "lido:rightsWorkWrap": {
+                    "lido:rightsWorkSet": {
+                        "lido:rightsHolder": {
+                            "lido:legalBodyName": {
+                                "lido:appellationValue": [
+                                    {
+                                        "@xml:lang": "de",
+                                        "#text": "Freies Deutsches Hochstift / Frankfurter Goethe-Museum"
+                                    },
+                                    {
+                                        "@xml:lang": "id",
+                                        "#text": "Frankfurter Goethe-Haus / Freies Deutsches Hochstift"
+                                    },
+                                    {
+                                        "@xml:lang": "en",
+                                        "#text": "Frankfurter Goethe-Haus / Freies Deutsches Hochstift"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "lido:recordWrap": {
+                    "lido:recordID": {
+                        "@lido:type": "museum-digital",
+                        "#text": "2400"
+                    },
+                    "lido:recordType": {
+                        "lido:term": {
+                            "@lido:addedSearchTerm": "no",
+                            "#text": "item"
+                        }
+                    },
+                    "lido:recordSource": [
+                        {
+                            "@lido:type": "dataProvider",
+                            "lido:legalBodyName": {
+                                "lido:appellationValue": "museum-digital"
+                            },
+                            "lido:legalBodyWeblink": "https://hessen.museum-digital.de/"
+                        },
+                        {
+                            "lido:legalBodyID": {
+                                "@lido:type": "isil",
+                                "#text": "DE-MUS-046417"
+                            },
+                            "lido:legalBodyName": {
+                                "lido:appellationValue": [
+                                    {
+                                        "@xml:lang": "de",
+                                        "#text": "Freies Deutsches Hochstift / Frankfurter Goethe-Museum"
+                                    },
+                                    {
+                                        "@xml:lang": "id",
+                                        "#text": "Frankfurter Goethe-Haus / Freies Deutsches Hochstift"
+                                    },
+                                    {
+                                        "@xml:lang": "en",
+                                        "#text": "Frankfurter Goethe-Haus / Freies Deutsches Hochstift"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "lido:recordRights": {
+                        "lido:rightsType": {
+                            "lido:conceptID": {
+                                "@lido:type": "uri",
+                                "#text": "https://creativecommons.org/publicdomain/zero/1.0/"
+                            },
+                            "lido:term": {
+                                "@lido:addedSearchTerm": "no",
+                                "#text": "CC 0"
+                            }
+                        },
+                        "lido:rightsHolder": {
+                            "lido:legalBodyName": {
+                                "lido:appellationValue": "Freies Deutsches Hochstift / Frankfurter Goethe-Museum"
+                            }
+                        }
+                    },
+                    "lido:recordInfoSet": {
+                        "lido:recordInfoLink": "https://hessen.museum-digital.de/index.php?t=objekt&oges=2400",
+                        "lido:recordMetadataDate": "2021-01-06 21:53:14"
+                    }
+                },
+                "lido:resourceWrap": {
+                    "lido:resourceSet": {
+                        "@lido:sortorder": "1",
+                        "lido:resourceID": {
+                            "@lido:source": "image",
+                            "@lido:type": "local",
+                            "#text": "7244"
+                        },
+                        "lido:resourceRepresentation": [
+                            {
+                                "@lido:type": "masterfile",
+                                "lido:linkResource": {
+                                    "@lido:formatResource": "image/tiff"
+                                }
+                            },
+                            {
+                                "@lido:type": "image_thumb",
+                                "lido:linkResource": {
+                                    "@lido:formatResource": "image/jpeg",
+                                    "#text": "https://hessen.museum-digital.de/data/hessen/images/import_1/201312/100h_14193346991.jpg"
+                                }
+                            },
+                            {
+                                "@lido:type": "image_preview",
+                                "lido:linkResource": {
+                                    "@lido:formatResource": "image/jpeg",
+                                    "#text": "https://hessen.museum-digital.de/data/hessen/images/import_1/201312/200w_14193346991.jpg"
+                                }
+                            },
+                            {
+                                "@lido:type": "image_master",
+                                "lido:linkResource": {
+                                    "@lido:formatResource": "image/jpeg",
+                                    "#text": "https://hessen.museum-digital.de/data/hessen/images/import_1/201312/14193346991.jpg"
+                                }
+                            }
+                        ],
+                        "lido:resourceType": {
+                            "lido:term": {
+                                "@lido:addedSearchTerm": "no",
+                                "#text": "image"
+                            }
+                        },
+                        "lido:resourceRelType": {
+                            "lido:term": {
+                                "@lido:addedSearchTerm": "no",
+                                "#text": "Hauptansicht"
+                            }
+                        },
+                        "lido:resourceDescription": null,
+                        "lido:resourceSource": [
+                            {
+                                "@lido:type": "owner",
+                                "lido:legalBodyName": {
+                                    "lido:appellationValue": "Freies Deutsches Hochstift / Frankfurter Goethe-Museum"
+                                }
+                            },
+                            {
+                                "@lido:type": "creator",
+                                "lido:legalBodyName": {
+                                    "lido:appellationValue": null
+                                }
+                            }
+                        ],
+                        "lido:rightsResource": {
+                            "lido:rightsType": {
+                                "lido:conceptID": {
+                                    "@lido:type": "uri",
+                                    "#text": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+                                },
+                                "lido:term": {
+                                    "@lido:addedSearchTerm": "no",
+                                    "#text": "CC BY-NC-SA"
+                                }
+                            },
+                            "lido:rightsHolder": {
+                                "lido:legalBodyName": {
+                                    "lido:appellationValue": "Freies Deutsches Hochstift / Frankfurter Goethe-Museum"
+                                }
+                            },
+                            "lido:creditLine": null
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

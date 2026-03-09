@@ -1,0 +1,371 @@
+{
+  "TEMPLATE": {
+    "sameAs": "fabio:",
+    "range": {
+      "default": "frbr:",
+      "classes": [
+      ]
+    },
+    "type": "",
+    "endeavor": [false, false, true, true],
+    "LOD": {
+      "GND": {
+        "type": "",
+        "label": ""
+      }
+    },
+    "inverse": "fabio:isPartOf"
+  },
+  "dc:type": {
+    "sameAs": "dcterms:type",
+    "endeavor": [false, false, false, true],
+    "LOD": {
+      "GND": {
+        "type": "SubjectHeading",
+        "label": "preferredName"
+      }
+    }
+  },
+  "edm:hasType": {
+    "sameAs": "dcterms:type",
+    "endeavor": [false, false, false, true],
+    "LOD": {
+      "GND": {
+        "type": "SubjectHeading",
+        "label": "preferredName"
+      }
+    }
+  },
+  "edm:type": {
+    "sameAs": "dcterms:format",
+    "endeavor": [false, false, false, true]
+  },
+  "dc:contributor": {
+    "sameAs": "dcterms:contributor",
+    "range": {
+      "default": "foaf:Person",
+      "classes": [
+        "foaf:Person",
+        "foaf:Organization"
+      ]
+    },
+    "endeavor": [false, true, true, true],
+    "LOD": {
+      "GND": {
+        "type": "Person",
+        "label": "preferredName"
+      }
+    }
+  },
+  "dc:coverage": {
+    "sameAs": "dcterms:subject",
+    "range": {
+      "default": "frbr:Subject",
+      "classes": ["edm:Event", "edm:Place"]
+    },
+    "endeavor": [true, true, true, true],
+    "LOD": {
+      "GND": {
+        "type": "Place",
+        "label": "preferredName"
+      },
+      "WGS_84": {
+      }
+    }
+  },
+  "dc:creator": {
+    "sameAs": "dcterms:creator",
+    "range": {
+      "default": "foaf:Person",
+      "classes": [
+        "foaf:Person",
+        "foaf:Organization"
+      ]
+    },
+    "endeavor": [true, true, true, true],
+    "LOD": {
+      "GND": {
+        "type": "Person",
+        "label": "preferredName"
+      }
+    }
+  },
+  "dc:date": {
+    "sameAs": "dcterms:date",
+    "type": "xsd:date",
+    "endeavor": [true, true, true, true]
+  },
+  "dc:description": {
+    "sameAs": "dc:description",
+    "endeavor": [false, false, true, true]
+  },
+  "dc:extent": {
+    "sameAs": "dcterms:extent",
+    "endeavor": [false, true, true, true]
+  },
+  "dcterms:extent": {
+    "sameAs": "dcterms:extent",
+    "endeavor": [false, true, true, true]
+  },
+  "dc:format": {
+    "sameAs": "dcterms:format",
+    "endeavor": [false, false, true, true]
+  },
+  "dcterms:hasFormat": {
+    "sameAs": "dcterms:hasFormat",
+    "endeavor": [false, false, true, true],
+    "inverse": "dcterms:isFormatOf"
+  },
+  "dcterms:isFormatOf": {
+    "sameAs": "dcterms:isFormatOf",
+    "endeavor": [false, false, true, true],
+    "inverse": "dcterms:hasFormat"
+  },
+  "dc:identifier": {
+    "sameAs": "dcterms:identifier",
+    "endeavor": [false, false, true, true]
+  },
+  "dc:language": {
+    "sameAs": "dcterms:language",
+    "endeavor": [false, true, true, true],
+    "LOD": {
+      "LOC": {
+        "type": "",
+        "label": ""
+      }
+    }
+  },
+  "dcterms:language": {
+    "sameAs": "dcterms:language",
+    "endeavor": [false, true, true, true],
+    "LOD": {
+      "LOC": {
+        "type": "",
+        "label": ""
+      }
+    }
+  },
+  "dc:publisher": {
+    "sameAs": "dcterms:publisher",
+    "endeavor": [false, false, true, true],
+    "range": {
+      "default": "foaf:Organization",
+      "classes": [
+        "foaf:Person",
+        "foaf:Organization"
+      ]
+    },
+    "LOD": {
+      "GND": {
+        "type": "Person",
+        "label": "preferredName"
+      }
+    }
+  },
+  "dc:rights": {
+    "sameAs": "dcterms:rights",
+    "endeavor": [false, false, true, true]
+  },
+  "dc:source": {
+    "sameAs": "dcterms:source",
+    "range": {
+      "default": "fabio:Item"
+    },
+    "type": "",
+    "endeavor": [false, false, true, true]
+  },
+  "dc:subject": {
+    "sameAs": "fabio:hasSubjectTerm",
+    "range": {
+      "default": "fabio:SubjectTerm",
+      "classes": [
+      ]
+    },
+    "endeavor": [true, true, true, true],
+    "LOD": {
+      "GND": {
+        "type": "SubjectHeading",
+        "label": "preferredName"
+      }
+    }
+  },
+  "dcterms:subject": {
+    "sameAs": "dcterms:subject",
+    "range": {
+      "default": "frbr:Subject",
+      "classes": [
+        "skoks:Concept",
+        "fabio:Endeavor",
+        "edm:Person",
+        "edm:Place",
+        "edm:Event"
+      ]
+    },
+    "endeavor": [true, true, true, true],
+    "LOD": {
+      "GND": {
+        "type": "SubjectHeading",
+        "label": "preferredName"
+      }
+    }
+  },
+  "dc:title": {
+    "sameAs": "dcterms:title",
+    "endeavor": [true, true, true, true],
+    "LOD": {
+      "GND": {
+        "type": "Werk",
+        "label": "preferredName"
+      }
+    }
+  },
+  "dcterms:alternative": {
+    "sameAs": "dcterms:alternative",
+    "endeavor": [true, true, true, true]
+  },
+  "dcterms:conformsTo": {
+    "sameAs": "dcterms:conformsTo",
+    "endeavor": [false, false, false, true]
+  },
+  "dcterms:created": {
+    "sameAs": "dcterms:created",
+    "endeavor": [false, true, true, true]
+  },
+  "dc:created": {
+    "sameAs": "dcterms:created",
+    "type": "xsd:date",
+    "endeavor": [false, true, true, true]
+  },
+  "dcterms:hasPart": {
+    "sameAs": "dcterms:hasPart",
+    "type": "",
+    "endeavor": [false, false, true, true],
+    "inverse": "dcterms:hasPart"
+  },
+  "dcterms:hasVersion": {
+    "sameAs": "dcterms:hasVersion",
+    "endeavor": [false, true, true, true]
+  },
+  "dcterms:isPartOf": {
+    "sameAs": "dcterms:isPartOf",
+    "type": "",
+    "endeavor": [false, false, true, true],
+    "inverse": "dcterms:hasPart"
+  },
+  "dcterms:isReferencedBy": {
+    "sameAs": "dcterms:isReferencedBy",
+    "endeavor": [false, true, false, true],
+    "inverse": "dcterms:references"
+  },
+  "dcterms:references": {
+    "sameAs": "dcterms:references",
+    "endeavor": [false, true, false, true],
+    "inverse": "dcterms:isReferencedBy"
+  },
+  "dcterms:isReplacedBy": {
+    "sameAs": "dcterms:isReplacedBy",
+    "endeavor": [false, false, false, true],
+    "inverse": "dcterms:replaces"
+  },
+  "dcterms:replaces": {
+    "sameAs": "dcterms:replaces",
+    "endeavor": [false, false, false, true],
+    "inverse": "dcterms:isReplacedBy"
+  },
+  "dcterms:isRequiredBy": {
+    "sameAs": "dcterms:isRequiredBy",
+    "endeavor": [false, false, false, true],
+    "inverse": "dcterms:requires"
+  },
+  "dcterms:requires": {
+    "sameAs": "dcterms:requires",
+    "endeavor": [false, false, false, true],
+    "inverse": "dcterms:isRequiredBy"
+  },
+  "dcterms:issued": {
+    "sameAs": "dcterms:issued",
+    "type": "",
+    "endeavor": [false, false, true, true]
+  },
+  "dc:issued": {
+    "sameAs": "dcterms:issued",
+    "type": "xsd:date",
+    "endeavor": [false, false, true, true]
+  },
+  "dcterms:medium": {
+    "sameAs": "dcterms:medium",
+    "endeavor": [false, false, false, true]
+  },
+  "dcterms:provenance": {
+    "sameAs": "dcterms:provenance",
+    "endeavor": [false, false, false, true]
+  },
+  "dcterms:spatial": {
+    "sameAs": "dcterms:spatial",
+    "range": {
+      "default": "edm:Place"
+    },
+    "endeavor": [true, true, true, true],
+    "LOD": {
+      "WGS84": {
+        "type": "",
+        "label": ""
+      }
+    }
+  },
+  "dcterms:tableOfContents": {
+    "sameAs": "doco:tableOfContents",
+    "endeavor": [false, true, true, true]
+    },
+  "dcterms:temporal": {
+    "sameAs": "dcterms:temporal",
+    "range": {
+      "default": "edm:Event"
+    },
+    "endeavor": [true, true, true, true],
+    "LOD": {
+      "GND": {
+        "type": "SubjectHeading",
+        "label": "preferredName"
+      }
+    }
+  },
+  "ddb:hierarchyPosition": {
+    "sameAs": "fabio:hasSequenceIdentifier",
+    "endeavor": [false, false, false, true]
+  },
+  "edm:currentLocation": {
+    "sameAs": "edm:currentLocation",
+    "range": {
+      "default": "edm:Place"
+    },
+    "endeavor": [false, false, false, true],
+    "LOD": {
+      "GND": {
+        "type": "Place",
+        "label": "preferredName"
+      }
+    }
+  },
+  "edm:isNextInSequence": {
+    "sameAs": "edm:isNextInSequence",
+    "endeavor": [false, false, true, true]
+  },
+  "dc:relation": {
+    "sameAs": "frbr:relatedEndeavor:",
+    "range": {
+      "default": "fabio:Endeavor",
+      "classes": [
+      ]
+    },
+    "endeavor": [false, false, true, true]
+  },
+  "Prov-dataset-id": {
+    "sameAs": "dcterms:identifier",
+    "endeavor": [false, false, true, true]
+  },
+  "Prov-dataset-label": {
+    "sameAs": "rdfs:label",
+    "endeavor": [false, false, true, true]
+  }
+}

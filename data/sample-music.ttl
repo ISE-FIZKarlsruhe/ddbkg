@@ -1,0 +1,142 @@
+@prefix aco: <https://w3id.org/ac-ontology/aco#> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ddb-item: <http://www.deutsche-digitale-bibliothek.de/item/> .
+@prefix ddb-org: <http://www.deutsche-digitale-bibliothek.de/organization/> .
+@prefix ddbkg-resource: <http://ddbkg.fiz-karlsruhe.de/resource/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://www.schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<XKHT32A6NGEESQ34YNWWH23Q2INRHVXR> a skos:Concept ;
+    skos:prefLabel "Schellackplatte" .
+
+ddbkg-resource:AA4XOSGWVZ5SWAWFPN6MDPSQ9KA8KR9M a prov:SoftwareAgent ;
+    rdfs:label "XSLT-0.0" ;
+    prov:actedOnBehalfOf <http://www.deutsche-digitale-bibliothek.de> .
+
+ddbkg-resource:DD1TNRJQQ4B47HXFLRMHN1OZOZJI3AZD a dcat:Dataset,
+        prov:Entity ;
+    dcterms:identifier "8214877930552945wTgL" ;
+    dcterms:type <http://www.lido-schema.org/> ;
+    prov:wasAttributedTo ddb-org:JJUO42747XGNHECFH7ZFVLVQYPXS4ZBK .
+
+<http://mediathek.slub-dresden.de/ton70912517.html> a edm:WebResource,
+        aco:AudioFile ;
+    dcterms:rights <http://www.deutsche-digitale-bibliothek.de/lizenzen/rv-fz/> ;
+    fabio:isReproductionOf ddbkg-resource:ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV .
+
+<http://vocab.getty.edu/tgn/7003721> a edm:Place ;
+    rdfs:label "Dresden"@de .
+
+<http://www.deutsche-digitale-bibliothek.de> a prov:Agent,
+        foaf:Organization ;
+    rdfs:label "Deutsche Digitale Bibliothek"@de,
+        "German Digital Library"@en .
+
+ddb-org:JJUO42747XGNHECFH7ZFVLVQYPXS4ZBK a prov:Agent,
+        foaf:Organization ;
+    dbpedia-owl:isil <http://ld.zdb-services.de/resource/organisations/DE-14> ;
+    dcterms:identifier "oid1470131600302" ;
+    dcterms:type <http://ddb.vocnet.org/sparte/sparte005> ;
+    schema:url "https://www.slub-dresden.de/sammlungen/av-medien-mediathek/" ;
+    foaf:name "SLUB Dresden. Musikabteilung" .
+
+ddbkg-resource:EELQYELZPNN94T47OTHPSHPAHH0UPCOG a mo:MuscialExpression ;
+    dcterms:creator <UTQJCKNBPM5W3UXFAW4BEWCIMXRQANII>,
+        <UZTHVLKB6MURT3ECY4GLEE6PHV6IUB7K>,
+        <http://d-nb.info/gnd/118684280>,
+        <http://d-nb.info/gnd/5008770-8> ;
+    dcterms:extent "Durchmesser: 30 cm"@de ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-2/ger> ;
+    dcterms:title "Old folks at home / (Stephen C. Foster)"@en ;
+    fabio:hasEmbodiment ddbkg-resource:MMO3RRBOQR4FFMULFX8W2XEG4K8FYSXR ;
+    fabio:hasRepresentation ddbkg-resource:ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV ;
+    fabio:hasSubjectTerm <UPIAUV3EEULHBUR6OA6XUEGFBV3TFPUG>,
+        <http://d-nb.info/gnd/4035669-3> .
+
+ddbkg-resource:MMO3RRBOQR4FFMULFX8W2XEG4K8FYSXR a mo:MusicalManifestation ;
+    dc:description "Interpretation: Baritone solo and male quartette. Sung by Oscar Seagle and Columbia Stellar Quartette. With orchestra accompaniment, [Aufnahme: New York, 25. September 1918]"@de ;
+    dcterms:creator <UTQJCKNBPM5W3UXFAW4BEWCIMXRQANII>,
+        <UZTHVLKB6MURT3ECY4GLEE6PHV6IUB7K>,
+        <http://d-nb.info/gnd/118684280>,
+        <http://d-nb.info/gnd/5008770-8> ;
+    dcterms:extent "Durchmesser: 30 cm"@de ;
+    dcterms:format "1 Schellackplatte : 78 UpM (Material/Technik)"@de ;
+    dcterms:identifier "49508 (Matrizennummer)",
+        "A 6082 (Bestellnummer)",
+        "Fon-SNP-A 9117 (Inventarnummer)" ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-2/ger> ;
+    dcterms:title "Old folks at home / (Stephen C. Foster)"@en ;
+    fabio:hasExemplar ddbkg-resource:ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV ;
+    fabio:hasSubjectTerm <UPIAUV3EEULHBUR6OA6XUEGFBV3TFPUG>,
+        <http://d-nb.info/gnd/4035669-3> ;
+    fabio:isEmbodimentOf ddbkg-resource:EELQYELZPNN94T47OTHPSHPAHH0UPCOG .
+
+<http://id.loc.gov/vocabulary/iso639-2/ger> a dcterms:LinguisticSystem ;
+    rdfs:label "ger" .
+
+<UPIAUV3EEULHBUR6OA6XUEGFBV3TFPUG> a fabio:SubjectTerm ;
+    skos:prefLabel "Tonträger (Gattung)"@de .
+
+<UTQJCKNBPM5W3UXFAW4BEWCIMXRQANII> a foaf:Person ;
+    foaf:givenName "Columbia" ;
+    foaf:lastName "Record" ;
+    foaf:name "Record, Columbia" .
+
+<UZTHVLKB6MURT3ECY4GLEE6PHV6IUB7K> a foaf:Person ;
+    foaf:givenName "Oskar" ;
+    foaf:lastName "Seagle" ;
+    foaf:name "Seagle, Oskar" .
+
+<http://d-nb.info/gnd/118684280> a foaf:Person ;
+    foaf:givenName "Stephen Collins" ;
+    foaf:lastName "Foster" ;
+    foaf:name "Foster, Stephen Collins" .
+
+<http://d-nb.info/gnd/4035669-3> a fabio:SubjectTerm,
+        frbr:Subject ;
+    skos:prefLabel "Lied"@de .
+
+<http://d-nb.info/gnd/5008770-8> a foaf:Person ;
+    foaf:givenName "Columbia Graphophone Company" ;
+    foaf:lastName "(London)" ;
+    foaf:name "(London), Columbia Graphophone Company" .
+
+ddbkg-resource:ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV a mo:MusicalItem,
+        edm:ProvidedCHO,
+        prov:Entity ;
+    dc:description "Interpretation: Baritone solo and male quartette. Sung by Oscar Seagle and Columbia Stellar Quartette. With orchestra accompaniment, [Aufnahme: New York, 25. September 1918]"@de ;
+    dcterms:creator <UTQJCKNBPM5W3UXFAW4BEWCIMXRQANII>,
+        <UZTHVLKB6MURT3ECY4GLEE6PHV6IUB7K>,
+        <http://d-nb.info/gnd/118684280>,
+        <http://d-nb.info/gnd/5008770-8> ;
+    dcterms:extent "Durchmesser: 30 cm"@de ;
+    dcterms:format "SOUND",
+        "1 Schellackplatte : 78 UpM (Material/Technik)"@de ;
+    dcterms:hasVersion "" ;
+    dcterms:identifier "49508 (Matrizennummer)",
+        "A 6082 (Bestellnummer)",
+        "Fon-SNP-A 9117 (Inventarnummer)" ;
+    dcterms:title "Old folks at home / (Stephen C. Foster)"@en ;
+    dcterms:type <XKHT32A6NGEESQ34YNWWH23Q2INRHVXR> ;
+    fabio:hasReproduction <http://mediathek.slub-dresden.de/ton70912517.html> ;
+    fabio:hasSubjectTerm <UPIAUV3EEULHBUR6OA6XUEGFBV3TFPUG>,
+        <http://d-nb.info/gnd/4035669-3> ;
+    fabio:isExemplarOf ddbkg-resource:MMO3RRBOQR4FFMULFX8W2XEG4K8FYSXR ;
+    fabio:isRepresentationOf ddbkg-resource:EELQYELZPNN94T47OTHPSHPAHH0UPCOG ;
+    edm:currentLocation <http://vocab.getty.edu/tgn/7003721> ;
+    owl:sameAs ddb-item:ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV ;
+    prov:generatedAtTime "2020-09-17T08:50:06+0200" ;
+    prov:wasAttributedTo ddbkg-resource:AA4XOSGWVZ5SWAWFPN6MDPSQ9KA8KR9M ;
+    prov:wasDerivedFrom ddbkg-resource:DD1TNRJQQ4B47HXFLRMHN1OZOZJI3AZD .
+

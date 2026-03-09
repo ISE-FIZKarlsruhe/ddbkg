@@ -1,0 +1,124 @@
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/publisher> <http://d-nb.info/gnd/5008770-8> .
+<http://ddbkg.fiz-karlsruhe.de/resource/expression/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/spar/fabio/hasRepresentation> <http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/format> "SOUND"@en .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/subject> <http://d-nb.info/gnd/4035669-3> .
+<http://www.deutsche-digitale-bibliothek.de> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<https://www.wikidata.org/wiki/Q183387> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://ddbkg.fiz-karlsruhe.de/resource/manifestation/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/vocab/frbr/core#embodimentOf> <http://ddbkg.fiz-karlsruhe.de/resource/expression/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> .
+<http://ddbkg.fiz-karlsruhe.de/resource/work/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://www.w3.org/2002/07/owl#sameAs> <https://musicbrainz.org/work/f2f30ea4-b285-41c7-ac4e-f3be93a50d6f> .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/identifier> "49508 (Matrizennummer)"@de .
+<https://d-nb.info/gnd/4042011-5> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@de .
+<http://vocab.getty.edu/tgn/7003721> <http://www.w3.org/2000/01/rdf-schema#label> "Dresden"@de .
+<http://ddbkg.fiz-karlsruhe.de/resource/AAAT3H3ZDUY6JRZAEO4PJRTVNTLG6ZF8> <http://www.w3.org/2000/01/rdf-schema#label> "XSLT" .
+<http://www.deutsche-digitale-bibliothek.de> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+<http://d-nb.info/gnd/4035669-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ddbkg.fiz-karlsruhe.de/resource/manifestation/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/type> <https://d-nb.info/gnd/4135113-7> .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://www.w3.org/ns/prov#wasDerivedFrom> <http://ddbkg.fiz-karlsruhe.de/resource//prov/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/MusicalItem> .
+<https://www.wikidata.org/wiki/Q183387> <http://xmlns.com/foaf/0.1/name> "Columbia Records"@en .
+<http://ddbkg.fiz-karlsruhe.de/resource/manifestation/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/currentLocation> <http://vocab.getty.edu/tgn/7003721> .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<http://www.deutsche-digitale-bibliothek.de/organization/JJUO42747XGNHECFH7ZFVLVQYPXS4ZBK> <http://purl.org/dc/terms/identifier> "oid1470131600302" .
+<https://d-nb.info/gnd/4135113-7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/alternative> "Old folks at home (Einheitssachtitel)"@de .
+<https://en.wikipedia.org/wiki/Oscar_Seagle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<https://en.wikipedia.org/wiki/Oscar_Seagle> <http://xmlns.com/foaf/0.1/lastName> "Seagle"@en .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://www.w3.org/ns/prov#generatedAtTime> "2020-09-17T08:50:06+0200" .
+<http://ddbkg.fiz-karlsruhe.de/resource//prov/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/identifier> "8214877930552945wTgL" .
+<http://d-nb.info/gnd/118684280> <http://xmlns.com/foaf/0.1/lastName> "Foster"@en .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/title> "Old folks at home / (Stephen C. Foster)"@en .
+<https://d-nb.info/gnd/7844609-0> <http://www.w3.org/2000/01/rdf-schema#label> "London"@de .
+<http://ddbkg.fiz-karlsruhe.de/resource/manifestation/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/ontology/mo/publishing_location> <https://d-nb.info/gnd/4042011-5> .
+<http://d-nb.info/gnd/118684280> <http://xmlns.com/foaf/0.1/name> "Robert Foster"@en .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/publisher> <https://www.wikidata.org/wiki/Q183387> .
+<http://ddbkg.fiz-karlsruhe.de/resource/manifestation/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/subject> <http://d-nb.info/gnd/4035669-3> .
+<http://ddbkg.fiz-karlsruhe.de/resource/expression/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/vocab/frbr/core#realization> <http://ddbkg.fiz-karlsruhe.de/resource/work/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> .
+<http://ddbkg.fiz-karlsruhe.de/resource/manifestation/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/alternative> "Old folks at home (Einheitssachtitel)"@de .
+<http://ddbkg.fiz-karlsruhe.de/resource/work/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/vocab/frbr/core#realization> <http://ddbkg.fiz-karlsruhe.de/resource/expression/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> .
+<http://ddbkg.fiz-karlsruhe.de/resource/work/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/spar/fabio/hasPortrayal> <http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> .
+<http://ddbkg.fiz-karlsruhe.de/resource/manifestation/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/vocab/frbr/core#exemplar> <http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> .
+<http://ddbkg.fiz-karlsruhe.de/resource/manifestation/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/ontology/mo/publishing_location> <https://d-nb.info/gnd/7844609-0> .
+<http://ddbkg.fiz-karlsruhe.de/resource/expression/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/creator> <http://d-nb.info/gnd/118684280> .
+<http://ddbkg.fiz-karlsruhe.de/resource/manifestation/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/publisher> <https://www.wikidata.org/wiki/Q183387> .
+<http://www.deutsche-digitale-bibliothek.de> <http://www.w3.org/2000/01/rdf-schema#label> "German Digital Library"@en .
+<http://d-nb.info/gnd/118684280> <http://xmlns.com/foaf/0.1/givenName> "Robert"@en .
+<https://en.wikipedia.org/wiki/Oscar_Seagle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.europeana.eu/schemas/edm/Agent> .
+<http://ddbkg.fiz-karlsruhe.de/resource/work/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/MusicalWork> .
+<http://www.deutsche-digitale-bibliothek.de/organization/JJUO42747XGNHECFH7ZFVLVQYPXS4ZBK> <http://xmlns.com/foaf/0.1/name> "SLUB Dresden. Musikabteilung" .
+<http://ddbkg.fiz-karlsruhe.de/resource/work/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://www.w3.org/2002/07/owl#sameAs> <https://www.wikidata.org/wiki/Q834609> .
+<http://mediathek.slub-dresden.de/ton70912517.html> <http://www.schema.org/thumbnail> <http://media.slub-dresden.de/fon/snp/a/009117/fon_snp_a_009117_01.jpg> .
+<http://d-nb.info/gnd/5008770-8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/created> "1906"@en .
+<http://d-nb.info/gnd/118684280> <http://xmlns.com/foaf/0.1/givenName> "Oscar"@en .
+<http://ddbkg.fiz-karlsruhe.de/resource/manifestation/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/rights> "Sächsische Landesbibliothek \u2013 Staats- und Universitätsbibliothek Dresden"@de .
+<http://ddbkg.fiz-karlsruhe.de/resource//prov/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://www.w3.org/ns/prov#wasAttributedTo> <http://www.deutsche-digitale-bibliothek.de/organization/JJUO42747XGNHECFH7ZFVLVQYPXS4ZBK> .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/spar/fabio/hasReproduction> <http://mediathek.slub-dresden.de/ton70912517.html> .
+<https://en.wikipedia.org/wiki/Oscar_Seagle> <http://xmlns.com/foaf/0.1/name> "Oscar Seagle"@en .
+<http://ddbkg.fiz-karlsruhe.de/resource/expression/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/subject> <http://d-nb.info/gnd/4035669-3> .
+<http://ddbkg.fiz-karlsruhe.de/resource/work/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/subject> <http://d-nb.info/gnd/4035669-3> .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/extent> "Durchmesser: 30 cm"@de .
+<https://d-nb.info/gnd/4042011-5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.europeana.eu/schemas/edm/Place> .
+<https://d-nb.info/gnd/4134364-5> <http://www.w3.org/2000/01/rdf-schema#label> "Tonträger"@de .
+<https://d-nb.info/gnd/7844609-0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.europeana.eu/schemas/edm/Place> .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/identifier> "Fon-SNP-A 9117 (Inventarnummer)"@de .
+<http://www.deutsche-digitale-bibliothek.de/organization/JJUO42747XGNHECFH7ZFVLVQYPXS4ZBK> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://www.europeana.eu/schemas/edm/currentLocation> <http://vocab.getty.edu/tgn/7003721> .
+<http://mediathek.slub-dresden.de/ton70912517.html> <http://purl.org/dc/terms/rights> <http://www.deutsche-digitale-bibliothek.de/lizenzen/rv-fz/> .
+<http://ddbkg.fiz-karlsruhe.de/resource/manifestation/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/extent> "Durchmesser: 30 cm"@de .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/description> "Interpretation: Baritone solo and male quartette. Sung by Oscar Seagle and Columbia Stellar Quartette. With orchestra accompaniment, [Aufnahme: New York, 25. September 1918]"@en .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/creator> <http://d-nb.info/gnd/118684280> .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/currentLocation> <http://vocab.getty.edu/tgn/7003721> .
+<https://d-nb.info/gnd/4135113-7> <http://www.w3.org/2000/01/rdf-schema#label> "Schellackplate"@de .
+<http://ddbkg.fiz-karlsruhe.de/resource/expression/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/vocab/frbr/core#embodiment> <http://ddbkg.fiz-karlsruhe.de/resource/manifestation/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> .
+<http://www.deutsche-digitale-bibliothek.de/organization/JJUO42747XGNHECFH7ZFVLVQYPXS4ZBK> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+<http://d-nb.info/gnd/118684280> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://www.w3.org/2002/07/owl#sameAs> <http://www.deutsche-digitale-bibliothek.de/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/contributor> <https://en.wikipedia.org/wiki/Oscar_Seagle> .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://www.w3.org/ns/prov#wasAttributedTo> <http://ddbkg.fiz-karlsruhe.de/resource/AAAT3H3ZDUY6JRZAEO4PJRTVNTLG6ZF8> .
+<http://ddbkg.fiz-karlsruhe.de/resource/manifestation/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/creator> <http://d-nb.info/gnd/118684280> .
+<http://ddbkg.fiz-karlsruhe.de/resource/AAAT3H3ZDUY6JRZAEO4PJRTVNTLG6ZF8> <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://www.deutsche-digitale-bibliothek.de> .
+<https://www.wikidata.org/wiki/Q183387> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.europeana.eu/schemas/edm/Agent> .
+<http://ddbkg.fiz-karlsruhe.de/resource/manifestation/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/contributor> <https://en.wikipedia.org/wiki/Oscar_Seagle> .
+<https://d-nb.info/gnd/4134364-5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ddbkg.fiz-karlsruhe.de/resource/manifestation/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/publisher> <http://d-nb.info/gnd/5008770-8> .
+<http://ddbkg.fiz-karlsruhe.de/resource/manifestation/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/spar/fabio/manifestationOf> <http://ddbkg.fiz-karlsruhe.de/resource/work/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/vocab/frbr/core#exemplarOf> <http://ddbkg.fiz-karlsruhe.de/resource/manifestation/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/format> "1 Schellackplatte : 78 UpM (Material/Technik)"@de .
+<http://ddbkg.fiz-karlsruhe.de/resource/expression/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/created> "1906"@en .
+<http://ddbkg.fiz-karlsruhe.de/resource/work/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/spar/fabio/hasManifestation> <http://ddbkg.fiz-karlsruhe.de/resource/manifestation/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> .
+<http://vocab.getty.edu/tgn/7003721> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.europeana.eu/schemas/edm/Place> .
+<http://d-nb.info/gnd/118684280> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.europeana.eu/schemas/edm/Agent> .
+<http://www.deutsche-digitale-bibliothek.de> <http://www.w3.org/2000/01/rdf-schema#label> "Deutsche Digitale Bibliothek"@de .
+<http://ddbkg.fiz-karlsruhe.de/resource/work/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/created> "1906"@en .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/rights> "Sächsische Landesbibliothek \u2013 Staats- und Universitätsbibliothek Dresden"@de .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/type> <https://d-nb.info/gnd/4134364-5> .
+<http://ddbkg.fiz-karlsruhe.de/resource//prov/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/type> <http://www.lido-schema.org/> .
+<http://ddbkg.fiz-karlsruhe.de/resource/work/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/creator> <http://d-nb.info/gnd/118684280> .
+<http://ddbkg.fiz-karlsruhe.de/resource/manifestation/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/format> "1 Schellackplatte : 78 UpM (Material/Technik)"@de .
+<http://d-nb.info/gnd/5008770-8> <http://xmlns.com/foaf/0.1/name> "Columbia Graphophone Company (London)"@en .
+<http://ddbkg.fiz-karlsruhe.de/resource/AAAT3H3ZDUY6JRZAEO4PJRTVNTLG6ZF8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#SoftwareAgent> .
+<http://ddbkg.fiz-karlsruhe.de/resource/manifestation/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/type> <https://d-nb.info/gnd/4134364-5> .
+<http://mediathek.slub-dresden.de/ton70912517.html> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/AudioFile> .
+<http://www.deutsche-digitale-bibliothek.de/organization/JJUO42747XGNHECFH7ZFVLVQYPXS4ZBK> <http://www.schema.org/url> "https://www.slub-dresden.de/sammlungen/av-medien-mediathek/" .
+<http://ddbkg.fiz-karlsruhe.de/resource/expression/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/MusicalExpression> .
+<http://ddbkg.fiz-karlsruhe.de/resource/manifestation/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/title> "Old folks at home / (Stephen C. Foster)"@en .
+<https://en.wikipedia.org/wiki/Oscar_Seagle> <http://xmlns.com/foaf/0.1/givenName> "Oskar"@de .
+<http://ddbkg.fiz-karlsruhe.de/resource//prov/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<http://ddbkg.fiz-karlsruhe.de/resource/work/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://www.w3.org/2002/07/owl#sameAs> <https://d-nb.info/gnd/300365624> .
+<http://www.deutsche-digitale-bibliothek.de/organization/JJUO42747XGNHECFH7ZFVLVQYPXS4ZBK> <http://dbpedia.org/ontology/isil> <http://ld.zdb-services.de/resource/organisations/DE-14> .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.europeana.eu/schemas/edm/ProvidedCHO> .
+<http://d-nb.info/gnd/5008770-8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.europeana.eu/schemas/edm/Agent> .
+<http://d-nb.info/gnd/4035669-3> <http://www.w3.org/2000/01/rdf-schema#label> "Lied"@de .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/spar/fabio/portrayalOf> <http://ddbkg.fiz-karlsruhe.de/resource/work/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> .
+<https://en.wikipedia.org/wiki/Oscar_Seagle> <http://xmlns.com/foaf/0.1/name> "Oskar Seagle"@de .
+<http://ddbkg.fiz-karlsruhe.de/resource/work/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/alternative> "Old folks at home (Einheitssachtitel)"@de .
+<http://ddbkg.fiz-karlsruhe.de/resource/manifestation/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/MusicalManifestation> .
+<http://ddbkg.fiz-karlsruhe.de/resource/manifestation/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/created> "1906"@en .
+<http://ddbkg.fiz-karlsruhe.de/resource//prov/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<http://ddbkg.fiz-karlsruhe.de/resource/expression/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/alternative> "Old folks at home (Einheitssachtitel)"@de .
+<http://mediathek.slub-dresden.de/ton70912517.html> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.europeana.eu/schemas/edm/WebResource> .
+<http://ddbkg.fiz-karlsruhe.de/resource/expression/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/title> "Old folks at home / (Stephen C. Foster)"@en .
+<http://ddbkg.fiz-karlsruhe.de/resource/work/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/title> "Old folks at home / (Stephen C. Foster)"@en .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/spar/fabio/representationOf> <http://ddbkg.fiz-karlsruhe.de/resource/expression/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> .
+<http://ddbkg.fiz-karlsruhe.de/resource/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV> <http://purl.org/dc/terms/type> <https://d-nb.info/gnd/4135113-7> .
+

@@ -1,1 +1,1 @@
-# DDB-KG
+# DDB Knowledge Graph

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/docs/examples/</loc>
+    <lastmod>2021-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/docs/alignment/</loc>
+    <lastmod>2021-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/docs/alignment/library/</loc>
+    <lastmod>2021-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/docs/alignment/audio/</loc>
+    <lastmod>2022-03-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/docs/alignment/archives/</loc>
+    <lastmod>2021-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/docs/alignment/museum/</loc>
+    <lastmod>2021-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/docs/alignment/images/</loc>
+    <lastmod>2023-07-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/docs/alignment/videos/</loc>
+    <lastmod>2023-07-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/docs/alignment/provenance/</loc>
+    <lastmod>2022-05-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/</loc>
+    <lastmod>2022-05-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/docs/</loc>
+    <lastmod>2022-05-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/tag/audio/</loc>
+    <lastmod>2022-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/publication/eswc2022pd/</loc>
+    <lastmod>2022-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/authors/</loc>
+    <lastmod>2022-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/tag/cultural-heritage/</loc>
+    <lastmod>2022-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/tag/digital-humanities/</loc>
+    <lastmod>2022-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/tag/digital-library/</loc>
+    <lastmod>2022-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/author/etienne-posthumus/</loc>
+    <lastmod>2022-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/author/harald-sack/</loc>
+    <lastmod>2022-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/author/mary-ann-tan/</loc>
+    <lastmod>2022-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/tag/ontology/</loc>
+    <lastmod>2022-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/publication/</loc>
+    <lastmod>2022-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/tags/</loc>
+    <lastmod>2022-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/author/danilo-dessi/</loc>
+    <lastmod>2021-09-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/publication/histoinformatics2021/</loc>
+    <lastmod>2021-09-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/author/jonas-oppenlaender/</loc>
+    <lastmod>2021-09-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/author/sasha-bruns/</loc>
+    <lastmod>2021-09-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/author/tabea-tietz/</loc>
+    <lastmod>2021-09-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/publication/preprint/</loc>
+    <lastmod>2021-08-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ddbkg/categories/</loc>
+  </url>
+  
+</urlset>

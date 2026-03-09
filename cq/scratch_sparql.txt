@@ -1,0 +1,348 @@
+#defaultView:Timeline
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dbc: <http://dbpedia.org/resource/Category:>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT DISTINCT  ?wditem ?wditemLabel ?date ?image ?work ?workLabel ?coord ?description WHERE {
+    SERVICE <http://dbpedia.org/sparql> {
+       ?item dct:subject|dct:subject/skos:broader|dct:subject/skos:broader/skos:broader dbc:Sturm_und_Drang ;
+        #?item dct:subject|dct:subject/skos:broader|dct:subject/skos:broader/skos:broader dbc:Bernoulli_family ;
+        #?item dct:subject|dct:subject/skos:broader dbc:Latvian_scientists ;
+              owl:sameAs ?wditem FILTER regex (?wditem, "wikidata.org") .
+        #?item dct:subject|dct:subject/skos:broader|dct:subject/skos:broader/skos:broader dbc:Duelling_fatalities .
+    }
+    SERVICE <https://query.wikidata.org/sparql> {
+	  {?wditem wdt:P569|wdt:P571|wdt:P580|wdt:P577 ?date .}
+      OPTIONAL {?wditem wdt:P18 ?image } .
+      ?wditem rdfs:label ?wditemLabel FILTER (LANG(?wditemLabel)="en") .
+    }
+}
+
+
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dbc: <http://dbpedia.org/resource/Category:>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX fabio: <http://purl.org/spar/fabio/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+SELECT DISTINCT  ?wditem ?wditemLabel ?work ?title WHERE {
+    SERVICE <http://dbpedia.org/sparql> {
+       ?item dct:subject|dct:subject/skos:broader|dct:subject/skos:broader/skos:broader dbc:Sturm_und_Drang ;
+              owl:sameAs ?wditem FILTER regex (?wditem, "wikidata.org") .
+    }
+    SERVICE <https://query.wikidata.org/sparql> {
+	  {?wditem wdt:P569|wdt:P571|wdt:P580|wdt:P577 ?date .}
+      OPTIONAL {?wditem wdt:P18 ?image } .
+      ?wditem rdfs:label ?wditemLabel FILTER (LANG(?wditemLabel)="en") .
+      ?wditem wdt:P734 ?wdtfamilyname .
+      ?wdtfamilyname rdfs:label ?familyName FILTER (LANG(?familyName)="en") .
+      ?wditem wdt:P735 ?wdtgivenname .
+      ?wdtgivenname rdfs:label ?givenName FILTER (LANG(?givenName)="en") .
+    }
+    ?work rdf:type fabio:Work .
+    ?work dcterms:creator ?author .
+    ?author foaf:lastName ?author_lastName .
+    ?author foaf:givenName ?author_givenName .
+    ?work dcterms:title ?title .
+    FILTER regex(str(?author_lastName), ?familyName, "i") .
+    FILTER regex(str(?author_givenName), ?givenName, "i") .
+}
+LIMIT 100
+
+
+####################################
+DBPEDIA: get details about a person
+####################################
+select * where {
+  ?s foaf:surname "Presley"@en
+  optional { ?s dbo:name ?name }
+  optional { ?s dbo:birthDate ?birth }
+  optional { ?s dbo:deathDate ?death }
+  optional { ?s dbo:thumbnail ?thumb }
+}
+
+####################################
+DBPEDIA + DDBKG: Look for notable work of an author and ddbitems
+####################################
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dbc: <http://dbpedia.org/resource/Category:>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX fabio: <http://purl.org/spar/fabio/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX schema: <http://www.schema.org/>
+
+SELECT DISTINCT ?workLabel ?ddbitem ?thumbnail WHERE {
+    SERVICE <http://dbpedia.org/sparql> {
+      ?s rdfs:label "Friedrich Schiller"@de .
+      ?s dbo:notableWork ?notableWork .
+      ?notableWork rdfs:label ?workLabel FILTER (LANG(?workLabel)="de") .
+   }
+   ?ddbitem rdf:type fabio:AnalogItem FILTER (
+     !EXISTS {
+       ?ddbitem dcterms:isPartOf ?parent
+     }
+  )
+   ?ddbitem dcterms:title ?title FILTER regex(str(?title), ?workLabel, "i") .
+   optional { ?ddbitem schema:thumbnail ?thumbnail }
+}
+
+
+   optional { ?owner foaf:name ?institutionName }
+   optional { ?owner schema:url ?institutionUrl }
+
+
+####################################
+Looking for category of O Fortuna
+####################################
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dbc: <http://dbpedia.org/resource/Category:>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX fabio: <http://purl.org/spar/fabio/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX schema: <http://www.schema.org/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT DISTINCT ?s ?dct_subject ?dnb WHERE {
+    SERVICE <http://dbpedia.org/sparql> {
+      ?s rdfs:label "O Fortuna"@en ;
+        dct:subject ?dct_subject ;
+        owl:sameAs ?dnb FILTER regex(?dnb, "d-nb.info", "i") .
+   }
+}
+
+####################################
+Looking for other authors with same movement as Friedrich Schiller
+####################################
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dbc: <http://dbpedia.org/resource/Category:>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX fabio: <http://purl.org/spar/fabio/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX schema: <http://www.schema.org/>
+
+SELECT DISTINCT ?movement ?others WHERE {
+    SERVICE <http://dbpedia.org/sparql> {
+      ?s rdfs:label "Friedrich Schiller"@de ;
+        dbo:movement ?movement .
+      ?others dbo:movement ?others .
+   }
+}
+
+
+####################################
+Search for O Fortuna (thru author)
+####################################
+
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX  gndo:   <https://d-nb.info/standards/elementset/gnd#>
+PREFIX fabio: <http://purl.org/spar/fabio/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT DISTINCT ?gnd ?gndCreator ?gndName ?ddbitem ?title WHERE {
+    SERVICE <http://dbpedia.org/sparql> {
+      ?s rdfs:label "O Fortuna"@en ;
+        owl:sameAs ?gnd FILTER regex(?gnd, "d-nb.info", "i") .
+   }
+   SERVICE <http://zbw.eu/beta/sparql/gnd/query> {
+    ?gnd a ?gndCategory ;
+       gndo:preferredNameForTheWork ?workLabel ;
+       gndo:firstComposer ?gndCreator .
+    ?gndCreator gndo:preferredNameForThePerson ?gndName .
+  }
+  ?ddbitem a fabio:AnalogItem ;
+    dcterms:title ?title ;
+    dcterms:creator ?ddbCreator.
+  ?ddbCreator a foaf:Person ;
+    foaf:name ?ddbName FILTER (?gndName = ?ddbName) .
+ }
+
+####################################
+Search for O Fortuna (thru title)
+####################################
+
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX  gndo:   <https://d-nb.info/standards/elementset/gnd#>
+PREFIX fabio: <http://purl.org/spar/fabio/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT DISTINCT (?s AS ?dbpedia) (?sameGnd as ?GND) (?workLabel as ?GNDLabel) ?ddbitem ?title WHERE {
+    SERVICE <http://dbpedia.org/sparql> {
+      ?s rdfs:label "O Fortuna"@en ;
+        owl:sameAs ?sameGnd FILTER regex(?sameGnd, "d-nb.info", "i") .
+   }
+  BIND (SUBSTR(str(?sameGnd), 22) as ?sameGndId) .
+
+   SERVICE <http://zbw.eu/beta/sparql/gnd/query> {
+     ?gnd gndo:gndIdentifier ?gndId FILTER (?gndId = ?sameGndId) .
+     ?gnd gndo:preferredNameForTheWork ?workLabel .
+  }
+
+  ?ddbitem a fabio:AnalogItem ;
+    dcterms:title ?title FILTER regex(?title, SUBSTR(?workLabel, 0, 10), "i") .
+ }
+
+###################################
+# LINKED STAGED GRAPH
+###################################
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+SELECT DISTINCT ?slod (COUNT(?image) as ?count_image)
+WHERE {
+   SERVICE <https://slod.fiz-karlsruhe.de/sparql> {
+      ?slod dcterms:title ?lsgTitle  FILTER regex(?lsgTitle, "Die Räuber", "i") .
+
+      ?slod foaf:depiction ?image .
+   }
+
+}
+
+###################################
+# WIKIDATA influencer
+###################################
+
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dbc: <http://dbpedia.org/resource/Category:>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX fabio: <http://purl.org/spar/fabio/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX schema: <http://www.schema.org/>
+PREFIX frbr: <http://purl.org/vocab/frbr/core#>
+
+SELECT DISTINCT ?influencedLabel WHERE {
+    SERVICE <https://query.wikidata.org/sparql> {
+      ?influenced wdt:P737 wd:Q22670 .
+      ?influenced wdt:P734 ?wdtfamilyname .
+      ?influenced wdt:P735 ?wdtgivenname .
+      FILTER (?influenced != wd:Q22670) .
+      ?influenced rdfs:label ?influencedLabel .
+      ?wdtfamilyname rdfs:label ?familynameLabel .
+      ? wdtgivenname rdfs:label ?givennameLabel .
+   }
+   ?ddbitem rdf:type fabio:AnalogItem FILTER (
+     !EXISTS {
+       ?ddbitem dcterms:isPartOf ?parent
+     }
+  )
+   ?ddbitem dcterms:title ?title ;
+      dcterms:creator ?creator .
+   ?creator a foaf:Person ;
+      foaf:lastName ?ddblastName ;
+      foaf:givenName ?ddbgivenName .
+  FILTER regex(?familynameLabel, ?ddblastName, "i")
+  FILTER regex(?givennameLabel, ?ddbgivenName, "i")
+}
+
+#####################
+TRANSRAZ EXAMPLE
+#####################
+SELECT DISTINCT ?person (SAMPLE(?personLabel) as ?name) (SAMPLE(?image) as ?img) (GROUP_CONCAT(DISTINCT ?occupationLabel; SEPARATOR=", ") AS ?beruf) (SAMPLE(?gnd_uri) as ?gnd_id)
+      (SAMPLE(?birthdate) as ?geboren) (SAMPLE(?deathdate) as ?gestorben) (SAMPLE(?dbio_uri) as ?dbio_id)
+WHERE {
+SERVICE <https://query.wikidata.org/sparql> {
+# residence in Nürnberg
+  {  ?person wdt:P551 wd:Q2090 ;
+          wdt:P569 ?birthdate .
+  ?person p:P551 ?residenceStatement .
+  ?residenceStatement ps:P551 wd:Q2090 ;
+          pq:P580 ?start ;
+          pq:P582 ?end .
+          FILTER ((YEAR(?start) <= 1908)&&(YEAR(?end) >= 1908))
+} UNION
+# geboren/gestorben in Nürnberg
+{
+  ?person wdt:P19|wdt:P20 wd:Q2090 ;
+          wdt:P569 ?birthdate ;
+          wdt:P570 ?deathdate FILTER ((YEAR(?birthdate) <= 1908)&&(YEAR(?deathdate) >= 1908))
+          ?person rdfs:label ?personLabel FILTER ( LANGMATCHES ( LANG ( ?personLabel ), "de" ) ).
+}
+  OPTIONAL {?person wdt:P18 ?image .} #bild
+  OPTIONAL {?person wdt:P106 ?occupation. ?occupation rdfs:label ?occupationLabel FILTER ( LANGMATCHES ( LANG ( ?occupationLabel ), "de" ) )  } #beruf
+  OPTIONAL {?person wdt:P227 ?gnd . BIND (IRI(CONCAT("https://d-nb.info/gnd/", ?gnd)) AS ?gnd_uri)}  #GND
+  OPTIONAL {?person wdt:P7902 ?dbio . BIND (IRI(CONCAT("https://www.deutsche-biographie.de/pnd", ?dbio, ".html")) AS ?dbio_uri)}  #Deutsche Biografie
+}
+} GROUP BY ?person
+ORDER BY ?geboren
+
+
+###########
+# JEANNE D'ARC
+###########
+
+SELECT DISTINCT ?s ?wditem WHERE {
+    SERVICE <http://dbpedia.org/sparql> {
+      ?s rdfs:label "Jeanne D'Arc"@en .
+     OPTIONAL {?s owl:sameAs ?wditem}
+   }
+ }
+
+
+#####
+#
+####
+
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX  gndo:   <https://d-nb.info/standards/elementset/gnd#>
+PREFIX fabio: <http://purl.org/spar/fabio/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+
+SELECT DISTINCT ?item ?itemLabel WHERE {
+  SERVICE <https://query.wikidata.org/sparql> {
+      ?item wdt:P921 wd:Q7226 . # main subject is "Joan of Arc"
+      ?item wdt:P407 wd:Q188 . #language of work or name is "German"
+      ?item rdfs:label ?itemLabel FILTER (LANG(?itemLabel)="de") .
+  }
+}
+
+
+###########
+# O FORTUNA (gnd)
+###########
+
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dbc: <http://dbpedia.org/resource/Category:>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX fabio: <http://purl.org/spar/fabio/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX schema: <http://www.schema.org/>
+PREFIX frbr: <http://purl.org/vocab/frbr/core#>
+
+SELECT DISTINCT ?altName  ?author_name ?title ?ddbitem WHERE {
+    SERVICE <https://query.wikidata.org/sparql> {
+      wd:Q7226 skos:altLabel ?altName FILTER(lang(?altName)="de").
+   }
+   ?ddbitem dcterms:title ?title FILTER regex(?title, SUBSTR(?altName,1,12), "i") .
+   ?ddbitem dcterms:creator ?author .
+   ?author foaf:name ?author_name FILTER regex(?author_name, "Friedrich Schiller", "i") .
+  #?ddbitem fabio:hasReproduction ?digitizedItem .
+   #?digitizedItem fabio:isExemplarOf ?digitized .
+   #?digitized frbr:owner ?owner .
+}

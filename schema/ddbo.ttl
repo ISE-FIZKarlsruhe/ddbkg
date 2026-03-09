@@ -1,0 +1,1682 @@
+@prefix : <http://ise-fizkarlsruhe.github.io/ddbkg/ddbo#> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix lio: <https://w3id.org/lio/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vra: <http://purl.org/vra/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix arco: <https://w3id.org/arco/ontology/arco/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/spar/fabio/core#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix schema: <http://www.schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://ise-fizkarlsruhe.github.io/ddbkg/ddbo> .
+
+<http://ise-fizkarlsruhe.github.io/ddbkg/ddbo> rdf:type owl:Ontology ;
+                                                dcterms:creator "1. Mary Ann Tan" ,
+                                                                "2. Tabea Tietz" ,
+                                                                "3. Oleksandra Bruns" ,
+                                                                "4. Etienne Posthumus" ,
+                                                                "5. Danilo Dessì" ,
+                                                                "6. Harald Sack" ;
+                                                <http://purl.org/vocab/vann/preferredNamespacePrefix> "ddbo" ;
+                                                rdfs:label "DDB-KG - The German Digital Library Knowledge Graph"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+skos:altLabel rdf:type owl:AnnotationProperty ;
+              rdfs:comment "Acronyms, abbreviations, spelling variants, and irregular plural/singular forms may be included among the alternative labels for a concept. Mis-spelled terms are normally included as hidden labels (see skos:hiddenLabel)."@en ;
+              rdfs:subPropertyOf rdfs:label .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#duration
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#duration> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf dcterms:extent ;
+                                                         rdfs:comment "This property is used to specify duration in ISO 8601 format." ;
+                                                         rdfs:label "ddbo:duration" .
+
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#filesize
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#filesize> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf dcterms:extent ;
+                                                         rdfs:comment "This property is used to specify the file size in megabytes." ;
+                                                         rdfs:label "ddbo:filesize" .
+
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#hasArea
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#hasArea> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf dcterms:format ;
+                                                        rdfs:label "ddbo:hasArea" .
+
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#hasCircumference
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#hasCircumference> rdf:type owl:ObjectProperty ;
+                                                                 rdfs:subPropertyOf dcterms:format ;
+                                                                 rdfs:label "ddbo:hasCircumference" .
+
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#hasDepth
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#hasDepth> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf dcterms:format ;
+                                                         rdfs:label "ddbo:hasDepth" .
+
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#hasDiameter
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#hasDiameter> rdf:type owl:ObjectProperty ;
+                                                            rdfs:subPropertyOf dcterms:format ;
+                                                            rdfs:label "ddbo:hasDiameter" .
+
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#hasHeight
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#hasHeight> rdf:type owl:ObjectProperty ;
+                                                          rdfs:subPropertyOf dcterms:format ;
+                                                          rdfs:label "ddbo:hasHeight" .
+
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#hasLength
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#hasLength> rdf:type owl:ObjectProperty ;
+                                                          rdfs:subPropertyOf dcterms:format ;
+                                                          rdfs:label "ddbo:hasLength" .
+
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#hasWeight
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#hasWeight> rdf:type owl:ObjectProperty ;
+                                                          rdfs:subPropertyOf dcterms:format ;
+                                                          rdfs:label "ddbo:hasWeight" .
+
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#hasWidth
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#hasWidth> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf dcterms:format ;
+                                                         rdfs:label "ddbo:hasWidth" .
+
+
+###  http://purl.org/dc/terms/contributor
+dcterms:contributor rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/dc/terms/extent
+dcterms:extent rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/dc/terms/format
+dcterms:format rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/dc/terms/hasPart
+dcterms:hasPart rdf:type owl:ObjectProperty ;
+                owl:inverseOf dcterms:isPartOf .
+
+
+###  http://purl.org/dc/terms/isPartOf
+dcterms:isPartOf rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/dc/terms/language
+dcterms:language rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/dc/terms/subject
+dcterms:subject rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/dc/terms/type
+dcterms:type rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/net/lio#hasVisualPart
+<http://purl.org/net/lio#hasVisualPart> rdf:type owl:ObjectProperty ;
+                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                        rdfs:label "lio:hasVisualPart" .
+
+
+###  http://purl.org/spar/fabio/hasManifestation
+fabio:hasManifestation rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf <http://purl.org/vocab/frbr/core#relatedEndeavor> ;
+                       owl:inverseOf fabio:isManifestationOf ;
+                       rdfs:domain <http://purl.org/vocab/frbr/core#Work> ;
+                       rdfs:range <http://purl.org/vocab/frbr/core#Manifestation> ;
+                       rdfs:label "fabio:hasManifestation" .
+
+
+###  http://purl.org/spar/fabio/hasPlaceOfPublication
+fabio:hasPlaceOfPublication rdf:type owl:ObjectProperty ;
+                            rdfs:label "fabio:hasPlaceOfPublication" .
+
+
+###  http://purl.org/spar/fabio/hasPortrayal
+fabio:hasPortrayal rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf <http://purl.org/vocab/frbr/core#relatedEndeavor> ;
+                   owl:inverseOf fabio:isPortrayalOf ;
+                   rdfs:label "fabio:hasPortrayal" .
+
+
+###  http://purl.org/spar/fabio/hasRepresentation
+fabio:hasRepresentation rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf <http://purl.org/vocab/frbr/core#relatedEndeavor> ;
+                        owl:inverseOf fabio:isRepresentationOf ;
+                        rdfs:domain <http://purl.org/vocab/frbr/core#Expression> ;
+                        rdfs:range <http://purl.org/vocab/frbr/core#Item> ;
+                        rdfs:label "fabio:hasRepresentation" .
+
+
+###  http://purl.org/spar/fabio/hasSubjectTerm
+fabio:hasSubjectTerm rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdfs:range fabio:SubjectTerm ;
+                     rdfs:label "fabio:hasSubjectTerm" .
+
+
+###  http://purl.org/spar/fabio/isManifestationOf
+fabio:isManifestationOf rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf <http://purl.org/vocab/frbr/core#relatedEndeavor> ;
+                        rdfs:label "fabio:isManifestationOf" .
+
+
+###  http://purl.org/spar/fabio/isPortrayalOf
+fabio:isPortrayalOf rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <http://purl.org/vocab/frbr/core#relatedEndeavor> ;
+                    rdfs:label "fabio:isPortrayalOf" .
+
+
+###  http://purl.org/spar/fabio/isRepresentationOf
+fabio:isRepresentationOf rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf <http://purl.org/vocab/frbr/core#relatedEndeavor> ;
+                         rdfs:label "fabio:isRepresentationOf" .
+
+
+###  http://purl.org/vocab/frbr/core#creator
+<http://purl.org/vocab/frbr/core#creator> rdf:type owl:ObjectProperty ;
+                                          rdfs:subPropertyOf <http://purl.org/vocab/frbr/core#responsibleEntity> ;
+                                          rdfs:label "frbr:creator" .
+
+
+###  http://purl.org/vocab/frbr/core#embodiment
+<http://purl.org/vocab/frbr/core#embodiment> rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf <http://purl.org/vocab/frbr/core#relatedEndeavor> ;
+                                             owl:inverseOf <http://purl.org/vocab/frbr/core#embodimentOf> ;
+                                             rdfs:domain <http://purl.org/vocab/frbr/core#Expression> ;
+                                             rdfs:range <http://purl.org/vocab/frbr/core#Manifestation> ;
+                                             rdfs:label "frbr:embodiment" .
+
+
+###  http://purl.org/vocab/frbr/core#embodimentOf
+<http://purl.org/vocab/frbr/core#embodimentOf> rdf:type owl:ObjectProperty ;
+                                               rdfs:subPropertyOf <http://purl.org/vocab/frbr/core#relatedEndeavor> ;
+                                               rdfs:label "frbr:embodimentOf" .
+
+
+###  http://purl.org/vocab/frbr/core#exemplar
+<http://purl.org/vocab/frbr/core#exemplar> rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf <http://purl.org/vocab/frbr/core#relatedEndeavor> ;
+                                           owl:inverseOf <http://purl.org/vocab/frbr/core#exemplarOf> ;
+                                           rdfs:domain <http://purl.org/vocab/frbr/core#Manifestation> ;
+                                           rdfs:range <http://purl.org/vocab/frbr/core#Item> ;
+                                           rdfs:label "frbr:exemplar" .
+
+
+###  http://purl.org/vocab/frbr/core#exemplarOf
+<http://purl.org/vocab/frbr/core#exemplarOf> rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf <http://purl.org/vocab/frbr/core#relatedEndeavor> ;
+                                             rdfs:label "frbr:exemplarOf" .
+
+
+###  http://purl.org/vocab/frbr/core#owner
+<http://purl.org/vocab/frbr/core#owner> rdf:type owl:ObjectProperty ;
+                                        rdfs:subPropertyOf <http://purl.org/vocab/frbr/core#responsibleEntity> ;
+                                        rdfs:label "frbr:owner" .
+
+
+###  http://purl.org/vocab/frbr/core#part
+<http://purl.org/vocab/frbr/core#part> rdf:type owl:ObjectProperty ;
+                                       rdfs:subPropertyOf <http://purl.org/vocab/frbr/core#relatedEndeavor> ;
+                                       owl:inverseOf <http://purl.org/vocab/frbr/core#partOf> ;
+                                       rdfs:label "frbr:part" .
+
+
+###  http://purl.org/vocab/frbr/core#partOf
+<http://purl.org/vocab/frbr/core#partOf> rdf:type owl:ObjectProperty ;
+                                         rdfs:subPropertyOf <http://purl.org/vocab/frbr/core#relatedEndeavor> ;
+                                         rdfs:label "frbr:partOf" .
+
+
+###  http://purl.org/vocab/frbr/core#producer
+<http://purl.org/vocab/frbr/core#producer> rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf <http://purl.org/vocab/frbr/core#responsibleEntity> ;
+                                           rdfs:label "frbr:producer" .
+
+
+###  http://purl.org/vocab/frbr/core#realization
+<http://purl.org/vocab/frbr/core#realization> rdf:type owl:ObjectProperty ;
+                                              rdfs:subPropertyOf <http://purl.org/vocab/frbr/core#relatedEndeavor> ;
+                                              owl:inverseOf <http://purl.org/vocab/frbr/core#realizationOf> ;
+                                              rdfs:domain <http://purl.org/vocab/frbr/core#Work> ;
+                                              rdfs:range <http://purl.org/vocab/frbr/core#Expression> ;
+                                              rdfs:label "frbr:realization" .
+
+
+###  http://purl.org/vocab/frbr/core#realizationOf
+<http://purl.org/vocab/frbr/core#realizationOf> rdf:type owl:ObjectProperty ;
+                                                rdfs:subPropertyOf <http://purl.org/vocab/frbr/core#relatedEndeavor> ;
+                                                rdfs:label "frbr:realizationOf" .
+
+
+###  http://purl.org/vocab/frbr/core#relatedEndeavor
+<http://purl.org/vocab/frbr/core#relatedEndeavor> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain <http://purl.org/vocab/frbr/core#Work> ;
+                                                  rdfs:range <http://purl.org/vocab/frbr/core#Item> ;
+                                                  rdfs:label "frbr:relatedEndeavor" .
+
+
+###  http://purl.org/vocab/frbr/core#responsibleEntity
+<http://purl.org/vocab/frbr/core#responsibleEntity> rdf:type owl:ObjectProperty ;
+                                                    rdfs:subPropertyOf owl:topObjectProperty ;
+                                                    rdfs:label "frbr:responsibleEntity" .
+
+
+###  http://purl.org/vocab/frbr/core#subject
+<http://purl.org/vocab/frbr/core#subject> rdf:type owl:ObjectProperty ;
+                                          rdfs:subPropertyOf owl:topObjectProperty ;
+                                          rdfs:label "frbr:subject" .
+
+
+###  http://purl.org/vra/composer
+vra:composer rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf vra:creator ;
+             rdfs:label "vra:composer" .
+
+
+###  http://purl.org/vra/creator
+vra:creator rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf dcterms:creator ;
+            rdfs:label "vra:creator" .
+
+
+###  http://www.europeana.eu/schemas/edm/isNextInSequence
+edm:isNextInSequence rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdfs:label "edm:isNextInSequence" .
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/prov#actedOnBehalfOf
+prov:actedOnBehalfOf rdf:type owl:ObjectProperty ;
+                     rdfs:domain prov:Agent ;
+                     rdfs:range prov:Agent .
+
+
+###  http://www.w3.org/ns/prov#generatedAtTime
+prov:generatedAtTime rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/prov#wasAttributedTo
+prov:wasAttributedTo rdf:type owl:ObjectProperty ;
+                     rdfs:domain prov:Entity ;
+                     rdfs:range prov:Agent .
+
+
+###  http://www.w3.org/ns/prov#wasDerivedFrom
+prov:wasDerivedFrom rdf:type owl:ObjectProperty .
+
+
+###  http://xmlns.com/foaf/0.1/depicts
+foaf:depicts rdf:type owl:ObjectProperty ;
+             rdfs:domain foaf:Image ;
+             rdfs:label "foaf:depicts" .
+
+
+###  https://w3id.org/lio/v1#looksLike
+lio:looksLike rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain lio:PictorialElement ;
+              rdfs:label "lio:looksLike" .
+
+
+###  https://www.ica.org/standards/RiC/ontology#hasOrHadCategory
+rico:hasOrHadCategory rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf rico:isRelatedTo ;
+                      rdfs:label "rico:hasOrHadCategory" .
+
+
+###  https://www.ica.org/standards/RiC/ontology#hasRecordSetType
+rico:hasRecordSetType rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf rico:hasOrHadCategory ;
+                      owl:inverseOf rico:isRecordSetTypeOf ;
+                      rdfs:label "rico:hasRecordSetType" .
+
+
+###  https://www.ica.org/standards/RiC/ontology#isOrWasCategoryOf
+rico:isOrWasCategoryOf rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf rico:isRelatedTo ;
+                       rdfs:label "rico:isOrWasCategoryOf" .
+
+
+###  https://www.ica.org/standards/RiC/ontology#isRecordSetTypeOf
+rico:isRecordSetTypeOf rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf rico:isOrWasCategoryOf ;
+                       rdfs:domain rico:RecordSetType ;
+                       rdfs:range rico:RecordSet ;
+                       rdfs:label "rico:isRecordSetTypeOf" .
+
+
+###  https://www.ica.org/standards/RiC/ontology#isRelatedTo
+rico:isRelatedTo rdf:type owl:ObjectProperty ;
+                 rdfs:label "rico:isRelatedTo" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#hasUnitCode
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#hasUnitCode> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:comment "This property is used to specify the unit of measurement. Common synonym is advised. (i.e. m for meter, cm for centimeter, and so on)" ;
+                                                            rdfs:label "ddbo:hasUnitCode" .
+
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#hasValue
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#hasValue> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:label "ddbo:hasValue" .
+
+
+###  http://purl.org/dc/terms/alternative
+dcterms:alternative rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/terms/date
+dcterms:date rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/ontology/bibo/identifier
+<http://purl.org/ontology/bibo/identifier> rdf:type owl:DatatypeProperty ;
+                                           rdfs:subPropertyOf owl:topDataProperty ;
+                                           rdfs:label "bibo:identifier" .
+
+
+###  http://purl.org/ontology/bibo/isbn
+<http://purl.org/ontology/bibo/isbn> rdf:type owl:DatatypeProperty ;
+                                     rdfs:subPropertyOf <http://purl.org/ontology/bibo/identifier> ;
+                                     rdfs:label "bibo:isbn" .
+
+
+###  http://purl.org/ontology/bibo/lccn
+<http://purl.org/ontology/bibo/lccn> rdf:type owl:DatatypeProperty ;
+                                     rdfs:subPropertyOf <http://purl.org/ontology/bibo/identifier> .
+
+
+###  http://purl.org/spar/fabio/hasPageCount
+fabio:hasPageCount rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:label "fabio:hasPageCount" .
+
+
+###  http://purl.org/spar/fabio/hasSequenceIdentifier
+fabio:hasSequenceIdentifier rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf owl:topDataProperty ;
+                            rdfs:label "fabio:hasSequenceIdentifier" .
+
+
+###  http://purl.org/spar/fabio/hasVolumeCount
+fabio:hasVolumeCount rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf owl:topDataProperty ;
+                     rdfs:label "fabio:hasVolumeCount" .
+
+
+###  http://www.schema.org/thumbnail
+schema:thumbnail rdf:type owl:DatatypeProperty ;
+                 rdfs:label "schema:thumbnail" .
+
+
+###  http://www.w3.org/2002/07/owl#topDataProperty
+owl:topDataProperty rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/lio/v1#hasTag
+lio:hasTag rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:label "lio:hasTag" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://ise-fizkarlsruhe.github.io/ddbkg/ddbo#Advertisement
+:Advertisement rdf:type owl:Class ;
+               rdfs:subClassOf fabio:Movie .
+
+
+###  http://ise-fizkarlsruhe.github.io/ddbkg/ddbo#AmateurFilm
+:AmateurFilm rdf:type owl:Class ;
+             rdfs:subClassOf fabio:Movie .
+
+
+###  http://ise-fizkarlsruhe.github.io/ddbkg/ddbo#Animation
+:Animation rdf:type owl:Class ;
+           rdfs:subClassOf fabio:Movie .
+
+
+###  http://ise-fizkarlsruhe.github.io/ddbkg/ddbo#DocumentaryFilm
+:DocumentaryFilm rdf:type owl:Class ;
+                 rdfs:subClassOf fabio:Movie .
+
+
+###  http://ise-fizkarlsruhe.github.io/ddbkg/ddbo#FeatureFilm
+:FeatureFilm rdf:type owl:Class ;
+             rdfs:subClassOf fabio:Movie .
+
+
+###  http://ise-fizkarlsruhe.github.io/ddbkg/ddbo#InstructionalFilm
+:InstructionalFilm rdf:type owl:Class ;
+                   rdfs:subClassOf fabio:Movie .
+
+
+###  http://ise-fizkarlsruhe.github.io/ddbkg/ddbo#ShortFilm
+:ShortFilm rdf:type owl:Class ;
+           rdfs:subClassOf fabio:Movie .
+
+
+###  http://ise-fizkarlsruhe.github.io/ddbkg/ddbo#Trailer
+:Trailer rdf:type owl:Class ;
+         rdfs:subClassOf fabio:Movie .
+
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#AgentRole
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#AgentRole> rdf:type owl:Class ;
+                                                          rdfs:label "ddbo:AgentRole"@en .
+
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#ImmovableCHO
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#ImmovableCHO> rdf:type owl:Class ;
+                                                             owl:equivalentClass arco:ImmovableCulturalProperty ;
+                                                             rdfs:subClassOf <http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#TangibleCHO> ;
+                                                             rdfs:label "ddbo:ImmovableCHO"@en .
+
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#IntangibleCHO
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#IntangibleCHO> rdf:type owl:Class ;
+                                                              owl:equivalentClass arco:IntangibleCulturalProperty ;
+                                                              rdfs:subClassOf edm:ProvidedCHO ;
+                                                              rdfs:label "ddbo:IntangibleCHO"@en .
+
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#Measurement
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#Measurement> rdf:type owl:Class ;
+                                                            rdfs:label "ddbo:Measurement"@en .
+
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#MovableCHO
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#MovableCHO> rdf:type owl:Class ;
+                                                           owl:equivalentClass arco:MovableCulturalProperty ;
+                                                           rdfs:subClassOf <http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#TangibleCHO> ;
+                                                           rdfs:label "ddbo:MovableCHO"@en .
+
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#TangibleCHO
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#TangibleCHO> rdf:type owl:Class ;
+                                                            owl:equivalentClass arco:TangibleCulturalProperty ;
+                                                            rdfs:subClassOf edm:ProvidedCHO ;
+                                                            rdfs:label "ddbo:Tangible"@en .
+
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#VideoClip
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#VideoClip> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#VideoManifestation> ;
+                                                          rdfs:label "ddbo:VideoClip"@en .
+
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#VideoItem
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#VideoItem> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://purl.org/vocab/frbr/core#Item> ;
+                                                          rdfs:label "Video Item"@en .
+
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#VideoManifestation
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#VideoManifestation> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://purl.org/vocab/frbr/core#Manifestation> ;
+                                                                   rdfs:label "ddbo:VideoManifestation"@en .
+
+
+###  http://purl.org/ontology/mo/MusicArtist
+mo:MusicArtist rdf:type owl:Class ;
+               rdfs:subClassOf foaf:Agent ;
+               rdfs:label "mo:MusicArtist"@en .
+
+
+###  http://purl.org/ontology/mo/MusicalExpression
+mo:MusicalExpression rdf:type owl:Class ;
+                     rdfs:subClassOf <https://w3id.org/ac-ontology/aco#AudioExpression> ;
+                     rdfs:label "mo:MusicalExpression" .
+
+
+###  http://purl.org/ontology/mo/MusicalItem
+mo:MusicalItem rdf:type owl:Class ;
+               rdfs:subClassOf <https://w3id.org/ac-ontology/aco#AudioItem> ;
+               rdfs:label "mo:MusicalItem" .
+
+
+###  http://purl.org/ontology/mo/MusicalManifestation
+mo:MusicalManifestation rdf:type owl:Class ;
+                        rdfs:subClassOf <https://w3id.org/ac-ontology/aco#AudioManifestation> ;
+                        rdfs:label "mo:MusicalManifestation" .
+
+
+###  http://purl.org/ontology/mo/MusicalWork
+mo:MusicalWork rdf:type owl:Class ;
+               rdfs:subClassOf <http://purl.org/vocab/frbr/core#Work> ;
+               rdfs:label "mo:MusicalWork" .
+
+
+###  http://purl.org/ontology/mo/Record
+mo:Record rdf:type owl:Class ;
+          rdfs:subClassOf <https://w3id.org/ac-ontology/aco#AudioCollection> ;
+          rdfs:label "mo:Record"@en .
+
+
+###  http://purl.org/ontology/mo/ReleaseType
+mo:ReleaseType rdf:type owl:Class ;
+               rdfs:label "mo:ReleaseType"@en .
+
+
+###  http://purl.org/spar/deo/DiscourseElement
+<http://purl.org/spar/deo/DiscourseElement> rdf:type owl:Class ;
+                                            rdfs:label "doco:DiscourseElement"@en .
+
+
+###  http://purl.org/spar/doco/BibliographicReferenceList
+doco:BibliographicReferenceList rdf:type owl:Class ;
+                                rdfs:subClassOf doco:ListOfReferences ;
+                                rdfs:comment "Quelle"@de ;
+                                rdfs:label "doco:BibliographicReferenceList" .
+
+
+###  http://purl.org/spar/doco/FrontMatter
+doco:FrontMatter rdf:type owl:Class ;
+                 rdfs:subClassOf <http://purl.org/spar/deo/DiscourseElement> ;
+                 rdfs:label "doco:FrontMatter" .
+
+
+###  http://purl.org/spar/doco/List
+doco:List rdf:type owl:Class ;
+          rdfs:subClassOf <http://purl.org/spar/deo/DiscourseElement> ;
+          rdfs:label "doco:List" .
+
+
+###  http://purl.org/spar/doco/ListOfReferences
+doco:ListOfReferences rdf:type owl:Class ;
+                      rdfs:subClassOf doco:List ;
+                      rdfs:label "doco:ListOfReferences" .
+
+
+###  http://purl.org/spar/doco/Preface
+doco:Preface rdf:type owl:Class ;
+             rdfs:subClassOf doco:Section ;
+             rdfs:comment "Vorwort"@de ;
+             rdfs:label "doco:Preface" .
+
+
+###  http://purl.org/spar/doco/Section
+doco:Section rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.org/spar/deo/DiscourseElement> ;
+             rdfs:comment "Abschnitt"@de ;
+             rdfs:label "doco:Section"@en .
+
+
+###  http://purl.org/spar/fabio/AcademicProceedings
+fabio:AcademicProceedings rdf:type owl:Class ;
+                          rdfs:subClassOf fabio:ExpressionCollection ;
+                          rdfs:label "fabio:AcademicProceedings"@en .
+
+
+###  http://purl.org/spar/fabio/Addendum
+fabio:Addendum rdf:type owl:Class ;
+               rdfs:subClassOf fabio:Expression ;
+               rdfs:comment "Beifügung"@de ;
+               rdfs:label "fabio:Addendum"@en .
+
+
+###  http://purl.org/spar/fabio/AnalogItem
+fabio:AnalogItem rdf:type owl:Class ;
+                 rdfs:subClassOf fabio:Item ;
+                 rdfs:label "fabio:AnalogItem"@en .
+
+
+###  http://purl.org/spar/fabio/AnalogManifestation
+fabio:AnalogManifestation rdf:type owl:Class ;
+                          rdfs:subClassOf fabio:Manifestation ;
+                          rdfs:label "fabio:AnalogManifestation" .
+
+
+###  http://purl.org/spar/fabio/Anthology
+fabio:Anthology rdf:type owl:Class ;
+                rdfs:subClassOf fabio:ExpressionCollection ;
+                rdfs:comment "Anthologie"@de ;
+                rdfs:label "fabio:Anthology"@en .
+
+
+###  http://purl.org/spar/fabio/ArchivalDocument
+fabio:ArchivalDocument rdf:type owl:Class ;
+                       rdfs:subClassOf fabio:Expression ;
+                       rdfs:comment "Akte"@de ;
+                       rdfs:label "fabio:ArchivalDocument"@en .
+
+
+###  http://purl.org/spar/fabio/ArchivalDocumentSet
+fabio:ArchivalDocumentSet rdf:type owl:Class ;
+                          rdfs:subClassOf fabio:ExpressionCollection ;
+                          rdfs:label "fabio:ArchivalDocumentSet"@en .
+
+
+###  http://purl.org/spar/fabio/ArchivalRecord
+fabio:ArchivalRecord rdf:type owl:Class ;
+                     rdfs:subClassOf fabio:Work ;
+                     rdfs:comment "Akte"@de ;
+                     rdfs:label "fabio:ArchivalRecord"@en .
+
+
+###  http://purl.org/spar/fabio/ArchivalRecordSet
+fabio:ArchivalRecordSet rdf:type owl:Class ;
+                        rdfs:subClassOf fabio:WorkCollection ;
+                        rdfs:label "fabio:ArchivalRecordSet"@en .
+
+
+###  http://purl.org/spar/fabio/Article
+fabio:Article rdf:type owl:Class ;
+              rdfs:subClassOf fabio:Expression ;
+              rdfs:comment "Artikel"@de ;
+              rdfs:label "fabio:Article"@en .
+
+
+###  http://purl.org/spar/fabio/ArtisticWork
+fabio:ArtisticWork rdf:type owl:Class ;
+                   rdfs:subClassOf fabio:Work ;
+                   rdfs:label "Kunstschaffen"@de ,
+                              "fabio:ArtisticWork"@en ,
+                              "literarisches Kunstschaffen"@de .
+
+
+###  http://purl.org/spar/fabio/AudioDocument
+fabio:AudioDocument rdf:type owl:Class ;
+                    rdfs:subClassOf fabio:Expression ;
+                    rdfs:label "fabio:AudioDocument"@en .
+
+
+###  http://purl.org/spar/fabio/BachelorsThesis
+fabio:BachelorsThesis rdf:type owl:Class ;
+                      rdfs:subClassOf fabio:Thesis ;
+                      rdfs:comment "Bachelorarbeit"@de ;
+                      rdfs:label "fabio:BachelorsThesis"@en .
+
+
+###  http://purl.org/spar/fabio/BibliographicMetadata
+fabio:BibliographicMetadata rdf:type owl:Class ;
+                            rdfs:subClassOf fabio:Metadata ;
+                            rdfs:label "fabio:BibliographicMetadata"@en .
+
+
+###  http://purl.org/spar/fabio/Biography
+fabio:Biography rdf:type owl:Class ;
+                rdfs:subClassOf fabio:Work ;
+                rdfs:comment "Biografie"@de ;
+                rdfs:label "fabio:Biography"@en .
+
+
+###  http://purl.org/spar/fabio/Book
+fabio:Book rdf:type owl:Class ;
+           rdfs:subClassOf fabio:Expression ;
+           rdfs:comment "Buch"@de ;
+           rdfs:label "fabio:Book"@en .
+
+
+###  http://purl.org/spar/fabio/BookChapter
+fabio:BookChapter rdf:type owl:Class ;
+                  rdfs:subClassOf fabio:Chapter ;
+                  rdfs:label "fabio:BookChapter"@en .
+
+
+###  http://purl.org/spar/fabio/BookReview
+fabio:BookReview rdf:type owl:Class ;
+                 rdfs:subClassOf fabio:Review ;
+                 rdfs:comment "Buchbeitrag"@de ;
+                 rdfs:label "fabio:BookReview"@en .
+
+
+###  http://purl.org/spar/fabio/BriefReport
+fabio:BriefReport rdf:type owl:Class ;
+                  rdfs:subClassOf fabio:Expression ;
+                  rdfs:label "fabio:BriefReport"@en .
+
+
+###  http://purl.org/spar/fabio/Catalog
+fabio:Catalog rdf:type owl:Class ;
+              rdfs:subClassOf fabio:Specification ;
+              rdfs:comment "Katalog"@de ;
+              rdfs:label "fabio:Catalog"@en .
+
+
+###  http://purl.org/spar/fabio/Chapter
+fabio:Chapter rdf:type owl:Class ;
+              rdfs:subClassOf fabio:Expression ;
+              rdfs:comment "Abschnitt"@de ;
+              rdfs:label "fabio:Chapter"@en .
+
+
+###  http://purl.org/spar/fabio/Comment
+fabio:Comment rdf:type owl:Class ;
+              rdfs:subClassOf fabio:Expression ;
+              rdfs:comment "Kommentar"@de ;
+              rdfs:label "fabio:Comment"@en .
+
+
+###  http://purl.org/spar/fabio/ConferenceProceedings
+fabio:ConferenceProceedings rdf:type owl:Class ;
+                            rdfs:subClassOf fabio:AcademicProceedings ;
+                            rdfs:label "fabio:ConferenceProceedings"@en .
+
+
+###  http://purl.org/spar/fabio/Cover
+fabio:Cover rdf:type owl:Class ;
+            rdfs:subClassOf fabio:Expression ;
+            rdfs:comment "Einband"@de ;
+            rdfs:label "fabio:Cover" .
+
+
+###  http://purl.org/spar/fabio/Diary
+fabio:Diary rdf:type owl:Class ;
+            rdfs:subClassOf fabio:Notebook ;
+            rdfs:comment "Tagebuch"@de ;
+            rdfs:label "fabio:Diary"@en .
+
+
+###  http://purl.org/spar/fabio/DigitalItem
+fabio:DigitalItem rdf:type owl:Class ;
+                  rdfs:subClassOf fabio:Item ;
+                  rdfs:label "fabio:DigitalItem"@en .
+
+
+###  http://purl.org/spar/fabio/DigitalManifestation
+fabio:DigitalManifestation rdf:type owl:Class ;
+                           rdfs:subClassOf fabio:Manifestation ;
+                           rdfs:label "digitale Ausprägung"@de ,
+                                      "fabio:DigitalManifestation"@en .
+
+
+###  http://purl.org/spar/fabio/DoctoralThesis
+fabio:DoctoralThesis rdf:type owl:Class ;
+                     rdfs:subClassOf fabio:Thesis ;
+                     rdfs:comment "Doktorarbeit"@de ;
+                     rdfs:label "fabio:DoctoralThesis"@en .
+
+
+###  http://purl.org/spar/fabio/Entry
+fabio:Entry rdf:type owl:Class ;
+            rdfs:subClassOf fabio:Expression ;
+            rdfs:comment "Eintrag"@de ;
+            rdfs:label "fabio:Entry" .
+
+
+###  http://purl.org/spar/fabio/Essay
+fabio:Essay rdf:type owl:Class ;
+            rdfs:subClassOf fabio:Work ;
+            rdfs:comment "Aufsatz"@de ;
+            rdfs:label "fabio:Essay"@en .
+
+
+###  http://purl.org/spar/fabio/Expression
+fabio:Expression rdf:type owl:Class ;
+                 rdfs:subClassOf <http://purl.org/vocab/frbr/core#Expression> ;
+                 rdfs:label "fabio:Expression" .
+
+
+###  http://purl.org/spar/fabio/ExpressionCollection
+fabio:ExpressionCollection rdf:type owl:Class ;
+                           rdfs:subClassOf fabio:Expression ;
+                           rdfs:label "fabio:ExpressionCollection"@en .
+
+
+###  http://purl.org/spar/fabio/Film
+fabio:Film rdf:type owl:Class ;
+           rdfs:subClassOf fabio:Movie ;
+           rdfs:label "fabio:Film"@en .
+
+
+###  http://purl.org/spar/fabio/Image
+fabio:Image rdf:type owl:Class ;
+            rdfs:subClassOf fabio:Work ;
+            rdfs:label "fabio:Image"@en .
+
+
+###  http://purl.org/spar/fabio/Index
+fabio:Index rdf:type owl:Class ;
+            rdfs:subClassOf fabio:Expression ;
+            rdfs:label "fabio:Index"@en .
+
+
+###  http://purl.org/spar/fabio/InstructionManual
+fabio:InstructionManual rdf:type owl:Class ;
+                        rdfs:subClassOf fabio:Expression ;
+                        rdfs:comment "Anleitung"@de ;
+                        rdfs:label "fabio:InstructionManual"@en .
+
+
+###  http://purl.org/spar/fabio/InstructionalWork
+fabio:InstructionalWork rdf:type owl:Class ;
+                        rdfs:subClassOf fabio:Work ;
+                        rdfs:comment "Lehrmaterial"@de ;
+                        rdfs:label "fabio:InstructionalWork"@en .
+
+
+###  http://purl.org/spar/fabio/Item
+fabio:Item rdf:type owl:Class ;
+           rdfs:subClassOf <http://purl.org/vocab/frbr/core#Item> ;
+           rdfs:label "fabio:Item" .
+
+
+###  http://purl.org/spar/fabio/ItemCollection
+fabio:ItemCollection rdf:type owl:Class ;
+                     rdfs:subClassOf fabio:Item ;
+                     rdfs:label "fabio:ItemCollection"@en .
+
+
+###  http://purl.org/spar/fabio/Journal
+fabio:Journal rdf:type owl:Class ;
+              rdfs:subClassOf fabio:Periodical ;
+              rdfs:label "fabio:Journal"@en .
+
+
+###  http://purl.org/spar/fabio/LectureNotes
+fabio:LectureNotes rdf:type owl:Class ;
+                   rdfs:subClassOf fabio:Expression ;
+                   rdfs:comment "Vorlesungsmitschrift"@de ;
+                   rdfs:label "fabio:LectureNotes" .
+
+
+###  http://purl.org/spar/fabio/LegalOpinion
+fabio:LegalOpinion rdf:type owl:Class ;
+                   rdfs:subClassOf fabio:Opinion ;
+                   rdfs:comment "Konsilium"@de ;
+                   rdfs:label "fabio:LegalOpinion"@en .
+
+
+###  http://purl.org/spar/fabio/Letter
+fabio:Letter rdf:type owl:Class ;
+             rdfs:subClassOf fabio:Expression ;
+             rdfs:comment "Brief"@de ;
+             rdfs:label "fabio:Letter" .
+
+
+###  http://purl.org/spar/fabio/LibraryCatalog
+fabio:LibraryCatalog rdf:type owl:Class ;
+                     rdfs:subClassOf fabio:Catalog ;
+                     rdfs:label "Bibliothekskatalog"@de .
+
+
+###  http://purl.org/spar/fabio/LiteraryArtisticWork
+fabio:LiteraryArtisticWork rdf:type owl:Class ;
+                           rdfs:subClassOf fabio:ArtisticWork ;
+                           rdfs:label "fabio:LiteraryArtisticWork"@en .
+
+
+###  http://purl.org/spar/fabio/Magazine
+fabio:Magazine rdf:type owl:Class ;
+               rdfs:subClassOf fabio:Periodical ;
+               rdfs:comment "Zeitschrift"@de ;
+               rdfs:label "fabio:Magazine" .
+
+
+###  http://purl.org/spar/fabio/MagazineArticle
+fabio:MagazineArticle rdf:type owl:Class ;
+                      rdfs:subClassOf fabio:Article ;
+                      rdfs:comment "Zeitschriftenartikel"@de ;
+                      rdfs:label "fabio:MagazineArticle" .
+
+
+###  http://purl.org/spar/fabio/Manifestation
+fabio:Manifestation rdf:type owl:Class ;
+                    rdfs:subClassOf <http://purl.org/vocab/frbr/core#Manifestation> ;
+                    rdfs:label "Ausprägung"@de ,
+                               "fabio:Manifestation" .
+
+
+###  http://purl.org/spar/fabio/ManifestationCollection
+fabio:ManifestationCollection rdf:type owl:Class ;
+                              rdfs:subClassOf fabio:Manifestation ;
+                              rdfs:label "fabio:ManifestationCollection"@en .
+
+
+###  http://purl.org/spar/fabio/Manuscript
+fabio:Manuscript rdf:type owl:Class ;
+                 rdfs:subClassOf fabio:Expression ;
+                 rdfs:comment "Manuskript"@de ;
+                 rdfs:label "fabio:Manuscript" .
+
+
+###  http://purl.org/spar/fabio/MastersThesis
+fabio:MastersThesis rdf:type owl:Class ;
+                    rdfs:subClassOf fabio:Thesis ;
+                    rdfs:comment "MasterArbeit"@de ;
+                    rdfs:label "fabio:MastersThesis"@en .
+
+
+###  http://purl.org/spar/fabio/MeetingReport
+fabio:MeetingReport rdf:type owl:Class ;
+                    rdfs:subClassOf fabio:Report ;
+                    rdfs:comment "Sitzungsbericht"@de ;
+                    rdfs:label "fabio:MeetingReport"@en .
+
+
+###  http://purl.org/spar/fabio/Metadata
+fabio:Metadata rdf:type owl:Class ;
+               rdfs:subClassOf fabio:Work ;
+               rdfs:label "fabio:Metadata"@en .
+
+
+###  http://purl.org/spar/fabio/Movie
+fabio:Movie rdf:type owl:Class ;
+            rdfs:subClassOf fabio:Expression ;
+            rdfs:label "fabio:Movie"@en .
+
+
+###  http://purl.org/spar/fabio/MovingImage
+fabio:MovingImage rdf:type owl:Class ;
+                  rdfs:subClassOf fabio:Image ;
+                  rdfs:label "fabio:MovingImage"@en .
+
+
+###  http://purl.org/spar/fabio/MusicalComposition
+fabio:MusicalComposition rdf:type owl:Class ;
+                         rdfs:subClassOf fabio:LiteraryArtisticWork ;
+                         rdfs:comment "Tonsatz"@de ;
+                         rdfs:label "fabio:MusicalComposition"@en .
+
+
+###  http://purl.org/spar/fabio/NewsReport
+fabio:NewsReport rdf:type owl:Class ;
+                 rdfs:subClassOf fabio:Report ;
+                 rdfs:label "fabio:NewsReport"@en .
+
+
+###  http://purl.org/spar/fabio/Newspaper
+fabio:Newspaper rdf:type owl:Class ;
+                rdfs:subClassOf fabio:Periodical ;
+                rdfs:comment "Zeitung"@de ;
+                rdfs:label "fabio:Newspaper" .
+
+
+###  http://purl.org/spar/fabio/NewspaperArticle
+fabio:NewspaperArticle rdf:type owl:Class ;
+                       rdfs:subClassOf fabio:Article ;
+                       rdfs:comment "Zeitungsartikel"@de ;
+                       rdfs:label "fabio:NewspaperArticle" .
+
+
+###  http://purl.org/spar/fabio/Notebook
+fabio:Notebook rdf:type owl:Class ;
+               rdfs:subClassOf fabio:Book ;
+               rdfs:comment "Heft"@de ;
+               rdfs:label "fabio:Notebook"@en .
+
+
+###  http://purl.org/spar/fabio/Novel
+fabio:Novel rdf:type owl:Class ;
+            rdfs:subClassOf fabio:LiteraryArtisticWork ;
+            rdfs:comment "Roman"@de ;
+            rdfs:label "fabio:Novel"@en .
+
+
+###  http://purl.org/spar/fabio/Obituary
+fabio:Obituary rdf:type owl:Class ;
+               rdfs:subClassOf fabio:NewsReport ;
+               rdfs:comment "Nachruf"@de ;
+               rdfs:label "fabio:Obituary"@en .
+
+
+###  http://purl.org/spar/fabio/Opinion
+fabio:Opinion rdf:type owl:Class ;
+              rdfs:subClassOf fabio:Work ;
+              rdfs:comment "Stellungnahme"@de ;
+              rdfs:label "fabio:Opinion"@en .
+
+
+###  http://purl.org/spar/fabio/Oration
+fabio:Oration rdf:type owl:Class ;
+              rdfs:subClassOf fabio:Expression ;
+              rdfs:comment "Rede"@de ;
+              rdfs:label "fabio:Oration" .
+
+
+###  http://purl.org/spar/fabio/Page
+fabio:Page rdf:type owl:Class ;
+           rdfs:subClassOf fabio:Manifestation ;
+           rdfs:label "fabio:Page"@en .
+
+
+###  http://purl.org/spar/fabio/Periodical
+fabio:Periodical rdf:type owl:Class ;
+                 rdfs:subClassOf fabio:Expression ;
+                 rdfs:comment "Periodikum"@de ;
+                 rdfs:label "fabio:Periodical" .
+
+
+###  http://purl.org/spar/fabio/PeriodicalIssue
+fabio:PeriodicalIssue rdf:type owl:Class ;
+                      rdfs:subClassOf fabio:Expression ;
+                      rdfs:label "fabio:PeriodicalIssue" .
+
+
+###  http://purl.org/spar/fabio/PeriodicalItem
+fabio:PeriodicalItem rdf:type owl:Class ;
+                     rdfs:subClassOf fabio:Expression ;
+                     rdfs:label "fabio:PeriodicalItem" .
+
+
+###  http://purl.org/spar/fabio/Play
+fabio:Play rdf:type owl:Class ;
+           rdfs:subClassOf fabio:LiteraryArtisticWork ;
+           rdfs:comment "Schauspiel"@de ;
+           rdfs:label "fabio:Play"@en .
+
+
+###  http://purl.org/spar/fabio/Poem
+fabio:Poem rdf:type owl:Class ;
+           rdfs:subClassOf fabio:LiteraryArtisticWork ;
+           rdfs:comment "Gedicht"@de ;
+           rdfs:label "fabio:Poem"@en .
+
+
+###  http://purl.org/spar/fabio/PolicyDocument
+fabio:PolicyDocument rdf:type owl:Class ;
+                     rdfs:subClassOf fabio:Expression ;
+                     rdfs:label "fabio:PolicyDocument" .
+
+
+###  http://purl.org/spar/fabio/Preprint
+fabio:Preprint rdf:type owl:Class ;
+               rdfs:subClassOf fabio:Manuscript ;
+               rdfs:comment "fabio:Preprint" .
+
+
+###  http://purl.org/spar/fabio/Presentation
+fabio:Presentation rdf:type owl:Class ;
+                   rdfs:subClassOf fabio:Expression ;
+                   rdfs:comment "Vortrag"@de ;
+                   rdfs:label "fabio:Presentation" .
+
+
+###  http://purl.org/spar/fabio/PrintObject
+fabio:PrintObject rdf:type owl:Class ;
+                  rdfs:subClassOf fabio:AnalogManifestation ;
+                  rdfs:label "fabio:PrintObject"@en .
+
+
+###  http://purl.org/spar/fabio/Quotation
+fabio:Quotation rdf:type owl:Class ;
+                rdfs:subClassOf fabio:Expression ;
+                rdfs:label "fabio:Quotation" .
+
+
+###  http://purl.org/spar/fabio/ReferenceBook
+fabio:ReferenceBook rdf:type owl:Class ;
+                    rdfs:subClassOf fabio:Book ;
+                    rdfs:comment "Referenzbuch"@de ;
+                    rdfs:label "fabio:ReferenceBook"@en .
+
+
+###  http://purl.org/spar/fabio/ReferenceWork
+fabio:ReferenceWork rdf:type owl:Class ;
+                    rdfs:subClassOf fabio:Work ;
+                    rdfs:comment "Referenzwerk"@de ;
+                    rdfs:label "fabio:ReferenceWork"@en .
+
+
+###  http://purl.org/spar/fabio/Report
+fabio:Report rdf:type owl:Class ;
+             rdfs:subClassOf fabio:Work ;
+             rdfs:comment "Bericht"@de ;
+             rdfs:label "fabio:Report"@en .
+
+
+###  http://purl.org/spar/fabio/ReportDocument
+fabio:ReportDocument rdf:type owl:Class ;
+                     rdfs:subClassOf fabio:Expression ;
+                     rdfs:label "fabio:ReportDocument" .
+
+
+###  http://purl.org/spar/fabio/Review
+fabio:Review rdf:type owl:Class ;
+             rdfs:subClassOf fabio:Work ;
+             rdfs:comment "Rezension"@de ;
+             rdfs:label "fabio:Review"@en .
+
+
+###  http://purl.org/spar/fabio/ScholarlyWork
+fabio:ScholarlyWork rdf:type owl:Class ;
+                    rdfs:subClassOf fabio:Work ;
+                    rdfs:comment "Akademieschrift"@de ;
+                    rdfs:label "fabio:ScholarlyWork"@en .
+
+
+###  http://purl.org/spar/fabio/Screenplay
+fabio:Screenplay rdf:type owl:Class ;
+                 rdfs:subClassOf fabio:LiteraryArtisticWork ;
+                 rdfs:comment "Drehbuch"@de ;
+                 rdfs:label "fabio:Screenplay"@en .
+
+
+###  http://purl.org/spar/fabio/Series
+fabio:Series rdf:type owl:Class ;
+             rdfs:subClassOf fabio:ExpressionCollection ;
+             rdfs:comment "Serie"@de ;
+             rdfs:label "fabio:Series" .
+
+
+###  http://purl.org/spar/fabio/ShortStory
+fabio:ShortStory rdf:type owl:Class ;
+                 rdfs:subClassOf fabio:LiteraryArtisticWork ;
+                 rdfs:comment "Kurzgeschichte"@de ;
+                 rdfs:label "fabio:ShortStory"@en .
+
+
+###  http://purl.org/spar/fabio/Song
+fabio:Song rdf:type owl:Class ;
+           rdfs:subClassOf fabio:MusicalComposition ;
+           rdfs:comment "Lied"@de ;
+           rdfs:label "fabio:Song"@en .
+
+
+###  http://purl.org/spar/fabio/SoundRecording
+fabio:SoundRecording rdf:type owl:Class ;
+                     rdfs:subClassOf fabio:Work ;
+                     rdfs:label "fabio:SoundRecording"@en .
+
+
+###  http://purl.org/spar/fabio/Specification
+fabio:Specification rdf:type owl:Class ;
+                    rdfs:subClassOf fabio:Work ;
+                    rdfs:label "fabio:Specification"@en .
+
+
+###  http://purl.org/spar/fabio/SpecificationDocument
+fabio:SpecificationDocument rdf:type owl:Class ;
+                            rdfs:subClassOf fabio:Expression ;
+                            rdfs:label "fabio:SpecificationDocument" .
+
+
+###  http://purl.org/spar/fabio/StillImage
+fabio:StillImage rdf:type owl:Class ;
+                 rdfs:subClassOf fabio:Image ;
+                 rdfs:label "fabio:StillImage"@en .
+
+
+###  http://purl.org/spar/fabio/SubjectTerm
+fabio:SubjectTerm rdf:type owl:Class ;
+                  rdfs:subClassOf skos:Concept ;
+                  rdfs:label "fabio:SubjectTerm"@en .
+
+
+###  http://purl.org/spar/fabio/SystematicReview
+fabio:SystematicReview rdf:type owl:Class ;
+                       rdfs:subClassOf fabio:Review ;
+                       rdfs:comment "Literaturbericht"@de ;
+                       rdfs:label "fabio:SystematicReview"@en .
+
+
+###  http://purl.org/spar/fabio/Table
+fabio:Table rdf:type owl:Class ;
+            rdfs:subClassOf fabio:Expression ;
+            rdfs:comment "Tabelle"@de ;
+            rdfs:label "fabio:Table" .
+
+
+###  http://purl.org/spar/fabio/TableOfContents
+fabio:TableOfContents rdf:type owl:Class ;
+                      rdfs:subClassOf fabio:Table ;
+                      rdfs:comment "Inhaltsverzeichnis"@de ;
+                      rdfs:label "fabio:TableOfContents" .
+
+
+###  http://purl.org/spar/fabio/TechnicalReport
+fabio:TechnicalReport rdf:type owl:Class ;
+                      rdfs:subClassOf fabio:Report ;
+                      rdfs:comment "Fachbericht"@de ;
+                      rdfs:label "fabio:TechnicalReport"@en .
+
+
+###  http://purl.org/spar/fabio/Textbook
+fabio:Textbook rdf:type owl:Class ;
+               rdfs:subClassOf fabio:Book ;
+               rdfs:comment "Schulbuch"@de ;
+               rdfs:label "fabio:Textbook"@en .
+
+
+###  http://purl.org/spar/fabio/Thesis
+fabio:Thesis rdf:type owl:Class ;
+             rdfs:subClassOf fabio:Book ;
+             rdfs:comment "Diplomarbeit"@de ;
+             rdfs:label "fabio:Thesis"@en .
+
+
+###  http://purl.org/spar/fabio/Vocabulary
+fabio:Vocabulary rdf:type owl:Class ;
+                 rdfs:subClassOf fabio:Work ;
+                 rdfs:comment "Wörterbuch"@de ;
+                 rdfs:label "fabio:Vocabulary"@en .
+
+
+###  http://purl.org/spar/fabio/WebManifestation
+fabio:WebManifestation rdf:type owl:Class ;
+                       rdfs:subClassOf fabio:DigitalManifestation ;
+                       rdfs:label "fabio:WebManifestation"@en .
+
+
+###  http://purl.org/spar/fabio/Work
+fabio:Work rdf:type owl:Class ;
+           rdfs:subClassOf <http://purl.org/vocab/frbr/core#Work> ;
+           rdfs:label "fabio:Work"@en .
+
+
+###  http://purl.org/spar/fabio/WorkCollection
+fabio:WorkCollection rdf:type owl:Class ;
+                     rdfs:subClassOf fabio:Work ;
+                     rdfs:label "fabio:WorkCollection"@en .
+
+
+###  http://purl.org/spar/fabio/WorkingPaper
+fabio:WorkingPaper rdf:type owl:Class ;
+                   rdfs:subClassOf fabio:Work ;
+                   rdfs:comment "Arbeitspapier"@en ;
+                   rdfs:label "fabio:WorkingPaper"@en .
+
+
+###  http://purl.org/vocab/frbr/core#Endeavor
+<http://purl.org/vocab/frbr/core#Endeavor> rdf:type owl:Class ;
+                                           rdfs:label "frbr:Endeavor" .
+
+
+###  http://purl.org/vocab/frbr/core#Expression
+<http://purl.org/vocab/frbr/core#Expression> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.org/vocab/frbr/core#Endeavor> ;
+                                             rdfs:label "frbr:Expression" .
+
+
+###  http://purl.org/vocab/frbr/core#Item
+<http://purl.org/vocab/frbr/core#Item> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://purl.org/vocab/frbr/core#Endeavor> ;
+                                       rdfs:label "frbr:Item" .
+
+
+###  http://purl.org/vocab/frbr/core#Manifestation
+<http://purl.org/vocab/frbr/core#Manifestation> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://purl.org/vocab/frbr/core#Endeavor> ;
+                                                rdfs:label "frbr:Manifestation" .
+
+
+###  http://purl.org/vocab/frbr/core#Work
+<http://purl.org/vocab/frbr/core#Work> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://purl.org/vocab/frbr/core#Endeavor> ;
+                                       rdfs:label "frbr:Work" .
+
+
+###  http://salt.semanticauthoring.org/ontologies/sro#Abstract
+<http://salt.semanticauthoring.org/ontologies/sro#Abstract> rdf:type owl:Class ;
+                                                            rdfs:label "doco:Abstract" .
+
+
+###  http://www.europeana.eu/schemas/edm/Event
+edm:Event rdf:type owl:Class ;
+          rdfs:label "edm:Event" .
+
+
+###  http://www.europeana.eu/schemas/edm/ProvidedCHO
+edm:ProvidedCHO rdf:type owl:Class ;
+                rdfs:label "edm:ProvidedCHO" .
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+owl:Thing rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Agent
+prov:Agent rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Entity
+prov:Entity rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#SoftwareAgent
+prov:SoftwareAgent rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+foaf:Agent rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Image
+foaf:Image rdf:type owl:Class ;
+           owl:equivalentClass lio:Image ;
+           rdfs:label "foaf:Image"@en .
+
+
+###  http://xmlns.com/foaf/0.1/Organization
+foaf:Organization rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+foaf:Person rdf:type owl:Class .
+
+
+###  https://w3id.org/ac-ontology/aco#AudioClip
+<https://w3id.org/ac-ontology/aco#AudioClip> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://w3id.org/ac-ontology/aco#AudioManifestation> ;
+                                             rdfs:label "aco:AudioClip" .
+
+
+###  https://w3id.org/ac-ontology/aco#AudioCollection
+<https://w3id.org/ac-ontology/aco#AudioCollection> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://w3id.org/ac-ontology/aco#AudioManifestation> ;
+                                                   rdfs:label "aco:AudioCollection"@en .
+
+
+###  https://w3id.org/ac-ontology/aco#AudioExpression
+<https://w3id.org/ac-ontology/aco#AudioExpression> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.org/vocab/frbr/core#Expression> ;
+                                                   rdfs:label "aco:AudioExpression"@en .
+
+
+###  https://w3id.org/ac-ontology/aco#AudioFile
+<https://w3id.org/ac-ontology/aco#AudioFile> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://w3id.org/ac-ontology/aco#AudioItem> ;
+                                             rdfs:label "aco:AudioFile" .
+
+
+###  https://w3id.org/ac-ontology/aco#AudioItem
+<https://w3id.org/ac-ontology/aco#AudioItem> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.org/vocab/frbr/core#Item> ;
+                                             rdfs:label "aco:AudioItem" .
+
+
+###  https://w3id.org/ac-ontology/aco#AudioManifestation
+<https://w3id.org/ac-ontology/aco#AudioManifestation> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://purl.org/vocab/frbr/core#Manifestation> ;
+                                                      rdfs:label "aco:AudioManifestation" .
+
+
+###  https://w3id.org/arco/ontology/arco/ArcheologicalProperty
+arco:ArcheologicalProperty rdf:type owl:Class ;
+                           rdfs:subClassOf arco:TangibleCulturalProperty ;
+                           rdfs:label "arco:ArcheologicalProperty"@en .
+
+
+###  https://w3id.org/arco/ontology/arco/CulturalProperty
+arco:CulturalProperty rdf:type owl:Class ;
+                      rdfs:label "arco:CulturalProperty"@en .
+
+
+###  https://w3id.org/arco/ontology/arco/ImmovableCulturalProperty
+arco:ImmovableCulturalProperty rdf:type owl:Class ;
+                               rdfs:subClassOf arco:TangibleCulturalProperty ;
+                               rdfs:label "arco:ImmovableCulturalProperty"@en .
+
+
+###  https://w3id.org/arco/ontology/arco/IntangibleCulturalProperty
+arco:IntangibleCulturalProperty rdf:type owl:Class ;
+                                rdfs:subClassOf arco:CulturalProperty ;
+                                rdfs:label "arco:IntangibleCulturalProperty"@en .
+
+
+###  https://w3id.org/arco/ontology/arco/MovableCulturalProperty
+arco:MovableCulturalProperty rdf:type owl:Class ;
+                             rdfs:subClassOf arco:TangibleCulturalProperty ;
+                             rdfs:label "arco:MovableCulturalProperty"@en .
+
+
+###  https://w3id.org/arco/ontology/arco/TangibleCulturalProperty
+arco:TangibleCulturalProperty rdf:type owl:Class ;
+                              rdfs:subClassOf arco:CulturalProperty ;
+                              rdfs:label "arco:TangibleCulturalProperty"@en .
+
+
+###  https://w3id.org/lio/v1#Image
+lio:Image rdf:type owl:Class ;
+          rdfs:label "lio:Image"@en .
+
+
+###  https://w3id.org/lio/v1#PictorialElement
+lio:PictorialElement rdf:type owl:Class ;
+                     rdfs:label "lio:PictorialElement"@en .
+
+
+###  https://www.ica.org/standards/RiC/ontology#Concept
+rico:Concept rdf:type owl:Class ;
+             rdfs:subClassOf rico:Thing ;
+             rdfs:label "rico:Concept"@en .
+
+
+###  https://www.ica.org/standards/RiC/ontology#Record
+rico:Record rdf:type owl:Class ;
+            rdfs:subClassOf rico:Thing ;
+            rdfs:label "rico:Record"@en .
+
+
+###  https://www.ica.org/standards/RiC/ontology#RecordPart
+rico:RecordPart rdf:type owl:Class ;
+                rdfs:subClassOf rico:Thing ;
+                rdfs:label "rico:RecordPart"@en .
+
+
+###  https://www.ica.org/standards/RiC/ontology#RecordSet
+rico:RecordSet rdf:type owl:Class ;
+               rdfs:subClassOf rico:Thing ;
+               rdfs:label "rico:RecordSet"@en .
+
+
+###  https://www.ica.org/standards/RiC/ontology#RecordSetType
+rico:RecordSetType rdf:type owl:Class ;
+                   rdfs:subClassOf rico:Type ;
+                   rdfs:label "rico:RecordSetType"@en .
+
+
+###  https://www.ica.org/standards/RiC/ontology#Thing
+rico:Thing rdf:type owl:Class ;
+           rdfs:label "rico:Thing"@en .
+
+
+###  https://www.ica.org/standards/RiC/ontology#Type
+rico:Type rdf:type owl:Class ;
+          rdfs:subClassOf rico:Concept ;
+          rdfs:label "rico:Type"@en .
+
+
+###  https://www.w3.org/ns/dcat#Dataset
+<https://www.w3.org/ns/dcat#Dataset> rdf:type owl:Class ;
+                                     rdfs:label "dcat:Dataset"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://d-nb.info/gnd/4037215-7
+<http://d-nb.info/gnd/4037215-7> rdf:type owl:NamedIndividual ,
+                                          <http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#AgentRole> ;
+                                 rdfs:label "Maler"@de ,
+                                            "Painter"@en .
+
+
+###  http://d-nb.info/gnd/4166042-0
+<http://d-nb.info/gnd/4166042-0> rdf:type owl:NamedIndividual ,
+                                          <http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#AgentRole> ;
+                                 rdfs:label "Art Collector"@en ,
+                                            "Kunstsammler"@de .
+
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#Bestand
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#Bestand> rdf:type owl:NamedIndividual ,
+                                                                 skos:Concept ,
+                                                                 rico:RecordSetType .
+
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#Bestandsklassifikation
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#Bestandsklassifikation> rdf:type owl:NamedIndividual ,
+                                                                                skos:Concept ,
+                                                                                rico:RecordSetType .
+
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#Bestandsserie
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#Bestandsserie> rdf:type owl:NamedIndividual ,
+                                                                       skos:Concept ,
+                                                                       rico:RecordSetType .
+
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#Gliederung
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#Gliederung> rdf:type owl:NamedIndividual ,
+                                                                    skos:Concept ,
+                                                                    rico:RecordSetType .
+
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#Serie
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#Serie> rdf:type owl:NamedIndividual ,
+                                                               skos:Concept ,
+                                                               rico:RecordSetType .
+
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#Tektonik
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#Tektonik> rdf:type owl:NamedIndividual ,
+                                                                  skos:Concept ,
+                                                                  rico:RecordSetType .
+
+
+###  http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#Unterserie
+<http://ise-fizkkarlsruhe.github.io/ddbkg/ddbo#Unterserie> rdf:type owl:NamedIndividual ,
+                                                                    skos:Concept ,
+                                                                    rico:RecordSetType .
+
+
+###  https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection
+<https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection> rdf:type owl:NamedIndividual ,
+                                                                                    skos:Concept ,
+                                                                                    rico:RecordSetType ;
+                                                                           rdfs:label "ric-rst:Collection" .
+
+
+###  https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File
+<https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File> rdf:type owl:NamedIndividual ,
+                                                                              skos:Concept ,
+                                                                              rico:RecordSetType ;
+                                                                     rdfs:label "ric-rst:File" .
+
+
+###  https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds
+<https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds> rdf:type owl:NamedIndividual ,
+                                                                               skos:Concept ,
+                                                                               rico:RecordSetType ;
+                                                                      rdfs:label "ric-rst:Fonds" .
+
+
+###  https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series
+<https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series> rdf:type owl:NamedIndividual ,
+                                                                                skos:Concept ,
+                                                                                rico:RecordSetType ;
+                                                                       rdfs:label "ric-rst:Series" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://purl.org/spar/deo/Dedication> rdfs:label "Widmung"@de .
+
+
+<http://purl.org/spar/deo/Introduction> rdfs:label "Einführung"@de .
+
+
+<http://purl.org/spar/deo/Legend> rdfs:label "Legende"@de .
+
+
+doco:Abstract rdfs:label "Abstrakt"@de .
+
+
+fabio:BookSeries rdfs:label "Buchserie"@de .
+
+
+fabio:Figure skos:altLabel "Illustration"@en ;
+             rdfs:label "Figur"@de .
+
+
+fabio:LiteraryWork rdfs:label "literarisches Werk"@en .
+
+
+fabio:MagazineIssue rdfs:label "Zeitschriftenausgabe"@de .
+
+
+fabio:PressRelease rdfs:label "Amtsdruckschrift"@de .
+
+
+fabio:Proof rdfs:label "Probedruck"@de .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

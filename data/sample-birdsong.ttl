@@ -1,0 +1,114 @@
+@prefix aco: <https://w3id.org/ac-ontology/aco#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ddb-item: <http://www.deutsche-digitale-bibliothek.de/item/> .
+@prefix ddb-org: <http://www.deutsche-digitale-bibliothek.de/organization/> .
+@prefix ddbkg-resource: <http://ddbkg.fiz-karlsruhe.de/resource/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://www.schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://d-nb.info/gnd/4052020-1> a skos:Concept ;
+    skos:prefLabel "Tonaufnahme" .
+
+ddbkg-resource:AABHLUHFH3RT0RD8JVURZUZJ7KFXMBK6 a prov:SoftwareAgent ;
+    rdfs:label "XSLT-2.24" ;
+    dcterms:hasVersion "2.24" ;
+    prov:actedOnBehalfOf <http://www.deutsche-digitale-bibliothek.de> .
+
+ddbkg-resource:DDCY3AMQFISKSGIRGRWBNYWXOWUVUQYZ a dcat:Dataset,
+        prov:Entity ;
+    dcterms:identifier "33445323582674520qaHS" ;
+    dcterms:type <http://www.lido-schema.org/> ;
+    prov:wasAttributedTo ddb-org:6GWXTQXD535KAX63RWUKGWHAQ6GTKJF3 .
+
+ddbkg-resource:MM98ELHIPWSYITQLVFIC5ETNTD95G4QO a mo:Record,
+        aco:AudioClip ;
+    dc:description "Alter: Jungtier(e)"@de,
+        "Art(en) im Hintergrund: Phylloscopus trochilus"@de,
+        "Geschlecht: männlich"@de,
+        "Lauttyp: Ruf"@de ;
+    dcterms:creator <4GRKTI5P5TJFMWROZ5GIGVY7Y2VVUFCJ> ;
+    dcterms:format "Uher 4000 Report-S, Bändchenmikro Beyer M 260, Parabolspiegel Polyester (470 mm) (Material/Technik)"@de ;
+    dcterms:identifier "TSA:Picoides_minor_Co_25_9_1 (Inventarnummer)" ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-2/ger> ;
+    dcterms:title "Kleinspecht | Dendrocopos minor - Ruf"@de ;
+    fabio:hasExemplar ddbkg-resource:JI53FTTP6AQMEJEYJE3OMX3NROJPGQAP ;
+    fabio:hasSubjectTerm <7IPQQKLPZOHH6GDUCIPK6BVHZF5KHRJX>,
+        <LU4RDGDJWBGP4EPURXZMZMLKUTROGKON>,
+        <MHT3JNT6QJ2SG7ZRGQG24E5UN4CPN4OG>,
+        <PI3IHVKFZV4WZOAOZIRC5GCX3HXQWEOR> .
+
+<http://id.loc.gov/vocabulary/iso639-2/ger> a dcterms:LinguisticSystem ;
+    rdfs:label "ger" .
+
+<http://vocab.getty.edu/tgn/7003712> a edm:Place ;
+    rdfs:label "Berlin"@de .
+
+<http://www.deutsche-digitale-bibliothek.de> a prov:Agent,
+        foaf:Organization ;
+    rdfs:label "Deutsche Digitale Bibliothek"@de,
+        "German Digital Library"@en .
+
+ddb-org:6GWXTQXD535KAX63RWUKGWHAQ6GTKJF3 a prov:Agent,
+        foaf:Organization ;
+    dcterms:identifier "00050372" ;
+    dcterms:type <http://ddb.vocnet.org/sparte/sparte006> ;
+    schema:url "http://www.naturkundemuseum-berlin.de" ;
+    foaf:name "Museum für Naturkunde - Leibniz Institute for Research on Evolution and Biodiversity" .
+
+<http://www.tierstimmenarchiv.de/webinterface/contents/showdetails.php?edit=-1&unique_id=TSA:Picoides_minor_Co_25_9_1&autologin=true> a edm:WebResource,
+        aco:AudioFile ;
+    dcterms:rights <http://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+    fabio:isReproductionOf ddbkg-resource:JI53FTTP6AQMEJEYJE3OMX3NROJPGQAP .
+
+<4GRKTI5P5TJFMWROZ5GIGVY7Y2VVUFCJ> a foaf:Person ;
+    foaf:givenName "Klaus" ;
+    foaf:lastName "Conrads" ;
+    foaf:name "Conrads, Klaus" .
+
+<7IPQQKLPZOHH6GDUCIPK6BVHZF5KHRJX> a fabio:SubjectTerm ;
+    skos:prefLabel "Spechtvögel | Piciformes"@de .
+
+<LU4RDGDJWBGP4EPURXZMZMLKUTROGKON> a fabio:SubjectTerm ;
+    skos:prefLabel "Vögel | Aves"@de .
+
+<MHT3JNT6QJ2SG7ZRGQG24E5UN4CPN4OG> a fabio:SubjectTerm ;
+    skos:prefLabel "Tierstimme"@de .
+
+<PI3IHVKFZV4WZOAOZIRC5GCX3HXQWEOR> a fabio:SubjectTerm ;
+    skos:prefLabel "Spechte | Picidae"@de .
+
+ddbkg-resource:JI53FTTP6AQMEJEYJE3OMX3NROJPGQAP a edm:ProvidedCHO,
+        prov:Entity,
+        aco:AudioItem ;
+    dc:description "Alter: Jungtier(e)"@de,
+        "Art(en) im Hintergrund: Phylloscopus trochilus"@de,
+        "Geschlecht: männlich"@de,
+        "Lauttyp: Ruf"@de ;
+    dcterms:creator <4GRKTI5P5TJFMWROZ5GIGVY7Y2VVUFCJ> ;
+    dcterms:format "SOUND",
+        "Uher 4000 Report-S, Bändchenmikro Beyer M 260, Parabolspiegel Polyester (470 mm) (Material/Technik)"@de ;
+    dcterms:hasVersion "10" ;
+    dcterms:identifier "TSA:Picoides_minor_Co_25_9_1 (Inventarnummer)" ;
+    dcterms:title "Kleinspecht | Dendrocopos minor - Ruf"@de ;
+    dcterms:type <http://d-nb.info/gnd/4052020-1> ;
+    fabio:hasReproduction <http://www.tierstimmenarchiv.de/webinterface/contents/showdetails.php?edit=-1&unique_id=TSA:Picoides_minor_Co_25_9_1&autologin=true> ;
+    fabio:hasSubjectTerm <7IPQQKLPZOHH6GDUCIPK6BVHZF5KHRJX>,
+        <LU4RDGDJWBGP4EPURXZMZMLKUTROGKON>,
+        <MHT3JNT6QJ2SG7ZRGQG24E5UN4CPN4OG>,
+        <PI3IHVKFZV4WZOAOZIRC5GCX3HXQWEOR> ;
+    fabio:isExemplarOf ddbkg-resource:MM98ELHIPWSYITQLVFIC5ETNTD95G4QO ;
+    edm:currentLocation <http://vocab.getty.edu/tgn/7003712> ;
+    owl:sameAs ddb-item:JI53FTTP6AQMEJEYJE3OMX3NROJPGQAP ;
+    prov:generatedAtTime "2021-11-05T13:26:25+0100" ;
+    prov:wasAttributedTo ddbkg-resource:AABHLUHFH3RT0RD8JVURZUZJ7KFXMBK6 ;
+    prov:wasDerivedFrom ddbkg-resource:DDCY3AMQFISKSGIRGRWBNYWXOWUVUQYZ .
+

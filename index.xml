@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DDB-KG</title>
+    <link>http://localhost:1313/ddbkg/</link>
+      <atom:link href="http://localhost:1313/ddbkg/index.xml" rel="self" type="application/rss+xml" />
+    <description>DDB-KG</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 26 May 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/ddbkg/media/icon_hu721a5c7ae71041b61d7aa8ba822170d4_1023_512x512_fill_lanczos_center_2.png</url>
+      <title>DDB-KG</title>
+      <link>http://localhost:1313/ddbkg/</link>
+    </image>
+    
+    <item>
+      <title>Alignment of DDB-EDM to FaBiO</title>
+      <link>http://localhost:1313/ddbkg/docs/alignment/library/</link>
+      <pubDate>Wed, 25 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ddbkg/docs/alignment/library/</guid>
+      <description>&lt;p&gt;All terms in the library dataset are assigned to FaBiO endeavor sub-classes manually when applicable. There is no 1-to-1 correspondence between a term and a FaBiO class; this is because a term has several conceptual equivalences: document type, document structure, production process, purpose, manifestation, and subject headings.&lt;/p&gt;
+&lt;p&gt;The class/sub-class mapping is specified in the &amp;lsquo;&lt;em&gt;Terms-FaBiO Classes&lt;/em&gt;&amp;rsquo; sheet below, while the data and object properties alignment is specified in the &amp;lsquo;&lt;em&gt;WEMI Fields&lt;/em&gt;&amp;rsquo; sheet. This mapping is also available as JSON files: &lt;a href=&#34;https://github.com/ISE-FIZKarlsruhe/ddbkg/blob/main/config/type2class.json&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;type2class.json&lt;/a&gt; and &lt;a href=&#34;https://github.com/ISE-FIZKarlsruhe/ddbkg/blob/main/config/wemi_fields.json&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;wemi_fields.json&lt;/a&gt;.&lt;/p&gt;
+&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;https://docs.google.com/spreadsheets/d/1z-ixNa_rv-PumIhumgDSlMXGqRaamMSdcYn0LfPWq74/edit?usp=sharing&#34;  class=&#34;btn btn-primary px-3 py-3&#34;&gt;Google Sheets 👉&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+
+&lt;div class=&#34;responsive-wrap&#34;&gt;
+  &lt;iframe src=&#34;https://docs.google.com/spreadsheets/d/1z-ixNa_rv-PumIhumgDSlMXGqRaamMSdcYn0LfPWq74/edit?usp=sharing&#34; frameborder=&#34;0&#34; width=&#34;960&#34; height=&#34;569&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Audio Ontologies in the DDB</title>
+      <link>http://localhost:1313/ddbkg/docs/alignment/audio/</link>
+      <pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ddbkg/docs/alignment/audio/</guid>
+      <description>&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
+&lt;p&gt;The vast collection of the German Digital Company (DDB) includes objects that the UNESCO cultural heritage (CH) hierarchy (Ronchi, 2011) classified as intangible. Examples of intangible objects include musical works, natural heritage, oral traditions, to name a few. These are often digitized as audio or video.&lt;/p&gt;
+&lt;p&gt;Audio content in the DDB can be found across several sectors: audio books from libraries, interviews of significant German personalities from research institutions, commercial jingles from archives, recordings of animal sounds from natural museums and music from gramophone records often found in multimedia libraries. The audio files can be classified into two broad  (2) categories:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Work&lt;/strong&gt; - audio files containing intellectual or artistic content, such as Music, and Ebooks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Non-Work&lt;/strong&gt; - audio files without intellectual or artistic content, such as as bird songs, and machinery sounds.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The types of audio files are encoded in the &lt;a href=&#34;http://purl.org/dc/elements/1.1/type&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;dc:type&lt;/a&gt; or &lt;a href=&#34;http://www.europeana.eu/schemas/edm/hasType&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;edm:hasType&lt;/a&gt; data properties.  Below is the list of these terms and the number of objects associated with them. Note that the&lt;/p&gt;
+&lt;div class=&#34;responsive-wrap&#34;&gt;
+  &lt;iframe src=&#34;https://docs.google.com/spreadsheets/d/1_iN1W2Xo5WyYIQ3sgfDOcOeBvgZ_MkaBsL-7JTCKiUU/edit?usp=sharing&#34; frameborder=&#34;0&#34; width=&#34;960&#34; height=&#34;569&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;To determine whether the audio file is a &lt;em&gt;Work&lt;/em&gt; or &lt;em&gt;Non-Work&lt;/em&gt;, the values encoded by the data property &lt;a href=&#34;http://purl.org/dc/elements/1.1/subject&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;dc:subject&lt;/a&gt; are inspected. There are approximately 3,700 unique terms relating to the object&amp;rsquo;s subject or topic, however, only terms with frequency counts in the thousands were used. These terms are as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Work - &lt;em&gt;Lied&lt;/em&gt; (Song), &lt;em&gt;Duett&lt;/em&gt; (Duet), &lt;em&gt;Arie&lt;/em&gt; (Arias), &lt;em&gt;Oper&lt;/em&gt; (Opera), &lt;em&gt;Erzählende Literatur&lt;/em&gt; (Audio Books), &lt;em&gt;Werbesendung&lt;/em&gt; (Ads)&lt;/li&gt;
+&lt;li&gt;Non-Work - &lt;em&gt;Tierstimme&lt;/em&gt; (Animal Sounds), &lt;em&gt;Tonaufname&lt;/em&gt; (Sound Recording)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;2-ontologies&#34;&gt;2. Ontologies&lt;/h2&gt;
+&lt;p&gt;To be able to represent the semantics of these diverse objects, the selection of the target ontologies is based on the following considerations: interoperability, suitability to the domain, and the application profile.&lt;/p&gt;
+&lt;p&gt;In the case of audio books, adapting a FRBR-aligned ontology facilitates interoperability, by considering them as  expressions of their respective literary works. The same holds true for any musical composition and its text; for instance, a recording of Carl Orff&amp;rsquo;s Carmina Burana is considered an expression of the 13&lt;em&gt;th&lt;/em&gt; century manuscript containing a collection of poems it was based on.&lt;/p&gt;
+&lt;h3 id=&#34;21-fabio&#34;&gt;2.1 FaBiO&lt;/h3&gt;
+&lt;p&gt;Although, &lt;a href=&#34;https://sparontologies.github.io/fabio/current/fabio.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FaBiO&lt;/a&gt; (Peroni et al., 2012), as a FRBR-aligned bibliographic ontology, provides subclasses relating to musical works &lt;a href=&#34;https://sparontologies.github.io/fabio/current/fabio.html#d4e5392&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;fabio:Song&lt;/a&gt;, &lt;a href=&#34;https://sparontologies.github.io/fabio/current/fabio.html#d4e4227&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;fabio:MusicalComposition&lt;/a&gt; and their expression &lt;a href=&#34;https://sparontologies.github.io/fabio/current/fabio.html#d4e2145&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;fabio:AudioDocument&lt;/a&gt;, these subclasses cannot represent the full range of audio content described above (Figure &lt;a href=&#34;#docs-audio-fig1&#34;&gt;1&lt;/a&gt;).&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-docs-audio-fig1&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ise-fizkarlsruhe.github.io/ddbkg/images/audio-in-fabio.jpg&#34; alt=&#34;FaBiO Classes for Audio Files&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      FaBiO Classes for Audio Files
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;22-music-ontology-mo&#34;&gt;2.2 Music Ontology (MO)&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://musicontology.com/specification/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MO&lt;/a&gt; (Raimond et al., 2007) aims to model the semantics of music production workflows and their editorial metadata. FRBR plays a central role in the definition of its classes. Parallels can be drawn between the super-classes of MO (&lt;a href=&#34;http://musicontology.com/specification/#term-MusicalWork&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mo:MusicalWork&lt;/a&gt;, &lt;a href=&#34;http://musicontology.com/specification/#term-MusicalExpression&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mo:MusicalExpression&lt;/a&gt;, &lt;a href=&#34;http://musicontology.com/specification/#term-MusicalManifestation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mo:MusicalManifestation&lt;/a&gt;, and &lt;a href=&#34;http://musicontology.com/specification/#term-MusicalItem&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mo:MusicalItem&lt;/a&gt; and the 4 conceptual layers of FRBR. Since the original intention of the authors is to model the different workflows, events are central to this ontology. Entities that are usually found as attributes of a &lt;a href=&#34;https://vocab.org/frbr/core#term-Endeavour&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;frbr:Endeavor&lt;/a&gt; sub-class require intermediate events to link them to that endeavor: the attribution of an &lt;em&gt;mo:MusicalArtist&lt;/em&gt; (Agent) to its &lt;a href=&#34;http://musicontology.com/specification/#term-MusicalWork&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mo:MusicalWork&lt;/a&gt;) requires an instance of the &lt;a href=&#34;http://musicontology.com/specification/#term-Composition&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mo:Composition&lt;/a&gt; event (fig &lt;a href=&#34;#docs-audio-fig2&#34;&gt;2&lt;/a&gt;), in contrast to the widely-adopted convention of linking agents directly to the &lt;a href=&#34;https://vocab.org/frbr/core#term-Work&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;frbr:Work&lt;/a&gt;.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-docs-audio-fig2&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ise-fizkarlsruhe.github.io/ddbkg/images/audio-in-mo.jpg&#34; alt=&#34;MO Classes for Audio Files&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      MO Classes for Audio Files
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;23-audio-commons-ontology-aco&#34;&gt;2.3 Audio Commons Ontology (ACO)&lt;/h3&gt;
+&lt;p&gt;As mentioned, not all audio content in the DDB possess intellectual or artistic content. Examples of these are natural sounds and field recordings. An ontology that  provides classes and properties to allow representations of non-musical audio content exists in &lt;a href=&#34;https://w3id.org/ac-ontology/aco#AudioExpression&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ACO&lt;/a&gt; (Ceriani et al., 2018). Being an upper-level ontology for audio content, the authors&#39; initial intention is to provide interoperability across repositories on the Web. The FRBR-aligned classes of ACO are generalizations of MO classes. However, a FRBR Work sub-class specific to ACO was not defined, since it does not generalize to all types of sounds. Similarly to MO, events also play an central role in ACO.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;3-alignment&#34;&gt;3. Alignment&lt;/h2&gt;
+&lt;p&gt;The decision to forego the usage of &lt;a href=&#34;http://motools.sourceforge.net/event/event.html#term_Event&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;owl:Event&lt;/a&gt; sub-classes, namely, &lt;a href=&#34;http://musicontology.com/specification/#term-Composition&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mo:Composition&lt;/a&gt;, &lt;a href=&#34;http://musicontology.com/specification/#term-Performance&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mo:Performance&lt;/a&gt;, and &lt;a href=&#34;http://musicontology.com/specification/#term-Recording&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mo:Recording&lt;/a&gt;, can be explained by the application profile and dataset of the DDB. The intention to publish metadata describing the CHOs for the purpose of retrieval and exploration means that details of events that are relevant for music or sound production are rarely included in the data provided by participating institutions. For instance, the description of a gramophone record includes the names of the composer, performer/s and publisher. However, details of the performance of this specific record which is crucial when modeling a music production workflow is not available. If event-centric modeling is followed, the additional entities representing events such as &lt;a href=&#34;http://musicontology.com/specification/#term-Composition&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mo:Composition&lt;/a&gt; or &lt;a href=&#34;http://musicontology.com/specification/#term-Performance&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mo:Performance&lt;/a&gt; will serve no purpose, since the relationship between entities of the endeavor and the event will always be 1:1. Thus, the attributes that may be attached to the event can be defined as object or data properties of the involved endeavor entities. As a result, the generic property &lt;a href=&#34;&#34;&gt;dcterms:contributor&lt;/a&gt; is used in lieu of &lt;a href=&#34;http://musicontology.com/specification/#term-performer&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mo:performer&lt;/a&gt;, since the latter strictly defines the domain to be of class &lt;a href=&#34;http://musicontology.com/specification/#term-Performance&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mo:Performance&lt;/a&gt;, an event which is not utilized in the alignment.&lt;/p&gt;
+&lt;h5 id=&#34;31-simplified-music&#34;&gt;3.1 Simplified (Music)&lt;/h5&gt;
+&lt;p&gt;An overview of the alignment from DDB-EDM to MO and ACO is shown in Figure &lt;a href=&#34;#docs-audio-fig3&#34;&gt;3&lt;/a&gt;. The &lt;a href=&#34;https://www.deutsche-digitale-bibliothek.de/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DDB object&lt;/a&gt; in this example is a gramophone record of &amp;ldquo;&lt;a href=&#34;https://en.wikipedia.org/wiki/Old_Folks_at_Home&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Old Folks at Home&lt;/a&gt;&amp;rdquo; by &lt;a href=&#34;https://en.wikipedia.org/wiki/Old_Folks_at_Home&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stephen Foster&lt;/a&gt;.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-docs-audio-fig3&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ise-fizkarlsruhe.github.io/ddbkg/images/ddbedm-to-mo-aco.jpg&#34; alt=&#34;Alignment to Target Ontologies (simplified)&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Alignment to Target Ontologies (simplified)
+    &lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;32-detailed-music&#34;&gt;3.2 Detailed (Music)&lt;/h3&gt;
+&lt;p&gt;Figure &lt;a href=&#34;#docs-audio-fig3&#34;&gt;4&lt;/a&gt; illustrates the alignment with object and data properties. From the source data encoded in &lt;a href=&#34;https://www.deutsche-digitale-bibliothek.de/item/xml/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;xml&lt;/a&gt;, the resulting alignment is shown in this &lt;a href=&#34;https://ise-fizkarlsruhe.github.io/ddbkg/data/sample-music.ttl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;turtle file&lt;/a&gt;.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-docs-audio-fig4&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ise-fizkarlsruhe.github.io/ddbkg/images/mo-aco-detailed-music.jpg&#34; alt=&#34;Alignment to Target Ontologies of Musical Audio Content (detailed)&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Alignment to Target Ontologies of Musical Audio Content (detailed)
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;33-detailed-non-musical&#34;&gt;3.3 Detailed (Non-Musical)&lt;/h3&gt;
+&lt;p&gt;Figure &lt;a href=&#34;#docs-audio-fig5&#34;&gt;5&lt;/a&gt; illustrates the alignment of a non-musical audio object, e.g. &lt;a href=&#34;https://www.deutsche-digitale-bibliothek.de/item/JI53FTTP6AQMEJEYJE3OMX3NROJPGQAP&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;birdsong&lt;/a&gt;. From the source data encoded in &lt;a href=&#34;https://www.deutsche-digitale-bibliothek.de/item/xml/JI53FTTP6AQMEJEYJE3OMX3NROJPGQAP&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;xml&lt;/a&gt;, the resulting alignment is shown in this &lt;a href=&#34;https://ise-fizkarlsruhe.github.io/ddbkg/data/sample-birdsong.ttl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;turtle file&lt;/a&gt;.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-docs-audio-fig5&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ise-fizkarlsruhe.github.io/ddbkg/images/mo-aco-detailed-birdsong.jpg&#34; alt=&#34;Alignment to Target Ontologies of Non-Musical Audio Content (detailed)&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Alignment to Target Ontologies of Non-Musical Audio Content (detailed)
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;4-sparql-endpoint&#34;&gt;4. SPARQL Endpoint&lt;/h2&gt;
+&lt;p&gt;A total of 40,611 (see Google Sheets &lt;a href=&#34;#docs-audio-sheet2&#34;&gt;2&lt;/a&gt;) audio objects from the DDB are included in the &lt;a href=&#34;https://ddbkg.fiz-karslruhe.de:42003/sparql&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DDB-KG&lt;/a&gt; SPARQL endpoint. Using the &lt;a href=&#34;https://labs.deutsche-digitale-bibliothek.de/app/ddbapi/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DDB REST API&lt;/a&gt;, a list of object IDs corresponding to the audio objects are retrieved. After which, Python libraries to parse the DDB XML files (&lt;a href=&#34;https://docs.python.org/3/library/xml.etree.elementtree.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Element Tree&lt;/a&gt;) and to generate the RDF triples (&lt;a href=&#34;https://github.com/RDFLib/rdflib&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RDFLib&lt;/a&gt;). Competency questions and their corresponding SPARQL queries are provided in &lt;a href=&#34;http://localhost:1313/ddbkg/ddbkg/docs/examples/#audio&#34;&gt;section 4.2&lt;/a&gt; below.&lt;/p&gt;
+&lt;h3 id=&#34;41-dataset&#34;&gt;4.1 Dataset&lt;/h3&gt;
+&lt;p&gt;The top source of audio objects belong to the museum sector, closely followed by multimedia libraries and archives. There are 3,848,605 triples with 192,683 entities. A detailed list of entity types and their properties are shown in Google Sheets &lt;a href=&#34;#docs-audio-sheet2&#34;&gt;2&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;responsive-wrap&#34;&gt;
+  &lt;iframe src=&#34;https://docs.google.com/spreadsheets/d/1_iN1W2Xo5WyYIQ3sgfDOcOeBvgZ_MkaBsL-7JTCKiUU/edit#gid=2067206494&#34; frameborder=&#34;0&#34; width=&#34;960&#34; height=&#34;569&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;42-competency-questions-and-sparql-queries&#34;&gt;4.2 Competency Questions and SPARQL Queries&lt;/h3&gt;
+&lt;h4 id=&#34;cq1&#34;&gt;CQ1&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Which audio objects have musical content?
+&lt;pre&gt;&lt;code&gt;PREFIX mo: &amp;lt;http://purl.org/ontology/mo/&amp;gt;
+      
+SELECT DISTINCT ?ddbitem ?item WHERE {  
+   ?ddbobj rdf:type mo:MusicalItem ;
+       dcterms:title ?title ;
+       owl:sameAs ?ddbitem FILTER regex(?ddbitem, &amp;quot;deutsche-digitale-bibliothek&amp;quot;, &amp;quot;i&amp;quot;)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;https://ddbkg.fiz-karlsruhe.de/sparql?default-graph-uri=&amp;amp;qtxt=&amp;#43;&amp;#43;&amp;#43;&amp;#43;PREFIX&amp;#43;mo%3A&amp;#43;%3Chttp%3A%2F%2Fpurl.org%2Fontology%2Fmo%2F%3E%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;PREFIX&amp;#43;dcterms%3A&amp;#43;%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;SELECT&amp;#43;DISTINCT&amp;#43;%3Fddbitem&amp;#43;%3Ftitle&amp;#43;WHERE&amp;#43;%7B&amp;#43;&amp;#43;%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;%3Fddbobj&amp;#43;rdf%3Atype&amp;#43;mo%3AMusicalItem&amp;#43;%3B%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;dcterms%3Atitle&amp;#43;%3Ftitle&amp;#43;%3B%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;owl%3AsameAs&amp;#43;%3Fddbitem&amp;#43;FILTER&amp;#43;regex%28%3Fddbitem%2C&amp;#43;%22deutsche-digitale-bibliothek%22%2C&amp;#43;%22i%22%29%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;%7D&amp;amp;format=text%2Fhtml&amp;amp;should-sponge=&amp;amp;timeout=0&amp;amp;signal_void=on&#34;  class=&#34;btn btn-primary px-3 py-3&#34;&gt;Run 👉&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;cq2&#34;&gt;CQ2&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;How many objects in the DDB are recordings of Arias?
+&lt;pre&gt;&lt;code&gt;PREFIX mo: &amp;lt;http://purl.org/ontology/mo/&amp;gt;
+PREFIX skos: &amp;lt;http://www.w3.org/2004/02/skos/core#&amp;gt;
+PREFIX fabio: &amp;lt;http://purl.org/spar/fabio/&amp;gt;
+      
+SELECT DISTINCT COUNT(?ddbobj) WHERE {  
+   ?ddbobj rdf:type mo:MusicalItem ;
+       fabio:hasSubjectTerm ?subject .
+   ?subject skos:prefLabel ?subject_label FILTER regex(?subject_label, &amp;quot;arie&amp;quot;, &amp;quot;i&amp;quot;)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;https://ddbkg.fiz-karlsruhe.de/sparql?default-graph-uri=&amp;amp;qtxt=&amp;#43;&amp;#43;&amp;#43;&amp;#43;PREFIX&amp;#43;mo%3A&amp;#43;%3Chttp%3A%2F%2Fpurl.org%2Fontology%2Fmo%2F%3E%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;PREFIX&amp;#43;skos%3A&amp;#43;%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;PREFIX&amp;#43;fabio%3A&amp;#43;%3Chttp%3A%2F%2Fpurl.org%2Fspar%2Ffabio%2F%3E%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;SELECT&amp;#43;DISTINCT&amp;#43;COUNT%28%3Fddbobj%29&amp;#43;WHERE&amp;#43;%7B&amp;#43;&amp;#43;%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;%3Fddbobj&amp;#43;rdf%3Atype&amp;#43;mo%3AMusicalItem&amp;#43;%3B%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;fabio%3AhasSubjectTerm&amp;#43;%3Fsubject&amp;#43;.%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;%3Fsubject&amp;#43;skos%3AprefLabel&amp;#43;%3Fsubject_label&amp;#43;FILTER&amp;#43;regex%28%3Fsubject_label%2C&amp;#43;%22arie%22%2C&amp;#43;%22i%22%29%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;%7D&amp;amp;format=text%2Fhtml&amp;amp;should-sponge=&amp;amp;timeout=0&amp;amp;signal_void=on&#34;  class=&#34;btn btn-primary px-3 py-3&#34;&gt;Run 👉&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;cq3&#34;&gt;CQ3&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;How many objects in the DDB are recordings of animal sounds?
+&lt;pre&gt;&lt;code&gt;PREFIX aco: &amp;lt;https://w3id.org/ac-ontology/aco#&amp;gt;
+PREFIX skos: &amp;lt;http://www.w3.org/2004/02/skos/core#&amp;gt;
+PREFIX fabio: &amp;lt;http://purl.org/spar/fabio/&amp;gt;
+      
+SELECT DISTINCT COUNT(?ddbobj) WHERE {  
+   ?ddbobj rdf:type aco:AudioItem;
+       fabio:hasSubjectTerm ?subject .
+   ?subject skos:prefLabel ?subject_label FILTER regex(?subject_label, &amp;quot;tierstimme&amp;quot;, &amp;quot;i&amp;quot;)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;https://ddbkg.fiz-karlsruhe.de/sparql?default-graph-uri=&amp;amp;qtxt=&amp;#43;&amp;#43;&amp;#43;&amp;#43;PREFIX&amp;#43;aco%3A&amp;#43;%3Chttps%3A%2F%2Fw3id.org%2Fac-ontology%2Faco%23%3E%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;PREFIX&amp;#43;skos%3A&amp;#43;%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;PREFIX&amp;#43;fabio%3A&amp;#43;%3Chttp%3A%2F%2Fpurl.org%2Fspar%2Ffabio%2F%3E%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;SELECT&amp;#43;DISTINCT&amp;#43;COUNT%28%3Fddbobj%29&amp;#43;WHERE&amp;#43;%7B&amp;#43;&amp;#43;%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;%3Fddbobj&amp;#43;rdf%3Atype&amp;#43;aco%3AAudioItem%3B%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;fabio%3AhasSubjectTerm&amp;#43;%3Fsubject&amp;#43;.%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;%3Fsubject&amp;#43;skos%3AprefLabel&amp;#43;%3Fsubject_label&amp;#43;FILTER&amp;#43;regex%28%3Fsubject_label%2C&amp;#43;%22tierstimme%22%2C&amp;#43;%22i%22%29%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;%7D%0D%0A&amp;amp;format=text%2Fhtml&amp;amp;should-sponge=&amp;amp;timeout=0&amp;amp;signal_void=on&#34;  class=&#34;btn btn-primary px-3 py-3&#34;&gt;Run 👉&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;cq4&#34;&gt;CQ4&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Are there audio books in the DDB?
+&lt;pre&gt;&lt;code&gt;PREFIX aco: &amp;lt;https://w3id.org/ac-ontology/aco#&amp;gt;
+PREFIX dcterms: &amp;lt;http://purl.org/dc/terms/&amp;gt;
+PREFIX skos: &amp;lt;http://www.w3.org/2004/02/skos/core#&amp;gt;
+PREFIX fabio: &amp;lt;http://purl.org/spar/fabio/&amp;gt;
+      
+SELECT DISTINCT ?ddbitem ?title WHERE {  
+   ?ddbobj rdf:type aco:AudioItem;
+       dcterms:title ?title ;
+       dcterms:type ?obj_type ;
+       owl:sameAs ?ddbitem FILTER regex(?ddbitem, &amp;quot;deutsche-digitale-bibliothek&amp;quot;, &amp;quot;i&amp;quot;) .
+   ?obj_type skos:prefLabel ?type_label FILTER regex(?type_label, &amp;quot;monografie&amp;quot;, &amp;quot;i&amp;quot;)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;https://ddbkg.fiz-karlsruhe.de/sparql?default-graph-uri=&amp;amp;qtxt=&amp;#43;&amp;#43;&amp;#43;&amp;#43;PREFIX&amp;#43;aco%3A&amp;#43;%3Chttps%3A%2F%2Fw3id.org%2Fac-ontology%2Faco%23%3E%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;PREFIX&amp;#43;dcterms%3A&amp;#43;%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;PREFIX&amp;#43;skos%3A&amp;#43;%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;PREFIX&amp;#43;fabio%3A&amp;#43;%3Chttp%3A%2F%2Fpurl.org%2Fspar%2Ffabio%2F%3E%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;SELECT&amp;#43;DISTINCT&amp;#43;%3Fddbitem&amp;#43;%3Ftitle&amp;#43;WHERE&amp;#43;%7B&amp;#43;&amp;#43;%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;%3Fddbobj&amp;#43;rdf%3Atype&amp;#43;aco%3AAudioItem%3B%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;dcterms%3Atitle&amp;#43;%3Ftitle&amp;#43;%3B%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;dcterms%3Atype&amp;#43;%3Fobj_type&amp;#43;%3B%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;owl%3AsameAs&amp;#43;%3Fddbitem&amp;#43;FILTER&amp;#43;regex%28%3Fddbitem%2C&amp;#43;%22deutsche-digitale-bibliothek%22%2C&amp;#43;%22i%22%29&amp;#43;.%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;%3Fobj_type&amp;#43;skos%3AprefLabel&amp;#43;%3Ftype_label&amp;#43;FILTER&amp;#43;regex%28%3Ftype_label%2C&amp;#43;%22monografie%22%2C&amp;#43;%22i%22%29%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;%7D%0D%0A&amp;amp;format=text%2Fhtml&amp;amp;should-sponge=&amp;amp;timeout=0&amp;amp;signal_void=on&#34;  class=&#34;btn btn-primary px-3 py-3&#34;&gt;Run 👉&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;cq5&#34;&gt;CQ5&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Are there recordings of arias from Puccini&amp;rsquo;s Tosca?
+&lt;pre&gt;&lt;code&gt;PREFIX mo: &amp;lt;http://purl.org/ontology/mo/&amp;gt;
+PREFIX dcterms: &amp;lt;http://purl.org/dc/terms/&amp;gt;
+PREFIX rdfs: &amp;lt;http://www.w3.org/2000/01/rdf-schema#&amp;gt;
+
+SELECT DISTINCT ?ddbitem ?title WHERE {  
+   ?ddbobj rdf:type mo:MusicalItem ;
+       dcterms:creator ?creator ;
+       dcterms:title ?title FILTER regex (?title, &amp;quot;tosca&amp;quot;, &amp;quot;i&amp;quot;) .
+   ?ddbobj owl:sameAs ?ddbitem FILTER regex(?ddbitem, &amp;quot;deutsche-digitale-bibliothek&amp;quot;, &amp;quot;i&amp;quot;) .
+   ?creator foaf:name ?creator_name FILTER regex(?creator_name, &amp;quot;puccini&amp;quot;, &amp;quot;i&amp;quot;) .
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;https://ddbkg.fiz-karlsruhe.de/sparql?default-graph-uri=&amp;amp;qtxt=PREFIX&amp;#43;mo%3A&amp;#43;%3Chttp%3A%2F%2Fpurl.org%2Fontology%2Fmo%2F%3E%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;PREFIX&amp;#43;dcterms%3A&amp;#43;%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;PREFIX&amp;#43;rdfs%3A&amp;#43;%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;SELECT&amp;#43;DISTINCT&amp;#43;%3Fddbitem&amp;#43;%3Ftitle&amp;#43;WHERE&amp;#43;%7B&amp;#43;&amp;#43;%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;%3Fddbobj&amp;#43;rdf%3Atype&amp;#43;mo%3AMusicalItem&amp;#43;%3B%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;dcterms%3Acreator&amp;#43;%3Fcreator&amp;#43;%3B%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;dcterms%3Atitle&amp;#43;%3Ftitle&amp;#43;FILTER&amp;#43;regex&amp;#43;%28%3Ftitle%2C&amp;#43;%22tosca%22%2C&amp;#43;%22i%22%29&amp;#43;.%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;%3Fddbobj&amp;#43;owl%3AsameAs&amp;#43;%3Fddbitem&amp;#43;FILTER&amp;#43;regex%28%3Fddbitem%2C&amp;#43;%22deutsche-digitale-bibliothek%22%2C&amp;#43;%22i%22%29&amp;#43;.%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;%3Fcreator&amp;#43;foaf%3Aname&amp;#43;%3Fcreator_name&amp;#43;FILTER&amp;#43;regex%28%3Fcreator_name%2C&amp;#43;%22puccini%22%2C&amp;#43;%22i%22%29&amp;#43;.%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;%7D&amp;amp;format=text%2Fhtml&amp;amp;should-sponge=&amp;amp;timeout=0&amp;amp;signal_void=on&#34;  class=&#34;btn btn-primary px-3 py-3&#34;&gt;Run 👉&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;cq6&#34;&gt;CQ6&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;How many objects were provided by museums and who are these providers?
+&lt;pre&gt;&lt;code&gt;PREFIX mo: &amp;lt;http://purl.org/ontology/mo/&amp;gt;
+PREFIX aco: &amp;lt;https://w3id.org/ac-ontology/aco#&amp;gt;
+PREFIX dcterms: &amp;lt;http://purl.org/dc/terms/&amp;gt;
+PREFIX rdfs: &amp;lt;http://www.w3.org/2000/01/rdf-schema#&amp;gt;
+PREFIX prov: &amp;lt;http://www.w3.org/ns/prov#&amp;gt;
+PREFIX foaf: &amp;lt;http://xmlns.com/foaf/0.1/&amp;gt;
+
+SELECT DISTINCT ?provider_name (COUNT(?ddbobj) as ?NumObjects) WHERE {  
+   VALUES (?type) { (mo:MusicalItem) (aco:AudioItem) } 
+   ?ddbobj prov:wasDerivedFrom ?dataset .
+   ?dataset prov:wasAttributedTo ?provider .
+   ?provider dcterms:type ?sparte ;
+       foaf:name ?provider_name .
+  FILTER regex(?sparte, &amp;quot;sparte006&amp;quot;) 
+} GROUP BY ?provider_name
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;https://ddbkg.fiz-karlsruhe.de/sparql?default-graph-uri=&amp;amp;qtxt=&amp;#43;&amp;#43;&amp;#43;&amp;#43;PREFIX&amp;#43;mo%3A&amp;#43;%3Chttp%3A%2F%2Fpurl.org%2Fontology%2Fmo%2F%3E%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;PREFIX&amp;#43;aco%3A&amp;#43;%3Chttps%3A%2F%2Fw3id.org%2Fac-ontology%2Faco%23%3E%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;PREFIX&amp;#43;dcterms%3A&amp;#43;%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;PREFIX&amp;#43;rdfs%3A&amp;#43;%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;PREFIX&amp;#43;prov%3A&amp;#43;%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23%3E%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;PREFIX&amp;#43;foaf%3A&amp;#43;%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%3E%0D%0A%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;SELECT&amp;#43;DISTINCT&amp;#43;%3Fprovider_name&amp;#43;%28COUNT%28%3Fddbobj%29&amp;#43;as&amp;#43;%3FNumObjects%29&amp;#43;WHERE&amp;#43;%7B&amp;#43;&amp;#43;%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;VALUES&amp;#43;%28%3Ftype%29&amp;#43;%7B&amp;#43;%28mo%3AMusicalItem%29&amp;#43;%28aco%3AAudioItem%29&amp;#43;%7D&amp;#43;%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;%3Fddbobj&amp;#43;prov%3AwasDerivedFrom&amp;#43;%3Fdataset&amp;#43;.%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;%3Fdataset&amp;#43;prov%3AwasAttributedTo&amp;#43;%3Fprovider&amp;#43;.%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;%3Fprovider&amp;#43;dcterms%3Atype&amp;#43;%3Fsparte&amp;#43;%3B%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;foaf%3Aname&amp;#43;%3Fprovider_name&amp;#43;.%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;&amp;#43;FILTER&amp;#43;regex%28%3Fsparte%2C&amp;#43;%22sparte006%22%29&amp;#43;%0D%0A&amp;#43;&amp;#43;&amp;#43;&amp;#43;%7D&amp;#43;GROUP&amp;#43;BY&amp;#43;%3Fprovider_name%0D%0A&amp;amp;format=text%2Fhtml&amp;amp;should-sponge=&amp;amp;timeout=0&amp;amp;signal_void=on&#34;  class=&#34;btn btn-primary px-3 py-3&#34;&gt;Run 👉&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;p&gt;[1] Ceriani, M., Fazekas, G.: Audio Commons Ontology: A Data Model for an AudioContent Ecosystem. In: SEMWEB (2018)&lt;/p&gt;
+&lt;p&gt;[2] Peroni, S., Shotton, D.: FaBiO and CiTO: Ontologies for describing bibliographicresources and citations. Journal of Web Semantics17, 33–43 (12 2012)&lt;/p&gt;
+&lt;p&gt;[3] Raimond, Y., Abdallah, S., Sandler, M., Giasson, F.: The Music Ontology. In: ISMR.vol. 422 (09 2007)&lt;/p&gt;
+&lt;p&gt;[4] Ronchi, A.M.: eCulture: Cultural Content in the Digital Age. Springer, Berlin, Hei-delberg (2009)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Alignment of Archival Objects to RiC-O</title>
+      <link>http://localhost:1313/ddbkg/docs/alignment/archives/</link>
+      <pubDate>Wed, 25 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ddbkg/docs/alignment/archives/</guid>
+      <description>&lt;p&gt;The hierarchy of DDB’s archival objects follows the Encoded Archival Description (&lt;a href=&#34;https://www.landesarchiv-bw.de/ead&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;EAD&lt;/a&gt;). The &lt;a href=&#34;https://wiki.deutsche-digitale-bibliothek.de/pages/viewpage.action?pageId=19010180&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DDB-EAD&lt;/a&gt; hierarchy types are divided into two main types: “Tektonik” describes the organization of all holdings in a given archive, while “Findbuch” (Finding Aid) describes the organization of archival resources within a single holding. These are mapped to their respective classes in Record in Context Ontology (&lt;a href=&#34;https://www.ica.org/standards/RiC/RiC-O_v0-2.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RiC-O&lt;/a&gt;). RiC-O is an owl ontology developed by Expert Group on Archival Description (EGAD) that provides a unified formal specification to encompass existing archival standards with provisions for integration to the Linked Open Data (LOD) ecosystem. The hierarchical structure of archival record groups in RiC-O is modeled with named individuals which are members of the class &lt;a href=&#34;https://www.ica.org/standards/RiC/RiC-O_v0-2.html#RecordSetType&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;rico:RecordSetType&lt;/a&gt;, which are then connected to an archival object via &lt;a href=&#34;https://www.ica.org/standards/RiC/RiC-O_v0-2.html#hasRecordSetType&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;rico:hasRecordSetType&lt;/a&gt;. Such modeling addresses flexibility required by the use case of the DDB.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-docs-archives-fig1&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ise-fizkarlsruhe.github.io/ddbkg/images/ddbo-rico.jpg&#34; alt=&#34;Alignment of DDB-EDM Archival Objects to RiCO&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Alignment of DDB-EDM Archival Objects to RiCO
+    &lt;/figcaption&gt;&lt;/figure&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Comparison of Cultural Heritage Ontologies</title>
+      <link>http://localhost:1313/ddbkg/docs/alignment/museum/</link>
+      <pubDate>Wed, 25 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ddbkg/docs/alignment/museum/</guid>
+      <description>&lt;p&gt;With tens of thousands of object types, objects from these sectors are the most diverse. In addition to art collections, mundane objects of cultural value can also be found (i.e. &lt;a href=&#34;https://bit.ly/37QCLW3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;toilet spray&lt;/a&gt;). Through the use of &lt;a href=&#34;https://www.cidoc-crm.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CIDOC-CRM&lt;/a&gt;, DDB-EDM follows an event-centric paradigm. This approach is necessary when historical events associated with museum objects are available, such as sale, ownership transfer, or exhibition. However, most DDB objects only have information about its creation. Hence, it would be more efficient to use an object-centric ontologies such as &lt;a href=&#34;https://s3.amazonaws.com/VRA/ontology.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VRA Core 4.0&lt;/a&gt; where properties are directly linked to the object.  The class used to represent the CHO, &lt;a href=&#34;https://s3.amazonaws.com/VRA/ontology.html#Work&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;vra:Work&lt;/a&gt;, is synonymous to frbr:Work. A &lt;em&gt;vra:Work&lt;/em&gt; is associated with a &lt;a href=&#34;https://s3.amazonaws.com/VRA/ontology.html#Image&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;vra:Image&lt;/a&gt; and could be part of a &lt;a href=&#34;https://s3.amazonaws.com/VRA/ontology.html#Collection&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;vra:Collection&lt;/a&gt;. The ontology uses sub-properties to specify the type of vra:creator derived from list of artist roles specified by the Getty Union List of Names (&lt;a href=&#34;https://www.getty.edu/research/tools/vocabularies/ulan/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ULAN&lt;/a&gt;). Locations (&lt;a href=&#34;https://s3.amazonaws.com/VRA/ontology.html#locationOf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;vra:locationOf&lt;/a&gt;) and object relationships (&lt;a href=&#34;https://s3.amazonaws.com/VRA/ontology.html#isRelatedTo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;vra:isRelatedTo&lt;/a&gt;) are also specialized using sub-properties. Most VRA object properties are intended to be used in conjunction with &lt;a href=&#34;https://www.getty.edu/research/tools/vocabularies/lod/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Getty Linked Open Data (LOD)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In summary, interoperability is ensured despite the adaptation of domain-specific ontologies by retaining the use of dcterms:* for generic descriptive attributes. Concurrently, FRBR-aligned ontologies are favored for sectors and media types only when they address the modeling requirements. FAIR-compliance is achieved by linking entities to the German Integrated Authority File aka Gemeinsame Normdatei (&lt;a href=&#34;https://doku.wikibase.wiki/wiki/Hauptseite&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GND&lt;/a&gt;), &lt;a href=&#34;https://www.wikidata.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wikidata&lt;/a&gt;, and &lt;a href=&#34;https://iconclass.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Iconclass&lt;/a&gt;.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-docs-museum-fig1&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ise-fizkarlsruhe.github.io/ddbkg/images/docs-museum-comparison.png&#34; alt=&#34;A Comparison of Ontologies for Museum Objects&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      A Comparison of Ontologies for Museum Objects
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;div class=&#34;responsive-wrap&#34;&gt;
+  &lt;iframe src=&#34;https://docs.google.com/spreadsheets/d/1hdy8pytVkGU1hK1Xd8DpfdbbUjP72XuxJreD6IWSxXU/edit#gid=1447618652&#34; frameborder=&#34;0&#34; width=&#34;960&#34; height=&#34;569&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Alignment of DDB Images to LIO</title>
+      <link>http://localhost:1313/ddbkg/docs/alignment/images/</link>
+      <pubDate>Sun, 16 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ddbkg/docs/alignment/images/</guid>
+      <description>&lt;p&gt;Images make up to 12% of the DDB collection in total and can be broadly categorized as photographic documentation of artworks, historical objects, monuments, and events, as well as creative works of well-known photographers. Within the DDB, there are several layers of representations of an image: the object being portrayed in the image, the photograph and the digitized form of the photograph (Figure &lt;a href=&#34;#docs-images-fig1&#34;&gt;1&lt;/a&gt;). However, there is currently no distinction between these representation layers in the metadata. To address this, the Lightweight Image Ontology (&lt;a href=&#34;http://purl.org/net/lio&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LIO&lt;/a&gt;) is reused. To represent the stratified representations of an image, &lt;strong&gt;lio:Image&lt;/strong&gt;, a subclass of &lt;a href=&#34;http://xmlns.com/foaf/0.1/#term_Image&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;foaf:Image&lt;/a&gt;, is defined as the subject image. The property &lt;a href=&#34;http://xmlns.com/foaf/0.1/#term_depicts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;foaf:depicts&lt;/a&gt; associates the subject image with the actual object, while &lt;strong&gt;lio:hasVisualPart&lt;/strong&gt; is used to specify design or other visual cues visible on the image.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-docs-images-fig1&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ise-fizkarlsruhe.github.io/ddbkg/images/docs-images-levels.jpg&#34; alt=&#34;Representation levels in images.&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Representation levels in images.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Alignment of DDB Videos to FaBiO</title>
+      <link>http://localhost:1313/ddbkg/docs/alignment/videos/</link>
+      <pubDate>Sun, 16 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ddbkg/docs/alignment/videos/</guid>
+      <description>&lt;p&gt;Video objects cover less than 1% of the DDB collection. Similar to audio, videos can be broadly categorized to those having creative and intellectual content and documentation. Search and retrieval of videos can benefit from adopting the endeavors of &lt;a href=&#34;https://www.ifla.org/references/best-practice-for-national-bibliographic-agencies-in-a-digital-age/resource-description-and-standards/bibliographic-control/functional-requirements-the-frbr-family-of-models/functional-requirements-for-bibliographic-records-frbr/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FRBR&lt;/a&gt;. To this end, the FaBiO subclass &lt;a href=&#34;http://purl.org/spar/fabio/MovingImage&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;fabio:MovingImage&lt;/a&gt; is used to represent resources on the Work level, while &lt;a href=&#34;http://purl.org/spar/fabio/Movie&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;fabio:Movie&lt;/a&gt; is used on the Expression level. To address the granularity of the collection, additional subclasses are defined on the Expression level for the different types, e.g. &lt;a href=&#34;https://ise-fizkarlsruhe.github.io/ddbkg/ddbo#Advertisement&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ddbo:Advertisement&lt;/a&gt;, &lt;a href=&#34;http://ise-fizkarlsruhe.github.io/ddbkg/ddbo#AmateurFilm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ddbo:AmateurFilm&lt;/a&gt;, &lt;a href=&#34;http://ise-fizkarlsruhe.github.io/ddbkg/ddbo#Trailer&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ddbo:Trailer&lt;/a&gt;, as well as under the Manifestation and Item levels (Figure &lt;a href=&#34;docs-videos-fig1&#34;&gt;1&lt;/a&gt;).&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-docs-videos-fig1&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ise-fizkarlsruhe.github.io/ddbkg/images/ddbo-video.jpg&#34; alt=&#34;Classes for different types of videos.&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Classes for different types of videos.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Metadata Provenance</title>
+      <link>http://localhost:1313/ddbkg/docs/alignment/provenance/</link>
+      <pubDate>Thu, 26 May 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ddbkg/docs/alignment/provenance/</guid>
+      <description>&lt;p&gt;The current DDB infrastructure is based on the Open Archival Information System Model (OAIS), a standard in library management systems. There are around 500 participating public institutions providing metadata in varying exchange formats. It is imperative that &lt;a href=&#34;https://dpworkshop.org/dpm-eng/foundation/oais/ingest.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ingesting&lt;/a&gt; external data into the DDB- EDM format can be traced in the KG. The PROV Ontology (&lt;a href=&#34;https://www.w3.org/TR/prov-o/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PROV-O&lt;/a&gt;) is utilized for this purpose. The CHO and original metadata are defined as instances of &lt;a href=&#34;https://www.w3.org/TR/prov-o/#Entity&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;prov:Entity&lt;/a&gt;. Since there is only a single activity to model (ingest), there is no need to define &lt;a href=&#34;https://www.w3.org/TR/prov-o/#Activity&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;prov:Activity&lt;/a&gt;. The metadata provider, DDB and the XSLT mapper are defined as &lt;a href=&#34;https://www.w3.org/TR/prov-o/#Agent&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;prov:Agent&lt;/a&gt;. The PROV-O representation of metadata provenance in the DDB is illustrated here in Figure &lt;a href=&#34;%28#docs-prov-fig1%29&#34;&gt;1&lt;/a&gt;.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-docs-prov-fig1&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ise-fizkarlsruhe.github.io/ddbkg/images/prov.jpg&#34; alt=&#34;Metadata Provenance using PROV-O&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Metadata Provenance using PROV-O
+    &lt;/figcaption&gt;&lt;/figure&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Audio Ontologies for Intangible Cultural Heritage</title>
+      <link>http://localhost:1313/ddbkg/publication/eswc2022pd/</link>
+      <pubDate>Mon, 04 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ddbkg/publication/eswc2022pd/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    To be presented at &lt;a href=&#34;https://2022.eswc-conferences.org&#34;&gt;The 19th European
+Semantic Web Conference&lt;/a&gt; (May 29 - June 2, 2022) - &lt;a href=&#34;https://2022.eswc-conferences.org/call-for-posters-and-demos/&#34;&gt;Posters, Demos &amp;amp; Lightning Talks&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!---
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/).
+
+---&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>DDB-KG: The German Bibliographic Heritage in a Knowledge Graph</title>
+      <link>http://localhost:1313/ddbkg/publication/histoinformatics2021/</link>
+      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ddbkg/publication/histoinformatics2021/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    To be presented at &lt;a href=&#34;https://sites.google.com/view/histoinformatics2021workshop/home&#34;&gt;Histoinformatics 2021&lt;/a&gt; (Workshop).
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!---
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/).
+
+---&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>DDB-EDM to FaBiO: the Case of the German Digital Library</title>
+      <link>http://localhost:1313/ddbkg/publication/preprint/</link>
+      <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ddbkg/publication/preprint/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Presented at &lt;a href=&#34;https://iswc2021.semanticweb.org&#34;&gt;The 20th International
+Semantic Web Conference&lt;/a&gt; (October 24-28, 2021) - &lt;a href=&#34;https://iswc2021.semanticweb.org/posters-demos&#34;&gt;Posters, Demos &amp;amp; Lightning Talks&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!---
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/).
+
+---&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

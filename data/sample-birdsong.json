@@ -1,0 +1,218 @@
+{
+    "JI53FTTP6AQMEJEYJE3OMX3NROJPGQAP": {
+        "ore:Aggregation": {
+            "edm:aggregatedCHO": "http://www.deutsche-digitale-bibliothek.de/item/JI53FTTP6AQMEJEYJE3OMX3NROJPGQAP",
+            "edm:dataProvider": [
+                "Museum für Naturkunde - Leibniz Institute for Research on Evolution and Biodiversity",
+                "http://www.deutsche-digitale-bibliothek.de/organization/6GWXTQXD535KAX63RWUKGWHAQ6GTKJF3"
+            ],
+            "edm:isShownAt": "http://www.tierstimmenarchiv.de/webinterface/contents/showdetails.php?edit=-1&unique_id=TSA:Picoides_minor_Co_25_9_1&autologin=true",
+            "edm:provider": "Deutsche Digitale Bibliothek",
+            "edm:rights": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+            "dcterms:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "id": "J5AO3CP7FUT7DPNRAGGYE2ZSIVNEE4RK"
+        },
+        "edm:WebResource": {
+            "dc:rights": "Tierstimmenarchiv - Museum für Naturkunde Berlin",
+            "edm:rights": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+            "dc:type": "http://ddb.vocnet.org/medientyp/mt001",
+            "dcterms:rights": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+            "dc:creator": "Conrads, Klaus",
+            "id": "http://www.tierstimmenarchiv.de/webinterface/contents/showdetails.php?edit=-1&unique_id=TSA:Picoides_minor_Co_25_9_1&autologin=true"
+        },
+        "skos:Concept": [
+            {
+                "skos:notation": "mediatype_001",
+                "id": "http://ddb.vocnet.org/medientyp/mt001"
+            },
+            {
+                "skos:notation": "sec_06",
+                "id": "http://ddb.vocnet.org/sparte/sparte006"
+            },
+            {
+                "skos:prefLabel": {
+                    "lang": "ger",
+                    "text": "Tonaufnahme"
+                },
+                "id": "http://d-nb.info/gnd/4052020-1"
+            },
+            {
+                "skos:prefLabel": {
+                    "lang": "ger",
+                    "text": "Tierstimme"
+                },
+                "id": "MHT3JNT6QJ2SG7ZRGQG24E5UN4CPN4OG"
+            },
+            {
+                "skos:prefLabel": {
+                    "lang": "ger",
+                    "text": "Vögel | Aves"
+                },
+                "id": "LU4RDGDJWBGP4EPURXZMZMLKUTROGKON"
+            },
+            {
+                "skos:prefLabel": {
+                    "lang": "ger",
+                    "text": "Spechtvögel | Piciformes"
+                },
+                "id": "7IPQQKLPZOHH6GDUCIPK6BVHZF5KHRJX"
+            },
+            {
+                "skos:prefLabel": {
+                    "lang": "ger",
+                    "text": "Spechte | Picidae"
+                },
+                "id": "PI3IHVKFZV4WZOAOZIRC5GCX3HXQWEOR"
+            }
+        ],
+        "edm:Agent": [
+            {
+                "skos:prefLabel": "Museum für Naturkunde - Leibniz Institute for Research on Evolution and Biodiversity",
+                "rdf:type": "http://ddb.vocnet.org/sparte/sparte006",
+                "id": "6GWXTQXD535KAX63RWUKGWHAQ6GTKJF3"
+            },
+            {
+                "skos:prefLabel": "Conrads, Klaus",
+                "edm:wasPresentAt": "7UPJLTQXGXGVQHGRYAPFQTMMC6WYKAX3",
+                "id": "4GRKTI5P5TJFMWROZ5GIGVY7Y2VVUFCJ"
+            }
+        ],
+        "edm:ProvidedCHO": {
+            "edm:currentLocation": "http://vocab.getty.edu/tgn/7003712",
+            "edm:hasType": "http://d-nb.info/gnd/4052020-1",
+            "edm:hasMet": "7UPJLTQXGXGVQHGRYAPFQTMMC6WYKAX3",
+            "edm:type": "SOUND",
+            "dc:creator": {
+                "lang": "zxx",
+                "text": "Conrads, Klaus"
+            },
+            "dc:description": [
+                {
+                    "lang": "ger",
+                    "text": "Lauttyp: Ruf"
+                },
+                {
+                    "lang": "ger",
+                    "text": "Alter: Jungtier(e)"
+                },
+                {
+                    "lang": "ger",
+                    "text": "Geschlecht: männlich"
+                },
+                {
+                    "lang": "ger",
+                    "text": "Art(en) im Hintergrund: Phylloscopus trochilus"
+                }
+            ],
+            "dc:identifier": "TSA:Picoides_minor_Co_25_9_1 (Inventarnummer)",
+            "dc:format": {
+                "lang": "ger",
+                "text": "Uher 4000 Report-S, Bändchenmikro Beyer M 260, Parabolspiegel Polyester (470 mm) (Material/Technik)"
+            },
+            "dc:rights": {
+                "lang": "ger",
+                "text": "Tierstimmenarchiv - Museum für Naturkunde Berlin"
+            },
+            "dc:type": {
+                "lang": "ger",
+                "text": "Tonaufnahme"
+            },
+            "dc:subject": [
+                {
+                    "lang": "ger",
+                    "text": "Tierstimme"
+                },
+                {
+                    "lang": "ger",
+                    "text": "Vögel | Aves"
+                },
+                {
+                    "lang": "ger",
+                    "text": "Spechtvögel | Piciformes"
+                },
+                {
+                    "lang": "ger",
+                    "text": "Spechte | Picidae"
+                }
+            ],
+            "dc:title": {
+                "lang": "ger",
+                "text": "Kleinspecht | Dendrocopos minor - Ruf"
+            },
+            "dcterms:subject": [
+                "MHT3JNT6QJ2SG7ZRGQG24E5UN4CPN4OG",
+                "LU4RDGDJWBGP4EPURXZMZMLKUTROGKON",
+                "7IPQQKLPZOHH6GDUCIPK6BVHZF5KHRJX",
+                "PI3IHVKFZV4WZOAOZIRC5GCX3HXQWEOR"
+            ],
+            "dcterms:created": {
+                "lang": "zxx",
+                "text": "16.06.1968 (Aufnahme)"
+            },
+            "dcterms:spatial": [
+                "Schloß Holte-Stukenbrock, Senne, Deutschland (Herstellung)",
+                {
+                    "id": "http://vocab.getty.edu/tgn/7003712",
+                    "text": "Berlin (Standort)"
+                }
+            ],
+            "id": "JI53FTTP6AQMEJEYJE3OMX3NROJPGQAP"
+        },
+        "edm:Event": {
+            "edm:hasType": "http://terminology.lido-schema.org/lido00007",
+            "crm:P11_had_participant": "4GRKTI5P5TJFMWROZ5GIGVY7Y2VVUFCJ",
+            "edm:happenedAt": "GZHH7EYW2D232MMM5I7SXSNUPAZNGTGY",
+            "edm:occuredAt": "2ROCMOJBI3C3R2VFZL2TP7ZNUJFKGSQA",
+            "id": "7UPJLTQXGXGVQHGRYAPFQTMMC6WYKAX3"
+        },
+        "edm:Place": [
+            {
+                "skos:prefLabel": "Schloß Holte-Stukenbrock",
+                "id": "GZHH7EYW2D232MMM5I7SXSNUPAZNGTGY"
+            },
+            {
+                "skos:prefLabel": {
+                    "lang": "ger",
+                    "text": "Berlin"
+                },
+                "id": "http://vocab.getty.edu/tgn/7003712"
+            }
+        ],
+        "edm:TimeSpan": {
+            "edm:begin": "16.06.1968",
+            "edm:end": "16.06.1968",
+            "id": "2ROCMOJBI3C3R2VFZL2TP7ZNUJFKGSQA"
+        },
+        "View": {
+            "Objektbezeichnung": "Tonaufnahme",
+            "Objektbeschreibung": "Art(en) im Hintergrund: Phylloscopus trochilus",
+            "Material/Technik": "Uher 4000 Report-S, Bändchenmikro Beyer M 260, Parabolspiegel Polyester (470 mm)",
+            "Ereignis": "Aufnahme",
+            "(wer)": "Conrads, Klaus",
+            "(wo)": "Schloß Holte-Stukenbrock, Senne, Deutschland",
+            "(wann)": "16.06.1968",
+            "Bezug (was)": "animal sound recording",
+            "Klassifikation": "Spechte | Picidae (Familie)",
+            "Standort": "Tierstimmenarchiv - Museum für Naturkunde Berlin",
+            "Inventarnummer": "TSA:Picoides_minor_Co_25_9_1"
+        },
+        "Prov": {
+            "item-id": "JI53FTTP6AQMEJEYJE3OMX3NROJPGQAP",
+            "dataset-id": "33445323582674520qaHS",
+            "dataset-label": "Gesamtlieferung - LIDO",
+            "revision-id": "10",
+            "ingest-date": "2021-11-05T13:26:25+0100",
+            "cortex-type": "Kultur",
+            "mapping-version": "2.24",
+            "source-type": "http://www.lido-schema.org/",
+            "source-ic": [],
+            "provider": {
+                "name": "Museum für Naturkunde - Leibniz Institute for Research on Evolution and Biodiversity",
+                "uri": "http://www.naturkundemuseum-berlin.de",
+                "id": "00050372",
+                "ddbid": "6GWXTQXD535KAX63RWUKGWHAQ6GTKJF3",
+                "isil": null
+            }
+        }
+    }
+}

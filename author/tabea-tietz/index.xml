@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tabea Tietz | DDB-KG</title>
+    <link>http://localhost:1313/ddbkg/author/tabea-tietz/</link>
+      <atom:link href="http://localhost:1313/ddbkg/author/tabea-tietz/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tabea Tietz</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 30 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/ddbkg/author/tabea-tietz/avatar_hu167a6a9e66c0c27904bb3dcadbff6f9e_22893_270x270_fill_q75_lanczos_center.jpg</url>
+      <title>Tabea Tietz</title>
+      <link>http://localhost:1313/ddbkg/author/tabea-tietz/</link>
+    </image>
+    
+    <item>
+      <title>DDB-KG: The German Bibliographic Heritage in a Knowledge Graph</title>
+      <link>http://localhost:1313/ddbkg/publication/histoinformatics2021/</link>
+      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ddbkg/publication/histoinformatics2021/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    To be presented at &lt;a href=&#34;https://sites.google.com/view/histoinformatics2021workshop/home&#34;&gt;Histoinformatics 2021&lt;/a&gt; (Workshop).
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!---
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/).
+
+---&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>DDB-EDM to FaBiO: the Case of the German Digital Library</title>
+      <link>http://localhost:1313/ddbkg/publication/preprint/</link>
+      <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ddbkg/publication/preprint/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Presented at &lt;a href=&#34;https://iswc2021.semanticweb.org&#34;&gt;The 20th International
+Semantic Web Conference&lt;/a&gt; (October 24-28, 2021) - &lt;a href=&#34;https://iswc2021.semanticweb.org/posters-demos&#34;&gt;Posters, Demos &amp;amp; Lightning Talks&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!---
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/).
+
+---&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

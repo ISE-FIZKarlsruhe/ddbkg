@@ -1,0 +1,211 @@
+@prefix aco: <https://w3id.org/ac-ontology/aco#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ddb-item: <http://www.deutsche-digitale-bibliothek.de/item/> .
+@prefix ddb-org: <http://www.deutsche-digitale-bibliothek.de/organization/> .
+@prefix ddbkg-resource: <http://ddbkg.fiz-karlsruhe.de/resource/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://www.schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+<R2ARVR7OGLVUEWCKUW3HJGAKBHMRKIV7> a skos:Concept ;
+    skos:prefLabel "Monografie" .
+
+<V3GUD6CDMBTPBVAMQFRJCKBXZ5VAJ7NG> a edm:Place ;
+    rdfs:label "Deutsche Nationalbibliothek"@de ;
+    wgs84_pos:lat "50.13104" ;
+    wgs84_pos:long "8.68375" .
+
+<http://d-nb.info/1070325295> a edm:WebResource,
+        aco:AudioFile ;
+    dcterms:rights <http://www.deutsche-digitale-bibliothek.de/lizenzen/rv-fz/> ;
+    fabio:isReproductionOf ddbkg-resource:5BDZJCHYHRIGUR2HGCEJHKJVJ67DKXAU .
+
+ddbkg-resource:AAWXRFHI0GZQFJRCS5XSXBPB4GJZGDEK a prov:SoftwareAgent ;
+    rdfs:label "XSLT-2.50" ;
+    dcterms:hasVersion "2.50" ;
+    prov:actedOnBehalfOf <http://www.deutsche-digitale-bibliothek.de> .
+
+ddbkg-resource:DDIGSNGPD0AK4JYM6NKFSKRVHTVV9V4Y a dcat:Dataset,
+        prov:Entity ;
+    dcterms:identifier "8759509967988451nsnl" ;
+    dcterms:type <http://www.loc.gov/MARC21/slim/> ;
+    prov:wasAttributedTo ddb-org:2Q37XY5KXJNJE5MV6SWP3UKKZ6RSBLK5 .
+
+<http://www.deutsche-digitale-bibliothek.de> a prov:Agent,
+        foaf:Organization ;
+    rdfs:label "Deutsche Digitale Bibliothek"@de,
+        "German Digital Library"@en .
+
+ddb-org:2Q37XY5KXJNJE5MV6SWP3UKKZ6RSBLK5 a prov:Agent,
+        foaf:Organization ;
+    dbpedia-owl:isil <http://ld.zdb-services.de/resource/organisations/DE-101> ;
+    dcterms:identifier "00012008" ;
+    dcterms:type <http://ddb.vocnet.org/sparte/sparte002> ;
+    schema:url "http://www.dnb.de" ;
+    foaf:name "Deutsche Nationalbibliothek" .
+
+ddbkg-resource:EELLJINJTXNZ2DQTM22E0PRQ0MHRICWJ a fabio:AudioDocument ;
+    dcterms:contributor "Aufbau-Verlag"@de,
+        "Wette, Wolfram"@de ;
+    dcterms:creator <http://d-nb.info/gnd/11856319X>,
+        <http://d-nb.info/gnd/123176743>,
+        <http://d-nb.info/gnd/5058957-X> ;
+    dcterms:extent "263, [16] S." ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-2/ger> ;
+    dcterms:title "Man möchte immer weinen und lachen in einem :Revolutionstagebuch 1919"@de ;
+    fabio:hasEmbodiment ddbkg-resource:MME46KPELP0XDLIISD96MXFT1IOS5YYD ;
+    fabio:hasRepresentation ddbkg-resource:5BDZJCHYHRIGUR2HGCEJHKJVJ67DKXAU ;
+    fabio:hasSubjectTerm <244ACEEGU2O3MQGOZFGOYH243MF2ODO3>,
+        <2ZEDHXZ7WK3QIKIWGOQCHDLXINOHAV7K>,
+        <5D6RFSCOCZVVAQ33Z7LWV3GT7BNNCJX7>,
+        <7ZKDZRVRJT6YQS7OB2EM6SSARN5OLTWM>,
+        <D63RROVSDLMWSRZB42ABT2GAXQRQR7DB>,
+        <EC52LU3UBCCBIWKUCFY77DKVHKDKCHZQ>,
+        <GFQFN7OYJ46CCQEOKTF7N2HK4ZZPN5AX>,
+        <MFAU56NCIZFJ32BWRC3MZAHQOIN7GTVY>,
+        <TVU7YQATM62XZVPYGTISZTHAGENOL5IQ>,
+        <http://d-nb.info/gnd/11856319X>,
+        <http://d-nb.info/gnd/4065109-5>,
+        <http://d-nb.info/gnd/4075073-5> .
+
+ddbkg-resource:MME46KPELP0XDLIISD96MXFT1IOS5YYD a mo:Record,
+        aco:AudioClip ;
+    dc:description "1. Aufl."@de ;
+    dcterms:contributor "Aufbau-Verlag"@de,
+        "Wette, Wolfram"@de ;
+    dcterms:creator <http://d-nb.info/gnd/11856319X>,
+        <http://d-nb.info/gnd/123176743>,
+        <http://d-nb.info/gnd/5058957-X> ;
+    dcterms:extent "263, [16] S." ;
+    dcterms:identifier "(DE-599)DNB1070325295",
+        "(OCoLC)908644600",
+        "3-351-03598-5",
+        "978-3-351-03598-3" ;
+    dcterms:issued "2015" ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-2/ger> ;
+    dcterms:title "Man möchte immer weinen und lachen in einem :Revolutionstagebuch 1919"@de ;
+    fabio:hasExemplar ddbkg-resource:5BDZJCHYHRIGUR2HGCEJHKJVJ67DKXAU ;
+    fabio:hasSubjectTerm <244ACEEGU2O3MQGOZFGOYH243MF2ODO3>,
+        <2ZEDHXZ7WK3QIKIWGOQCHDLXINOHAV7K>,
+        <5D6RFSCOCZVVAQ33Z7LWV3GT7BNNCJX7>,
+        <7ZKDZRVRJT6YQS7OB2EM6SSARN5OLTWM>,
+        <D63RROVSDLMWSRZB42ABT2GAXQRQR7DB>,
+        <EC52LU3UBCCBIWKUCFY77DKVHKDKCHZQ>,
+        <GFQFN7OYJ46CCQEOKTF7N2HK4ZZPN5AX>,
+        <MFAU56NCIZFJ32BWRC3MZAHQOIN7GTVY>,
+        <TVU7YQATM62XZVPYGTISZTHAGENOL5IQ>,
+        <http://d-nb.info/gnd/11856319X>,
+        <http://d-nb.info/gnd/4065109-5>,
+        <http://d-nb.info/gnd/4075073-5> ;
+    fabio:isEmbodimentOf ddbkg-resource:EELLJINJTXNZ2DQTM22E0PRQ0MHRICWJ .
+
+<http://id.loc.gov/vocabulary/iso639-2/ger> a dcterms:LinguisticSystem ;
+    rdfs:label "ger" .
+
+<244ACEEGU2O3MQGOZFGOYH243MF2ODO3> a fabio:SubjectTerm ;
+    skos:prefLabel "Erlebnisbericht"@de .
+
+<2ZEDHXZ7WK3QIKIWGOQCHDLXINOHAV7K> a fabio:SubjectTerm ;
+    skos:prefLabel "Tagebuch 1919"@de .
+
+<5D6RFSCOCZVVAQ33Z7LWV3GT7BNNCJX7> a fabio:SubjectTerm ;
+    skos:prefLabel "(Produktform)Hardback"@de .
+
+<7ZKDZRVRJT6YQS7OB2EM6SSARN5OLTWM> a fabio:SubjectTerm ;
+    skos:prefLabel "Tagebuch"@de .
+
+<D63RROVSDLMWSRZB42ABT2GAXQRQR7DB> a fabio:SubjectTerm ;
+    skos:prefLabel "(Produktgruppe)99470: NONBOOK/Sachbücher/Geschichte/20. Jahrhundert (bis 1945)"@de .
+
+<EC52LU3UBCCBIWKUCFY77DKVHKDKCHZQ> a fabio:SubjectTerm ;
+    skos:prefLabel "(VLB-WN)1947: Hardcover, Softcover / Sachbücher/Geschichte/20. Jahrhundert (bis 1945)"@de .
+
+<GFQFN7OYJ46CCQEOKTF7N2HK4ZZPN5AX> a fabio:SubjectTerm ;
+    skos:prefLabel "(BISAC Subject Heading)HIS014000"@de .
+
+<MFAU56NCIZFJ32BWRC3MZAHQOIN7GTVY> a fabio:SubjectTerm ;
+    skos:prefLabel "Erlebnisbericht"@de .
+
+<TVU7YQATM62XZVPYGTISZTHAGENOL5IQ> a fabio:SubjectTerm ;
+    skos:prefLabel "München"@de .
+
+<http://d-nb.info/gnd/123176743> a foaf:Person ;
+    foaf:givenName "Wolfram" ;
+    foaf:lastName "Wette" ;
+    foaf:name "Wette, Wolfram" .
+
+<http://d-nb.info/gnd/4065109-5> a fabio:SubjectTerm,
+        frbr:Subject ;
+    skos:prefLabel "Weimarer Republik"@de .
+
+<http://d-nb.info/gnd/4075073-5> a fabio:SubjectTerm,
+        frbr:Subject ;
+    skos:prefLabel "Münchener Räterepublik <rswk-swf>"@de .
+
+ddbkg-resource:5BDZJCHYHRIGUR2HGCEJHKJVJ67DKXAU a edm:ProvidedCHO,
+        prov:Entity,
+        aco:AudioItem ;
+    dc:description "1. Aufl."@de ;
+    dcterms:contributor <http://d-nb.info/gnd/5058957-X>,
+        "Aufbau-Verlag"@de,
+        "Wette, Wolfram"@de ;
+    dcterms:creator <http://d-nb.info/gnd/11856319X>,
+        <http://d-nb.info/gnd/123176743>,
+        <http://d-nb.info/gnd/5058957-X> ;
+    dcterms:extent "263, [16] S." ;
+    dcterms:format "SOUND" ;
+    dcterms:hasVersion "36" ;
+    dcterms:identifier "(DE-599)DNB1070325295",
+        "(OCoLC)908644600",
+        "3-351-03598-5",
+        "978-3-351-03598-3" ;
+    dcterms:issued "2015" ;
+    dcterms:title "Man möchte immer weinen und lachen in einem :Revolutionstagebuch 1919"@de ;
+    dcterms:type <R2ARVR7OGLVUEWCKUW3HJGAKBHMRKIV7> ;
+    bibo:edition "1. Aufl." ;
+    bibo:isbn "978-3-351-03598-3" ;
+    fabio:hasReproduction <http://d-nb.info/1070325295> ;
+    fabio:hasSequenceIdentifier "-1" ;
+    fabio:hasSubjectTerm <244ACEEGU2O3MQGOZFGOYH243MF2ODO3>,
+        <2ZEDHXZ7WK3QIKIWGOQCHDLXINOHAV7K>,
+        <5D6RFSCOCZVVAQ33Z7LWV3GT7BNNCJX7>,
+        <7ZKDZRVRJT6YQS7OB2EM6SSARN5OLTWM>,
+        <D63RROVSDLMWSRZB42ABT2GAXQRQR7DB>,
+        <EC52LU3UBCCBIWKUCFY77DKVHKDKCHZQ>,
+        <GFQFN7OYJ46CCQEOKTF7N2HK4ZZPN5AX>,
+        <MFAU56NCIZFJ32BWRC3MZAHQOIN7GTVY>,
+        <TVU7YQATM62XZVPYGTISZTHAGENOL5IQ>,
+        <http://d-nb.info/gnd/11856319X>,
+        <http://d-nb.info/gnd/4065109-5>,
+        <http://d-nb.info/gnd/4075073-5> ;
+    fabio:isExemplarOf ddbkg-resource:MME46KPELP0XDLIISD96MXFT1IOS5YYD ;
+    fabio:isRepresentationOf ddbkg-resource:EELLJINJTXNZ2DQTM22E0PRQ0MHRICWJ ;
+    edm:currentLocation <V3GUD6CDMBTPBVAMQFRJCKBXZ5VAJ7NG> ;
+    owl:sameAs ddb-item:5BDZJCHYHRIGUR2HGCEJHKJVJ67DKXAU ;
+    prov:generatedAtTime "2022-02-04T10:02:45+0100" ;
+    prov:wasAttributedTo ddbkg-resource:AAWXRFHI0GZQFJRCS5XSXBPB4GJZGDEK ;
+    prov:wasDerivedFrom ddbkg-resource:DDIGSNGPD0AK4JYM6NKFSKRVHTVV9V4Y .
+
+<http://d-nb.info/gnd/5058957-X> a foaf:Organization ;
+    foaf:name "Aufbau-Verlag" .
+
+<http://d-nb.info/gnd/11856319X> a fabio:SubjectTerm,
+        frbr:Subject,
+        foaf:Person ;
+    skos:prefLabel "Victor Klemperer"@de ;
+    foaf:givenName "Victor" ;
+    foaf:lastName "Klemperer" ;
+    foaf:name "Klemperer, Victor" .
+

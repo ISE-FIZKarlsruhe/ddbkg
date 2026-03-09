@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Robert Ford | DDB-KG</title>
+    <link>http://localhost:1313/ddbkg/author/robert-ford/</link>
+      <atom:link href="http://localhost:1313/ddbkg/author/robert-ford/index.xml" rel="self" type="application/rss+xml" />
+    <description>Robert Ford</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/ddbkg/media/icon_hu721a5c7ae71041b61d7aa8ba822170d4_1023_512x512_fill_lanczos_center_2.png</url>
+      <title>Robert Ford</title>
+      <link>http://localhost:1313/ddbkg/author/robert-ford/</link>
+    </image>
+    
+  </channel>
+</rss>

@@ -1,0 +1,248 @@
+{
+    "ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV": {
+        "ore:Aggregation": {
+            "edm:aggregatedCHO": "http://www.deutsche-digitale-bibliothek.de/item/ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV",
+            "edm:dataProvider": [
+                "SLUB Dresden. Musikabteilung",
+                "http://www.deutsche-digitale-bibliothek.de/organization/JJUO42747XGNHECFH7ZFVLVQYPXS4ZBK"
+            ],
+            "edm:isShownAt": "http://mediathek.slub-dresden.de/ton70912517.html",
+            "edm:isShownBy": "http://media.slub-dresden.de/fon/snp/a/009117/fon_snp_a_009117_01.jpg",
+            "edm:object": "http://media.slub-dresden.de/fon/snp/a/009117/fon_snp_a_009117_01.jpg",
+            "edm:provider": "Deutsche Digitale Bibliothek",
+            "edm:rights": "http://rightsstatements.org/vocab/InC/1.0/",
+            "dcterms:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "id": "MLCFWKREZ6HTWEJ4NWJQIYEQM4CBOXPY"
+        },
+        "edm:WebResource": [
+            {
+                "dc:rights": "Sächsische Landesbibliothek – Staats- und Universitätsbibliothek Dresden",
+                "edm:rights": "http://rightsstatements.org/vocab/InC/1.0/",
+                "dc:type": "http://ddb.vocnet.org/medientyp/mt001",
+                "dcterms:rights": "http://www.deutsche-digitale-bibliothek.de/lizenzen/rv-fz/",
+                "id": "http://mediathek.slub-dresden.de/ton70912517.html"
+            },
+            {
+                "dc:rights": "Sächsische Landesbibliothek – Staats- und Universitätsbibliothek Dresden",
+                "edm:rights": "http://rightsstatements.org/vocab/InC/1.0/",
+                "dc:type": "http://ddb.vocnet.org/medientyp/mt001",
+                "dcterms:rights": "http://www.deutsche-digitale-bibliothek.de/lizenzen/rv-fz/",
+                "id": "http://media.slub-dresden.de/fon/snp/a/009117/fon_snp_a_009117_01.jpg"
+            }
+        ],
+        "skos:Concept": [
+            {
+                "skos:notation": "mediatype_001",
+                "id": "http://ddb.vocnet.org/medientyp/mt001"
+            },
+            {
+                "skos:notation": "mediatype_001",
+                "id": "http://ddb.vocnet.org/medientyp/mt001"
+            },
+            {
+                "skos:notation": "sec_05",
+                "id": "http://ddb.vocnet.org/sparte/sparte005"
+            },
+            {
+                "skos:prefLabel": {
+                    "lang": "ger",
+                    "text": "Schellackplatte"
+                },
+                "id": "XKHT32A6NGEESQ34YNWWH23Q2INRHVXR"
+            },
+            {
+                "skos:prefLabel": {
+                    "lang": "ger",
+                    "text": "Lied"
+                },
+                "id": "http://d-nb.info/gnd/4035669-3"
+            },
+            {
+                "skos:prefLabel": {
+                    "lang": "ger",
+                    "text": "Tonträger (Gattung)"
+                },
+                "id": "UPIAUV3EEULHBUR6OA6XUEGFBV3TFPUG"
+            }
+        ],
+        "edm:Agent": [
+            {
+                "skos:prefLabel": "SLUB Dresden. Musikabteilung",
+                "rdf:type": "http://ddb.vocnet.org/sparte/sparte005",
+                "dcterms:isPartOf": "http://www.deutsche-digitale-bibliothek.de/organization/265BI7NE7QBS4NQMZCCGIVLFR73OCOSL",
+                "id": "JJUO42747XGNHECFH7ZFVLVQYPXS4ZBK"
+            },
+            {
+                "skos:prefLabel": "Sächsische Landesbibliothek - Staats- und Universitätsbibliothek Dresden",
+                "id": "265BI7NE7QBS4NQMZCCGIVLFR73OCOSL"
+            },
+            {
+                "skos:prefLabel": "Columbia Graphophone Company (London)",
+                "edm:wasPresentAt": "W3EX2XF7SE5DLY73NFKGTEERFPJN6MRM",
+                "id": "http://d-nb.info/gnd/5008770-8"
+            },
+            {
+                "skos:prefLabel": "Columbia Record",
+                "edm:wasPresentAt": "W3EX2XF7SE5DLY73NFKGTEERFPJN6MRM",
+                "id": "UTQJCKNBPM5W3UXFAW4BEWCIMXRQANII"
+            },
+            {
+                "skos:prefLabel": "Stephen Collins Foster",
+                "edm:wasPresentAt": "W3EX2XF7SE5DLY73NFKGTEERFPJN6MRM",
+                "id": "http://d-nb.info/gnd/118684280"
+            },
+            {
+                "skos:prefLabel": "Seagle, Oskar",
+                "edm:wasPresentAt": "W3EX2XF7SE5DLY73NFKGTEERFPJN6MRM",
+                "id": "UZTHVLKB6MURT3ECY4GLEE6PHV6IUB7K"
+            }
+        ],
+        "edm:ProvidedCHO": {
+            "edm:currentLocation": "http://vocab.getty.edu/tgn/7003721",
+            "edm:hasType": "XKHT32A6NGEESQ34YNWWH23Q2INRHVXR",
+            "edm:hasMet": "W3EX2XF7SE5DLY73NFKGTEERFPJN6MRM",
+            "edm:type": "SOUND",
+            "dc:creator": [
+                {
+                    "lang": "ger",
+                    "text": "Columbia Graphophone Company (London) (Production) (Hersteller)"
+                },
+                {
+                    "lang": "ger",
+                    "text": "Columbia Record (Production) (Label)"
+                },
+                {
+                    "lang": "ger",
+                    "text": "Foster, Stephen Collins (Production) (Komponist)"
+                },
+                {
+                    "lang": "ger",
+                    "text": "Seagle, Oskar (Production) (Interpret,  - Bariton)"
+                }
+            ],
+            "dc:description": {
+                "lang": "ger",
+                "text": "Interpretation: Baritone solo and male quartette. Sung by Oscar Seagle and Columbia Stellar Quartette. With orchestra accompaniment, [Aufnahme: New York, 25. September 1918]"
+            },
+            "dc:identifier": [
+                "49508 (Matrizennummer)",
+                "A 6082 (Bestellnummer)",
+                "Fon-SNP-A 9117 (Inventarnummer)"
+            ],
+            "dc:format": {
+                "lang": "ger",
+                "text": "1 Schellackplatte : 78 UpM (Material/Technik)"
+            },
+            "dc:rights": "Sächsische Landesbibliothek – Staats- und Universitätsbibliothek Dresden",
+            "dc:type": {
+                "lang": "ger",
+                "text": "Schellackplatte"
+            },
+            "dc:subject": [
+                {
+                    "lang": "ger",
+                    "text": "Lied"
+                },
+                {
+                    "lang": "ger",
+                    "text": "Tonträger (Gattung)"
+                }
+            ],
+            "dc:title": {
+                "lang": "ger",
+                "text": "Old folks at home / (Stephen C. Foster)"
+            },
+            "dcterms:subject": [
+                "http://d-nb.info/gnd/4035669-3",
+                "UPIAUV3EEULHBUR6OA6XUEGFBV3TFPUG"
+            ],
+            "dcterms:alternative": {
+                "lang": "ger",
+                "text": "Old folks at home (Einheitssachtitel)"
+            },
+            "dcterms:extent": {
+                "lang": "zxx",
+                "text": "Durchmesser: 30 cm"
+            },
+            "dcterms:created": {
+                "lang": "zxx",
+                "text": "Vorlageform (Art der Zeitangabe): c 1906; 1906 (Herstellung)"
+            },
+            "dcterms:spatial": [
+                {
+                    "lang": "ger",
+                    "text": "Erscheinungsort: New York; London (Production)"
+                },
+                {
+                    "lang": "ger",
+                    "text": "Dresden (Standort)"
+                }
+            ],
+            "id": "ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV"
+        },
+        "edm:Event": {
+            "edm:hasType": "http://terminology.lido-schema.org/lido00007",
+            "crm:P11_had_participant": [
+                "http://d-nb.info/gnd/5008770-8",
+                "UTQJCKNBPM5W3UXFAW4BEWCIMXRQANII",
+                "http://d-nb.info/gnd/118684280",
+                "UZTHVLKB6MURT3ECY4GLEE6PHV6IUB7K"
+            ],
+            "edm:happenedAt": "PGDFJ5NIF33DRAX5P4K6FJDDWQDWZNZ2",
+            "edm:occuredAt": "UYV7HTWLLPVYX2BFZMN3BLU3WLD54JML",
+            "id": "W3EX2XF7SE5DLY73NFKGTEERFPJN6MRM"
+        },
+        "edm:Place": [
+            {
+                "skos:prefLabel": {
+                    "lang": "",
+                    "text": "New York; London"
+                },
+                "id": "PGDFJ5NIF33DRAX5P4K6FJDDWQDWZNZ2"
+            },
+            {
+                "skos:prefLabel": {
+                    "lang": "ger",
+                    "text": "Dresden"
+                },
+                "id": "http://vocab.getty.edu/tgn/7003721"
+            }
+        ],
+        "edm:TimeSpan": {
+            "edm:begin": "1906",
+            "edm:end": "1906",
+            "id": "UYV7HTWLLPVYX2BFZMN3BLU3WLD54JML"
+        },
+        "View": {
+            "Alternativer Titel": "Old folks at home (Einheitssachtitel)",
+            "Objektbezeichnung": "Schellackplatte",
+            "Objektbeschreibung": "Interpretation: Baritone solo and male quartette. Sung by Oscar Seagle and Columbia Stellar Quartette. With orchestra accompaniment, [Aufnahme: New York, 25. September 1918]",
+            "Material/Technik": "1 Schellackplatte : 78 UpM",
+            "Maße": "Durchmesser: 30 cm",
+            "Ereignis": "Herstellung",
+            "(wer)": "Seagle, Oskar (Interpret,  - Bariton)",
+            "(wo)": "Erscheinungsort: New York; London",
+            "(wann)": "Vorlageform (Art der Zeitangabe): c 1906; 1906",
+            "Bezug (was)": "Lied",
+            "Klassifikation": "Tonträger (Gattung)",
+            "Standort": "Sächsische Landesbibliothek – Staats- und Universitätsbibliothek Dresden",
+            "Inventarnummer": "Fon-SNP-A 9117",
+            "Weitere Nummer(n)": "A 6082 (Bestellnummer)"
+        },
+        "Prov": {
+            "item-id": "ILNOJIJWFWN3WFHQBS6RXI4QJ3BOXZVV",
+            "dataset-id": "8214877930552945wTgL",
+            "dataset-label": "Gesamtlieferung: SLUB-Mediathek Q2/2020 LIDO",
+            "ingest-date": "2020-09-17T08:50:06+0200",
+            "cortex-type": "Kultur",
+            "source-type": "http://www.lido-schema.org/",
+            "provider": {
+                "name": "SLUB Dresden. Musikabteilung",
+                "uri": "https://www.slub-dresden.de/sammlungen/av-medien-mediathek/",
+                "id": "oid1470131600302",
+                "ddbid": "JJUO42747XGNHECFH7ZFVLVQYPXS4ZBK",
+                "isil": "http://ld.zdb-services.de/resource/organisations/DE-14"
+            }
+        }
+    }
+}

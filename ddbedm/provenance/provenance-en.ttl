@@ -2,7 +2,17 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
-<http://purl.obolibrary.org/obo/ddbedm/releases/2026-03-09/ddbedm-full.owl> a prov:Entity;
+<https://ise-fizkarlsruhe.github.io/ddbkg/ddbedm/source/ddbedm-full.owl> a prov:Entity;
 	 dc:title "Deutsche Digitale Bibliothek Europeana Data Model";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo :agent3;
+	 prov:wasAttributedTo :agent4;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 .
+:agent0 a prov:Agent; foaf:name "Mary Ann Tan".
+:agent1 a prov:Agent; foaf:name "Stefanie Rühle".
+:agent2 a prov:Agent; foaf:name "Francesca Schulze".
+:agent3 a prov:Agent; foaf:name "Michael Büchner".
+:agent4 a prov:Agent; foaf:name "Harald Sack".

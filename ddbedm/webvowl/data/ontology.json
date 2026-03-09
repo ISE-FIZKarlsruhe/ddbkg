@@ -84,7 +84,7 @@
     "id" : "67",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "74",
+    "id" : "76",
     "type" : "owl:Class"
   }, {
     "id" : "77",
@@ -153,7 +153,7 @@
     "id" : "4",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "76",
+    "id" : "75",
     "type" : "owl:Class"
   }, {
     "id" : "128",
@@ -269,7 +269,7 @@
       "IRI-based" : "TimeSpan",
       "en" : "edm:TimeSpan"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "22",
     "superClasses" : [ "5", "23" ]
   }, {
@@ -281,7 +281,7 @@
       "IRI-based" : "E89_Propositional_Object"
     },
     "subClasses" : [ "0", "33", "34", "9", "35", "36", "37", "11" ],
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "2"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Organization",
@@ -382,7 +382,7 @@
       "en" : "dcterms:ProvenanceStatement"
     },
     "attributes" : [ "external" ],
-    "id" : "74"
+    "id" : "76"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "id" : "77",
@@ -461,7 +461,7 @@
     "label" : {
       "IRI-based" : "Place"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "59",
     "superClasses" : [ "5" ]
   }, {
@@ -478,7 +478,7 @@
     "label" : {
       "IRI-based" : "F9_Place"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "46",
     "superClasses" : [ "5" ]
   }, {
@@ -506,7 +506,7 @@
     "label" : {
       "IRI-based" : "E53_Place"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "52",
     "superClasses" : [ "5" ]
   }, {
@@ -520,16 +520,16 @@
         "value" : "This class has been mostly motivated by the need to assign a type to the “central node” in the EDM pattern, during the ingestion process, related to the XML expression of EDM at that stage. It was especially intended to fit the cases where edm:PhysicalThing  cannot be used as the type of the resource standing for the real-world object (independently of any specific data contributor perspective).",
         "type" : "label"
       } ],
-      "scopeNote" : [ {
-        "identifier" : "scopeNote",
-        "language" : "en",
-        "value" : "Rationale: This class is the range of edm:aggregatedCHO. A resource of type ProvidedCHO can be the subject of statements using edm:isRelatedTo or any more specific property.",
-        "type" : "label"
-      } ],
       "example" : [ {
         "identifier" : "example",
         "language" : "en",
         "value" : "Mona Lisa, Winged Victory of Samothrace",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "Rationale: This class is the range of edm:aggregatedCHO. A resource of type ProvidedCHO can be the subject of statements using edm:isRelatedTo or any more specific property.",
         "type" : "label"
       } ]
     },
@@ -546,7 +546,7 @@
     "label" : {
       "IRI-based" : "space-region"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "41",
     "superClasses" : [ "5" ]
   }, {
@@ -554,18 +554,7 @@
     "baseIri" : "http://www.europeana.eu/schemas/edm",
     "instances" : 0,
     "annotations" : {
-      "scopeNote" : [ {
-        "identifier" : "scopeNote",
-        "language" : "en",
-        "value" : "Rationale: This class is used to tag objects that are the result of activity of Europeana, and, as such, objects on which Europeana holds rights",
-        "type" : "label"
-      } ],
       "example" : [ {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "An annotation created by a user through the Europeana portal",
-        "type" : "label"
-      }, {
         "identifier" : "example",
         "language" : "en",
         "value" : "Any content created by the users through the service made available by Europeana for that purpose",
@@ -574,6 +563,17 @@
         "identifier" : "example",
         "language" : "en",
         "value" : "Any instance of the class EuropeanaAggregation",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "An annotation created by a user through the Europeana portal",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "Rationale: This class is used to tag objects that are the result of activity of Europeana, and, as such, objects on which Europeana holds rights",
         "type" : "label"
       } ]
     },
@@ -594,7 +594,7 @@
       "IRI-based" : "PhysicalThing",
       "en" : "edm:PhysicalThing"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "51",
     "superClasses" : [ "5" ]
   }, {
@@ -604,7 +604,7 @@
     "label" : {
       "IRI-based" : "time-interval"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "25",
     "superClasses" : [ "5", "23" ]
   }, {
@@ -614,7 +614,7 @@
     "label" : {
       "IRI-based" : "Temporality"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "54",
     "superClasses" : [ "5" ]
   }, {
@@ -633,7 +633,7 @@
     "label" : {
       "IRI-based" : "F8_Event"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "21",
     "superClasses" : [ "5" ]
   }, {
@@ -643,7 +643,7 @@
     "label" : {
       "IRI-based" : "Place"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "57",
     "superClasses" : [ "5" ]
   }, {
@@ -653,7 +653,7 @@
     "label" : {
       "IRI-based" : "Event"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "58",
     "superClasses" : [ "5" ]
   }, {
@@ -673,7 +673,7 @@
     "label" : {
       "IRI-based" : "Time"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "4",
     "superClasses" : [ "5", "23" ]
   }, {
@@ -696,7 +696,7 @@
       "en" : "Written, spoken, sign, and computer languages are linguistic systems."
     },
     "attributes" : [ "external" ],
-    "id" : "76"
+    "id" : "75"
   }, {
     "iri" : "http://purl.org/dc/terms/PhysicalMedium",
     "baseIri" : "http://purl.org/dc/terms",
@@ -728,7 +728,7 @@
     "label" : {
       "IRI-based" : "E52_Time-Span"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "24",
     "superClasses" : [ "5", "23" ]
   }, {
@@ -749,7 +749,7 @@
     "label" : {
       "IRI-based" : "E18_Physical_Thing"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "39",
     "superClasses" : [ "5" ]
   }, {
@@ -765,7 +765,7 @@
   }, {
     "instances" : 0,
     "union" : [ "1", "50", "51" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "88"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
@@ -782,23 +782,23 @@
     "annotations" : {
       "example" : [ {
         "identifier" : "example",
-        "language" : "undefined",
+        "language" : "en",
         "value" : "Leonardo da Vinci, the British Museum, W3C",
         "type" : "label"
       }, {
         "identifier" : "example",
-        "language" : "en",
+        "language" : "undefined",
         "value" : "Leonardo da Vinci, the British Museum, W3C",
         "type" : "label"
       } ],
       "scopeNote" : [ {
         "identifier" : "scopeNote",
-        "language" : "en",
+        "language" : "undefined",
         "value" : "Rationale: This class is a domain of edm:wasPresentAt",
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
-        "language" : "undefined",
+        "language" : "en",
         "value" : "Rationale: This class is a domain of edm:wasPresentAt",
         "type" : "label"
       } ]
@@ -807,7 +807,7 @@
       "IRI-based" : "Agent",
       "en" : "edm:Agent"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "50",
     "superClasses" : [ "5" ]
   }, {
@@ -846,7 +846,7 @@
     "label" : {
       "IRI-based" : "E39_Actor"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "53",
     "superClasses" : [ "5" ]
   }, {
@@ -865,9 +865,9 @@
       "IRI-based" : "InformationResource",
       "en" : "edm:InformationResource"
     },
-    "union" : [ "33", "0", "34", "9", "36", "11", "37" ],
+    "union" : [ "0", "33", "34", "9", "36", "37", "11" ],
     "subClasses" : [ "0", "33", "34", "9", "35", "36", "37", "11" ],
-    "attributes" : [ "union", "equivalent", "external" ],
+    "attributes" : [ "union", "external", "equivalent" ],
     "id" : "1"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#Work",
@@ -894,6 +894,11 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "en",
+        "value" : "The 2nd World War, the act of painting Mona Lisa, the change of custody of Mona Lisa.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
         "value" : "the act of painting Mona Lisa",
         "type" : "label"
       }, {
@@ -905,11 +910,6 @@
         "identifier" : "example",
         "language" : "en",
         "value" : "the 2nd World War",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "The 2nd World War, the act of painting Mona Lisa, the change of custody of Mona Lisa.",
         "type" : "label"
       } ],
       "scopeNote" : [ {
@@ -923,7 +923,7 @@
       "IRI-based" : "Event",
       "en" : "edm:Event"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "43",
     "superClasses" : [ "5" ]
   }, {
@@ -948,23 +948,7 @@
         "value" : "An instance of EuropeanaAggregation is created at ingestion time for each different Cultural Heritage Object recognized by Europeana. Such instance is associated to the Cultural Heritage Object that it is about, by the property edm:aggregatedCHO",
         "type" : "label"
       } ],
-      "scopeNote" : [ {
-        "identifier" : "scopeNote",
-        "language" : "en",
-        "value" : "Obligation and Occurence: The relation between the Cultural Heritage Objects represented in Europeana and the instances of the class EuropeanaAggregation is one-to-one, in the data maintained by Europeana: every Cultural Heritage Object is represented by an instance of EuropeanaAggregation, and every instance of EuropeanaAggregation represent a Cultural Heritage Object.",
-        "type" : "label"
-      }, {
-        "identifier" : "scopeNote",
-        "language" : "en",
-        "value" : "Rationale: This class is used in Europeana to gather in a single conceptual unit all the information about a Cultural Heritage Object, necessary for all operations on these objects.",
-        "type" : "label"
-      } ],
       "example" : [ {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "The painting Mona Lisa is a Cultural Heritage Object represented in Europeana by one EuropeanaAggregation instance",
-        "type" : "label"
-      }, {
         "identifier" : "example",
         "language" : "en",
         "value" : "The 56th issue of \"Le Temps\" is a (different) Cultural Heritage Object represented in Europeana by another EuropeanaAggregation instance",
@@ -973,6 +957,22 @@
         "identifier" : "example",
         "language" : "en",
         "value" : "The journal \"Le Temps\" is a Cultural Heritage Object represented in Europeana by one EuropeanaAggregation instance",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "The painting Mona Lisa is a Cultural Heritage Object represented in Europeana by one EuropeanaAggregation instance",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "Rationale: This class is used in Europeana to gather in a single conceptual unit all the information about a Cultural Heritage Object, necessary for all operations on these objects.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "Obligation and Occurence: The relation between the Cultural Heritage Objects represented in Europeana and the instances of the class EuropeanaAggregation is one-to-one, in the data maintained by Europeana: every Cultural Heritage Object is represented by an instance of EuropeanaAggregation, and every instance of EuropeanaAggregation represent a Cultural Heritage Object.",
         "type" : "label"
       } ]
     },
@@ -992,7 +992,7 @@
       "IRI-based" : "Place",
       "en" : "edm:Place"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "55",
     "superClasses" : [ "5" ]
   }, {
@@ -1002,7 +1002,7 @@
     "label" : {
       "IRI-based" : "E4_Period"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "56",
     "superClasses" : [ "5" ]
   } ],
@@ -1091,7 +1091,7 @@
     "id" : "73",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "75",
+    "id" : "74",
     "type" : "owl:objectProperty"
   }, {
     "id" : "81",
@@ -1539,14 +1539,14 @@
   }, {
     "iri" : "http://purl.org/dc/terms/language",
     "baseIri" : "http://purl.org/dc/terms",
-    "range" : "76",
+    "range" : "75",
     "label" : {
       "IRI-based" : "language",
       "en" : "dcterms:language"
     },
     "domain" : "30",
     "attributes" : [ "object", "external" ],
-    "id" : "75"
+    "id" : "74"
   }, {
     "range" : "1",
     "domain" : "0",

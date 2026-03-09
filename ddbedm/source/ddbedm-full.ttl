@@ -1,0 +1,724 @@
+@prefix : <http://purl.obolibrary.org/obo/ddbedm/ddbedm-full.ttl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix crm: <http://www.cidoc-crm.org/rdfs/cidoc-crm#> .
+@prefix ddb: <http://www.deutsche-digitale-bibliothek.de/edm/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://purl.obolibrary.org/obo/ddbedm/ddbedm-full.ttl> .
+
+<http://purl.obolibrary.org/obo/ddbedm/ddbedm-full.ttl> rdf:type owl:Ontology ;
+                                                         owl:versionIRI <http://purl.obolibrary.org/obo/ddbedm/releases/2026-03-09/ddbedm-full.ttl> ;
+                                                         dcterms:description "The DDB-EDM is an extension of the implemented the Europeana Mapping Guidelines  described in 2013. Implementation details are presented at the International Conference  on Dublin Core and Metadata Applications in 2014 (Rühle et al., 2014).  See https://dcpapers-data.dublincore.org/articles/dc-2014/952136503/files/dcmi-952136503.pdf"@en ;
+                                                         dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                                         dcterms:title "Deutsche Digitale Bibliothek Europeana Data Model"@en ;
+                                                         vann:preferredNamespaceUri ddb: ,
+                                                                                    "ddb"@en ;
+                                                         owl:versionInfo "2026-03-09" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/source
+dc:source rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty ;
+                    rdfs:label "dcterms:description"@en .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty ;
+               rdfs:label "dcterms:issued"@en ;
+               skos:definition "Date of formal issuance of the resource."@en .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty ;
+                rdfs:label "dcterms:license"@en .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty ;
+              rdfs:label "dcterms:title"@en .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty ;
+                              rdfs:isDefinedBy <https://vocab.org/vann/#preferredNamespacePrefix> ;
+                              rdfs:label "vann:preferredNamespacePrefix"@en .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty ;
+                           rdfs:isDefinedBy <https://vocab.org/vann/#preferredNamespaceUri> ;
+                           rdfs:label "vann:preferredNamespaceUri"@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+skos:example rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#note
+skos:note rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#scopeNote
+skos:scopeNote rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+dc:contributor rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <http://www.europeana.eu/schemas/edm/hasMet> .
+
+
+###  http://purl.org/dc/elements/1.1/coverage
+dc:coverage rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <http://www.europeana.eu/schemas/edm/hasMet> ;
+            rdfs:comment "Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods may be used in preference to numeric identifiers such as sets of coordinates or date ranges. Because coverage is so broadly defined, it is preferable to use the more specific subproperties Temporal Coverage and Spatial Coverage."@en ;
+            rdfs:label "dc:coverage"@en ;
+            skos:definition "The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant."@en .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <http://www.europeana.eu/schemas/edm/hasMet> .
+
+
+###  http://purl.org/dc/elements/1.1/date
+dc:date rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf <http://www.europeana.eu/schemas/edm/hasMet> ;
+        rdfs:comment "Date may be used to express temporal information at any level of granularity. Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [ISO 8601-1] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [W3CDTF] or the Extended Date/Time Format Specification [EDTF]. If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a '/' (slash) character. Either the start or end date may be missing."@en ;
+        rdfs:label "dc:date"@en ;
+        skos:definition "A point or period of time associated with an event in the lifecycle of the resource."@en .
+
+
+###  http://purl.org/dc/elements/1.1/publisher
+dc:publisher rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://www.europeana.eu/schemas/edm/hasMet> .
+
+
+###  http://purl.org/dc/elements/1.1/relation
+dc:relation rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <http://www.europeana.eu/schemas/edm/isRelatedTo> .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+dc:rights rdf:type owl:ObjectProperty ;
+          rdfs:comment "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights. Recommended practice is to refer to a rights statement with a URI. If this is not possible or feasible, a literal value (name, label, or short text) may be provided."@en ;
+          rdfs:label "dc:rights"@en ;
+          skos:definition "Information about rights held in and over the resource."@en .
+
+
+###  http://purl.org/dc/elements/1.1/subject
+dc:subject rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <http://www.europeana.eu/schemas/edm/isRelatedTo> ;
+           rdfs:label "dc:subject"@en .
+
+
+###  http://purl.org/dc/terms/date
+dcterms:date rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf dc:date ;
+             rdfs:comment "Date may be used to express temporal information at any level of granularity. Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [ISO 8601-1] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [W3CDTF] or the Extended Date/Time Format Specification [EDTF]. If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a '/' (slash) character. Either the start or end date may be missing."@en ;
+             rdfs:label "dcterms:date"@en ;
+             skos:definition "A point or period of time associated with an event in the lifecycle of the resource."@en .
+
+
+###  http://purl.org/dc/terms/hasPart
+dcterms:hasPart rdf:type owl:ObjectProperty ;
+                rdfs:label "dcterms:hasPart"@en .
+
+
+###  http://purl.org/dc/terms/isPartOf
+dcterms:isPartOf rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/dc/terms/language
+dcterms:language rdf:type owl:ObjectProperty ;
+                 rdfs:domain <http://www.europeana.eu/schemas/edm/ProvidedCHO> ;
+                 rdfs:range dcterms:LinguisticSystem ;
+                 rdfs:label "dcterms:language"@en .
+
+
+###  http://purl.org/dc/terms/rights
+dcterms:rights rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf dc:rights ;
+               rdfs:domain <http://www.europeana.eu/schemas/edm/WebResource> ;
+               rdfs:range dcterms:RightsStatement ;
+               rdfs:comment "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights. Recommended practice is to refer to a rights statement with a URI. If this is not possible or feasible, a literal value (name, label, or short text) may be provided."@en ;
+               rdfs:label "dcterms:rights"@en ;
+               skos:definition "Information about rights held in and over the resource."@en .
+
+
+###  http://purl.org/dc/terms/subject
+dcterms:subject rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf dc:subject ;
+                rdfs:domain <http://www.europeana.eu/schemas/edm/ProvidedCHO> ;
+                rdfs:comment "Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary."@en ;
+                rdfs:label "dcterms:subject"@en ;
+                skos:definition "A topic of the resource."@en .
+
+
+###  http://www.cidoc-crm.org/rdfs/cidoc-crm#P11_had_participant
+crm:P11_had_participant rdf:type owl:ObjectProperty ;
+                        rdfs:domain <http://www.europeana.eu/schemas/edm/Event> ;
+                        rdfs:range <http://www.europeana.eu/schemas/edm/Agent> ;
+                        rdfs:label "crm:P11_had_participant"@en ;
+                        skos:definition "with edm:Event as domain and edm:Agent as range, used to describe that there is a relation between an event and an agent (e. g. the creation event and the creator)."@en .
+
+
+###  http://www.cidoc-crm.org/rdfs/cidoc-crm#P129_is_about
+crm:P129_is_about rdf:type owl:ObjectProperty .
+
+
+###  http://www.europeana.eu/schemas/edm/aggregatedCHO
+<http://www.europeana.eu/schemas/edm/aggregatedCHO> rdf:type owl:ObjectProperty ;
+                                                    rdfs:subPropertyOf dc:subject ,
+                                                                       crm:P129_is_about ,
+                                                                       <http://www.openarchives.org/ore/terms/aggregates> ;
+                                                    rdfs:domain <http://www.openarchives.org/ore/terms/Aggregation> ;
+                                                    rdfs:range <http://www.europeana.eu/schemas/edm/ProvidedCHO> ;
+                                                    rdfs:label "edm:aggregatedCHO"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/happenedAt
+<http://www.europeana.eu/schemas/edm/happenedAt> rdf:type owl:ObjectProperty ;
+                                                 rdfs:subPropertyOf dc:relation ;
+                                                 rdfs:domain <http://www.europeana.eu/schemas/edm/Event> ;
+                                                 rdfs:range <http://www.europeana.eu/schemas/edm/Place> ;
+                                                 rdfs:label "edm:happenedAt"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/hasMet
+<http://www.europeana.eu/schemas/edm/hasMet> rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf dc:relation ;
+                                             rdfs:label "edm:hasMet"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/isNextInSequence
+<http://www.europeana.eu/schemas/edm/isNextInSequence> rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf dc:relation ;
+                                                       rdfs:label "Is Next In Sequence Of"@en ,
+                                                                  "edm:isNextInSequence"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/isRelatedTo
+<http://www.europeana.eu/schemas/edm/isRelatedTo> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain [ rdf:type owl:Class ;
+                                                                owl:unionOf ( <http://www.europeana.eu/schemas/edm/ProvidedCHO>
+                                                                              [ owl:intersectionOf ( <http://www.openarchives.org/ore/terms/Proxy>
+                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                       owl:onProperty <http://www.openarchives.org/ore/terms/proxyFor> ;
+                                                                                                       owl:someValuesFrom <http://www.europeana.eu/schemas/edm/ProvidedCHO>
+                                                                                                     ]
+                                                                                                   ) ;
+                                                                                rdf:type owl:Class
+                                                                              ]
+                                                                            )
+                                                              ] ;
+                                                  rdfs:label "edm:isRelatedTo"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/occurredAt
+<http://www.europeana.eu/schemas/edm/occurredAt> rdf:type owl:ObjectProperty ;
+                                                 rdfs:subPropertyOf dc:relation ;
+                                                 rdfs:domain <http://www.europeana.eu/schemas/edm/Event> ;
+                                                 rdfs:range <http://www.europeana.eu/schemas/edm/TimeSpan> ;
+                                                 rdfs:label "edm:occurredAt"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/provider
+<http://www.europeana.eu/schemas/edm/provider> rdf:type owl:ObjectProperty ;
+                                               rdfs:range <http://www.europeana.eu/schemas/edm/Agent> ;
+                                               rdfs:label "edm:provider"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/rights
+<http://www.europeana.eu/schemas/edm/rights> rdf:type owl:ObjectProperty ;
+                                             rdfs:label "edm:rights"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/wasPresentAt
+<http://www.europeana.eu/schemas/edm/wasPresentAt> rdf:type owl:ObjectProperty ;
+                                                   rdfs:subPropertyOf dc:relation ;
+                                                   rdfs:domain [ rdf:type owl:Class ;
+                                                                 owl:unionOf ( <http://www.europeana.eu/schemas/edm/Agent>
+                                                                               <http://www.europeana.eu/schemas/edm/InformationResource>
+                                                                               <http://www.europeana.eu/schemas/edm/PhysicalThing>
+                                                                             )
+                                                               ] ;
+                                                   rdfs:range <http://www.europeana.eu/schemas/edm/Event> ;
+                                                   rdfs:label "edm:wasPresentAt"@en .
+
+
+###  http://www.openarchives.org/ore/terms/aggregates
+<http://www.openarchives.org/ore/terms/aggregates> rdf:type owl:ObjectProperty ;
+                                                   rdfs:label "ore:aggregates"@en .
+
+
+###  http://www.openarchives.org/ore/terms/proxyFor
+<http://www.openarchives.org/ore/terms/proxyFor> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/terms/alternative
+dcterms:alternative rdf:type owl:DatatypeProperty ;
+                    rdfs:label "dcterms:alternative"@en ;
+                    skos:definition "An alternative name for the resource."@en .
+
+
+###  http://purl.org/dc/terms/bibliographicCitation
+dcterms:bibliographicCitation rdf:type owl:DatatypeProperty ;
+                              rdfs:comment "Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible."@en ;
+                              rdfs:label "dcterms:bibliographicCitation"@en ;
+                              skos:definition "A bibliographic reference for the resource."@en .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:DatatypeProperty ;
+                rdfs:comment "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en ;
+                rdfs:label "dcterms:created"@en ;
+                skos:definition "Date of creation of the resource."@en .
+
+
+###  http://purl.org/dc/terms/extent
+dcterms:extent rdf:type owl:DatatypeProperty ;
+               rdfs:comment "Recommended practice is to specify the file size in megabytes and duration in ISO 8601 format."@en ;
+               rdfs:label "dcterms:extent"@en ;
+               skos:definition "The size or duration of the resource."@en .
+
+
+###  http://www.deutsche-digitale-bibliothek.de/edm/aggregationEntity
+ddb:aggregationEntity rdf:type owl:DatatypeProperty ;
+                      rdfs:label "ddb:aggregationEntity"@en ;
+                      skos:definition "with edm:ProvidedCHO as domain and a literal value as range, used to distinguish between hierarchical levels with proper descriptions and levels without such descriptions (e.g. an issue that is only identified by the number)."@en .
+
+
+###  http://www.deutsche-digitale-bibliothek.de/edm/hierarchyPosition
+ddb:hierarchyPosition rdf:type owl:DatatypeProperty ;
+                      rdfs:label "ddb:hierarchyPosition"@en ;
+                      skos:definition """With edm:ProvidedCHO as domain and a literal value as range,
+used to describe the order of an edm:ProvidedCHO or edm:PhysicalThing in a hierarchy"""@en .
+
+
+###  http://www.deutsche-digitale-bibliothek.de/edm/hierarchyType
+ddb:hierarchyType rdf:type owl:DatatypeProperty ;
+                  rdfs:label "ddb:hierarchyType"@en ;
+                  skos:definition "This data property is used to describe the object type of an edm:ProvidedCHO or edm:PhysicalThing as part of a hierarchy (e.g. journal, volume, article, illustration). Values used here are based on a vocabulary published at http://ddb.vocnet.org/hierarchietyp/."@en .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#lat
+geo:lat rdf:type owl:DatatypeProperty ;
+        rdfs:label "geo:long"@en ;
+        skos:definition "Longitude"@en .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#long
+geo:long rdf:type owl:DatatypeProperty ;
+         rdfs:label "geo:lat"@en ;
+         skos:definition "Latitude"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://iflastandards.info/ns/fr/frbr/frbroo/F1_Work
+frbroo:F1_Work rdf:type owl:Class ;
+               rdfs:subClassOf crm:E89_Propositional_Object ,
+                               <http://www.europeana.eu/schemas/edm/InformationResource> .
+
+
+###  http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression
+frbroo:F2_Expression rdf:type owl:Class ;
+                     rdfs:subClassOf crm:E89_Propositional_Object ,
+                                     <http://www.europeana.eu/schemas/edm/InformationResource> .
+
+
+###  http://iflastandards.info/ns/fr/frbr/frbroo/F3_Manifestation_Product_Type
+frbroo:F3_Manifestation_Product_Type rdf:type owl:Class ;
+                                     rdfs:subClassOf crm:E89_Propositional_Object ,
+                                                     <http://www.europeana.eu/schemas/edm/InformationResource> .
+
+
+###  http://iflastandards.info/ns/fr/frbr/frbroo/F4_Manifestation_Singleton
+frbroo:F4_Manifestation_Singleton rdf:type owl:Class ;
+                                  rdfs:subClassOf crm:E89_Propositional_Object ,
+                                                  <http://www.europeana.eu/schemas/edm/InformationResource> .
+
+
+###  http://iflastandards.info/ns/fr/frbr/frbroo/F8_Event
+frbroo:F8_Event rdf:type owl:Class ;
+                owl:equivalentClass <http://www.europeana.eu/schemas/edm/Event> ;
+                rdfs:subClassOf <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+
+
+###  http://iflastandards.info/ns/fr/frbr/frbroo/F9_Place
+frbroo:F9_Place rdf:type owl:Class ;
+                owl:equivalentClass <http://www.europeana.eu/schemas/edm/Place> ;
+                rdfs:subClassOf <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+
+
+###  http://metadata.net/harmony/abc#Place
+<http://metadata.net/harmony/abc#Place> rdf:type owl:Class ;
+                                        owl:equivalentClass <http://www.europeana.eu/schemas/edm/Place> ;
+                                        rdfs:subClassOf <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+
+
+###  http://metadata.net/harmony/abc#Temporality
+<http://metadata.net/harmony/abc#Temporality> rdf:type owl:Class ;
+                                              owl:equivalentClass <http://www.europeana.eu/schemas/edm/Event> ;
+                                              rdfs:subClassOf <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+
+
+###  http://metadata.net/harmony/abc#Time
+<http://metadata.net/harmony/abc#Time> rdf:type owl:Class ;
+                                       owl:equivalentClass <http://www.europeana.eu/schemas/edm/TimeSpan> ;
+                                       rdfs:subClassOf dcterms:PeriodOfTime ,
+                                                       <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+
+
+###  http://purl.org/dc/terms/LinguisticSystem
+dcterms:LinguisticSystem rdf:type owl:Class ;
+                         rdfs:comment "Written, spoken, sign, and computer languages are linguistic systems."@en ;
+                         rdfs:label "dcterms:LinguisticSystem"@en ;
+                         skos:definition "A system of signs, symbols, sounds, gestures, or rules used in communication."@en .
+
+
+###  http://purl.org/dc/terms/PeriodOfTime
+dcterms:PeriodOfTime rdf:type owl:Class .
+
+
+###  http://purl.org/dc/terms/PhysicalMedium
+dcterms:PhysicalMedium rdf:type owl:Class ;
+                       rdfs:label "dcterms:PhysicalMedium"@en ;
+                       skos:definition "A physical material or carrier."@en ;
+                       skos:example "Examples include paper, canvas, or DVD."@en .
+
+
+###  http://purl.org/dc/terms/PhysicalResource
+dcterms:PhysicalResource rdf:type owl:Class ;
+                         rdfs:label "dcterms:PhysicalResource"@en ;
+                         skos:definition "A material thing."@en .
+
+
+###  http://purl.org/dc/terms/ProvenanceStatement
+dcterms:ProvenanceStatement rdf:type owl:Class ;
+                            rdfs:label "dcterms:ProvenanceStatement"@en ;
+                            skos:definition "Any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation."@en .
+
+
+###  http://purl.org/dc/terms/RightsStatement
+dcterms:RightsStatement rdf:type owl:Class ;
+                        rdfs:label "dcterms:RightsStatement"@en ;
+                        skos:definition "A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights."@en .
+
+
+###  http://purl.org/vocab/frbr/core#Event
+frbr:Event rdf:type owl:Class ;
+           owl:equivalentClass <http://www.europeana.eu/schemas/edm/Event> ;
+           rdfs:subClassOf <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+
+
+###  http://purl.org/vocab/frbr/core#Expression
+frbr:Expression rdf:type owl:Class ;
+                rdfs:subClassOf crm:E89_Propositional_Object ,
+                                <http://www.europeana.eu/schemas/edm/InformationResource> .
+
+
+###  http://purl.org/vocab/frbr/core#Manifestation
+frbr:Manifestation rdf:type owl:Class ;
+                   rdfs:subClassOf crm:E89_Propositional_Object ,
+                                   <http://www.europeana.eu/schemas/edm/InformationResource> .
+
+
+###  http://purl.org/vocab/frbr/core#Place
+frbr:Place rdf:type owl:Class ;
+           owl:equivalentClass <http://www.europeana.eu/schemas/edm/Place> ;
+           rdfs:subClassOf <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+
+
+###  http://purl.org/vocab/frbr/core#Work
+frbr:Work rdf:type owl:Class ;
+          rdfs:subClassOf crm:E89_Propositional_Object ,
+                          <http://www.europeana.eu/schemas/edm/InformationResource> .
+
+
+###  http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/rdfs/cidoc-crm#E18_Physical_Thing
+crm:E18_Physical_Thing rdf:type owl:Class ;
+                       owl:equivalentClass <http://www.europeana.eu/schemas/edm/PhysicalThing> ;
+                       rdfs:subClassOf <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+
+
+###  http://www.cidoc-crm.org/rdfs/cidoc-crm#E39_Actor
+crm:E39_Actor rdf:type owl:Class ;
+              owl:equivalentClass <http://www.europeana.eu/schemas/edm/Agent> ;
+              rdfs:subClassOf <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+
+
+###  http://www.cidoc-crm.org/rdfs/cidoc-crm#E4_Period
+crm:E4_Period rdf:type owl:Class ;
+              owl:equivalentClass <http://www.europeana.eu/schemas/edm/Event> ;
+              rdfs:subClassOf <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+
+
+###  http://www.cidoc-crm.org/rdfs/cidoc-crm#E52_Time-Span
+crm:E52_Time-Span rdf:type owl:Class ;
+                  owl:equivalentClass <http://www.europeana.eu/schemas/edm/TimeSpan> ;
+                  rdfs:subClassOf dcterms:PeriodOfTime ,
+                                  <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+
+
+###  http://www.cidoc-crm.org/rdfs/cidoc-crm#E53_Place
+crm:E53_Place rdf:type owl:Class ;
+              owl:equivalentClass <http://www.europeana.eu/schemas/edm/Place> ;
+              rdfs:subClassOf <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+
+
+###  http://www.cidoc-crm.org/rdfs/cidoc-crm#E89_Propositional_Object
+crm:E89_Propositional_Object rdf:type owl:Class ;
+                             owl:equivalentClass <http://www.europeana.eu/schemas/edm/InformationResource> .
+
+
+###  http://www.europeana.eu/schemas/edm/Agent
+<http://www.europeana.eu/schemas/edm/Agent> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://www.europeana.eu/schemas/edm/NonInformationResource> ;
+                                            rdfs:label "edm:Agent"@en ;
+                                            skos:example "Leonardo da Vinci, the British Museum, W3C" ,
+                                                         "Leonardo da Vinci, the British Museum, W3C"@en ;
+                                            skos:scopeNote "Rationale: This class is a domain of edm:wasPresentAt" ,
+                                                           "Rationale: This class is a domain of edm:wasPresentAt"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/EuropeanaAggregation
+<http://www.europeana.eu/schemas/edm/EuropeanaAggregation> rdf:type owl:Class ;
+                                                           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <http://www.europeana.eu/schemas/edm/aggregatedCHO> ;
+                                                                                 owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                                               ] ;
+                                                           rdfs:subClassOf <http://www.europeana.eu/schemas/edm/EuropeanaObject> ,
+                                                                           <http://www.openarchives.org/ore/terms/Aggregation> ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <http://www.europeana.eu/schemas/edm/aggregatedCHO> ;
+                                                                             owl:someValuesFrom owl:Thing
+                                                                           ] ;
+                                                           rdfs:label "Europeana Aggregation" ;
+                                                           skos:example "The 56th issue of \"Le Temps\" is a (different) Cultural Heritage Object represented in Europeana by another EuropeanaAggregation instance"@en ,
+                                                                        "The journal \"Le Temps\" is a Cultural Heritage Object represented in Europeana by one EuropeanaAggregation instance"@en ,
+                                                                        "The painting Mona Lisa is a Cultural Heritage Object represented in Europeana by one EuropeanaAggregation instance"@en ;
+                                                           skos:note "An instance of EuropeanaAggregation is created at ingestion time for each different Cultural Heritage Object recognized by Europeana. Such instance is associated to the Cultural Heritage Object that it is about, by the property edm:aggregatedCHO"@en ;
+                                                           skos:scopeNote "Obligation and Occurence: The relation between the Cultural Heritage Objects represented in Europeana and the instances of the class EuropeanaAggregation is one-to-one, in the data maintained by Europeana: every Cultural Heritage Object is represented by an instance of EuropeanaAggregation, and every instance of EuropeanaAggregation represent a Cultural Heritage Object."@en ,
+                                                                          "Rationale: This class is used in Europeana to gather in a single conceptual unit all the information about a Cultural Heritage Object, necessary for all operations on these objects."@en .
+
+
+###  http://www.europeana.eu/schemas/edm/EuropeanaObject
+<http://www.europeana.eu/schemas/edm/EuropeanaObject> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://www.europeana.eu/schemas/edm/WebResource> ;
+                                                      rdfs:label "Europeana Object"@en ;
+                                                      skos:example "An annotation created by a user through the Europeana portal"@en ,
+                                                                   "Any content created by the users through the service made available by Europeana for that purpose"@en ,
+                                                                   "Any instance of the class EuropeanaAggregation"@en ;
+                                                      skos:scopeNote "Rationale: This class is used to tag objects that are the result of activity of Europeana, and, as such, objects on which Europeana holds rights"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/Event
+<http://www.europeana.eu/schemas/edm/Event> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://www.europeana.eu/schemas/edm/NonInformationResource> ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://www.europeana.eu/schemas/edm/happenedAt> ;
+                                                              owl:someValuesFrom owl:Thing
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://www.europeana.eu/schemas/edm/happenedAt> ;
+                                                              owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                            ] ;
+                                            rdfs:label "edm:Event"@en ;
+                                            skos:example "The 2nd World War, the act of painting Mona Lisa, the change of custody of Mona Lisa."@en ,
+                                                         "the 2nd World War"@en ,
+                                                         "the act of painting Mona Lisa"@en ,
+                                                         "the change of custody of Mona Lisa"@en ;
+                                            skos:note "Events are identified either by the content provider or by Europeana enrichment at ingestion time"@en ;
+                                            skos:scopeNote "Rationale:This class is a domain of edm:happenedAt and the domain of edm:occurredAt"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/InformationResource
+<http://www.europeana.eu/schemas/edm/InformationResource> rdf:type owl:Class ;
+                                                          owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                owl:unionOf ( frbroo:F1_Work
+                                                                                              frbroo:F2_Expression
+                                                                                              frbroo:F3_Manifestation_Product_Type
+                                                                                              frbroo:F4_Manifestation_Singleton
+                                                                                            )
+                                                                              ] ,
+                                                                              [ rdf:type owl:Class ;
+                                                                                owl:unionOf ( frbr:Expression
+                                                                                              frbr:Manifestation
+                                                                                              frbr:Work
+                                                                                            )
+                                                                              ] ;
+                                                          rdfs:label "edm:InformationResource"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/NonInformationResource
+<http://www.europeana.eu/schemas/edm/NonInformationResource> rdf:type owl:Class ;
+                                                             owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                   owl:complementOf <http://www.europeana.eu/schemas/edm/InformationResource>
+                                                                                 ] ;
+                                                             rdfs:label "edm:NonInformationResource"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/PhysicalThing
+<http://www.europeana.eu/schemas/edm/PhysicalThing> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://www.europeana.eu/schemas/edm/NonInformationResource> ;
+                                                    rdfs:label "edm:PhysicalThing"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/Place
+<http://www.europeana.eu/schemas/edm/Place> rdf:type owl:Class ;
+                                            owl:equivalentClass <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#space-region> ;
+                                            rdfs:subClassOf <http://www.europeana.eu/schemas/edm/NonInformationResource> ;
+                                            rdfs:label "edm:Place"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/ProvidedCHO
+<http://www.europeana.eu/schemas/edm/ProvidedCHO> rdf:type owl:Class ;
+                                                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty [ owl:inverseOf <http://www.europeana.eu/schemas/edm/aggregatedCHO>
+                                                                                   ] ;
+                                                                    owl:someValuesFrom owl:Thing
+                                                                  ] ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty [ owl:inverseOf <http://www.europeana.eu/schemas/edm/aggregatedCHO>
+                                                                                   ] ;
+                                                                    owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                                  ] ;
+                                                  rdfs:label "edm:ProvidedCHO"@en ;
+                                                  skos:example "Mona Lisa, Winged Victory of Samothrace"@en ;
+                                                  skos:note "This class has been mostly motivated by the need to assign a type to the “central node” in the EDM pattern, during the ingestion process, related to the XML expression of EDM at that stage. It was especially intended to fit the cases where edm:PhysicalThing  cannot be used as the type of the resource standing for the real-world object (independently of any specific data contributor perspective)."@en ;
+                                                  skos:scopeNote "Rationale: This class is the range of edm:aggregatedCHO. A resource of type ProvidedCHO can be the subject of statements using edm:isRelatedTo or any more specific property."@en .
+
+
+###  http://www.europeana.eu/schemas/edm/TimeSpan
+<http://www.europeana.eu/schemas/edm/TimeSpan> rdf:type owl:Class ;
+                                               owl:equivalentClass <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval> ;
+                                               rdfs:subClassOf dcterms:PeriodOfTime ,
+                                                               <http://www.europeana.eu/schemas/edm/NonInformationResource> ;
+                                               rdfs:label "edm:TimeSpan"@en .
+
+
+###  http://www.europeana.eu/schemas/edm/WebResource
+<http://www.europeana.eu/schemas/edm/WebResource> rdf:type owl:Class ;
+                                                  rdfs:subClassOf crm:E89_Propositional_Object ,
+                                                                  <http://www.europeana.eu/schemas/edm/InformationResource> ;
+                                                  rdfs:label "edm:WebResource"@en .
+
+
+###  http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#space-region
+<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#space-region> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+
+
+###  http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval
+<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval> rdf:type owl:Class ;
+                                                                rdfs:subClassOf dcterms:PeriodOfTime ,
+                                                                                <http://www.europeana.eu/schemas/edm/NonInformationResource> .
+
+
+###  http://www.openarchives.org/ore/terms/Aggregation
+<http://www.openarchives.org/ore/terms/Aggregation> rdf:type owl:Class ;
+                                                    rdfs:label "ore:Aggregation"@en .
+
+
+###  http://www.openarchives.org/ore/terms/Proxy
+<http://www.openarchives.org/ore/terms/Proxy> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.europeana.eu/schemas/edm/NonInformationResource> ;
+             rdfs:label "skos:Concept"@en .
+
+
+###  http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://europeana.eu
+<http://europeana.eu> rdf:type owl:NamedIndividual ,
+                               <http://xmlns.com/foaf/0.1/Organization> .
+
+
+###  http://data.semanticweb.org/person/antoine-isaac
+<http://data.semanticweb.org/person/antoine-isaac> rdf:type owl:NamedIndividual ,
+                                                            <http://xmlns.com/foaf/0.1/Person> .
+
+
+###  http://www.europeana.eu/schemas/edm/
+<http://www.europeana.eu/schemas/edm/> rdf:type owl:NamedIndividual ,
+                                                <http://purl.org/vocommons/voaf#Vocabulary> ;
+                                       dc:contributor <http://www.ibi.hu-berlin.de/institut/personen/iwanowa> ,
+                                                      <http://www.ics.forth.gr/isl/people/people_individual.jsp?Person_ID=2> ,
+                                                      <http://www.image.ece.ntua.gr/~ndroso/> ,
+                                                      <http://www.image.ntua.gr/~tzouvaras/> ,
+                                                      [ rdf:type <http://xmlns.com/foaf/0.1/Organization>
+                                                      ] ,
+                                                      [ rdf:type <http://xmlns.com/foaf/0.1/Person>
+                                                      ] ;
+                                       dc:creator <http://data.semanticweb.org/person/antoine-isaac> ;
+                                       dc:publisher <http://europeana.eu> .
+
+
+###  http://www.ibi.hu-berlin.de/institut/personen/iwanowa
+<http://www.ibi.hu-berlin.de/institut/personen/iwanowa> rdf:type owl:NamedIndividual ,
+                                                                 <http://xmlns.com/foaf/0.1/Person> .
+
+
+###  http://www.ics.forth.gr/isl/people/people_individual.jsp?Person_ID=2
+<http://www.ics.forth.gr/isl/people/people_individual.jsp?Person_ID=2> rdf:type owl:NamedIndividual ,
+                                                                                <http://xmlns.com/foaf/0.1/Person> .
+
+
+###  http://www.image.ece.ntua.gr/~ndroso/
+<http://www.image.ece.ntua.gr/~ndroso/> rdf:type owl:NamedIndividual ,
+                                                 <http://xmlns.com/foaf/0.1/Person> .
+
+
+###  http://www.image.ntua.gr/~tzouvaras/
+<http://www.image.ntua.gr/~tzouvaras/> rdf:type owl:NamedIndividual ,
+                                                <http://xmlns.com/foaf/0.1/Person> .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

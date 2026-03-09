@@ -1,0 +1,1071 @@
+{
+  "graphs" : [ {
+    "id" : "http://purl.obolibrary.org/obo/ddbedm/ddbedm-full.json",
+    "meta" : {
+      "basicPropertyValues" : [ {
+        "pred" : "http://purl.org/dc/terms/description",
+        "val" : "The DDB-EDM is an extension of the implemented the Europeana Mapping Guidelines  described in 2013. Implementation details are presented at the International Conference  on Dublin Core and Metadata Applications in 2014 (Rühle et al., 2014).  See https://dcpapers-data.dublincore.org/articles/dc-2014/952136503/files/dcmi-952136503.pdf"
+      }, {
+        "pred" : "http://purl.org/dc/terms/license",
+        "val" : "https://creativecommons.org/licenses/by/4.0/"
+      }, {
+        "pred" : "http://purl.org/dc/terms/title",
+        "val" : "Deutsche Digitale Bibliothek Europeana Data Model"
+      }, {
+        "pred" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+        "val" : "http://www.deutsche-digitale-bibliothek.de/edm/"
+      }, {
+        "pred" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+        "val" : "ddb"
+      }, {
+        "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
+        "val" : "2026-03-09"
+      } ],
+      "version" : "http://purl.obolibrary.org/obo/ddbedm/releases/2026-03-09/ddbedm-full.json"
+    },
+    "nodes" : [ {
+      "id" : "http://iflastandards.info/ns/fr/frbr/frbroo/F1_Work",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://iflastandards.info/ns/fr/frbr/frbroo/F3_Manifestation_Product_Type",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://iflastandards.info/ns/fr/frbr/frbroo/F4_Manifestation_Singleton",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://iflastandards.info/ns/fr/frbr/frbroo/F8_Event",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://iflastandards.info/ns/fr/frbr/frbroo/F9_Place",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://metadata.net/harmony/abc#Place",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://metadata.net/harmony/abc#Temporality",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://metadata.net/harmony/abc#Time",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.org/dc/terms/LinguisticSystem",
+      "lbl" : "dcterms:LinguisticSystem",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Written, spoken, sign, and computer languages are linguistic systems." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A system of signs, symbols, sounds, gestures, or rules used in communication."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.org/dc/terms/PeriodOfTime",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.org/dc/terms/PhysicalMedium",
+      "lbl" : "dcterms:PhysicalMedium",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A physical material or carrier."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#example",
+          "val" : "Examples include paper, canvas, or DVD."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.org/dc/terms/PhysicalResource",
+      "lbl" : "dcterms:PhysicalResource",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A material thing."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.org/dc/terms/ProvenanceStatement",
+      "lbl" : "dcterms:ProvenanceStatement",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "Any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.org/dc/terms/RightsStatement",
+      "lbl" : "dcterms:RightsStatement",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.org/vocab/frbr/core#Event",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.org/vocab/frbr/core#Expression",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.org/vocab/frbr/core#Manifestation",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.org/vocab/frbr/core#Place",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.org/vocab/frbr/core#Work",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.org/vocommons/voaf#Vocabulary",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#E18_Physical_Thing",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#E39_Actor",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#E4_Period",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#E52_Time-Span",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#E53_Place",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#E89_Propositional_Object",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://www.europeana.eu/schemas/edm/Agent",
+      "lbl" : "edm:Agent",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#example",
+          "val" : "Leonardo da Vinci, the British Museum, W3C"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#example",
+          "val" : "Leonardo da Vinci, the British Museum, W3C"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#scopeNote",
+          "val" : "Rationale: This class is a domain of edm:wasPresentAt"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#scopeNote",
+          "val" : "Rationale: This class is a domain of edm:wasPresentAt"
+        } ]
+      }
+    }, {
+      "id" : "http://www.europeana.eu/schemas/edm/EuropeanaAggregation",
+      "lbl" : "Europeana Aggregation",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#example",
+          "val" : "The 56th issue of \"Le Temps\" is a (different) Cultural Heritage Object represented in Europeana by another EuropeanaAggregation instance"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#example",
+          "val" : "The journal \"Le Temps\" is a Cultural Heritage Object represented in Europeana by one EuropeanaAggregation instance"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#example",
+          "val" : "The painting Mona Lisa is a Cultural Heritage Object represented in Europeana by one EuropeanaAggregation instance"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#note",
+          "val" : "An instance of EuropeanaAggregation is created at ingestion time for each different Cultural Heritage Object recognized by Europeana. Such instance is associated to the Cultural Heritage Object that it is about, by the property edm:aggregatedCHO"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#scopeNote",
+          "val" : "Obligation and Occurence: The relation between the Cultural Heritage Objects represented in Europeana and the instances of the class EuropeanaAggregation is one-to-one, in the data maintained by Europeana: every Cultural Heritage Object is represented by an instance of EuropeanaAggregation, and every instance of EuropeanaAggregation represent a Cultural Heritage Object."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#scopeNote",
+          "val" : "Rationale: This class is used in Europeana to gather in a single conceptual unit all the information about a Cultural Heritage Object, necessary for all operations on these objects."
+        } ]
+      }
+    }, {
+      "id" : "http://www.europeana.eu/schemas/edm/EuropeanaObject",
+      "lbl" : "Europeana Object",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#example",
+          "val" : "An annotation created by a user through the Europeana portal"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#example",
+          "val" : "Any content created by the users through the service made available by Europeana for that purpose"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#example",
+          "val" : "Any instance of the class EuropeanaAggregation"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#scopeNote",
+          "val" : "Rationale: This class is used to tag objects that are the result of activity of Europeana, and, as such, objects on which Europeana holds rights"
+        } ]
+      }
+    }, {
+      "id" : "http://www.europeana.eu/schemas/edm/Event",
+      "lbl" : "edm:Event",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#example",
+          "val" : "The 2nd World War, the act of painting Mona Lisa, the change of custody of Mona Lisa."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#example",
+          "val" : "the 2nd World War"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#example",
+          "val" : "the act of painting Mona Lisa"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#example",
+          "val" : "the change of custody of Mona Lisa"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#note",
+          "val" : "Events are identified either by the content provider or by Europeana enrichment at ingestion time"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#scopeNote",
+          "val" : "Rationale:This class is a domain of edm:happenedAt and the domain of edm:occurredAt"
+        } ]
+      }
+    }, {
+      "id" : "http://www.europeana.eu/schemas/edm/InformationResource",
+      "lbl" : "edm:InformationResource",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://www.europeana.eu/schemas/edm/NonInformationResource",
+      "lbl" : "edm:NonInformationResource",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://www.europeana.eu/schemas/edm/PhysicalThing",
+      "lbl" : "edm:PhysicalThing",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://www.europeana.eu/schemas/edm/Place",
+      "lbl" : "edm:Place",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://www.europeana.eu/schemas/edm/ProvidedCHO",
+      "lbl" : "edm:ProvidedCHO",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#example",
+          "val" : "Mona Lisa, Winged Victory of Samothrace"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#note",
+          "val" : "This class has been mostly motivated by the need to assign a type to the “central node” in the EDM pattern, during the ingestion process, related to the XML expression of EDM at that stage. It was especially intended to fit the cases where edm:PhysicalThing  cannot be used as the type of the resource standing for the real-world object (independently of any specific data contributor perspective)."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#scopeNote",
+          "val" : "Rationale: This class is the range of edm:aggregatedCHO. A resource of type ProvidedCHO can be the subject of statements using edm:isRelatedTo or any more specific property."
+        } ]
+      }
+    }, {
+      "id" : "http://www.europeana.eu/schemas/edm/TimeSpan",
+      "lbl" : "edm:TimeSpan",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://www.europeana.eu/schemas/edm/WebResource",
+      "lbl" : "edm:WebResource",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#space-region",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://www.openarchives.org/ore/terms/Aggregation",
+      "lbl" : "ore:Aggregation",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://www.openarchives.org/ore/terms/Proxy",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://www.w3.org/2004/02/skos/core#Concept",
+      "lbl" : "skos:Concept",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://xmlns.com/foaf/0.1/Organization",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://xmlns.com/foaf/0.1/Person",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/contributor",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/coverage",
+      "lbl" : "dc:coverage",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods may be used in preference to numeric identifiers such as sets of coordinates or date ranges. Because coverage is so broadly defined, it is preferable to use the more specific subproperties Temporal Coverage and Spatial Coverage." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/creator",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/date",
+      "lbl" : "dc:date",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "Date may be used to express temporal information at any level of granularity. Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [ISO 8601-1] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [W3CDTF] or the Extended Date/Time Format Specification [EDTF]. If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a '/' (slash) character. Either the start or end date may be missing." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A point or period of time associated with an event in the lifecycle of the resource."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/publisher",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/relation",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/rights",
+      "lbl" : "dc:rights",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights. Recommended practice is to refer to a rights statement with a URI. If this is not possible or feasible, a literal value (name, label, or short text) may be provided." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "Information about rights held in and over the resource."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/subject",
+      "lbl" : "dc:subject",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.org/dc/terms/date",
+      "lbl" : "dcterms:date",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "Date may be used to express temporal information at any level of granularity. Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [ISO 8601-1] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [W3CDTF] or the Extended Date/Time Format Specification [EDTF]. If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a '/' (slash) character. Either the start or end date may be missing." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A point or period of time associated with an event in the lifecycle of the resource."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.org/dc/terms/hasPart",
+      "lbl" : "dcterms:hasPart",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.org/dc/terms/isPartOf",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.org/dc/terms/language",
+      "lbl" : "dcterms:language",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.org/dc/terms/rights",
+      "lbl" : "dcterms:rights",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights. Recommended practice is to refer to a rights statement with a URI. If this is not possible or feasible, a literal value (name, label, or short text) may be provided." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "Information about rights held in and over the resource."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.org/dc/terms/subject",
+      "lbl" : "dcterms:subject",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A topic of the resource."
+        } ]
+      }
+    }, {
+      "id" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#P11_had_participant",
+      "lbl" : "crm:P11_had_participant",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "with edm:Event as domain and edm:Agent as range, used to describe that there is a relation between an event and an agent (e. g. the creation event and the creator)."
+        } ]
+      }
+    }, {
+      "id" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#P129_is_about",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://www.europeana.eu/schemas/edm/aggregatedCHO",
+      "lbl" : "edm:aggregatedCHO",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://www.europeana.eu/schemas/edm/happenedAt",
+      "lbl" : "edm:happenedAt",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://www.europeana.eu/schemas/edm/hasMet",
+      "lbl" : "edm:hasMet",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://www.europeana.eu/schemas/edm/isNextInSequence",
+      "lbl" : "edm:isNextInSequence",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://www.europeana.eu/schemas/edm/isRelatedTo",
+      "lbl" : "edm:isRelatedTo",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://www.europeana.eu/schemas/edm/occurredAt",
+      "lbl" : "edm:occurredAt",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://www.europeana.eu/schemas/edm/provider",
+      "lbl" : "edm:provider",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://www.europeana.eu/schemas/edm/rights",
+      "lbl" : "edm:rights",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://www.europeana.eu/schemas/edm/wasPresentAt",
+      "lbl" : "edm:wasPresentAt",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://www.openarchives.org/ore/terms/aggregates",
+      "lbl" : "ore:aggregates",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://www.openarchives.org/ore/terms/proxyFor",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.org/dc/terms/alternative",
+      "lbl" : "dcterms:alternative",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "An alternative name for the resource."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.org/dc/terms/bibliographicCitation",
+      "lbl" : "dcterms:bibliographicCitation",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA",
+      "meta" : {
+        "comments" : [ "Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A bibliographic reference for the resource."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.org/dc/terms/created",
+      "lbl" : "dcterms:created",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA",
+      "meta" : {
+        "comments" : [ "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "Date of creation of the resource."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.org/dc/terms/extent",
+      "lbl" : "dcterms:extent",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA",
+      "meta" : {
+        "comments" : [ "Recommended practice is to specify the file size in megabytes and duration in ISO 8601 format." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "The size or duration of the resource."
+        } ]
+      }
+    }, {
+      "id" : "http://www.deutsche-digitale-bibliothek.de/edm/aggregationEntity",
+      "lbl" : "ddb:aggregationEntity",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "with edm:ProvidedCHO as domain and a literal value as range, used to distinguish between hierarchical levels with proper descriptions and levels without such descriptions (e.g. an issue that is only identified by the number)."
+        } ]
+      }
+    }, {
+      "id" : "http://www.deutsche-digitale-bibliothek.de/edm/hierarchyPosition",
+      "lbl" : "ddb:hierarchyPosition",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "With edm:ProvidedCHO as domain and a literal value as range,\nused to describe the order of an edm:ProvidedCHO or edm:PhysicalThing in a hierarchy"
+        } ]
+      }
+    }, {
+      "id" : "http://www.deutsche-digitale-bibliothek.de/edm/hierarchyType",
+      "lbl" : "ddb:hierarchyType",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "This data property is used to describe the object type of an edm:ProvidedCHO or edm:PhysicalThing as part of a hierarchy (e.g. journal, volume, article, illustration). Values used here are based on a vocabulary published at http://ddb.vocnet.org/hierarchietyp/."
+        } ]
+      }
+    }, {
+      "id" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+      "lbl" : "geo:long",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "Longitude"
+        } ]
+      }
+    }, {
+      "id" : "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+      "lbl" : "geo:lat",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "Latitude"
+        } ]
+      }
+    }, {
+      "id" : "http://europeana.eu",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://data.semanticweb.org/person/antoine-isaac",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://www.europeana.eu/schemas/edm/",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://www.ibi.hu-berlin.de/institut/personen/iwanowa",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://www.ics.forth.gr/isl/people/people_individual.jsp?Person_ID=2",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://www.image.ece.ntua.gr/~ndroso/",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://www.image.ntua.gr/~tzouvaras/",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/source",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/description",
+      "lbl" : "dcterms:description",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/issued",
+      "lbl" : "dcterms:issued",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "Date of formal issuance of the resource."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.org/dc/terms/license",
+      "lbl" : "dcterms:license",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/title",
+      "lbl" : "dcterms:title",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+      "lbl" : "vann:preferredNamespacePrefix",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "https://vocab.org/vann/#preferredNamespacePrefix"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+      "lbl" : "vann:preferredNamespaceUri",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "https://vocab.org/vann/#preferredNamespaceUri"
+        } ]
+      }
+    }, {
+      "id" : "http://www.w3.org/2004/02/skos/core#definition",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.w3.org/2004/02/skos/core#example",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.w3.org/2004/02/skos/core#note",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.w3.org/2004/02/skos/core#scopeNote",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "_:genid2147483678"
+    }, {
+      "id" : "_:genid2147483680"
+    } ],
+    "edges" : [ {
+      "sub" : "http://iflastandards.info/ns/fr/frbr/frbroo/F1_Work",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#E89_Propositional_Object"
+    }, {
+      "sub" : "http://iflastandards.info/ns/fr/frbr/frbroo/F1_Work",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/InformationResource"
+    }, {
+      "sub" : "http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#E89_Propositional_Object"
+    }, {
+      "sub" : "http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/InformationResource"
+    }, {
+      "sub" : "http://iflastandards.info/ns/fr/frbr/frbroo/F3_Manifestation_Product_Type",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#E89_Propositional_Object"
+    }, {
+      "sub" : "http://iflastandards.info/ns/fr/frbr/frbroo/F3_Manifestation_Product_Type",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/InformationResource"
+    }, {
+      "sub" : "http://iflastandards.info/ns/fr/frbr/frbroo/F4_Manifestation_Singleton",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#E89_Propositional_Object"
+    }, {
+      "sub" : "http://iflastandards.info/ns/fr/frbr/frbroo/F4_Manifestation_Singleton",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/InformationResource"
+    }, {
+      "sub" : "http://iflastandards.info/ns/fr/frbr/frbroo/F8_Event",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/NonInformationResource"
+    }, {
+      "sub" : "http://iflastandards.info/ns/fr/frbr/frbroo/F9_Place",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/NonInformationResource"
+    }, {
+      "sub" : "http://metadata.net/harmony/abc#Place",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/NonInformationResource"
+    }, {
+      "sub" : "http://metadata.net/harmony/abc#Temporality",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/NonInformationResource"
+    }, {
+      "sub" : "http://metadata.net/harmony/abc#Time",
+      "pred" : "is_a",
+      "obj" : "http://purl.org/dc/terms/PeriodOfTime"
+    }, {
+      "sub" : "http://metadata.net/harmony/abc#Time",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/NonInformationResource"
+    }, {
+      "sub" : "http://purl.org/vocab/frbr/core#Event",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/NonInformationResource"
+    }, {
+      "sub" : "http://purl.org/vocab/frbr/core#Expression",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#E89_Propositional_Object"
+    }, {
+      "sub" : "http://purl.org/vocab/frbr/core#Expression",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/InformationResource"
+    }, {
+      "sub" : "http://purl.org/vocab/frbr/core#Manifestation",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#E89_Propositional_Object"
+    }, {
+      "sub" : "http://purl.org/vocab/frbr/core#Manifestation",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/InformationResource"
+    }, {
+      "sub" : "http://purl.org/vocab/frbr/core#Place",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/NonInformationResource"
+    }, {
+      "sub" : "http://purl.org/vocab/frbr/core#Work",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#E89_Propositional_Object"
+    }, {
+      "sub" : "http://purl.org/vocab/frbr/core#Work",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/InformationResource"
+    }, {
+      "sub" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#E18_Physical_Thing",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/NonInformationResource"
+    }, {
+      "sub" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#E39_Actor",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/NonInformationResource"
+    }, {
+      "sub" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#E4_Period",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/NonInformationResource"
+    }, {
+      "sub" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#E52_Time-Span",
+      "pred" : "is_a",
+      "obj" : "http://purl.org/dc/terms/PeriodOfTime"
+    }, {
+      "sub" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#E52_Time-Span",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/NonInformationResource"
+    }, {
+      "sub" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#E53_Place",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/NonInformationResource"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/Agent",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/NonInformationResource"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/EuropeanaAggregation",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/EuropeanaObject"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/EuropeanaAggregation",
+      "pred" : "is_a",
+      "obj" : "http://www.openarchives.org/ore/terms/Aggregation"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/EuropeanaAggregation",
+      "pred" : "http://www.europeana.eu/schemas/edm/aggregatedCHO",
+      "obj" : "http://www.w3.org/2002/07/owl#Thing"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/EuropeanaObject",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/WebResource"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/Event",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/NonInformationResource"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/Event",
+      "pred" : "http://www.europeana.eu/schemas/edm/happenedAt",
+      "obj" : "http://www.w3.org/2002/07/owl#Thing"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/PhysicalThing",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/NonInformationResource"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/Place",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/NonInformationResource"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/TimeSpan",
+      "pred" : "is_a",
+      "obj" : "http://purl.org/dc/terms/PeriodOfTime"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/TimeSpan",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/NonInformationResource"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/WebResource",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#E89_Propositional_Object"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/WebResource",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/InformationResource"
+    }, {
+      "sub" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#space-region",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/NonInformationResource"
+    }, {
+      "sub" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval",
+      "pred" : "is_a",
+      "obj" : "http://purl.org/dc/terms/PeriodOfTime"
+    }, {
+      "sub" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/NonInformationResource"
+    }, {
+      "sub" : "http://www.w3.org/2004/02/skos/core#Concept",
+      "pred" : "is_a",
+      "obj" : "http://www.europeana.eu/schemas/edm/NonInformationResource"
+    }, {
+      "sub" : "http://europeana.eu",
+      "pred" : "type",
+      "obj" : "http://xmlns.com/foaf/0.1/Organization"
+    }, {
+      "sub" : "http://data.semanticweb.org/person/antoine-isaac",
+      "pred" : "type",
+      "obj" : "http://xmlns.com/foaf/0.1/Person"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/",
+      "pred" : "type",
+      "obj" : "http://purl.org/vocommons/voaf#Vocabulary"
+    }, {
+      "sub" : "http://www.ibi.hu-berlin.de/institut/personen/iwanowa",
+      "pred" : "type",
+      "obj" : "http://xmlns.com/foaf/0.1/Person"
+    }, {
+      "sub" : "http://www.ics.forth.gr/isl/people/people_individual.jsp?Person_ID=2",
+      "pred" : "type",
+      "obj" : "http://xmlns.com/foaf/0.1/Person"
+    }, {
+      "sub" : "http://www.image.ece.ntua.gr/~ndroso/",
+      "pred" : "type",
+      "obj" : "http://xmlns.com/foaf/0.1/Person"
+    }, {
+      "sub" : "http://www.image.ntua.gr/~tzouvaras/",
+      "pred" : "type",
+      "obj" : "http://xmlns.com/foaf/0.1/Person"
+    }, {
+      "sub" : "_:genid2147483678",
+      "pred" : "type",
+      "obj" : "http://xmlns.com/foaf/0.1/Organization"
+    }, {
+      "sub" : "_:genid2147483680",
+      "pred" : "type",
+      "obj" : "http://xmlns.com/foaf/0.1/Person"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/",
+      "pred" : "http://purl.org/dc/elements/1.1/contributor",
+      "obj" : "http://www.ibi.hu-berlin.de/institut/personen/iwanowa"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/",
+      "pred" : "http://purl.org/dc/elements/1.1/contributor",
+      "obj" : "http://www.ics.forth.gr/isl/people/people_individual.jsp?Person_ID=2"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/",
+      "pred" : "http://purl.org/dc/elements/1.1/contributor",
+      "obj" : "http://www.image.ece.ntua.gr/~ndroso/"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/",
+      "pred" : "http://purl.org/dc/elements/1.1/contributor",
+      "obj" : "http://www.image.ntua.gr/~tzouvaras/"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/",
+      "pred" : "http://purl.org/dc/elements/1.1/contributor",
+      "obj" : "_:genid2147483678"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/",
+      "pred" : "http://purl.org/dc/elements/1.1/contributor",
+      "obj" : "_:genid2147483680"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/",
+      "pred" : "http://purl.org/dc/elements/1.1/creator",
+      "obj" : "http://data.semanticweb.org/person/antoine-isaac"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/",
+      "pred" : "http://purl.org/dc/elements/1.1/publisher",
+      "obj" : "http://europeana.eu"
+    }, {
+      "sub" : "http://purl.org/dc/elements/1.1/contributor",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.europeana.eu/schemas/edm/hasMet"
+    }, {
+      "sub" : "http://purl.org/dc/elements/1.1/coverage",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.europeana.eu/schemas/edm/hasMet"
+    }, {
+      "sub" : "http://purl.org/dc/elements/1.1/creator",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.europeana.eu/schemas/edm/hasMet"
+    }, {
+      "sub" : "http://purl.org/dc/elements/1.1/date",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.europeana.eu/schemas/edm/hasMet"
+    }, {
+      "sub" : "http://purl.org/dc/elements/1.1/publisher",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.europeana.eu/schemas/edm/hasMet"
+    }, {
+      "sub" : "http://purl.org/dc/elements/1.1/relation",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.europeana.eu/schemas/edm/isRelatedTo"
+    }, {
+      "sub" : "http://purl.org/dc/elements/1.1/subject",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.europeana.eu/schemas/edm/isRelatedTo"
+    }, {
+      "sub" : "http://purl.org/dc/terms/date",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.org/dc/elements/1.1/date"
+    }, {
+      "sub" : "http://purl.org/dc/terms/rights",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.org/dc/elements/1.1/rights"
+    }, {
+      "sub" : "http://purl.org/dc/terms/subject",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.org/dc/elements/1.1/subject"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/aggregatedCHO",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.org/dc/elements/1.1/subject"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/aggregatedCHO",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#P129_is_about"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/aggregatedCHO",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.openarchives.org/ore/terms/aggregates"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/happenedAt",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.org/dc/elements/1.1/relation"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/hasMet",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.org/dc/elements/1.1/relation"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/isNextInSequence",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.org/dc/elements/1.1/relation"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/occurredAt",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.org/dc/elements/1.1/relation"
+    }, {
+      "sub" : "http://www.europeana.eu/schemas/edm/wasPresentAt",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.org/dc/elements/1.1/relation"
+    } ],
+    "equivalentNodesSets" : [ {
+      "representativeNodeId" : "http://iflastandards.info/ns/fr/frbr/frbroo/F8_Event",
+      "nodeIds" : [ "http://iflastandards.info/ns/fr/frbr/frbroo/F8_Event", "http://www.europeana.eu/schemas/edm/Event" ]
+    }, {
+      "representativeNodeId" : "http://iflastandards.info/ns/fr/frbr/frbroo/F9_Place",
+      "nodeIds" : [ "http://iflastandards.info/ns/fr/frbr/frbroo/F9_Place", "http://www.europeana.eu/schemas/edm/Place" ]
+    }, {
+      "representativeNodeId" : "http://metadata.net/harmony/abc#Place",
+      "nodeIds" : [ "http://metadata.net/harmony/abc#Place", "http://www.europeana.eu/schemas/edm/Place" ]
+    }, {
+      "representativeNodeId" : "http://metadata.net/harmony/abc#Temporality",
+      "nodeIds" : [ "http://metadata.net/harmony/abc#Temporality", "http://www.europeana.eu/schemas/edm/Event" ]
+    }, {
+      "representativeNodeId" : "http://metadata.net/harmony/abc#Time",
+      "nodeIds" : [ "http://metadata.net/harmony/abc#Time", "http://www.europeana.eu/schemas/edm/TimeSpan" ]
+    }, {
+      "representativeNodeId" : "http://purl.org/vocab/frbr/core#Event",
+      "nodeIds" : [ "http://purl.org/vocab/frbr/core#Event", "http://www.europeana.eu/schemas/edm/Event" ]
+    }, {
+      "representativeNodeId" : "http://purl.org/vocab/frbr/core#Place",
+      "nodeIds" : [ "http://purl.org/vocab/frbr/core#Place", "http://www.europeana.eu/schemas/edm/Place" ]
+    }, {
+      "representativeNodeId" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#E18_Physical_Thing",
+      "nodeIds" : [ "http://www.cidoc-crm.org/rdfs/cidoc-crm#E18_Physical_Thing", "http://www.europeana.eu/schemas/edm/PhysicalThing" ]
+    }, {
+      "representativeNodeId" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#E39_Actor",
+      "nodeIds" : [ "http://www.cidoc-crm.org/rdfs/cidoc-crm#E39_Actor", "http://www.europeana.eu/schemas/edm/Agent" ]
+    }, {
+      "representativeNodeId" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#E4_Period",
+      "nodeIds" : [ "http://www.cidoc-crm.org/rdfs/cidoc-crm#E4_Period", "http://www.europeana.eu/schemas/edm/Event" ]
+    }, {
+      "representativeNodeId" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#E52_Time-Span",
+      "nodeIds" : [ "http://www.cidoc-crm.org/rdfs/cidoc-crm#E52_Time-Span", "http://www.europeana.eu/schemas/edm/TimeSpan" ]
+    }, {
+      "representativeNodeId" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#E53_Place",
+      "nodeIds" : [ "http://www.cidoc-crm.org/rdfs/cidoc-crm#E53_Place", "http://www.europeana.eu/schemas/edm/Place" ]
+    }, {
+      "representativeNodeId" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#E89_Propositional_Object",
+      "nodeIds" : [ "http://www.cidoc-crm.org/rdfs/cidoc-crm#E89_Propositional_Object", "http://www.europeana.eu/schemas/edm/InformationResource" ]
+    }, {
+      "representativeNodeId" : "http://www.europeana.eu/schemas/edm/Place",
+      "nodeIds" : [ "http://www.europeana.eu/schemas/edm/Place", "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#space-region" ]
+    }, {
+      "representativeNodeId" : "http://www.europeana.eu/schemas/edm/TimeSpan",
+      "nodeIds" : [ "http://www.europeana.eu/schemas/edm/TimeSpan", "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval" ]
+    } ],
+    "domainRangeAxioms" : [ {
+      "predicateId" : "http://purl.org/dc/terms/language",
+      "domainClassIds" : [ "http://www.europeana.eu/schemas/edm/ProvidedCHO" ],
+      "rangeClassIds" : [ "http://purl.org/dc/terms/LinguisticSystem" ]
+    }, {
+      "predicateId" : "http://purl.org/dc/terms/rights",
+      "domainClassIds" : [ "http://www.europeana.eu/schemas/edm/WebResource" ],
+      "rangeClassIds" : [ "http://purl.org/dc/terms/RightsStatement" ]
+    }, {
+      "predicateId" : "http://purl.org/dc/terms/subject",
+      "domainClassIds" : [ "http://www.europeana.eu/schemas/edm/ProvidedCHO" ]
+    }, {
+      "predicateId" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#P11_had_participant",
+      "domainClassIds" : [ "http://www.europeana.eu/schemas/edm/Event" ],
+      "rangeClassIds" : [ "http://www.europeana.eu/schemas/edm/Agent" ]
+    }, {
+      "predicateId" : "http://www.europeana.eu/schemas/edm/aggregatedCHO",
+      "domainClassIds" : [ "http://www.openarchives.org/ore/terms/Aggregation" ],
+      "rangeClassIds" : [ "http://www.europeana.eu/schemas/edm/ProvidedCHO" ]
+    }, {
+      "predicateId" : "http://www.europeana.eu/schemas/edm/happenedAt",
+      "domainClassIds" : [ "http://www.europeana.eu/schemas/edm/Event" ],
+      "rangeClassIds" : [ "http://www.europeana.eu/schemas/edm/Place" ]
+    }, {
+      "predicateId" : "http://www.europeana.eu/schemas/edm/occurredAt",
+      "domainClassIds" : [ "http://www.europeana.eu/schemas/edm/Event" ],
+      "rangeClassIds" : [ "http://www.europeana.eu/schemas/edm/TimeSpan" ]
+    }, {
+      "predicateId" : "http://www.europeana.eu/schemas/edm/provider",
+      "rangeClassIds" : [ "http://www.europeana.eu/schemas/edm/Agent" ]
+    }, {
+      "predicateId" : "http://www.europeana.eu/schemas/edm/wasPresentAt",
+      "rangeClassIds" : [ "http://www.europeana.eu/schemas/edm/Event" ]
+    } ]
+  } ]
+}

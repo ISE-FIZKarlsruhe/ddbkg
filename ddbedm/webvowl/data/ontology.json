@@ -180,10 +180,10 @@
     "id" : "50",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "86",
+    "id" : "13",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "13",
+    "id" : "86",
     "type" : "rdfs:Literal"
   }, {
     "id" : "118",
@@ -782,23 +782,23 @@
     "annotations" : {
       "example" : [ {
         "identifier" : "example",
-        "language" : "en",
+        "language" : "undefined",
         "value" : "Leonardo da Vinci, the British Museum, W3C",
         "type" : "label"
       }, {
         "identifier" : "example",
-        "language" : "undefined",
+        "language" : "en",
         "value" : "Leonardo da Vinci, the British Museum, W3C",
         "type" : "label"
       } ],
       "scopeNote" : [ {
         "identifier" : "scopeNote",
-        "language" : "undefined",
+        "language" : "en",
         "value" : "Rationale: This class is a domain of edm:wasPresentAt",
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
-        "language" : "en",
+        "language" : "undefined",
         "value" : "Rationale: This class is a domain of edm:wasPresentAt",
         "type" : "label"
       } ]
@@ -812,14 +812,14 @@
     "superClasses" : [ "5" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "86",
+    "id" : "13",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "13",
+    "id" : "86",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -894,22 +894,22 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "en",
-        "value" : "The 2nd World War, the act of painting Mona Lisa, the change of custody of Mona Lisa.",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "the act of painting Mona Lisa",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
         "value" : "the change of custody of Mona Lisa",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "en",
+        "value" : "The 2nd World War, the act of painting Mona Lisa, the change of custody of Mona Lisa.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
         "value" : "the 2nd World War",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "the act of painting Mona Lisa",
         "type" : "label"
       } ],
       "scopeNote" : [ {
@@ -948,6 +948,17 @@
         "value" : "An instance of EuropeanaAggregation is created at ingestion time for each different Cultural Heritage Object recognized by Europeana. Such instance is associated to the Cultural Heritage Object that it is about, by the property edm:aggregatedCHO",
         "type" : "label"
       } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "Obligation and Occurence: The relation between the Cultural Heritage Objects represented in Europeana and the instances of the class EuropeanaAggregation is one-to-one, in the data maintained by Europeana: every Cultural Heritage Object is represented by an instance of EuropeanaAggregation, and every instance of EuropeanaAggregation represent a Cultural Heritage Object.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "Rationale: This class is used in Europeana to gather in a single conceptual unit all the information about a Cultural Heritage Object, necessary for all operations on these objects.",
+        "type" : "label"
+      } ],
       "example" : [ {
         "identifier" : "example",
         "language" : "en",
@@ -956,23 +967,12 @@
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "The journal \"Le Temps\" is a Cultural Heritage Object represented in Europeana by one EuropeanaAggregation instance",
+        "value" : "The painting Mona Lisa is a Cultural Heritage Object represented in Europeana by one EuropeanaAggregation instance",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "The painting Mona Lisa is a Cultural Heritage Object represented in Europeana by one EuropeanaAggregation instance",
-        "type" : "label"
-      } ],
-      "scopeNote" : [ {
-        "identifier" : "scopeNote",
-        "language" : "en",
-        "value" : "Rationale: This class is used in Europeana to gather in a single conceptual unit all the information about a Cultural Heritage Object, necessary for all operations on these objects.",
-        "type" : "label"
-      }, {
-        "identifier" : "scopeNote",
-        "language" : "en",
-        "value" : "Obligation and Occurence: The relation between the Cultural Heritage Objects represented in Europeana and the instances of the class EuropeanaAggregation is one-to-one, in the data maintained by Europeana: every Cultural Heritage Object is represented by an instance of EuropeanaAggregation, and every instance of EuropeanaAggregation represent a Cultural Heritage Object.",
+        "value" : "The journal \"Le Temps\" is a Cultural Heritage Object represented in Europeana by one EuropeanaAggregation instance",
         "type" : "label"
       } ]
     },
@@ -1614,6 +1614,16 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "92"
   }, {
+    "iri" : "http://www.openarchives.org/ore/terms/proxyFor",
+    "baseIri" : "http://www.openarchives.org/ore/terms",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "proxyFor"
+    },
+    "domain" : "7",
+    "attributes" : [ "object", "external" ],
+    "id" : "93"
+  }, {
     "iri" : "http://www.europeana.eu/schemas/edm/occurredAt",
     "baseIri" : "http://www.europeana.eu/schemas/edm",
     "range" : "22",
@@ -1623,16 +1633,6 @@
     },
     "superproperty" : [ "14" ],
     "domain" : "43",
-    "attributes" : [ "object", "external" ],
-    "id" : "93"
-  }, {
-    "iri" : "http://www.openarchives.org/ore/terms/proxyFor",
-    "baseIri" : "http://www.openarchives.org/ore/terms",
-    "range" : "7",
-    "label" : {
-      "IRI-based" : "proxyFor"
-    },
-    "domain" : "7",
     "attributes" : [ "object", "external" ],
     "id" : "94"
   }, {
@@ -1980,7 +1980,7 @@
     },
     "superproperty" : [ "122" ],
     "domain" : "7",
-    "subproperty" : [ "87", "103", "8", "93", "48" ],
+    "subproperty" : [ "87", "103", "8", "94", "48" ],
     "attributes" : [ "object", "external" ],
     "id" : "14"
   }, {

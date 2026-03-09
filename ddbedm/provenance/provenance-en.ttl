@@ -7,12 +7,8 @@
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo :agent1;
 	 prov:wasAttributedTo :agent2;
-	 prov:wasAttributedTo :agent3;
-	 prov:wasAttributedTo :agent4;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 .
-:agent0 a prov:Agent; foaf:name "Mary Ann Tan".
-:agent1 a prov:Agent; foaf:name "Stefanie Rühle".
-:agent2 a prov:Agent; foaf:name "Francesca Schulze".
-:agent3 a prov:Agent; foaf:name "Michael Büchner".
-:agent4 a prov:Agent; foaf:name "Harald Sack".
+:agent0 a prov:Agent; foaf:name "Stefanie Rühle".
+:agent1 a prov:Agent; foaf:name "Francesca Schulze".
+:agent2 a prov:Agent; foaf:name "Michael Büchner".

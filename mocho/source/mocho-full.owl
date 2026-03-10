@@ -18,6 +18,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:fabio="http://purl.org/spar/fabio/"
+     xmlns:skos1="http://www.w3.org/2008/05/skos#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:schema="http://schema.org/"
      xmlns:dcterms="http://purl.org/dc/terms/">
@@ -289,6 +290,15 @@
     
 
 
+    <!-- http://www.w3.org/2008/05/skos#note -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2008/05/skos#note">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2008/05/skos#"/>
+        <rdfs:label xml:lang="en">skos:note</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -302,7 +312,9 @@
 
     <!-- http://purl.org/NET/c4dm/event.owl#agent -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/NET/c4dm/event.owl#agent"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/NET/c4dm/event.owl#agent">
+        <rdfs:label xml:lang="en">event:agent</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -582,6 +594,7 @@
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:comment>Relates a performance to the conductor involved</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/mo/"/>
+        <rdfs:label xml:lang="en">mo:conductor</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -645,6 +658,7 @@ The artist usually selected the tracks, chose their sequence, and slightly chang
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:comment>Relates a performance or a recording to the engineer involved</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/mo/"/>
+        <rdfs:label xml:lang="en">mo:engineer</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -754,6 +768,7 @@ The artist usually selected the tracks, chose their sequence, and slightly chang
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:comment>Relates a performance to the listener involved</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/mo/"/>
+        <rdfs:label xml:lang="en">mo:listener</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -818,6 +833,7 @@ The artist usually selected the tracks, chose their sequence, and slightly chang
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:comment>Relates a performance to the performers involved</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/mo/"/>
+        <rdfs:label xml:lang="en">mo:performer</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1785,6 +1801,7 @@ This property describes works that are intended to be an imitation another origi
         <rdfs:comment xml:lang="en">A part of an endeavour.</rdfs:comment>
         <rdfs:comment xml:lang="en">Meaning = has part.  As defined by FRBR (http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#part),  a property indicating that one entity includes another entity.</rdfs:comment>
         <rdfs:label xml:lang="en">has part</rdfs:label>
+        <skos1:note xml:lang="en">Unlike the FRBR version in RDF http://vocab.org/frbr/core.html the present version defines partonomy relationships transitive.</skos1:note>
     </owl:ObjectProperty>
     
 
@@ -1797,6 +1814,7 @@ This property describes works that are intended to be an imitation another origi
         <rdfs:comment xml:lang="en">An endeavour incorporating another endeavour.</rdfs:comment>
         <rdfs:comment xml:lang="en">Meaning = is part of.  As defined by FRBR (http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#partOf), a property indicating that one entity is a part of another entity.</rdfs:comment>
         <rdfs:label xml:lang="en">is part of</rdfs:label>
+        <skos1:note xml:lang="en">Unlike the FRBR version in RDF http://vocab.org/frbr/core.html the present version defines partonomy relationships transitive.</skos1:note>
     </owl:ObjectProperty>
     
 
@@ -2381,6 +2399,15 @@ It allows to refer to a literal translation, in which the intent is to render th
     <!-- http://xmlns.com/foaf/0.1/maker -->
 
     <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/maker"/>
+    
+
+
+    <!-- https://ise-fizkarlsruhe.github.io/ddbkg/mocho#creator -->
+
+    <owl:ObjectProperty rdf:about="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#creator">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/NET/c4dm/event.owl#agent"/>
+        <rdfs:label xml:lang="en">mocho:contributor</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -3652,7 +3679,10 @@ used to describe the order of an edm:ProvidedCHO or edm:PhysicalThing in a hiera
 
     <!-- http://purl.org/NET/c4dm/event.owl#Event -->
 
-    <owl:Class rdf:about="http://purl.org/NET/c4dm/event.owl#Event"/>
+    <owl:Class rdf:about="http://purl.org/NET/c4dm/event.owl#Event">
+        <rdfs:isDefinedBy rdf:resource="https://smartcity.linkeddata.es/ontologies/purl.orgNETc4dmevent.owl.html"/>
+        <rdfs:label xml:lang="en">event:Event</rdfs:label>
+    </owl:Class>
     
 
 
@@ -3789,6 +3819,7 @@ used to describe the order of an edm:ProvidedCHO or edm:PhysicalThing in a hiera
         It produces a MusicalWork, or a MusicalExpression (when the initial &quot;product&quot; is a score, for example), or both...
     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/mo/"/>
+        <rdfs:isDefinedBy xml:lang="en">mo:Composition</rdfs:isDefinedBy>
         <rdfs:label>composition</rdfs:label>
     </owl:Class>
     
@@ -4255,7 +4286,9 @@ work #1 J. S. Bach&apos;s The art of the fugue
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/mo/MusicArtist"/>
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:comment>Single person whose musical creative work shows sensitivity and imagination.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Single person whose musical creative work shows sensitivity and imagination.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/mo/"/>
+        <rdfs:label xml:lang="en">mo:SoloMusicArtist</rdfs:label>
         <rdfs:label>solo music artist</rdfs:label>
     </owl:Class>
     
@@ -4514,7 +4547,7 @@ Examples of different manifestations of a single &apos;version of record&apos; e
         <rdfs:comment xml:lang="en">An abstract notion or idea.
 
 The entity defined as concept encompasses a comprehensive range of abstractions that may be the subject of a work: fields of knowledge, disciplines, schools of thought (philosophies, religions, political ideologies, etc.), theories, processes, techniques, practices, etc.  A concept may be broad in nature or narrowly defined and precise. </rdfs:comment>
-        <rdfs:label xml:lang="en">frbr:Concept</rdfs:label>
+        <rdfs:label xml:lang="en">concept</rdfs:label>
     </owl:Class>
     
 
@@ -4556,10 +4589,11 @@ The entity defined as corporate body encompasses organizations and groups of ind
 
     <owl:Class rdf:about="http://purl.org/vocab/frbr/core#Event">
         <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Subject"/>
+        <rdfs:subClassOf rdf:resource="http://www.europeana.eu/schemas/edm/NonInformationResource"/>
         <rdfs:comment xml:lang="en">An action or occurrence.
 
 The entity defined as event encompasses a comprehensive range of actions and occurrences that may be the subject of a work: historical events, epochs, periods of time, etc. </rdfs:comment>
-        <rdfs:label xml:lang="en">frbr:Event</rdfs:label>
+        <rdfs:label xml:lang="en">event</rdfs:label>
     </owl:Class>
     
 
@@ -4732,7 +4766,7 @@ The entity defined as manifestation encompasses a wide range of materials and fo
         <rdfs:comment xml:lang="en">A material thing.
 
 The entity defined as object encompasses a comprehensive range of material things that may be the subject of a work: animate and inanimate objects occurring in nature; fixed, movable, and moving objects that are the product of human creation; objects that no longer exist. </rdfs:comment>
-        <rdfs:label xml:lang="en">frbr:Object</rdfs:label>
+        <rdfs:label xml:lang="en">object</rdfs:label>
     </owl:Class>
     
 
@@ -4751,10 +4785,10 @@ The entity defined as object encompasses a comprehensive range of material thing
 
     <owl:Class rdf:about="http://purl.org/vocab/frbr/core#Place">
         <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Subject"/>
+        <rdfs:subClassOf rdf:resource="http://www.europeana.eu/schemas/edm/NonInformationResource"/>
         <rdfs:comment xml:lang="en">A location.
 
 The entity defined as place encompasses a comprehensive range of locations: terrestrial and extra-terrestrial; historical and contemporary; geographic features and geo-political jurisdictions. </rdfs:comment>
-        <rdfs:label xml:lang="en">frbr:Place</rdfs:label>
         <rdfs:label xml:lang="en">place</rdfs:label>
     </owl:Class>
     
@@ -4764,7 +4798,7 @@ The entity defined as place encompasses a comprehensive range of locations: terr
 
     <owl:Class rdf:about="http://purl.org/vocab/frbr/core#ResponsibleEntity">
         <rdfs:comment xml:lang="en">It represents those responsible for the intellectual or artistic content, the physical production and dissemination, or the custodianship of any endeavour.</rdfs:comment>
-        <rdfs:label xml:lang="en">frbr:ResponsibleEntity</rdfs:label>
+        <rdfs:label xml:lang="en">responsible entity</rdfs:label>
     </owl:Class>
     
 
@@ -4920,6 +4954,7 @@ A work is an abstract entity; there is no single material object one can point t
     <!-- http://rdaregistry.info/Elements/c/C10005 -->
 
     <owl:Class rdf:about="http://rdaregistry.info/Elements/c/C10005">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/mo/CorporateBody"/>
         <rdfs:subClassOf rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
         <rdfs:label xml:lang="de">Körperschaft</rdfs:label>
         <rdfs:label xml:lang="en">rdac:C10005 Corporate Body</rdfs:label>
@@ -5089,7 +5124,13 @@ In First Order Logic:
 
     <!-- http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource -->
 
-    <owl:Class rdf:about="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource"/>
+    <owl:Class rdf:about="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource">
+        <dc:description xml:lang="en">An audiovisual MediaResource, which can be composed of one or more Tracks. A MediaResource is defined by an EditorialObject (Editorial Domain), which can be realised in Essences in one or more Formats for different delivery medias or platforms.</dc:description>
+        <dc:description xml:lang="de">Eine audiovisuelle MedienResource, die aus einer oder mehreren Spuren bestehen kann. Die MedienResource ist durch einen Medieninhalt definiert und kann durch Essenzen in einem oder mehreren Formaten für verschiedene Medien oder Plattformen realisiert werden.</dc:description>
+        <rdfs:label xml:lang="en">ec:MediaResource</rdfs:label>
+        <skos:definition xml:lang="en">a Resource that comprises encoded audio, video, graphics, data or text</skos:definition>
+        <skos:definition xml:lang="de">eine Resource, die aus kodierten Audio-, Video-, Grafik-, Daten- oder Textinhalten besteht</skos:definition>
+    </owl:Class>
     
 
 
@@ -5467,6 +5508,7 @@ o Représentation de la segmentation : Les TimelineTracks sont préférés aux h
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+        <rdfs:subClassOf rdf:resource="http://www.europeana.eu/schemas/edm/NonInformationResource"/>
         <owl:disjointWith rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <rdfs:comment xml:lang="en">A SKOS concept can be viewed as an idea or notion; a unit of thought. However, what constitutes a unit of thought is subjective, and this definition is meant to be suggestive, rather than restrictive.
 
@@ -5476,6 +5518,7 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">Concept</rdfs:label>
         <rdfs:label xml:lang="en">concept</rdfs:label>
+        <rdfs:label xml:lang="en">skos:Concept</rdfs:label>
         <skos:definition xml:lang="en">An idea or notion; a unit of thought.</skos:definition>
     </owl:Class>
     
@@ -5521,6 +5564,63 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
     
 
 
+    <!-- https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Agent -->
+
+    <owl:Class rdf:about="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Agent">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#ResponsibleEntity"/>
+        <rdfs:subClassOf rdf:resource="http://rdaregistry.info/Elements/c/C10002"/>
+        <rdfs:subClassOf rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
+        <rdfs:label xml:lang="en">mocho:Agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ise-fizkarlsruhe.github.io/ddbkg/mocho#CollectiveAgent -->
+
+    <owl:Class rdf:about="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#CollectiveAgent">
+        <rdfs:subClassOf rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+        <rdfs:subClassOf rdf:resource="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Agent"/>
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Group"/>
+        <rdfs:label xml:lang="en">mocho:CollectiveAgent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Concept -->
+
+    <owl:Class rdf:about="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Concept">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Concept"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ise-fizkarlsruhe.github.io/ddbkg/mocho#CorporateBody -->
+
+    <owl:Class rdf:about="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#CorporateBody">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#CorporateBody"/>
+        <rdfs:subClassOf rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+        <rdfs:subClassOf rdf:resource="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Agent"/>
+        <rdfs:label xml:lang="en">mocho:CorporateBody</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Event -->
+
+    <owl:Class rdf:about="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Event">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Event"/>
+        <rdfs:subClassOf rdf:resource="http://www.europeana.eu/schemas/edm/Event"/>
+        <rdfs:label xml:lang="en">mocho:Event</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Expression -->
 
     <owl:Class rdf:about="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Expression">
@@ -5541,6 +5641,16 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
         <rdfs:label xml:lang="en">mocho:Expression</rdfs:label>
         <skos:definition xml:lang="en">An intellectual or artistic realization of a work in the form of alpha-numeric, musical or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.</skos:definition>
         <skos:example xml:lang="en">Goethe&apos;s Faust in French</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Family -->
+
+    <owl:Class rdf:about="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Family">
+        <rdfs:subClassOf rdf:resource="http://rdaregistry.info/Elements/c/C10008"/>
+        <rdfs:subClassOf rdf:resource="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#CollectiveAgent"/>
+        <rdfs:label xml:lang="en">mocho:Family</rdfs:label>
     </owl:Class>
     
 
@@ -5584,6 +5694,38 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">mocho:Manifestation</rdfs:label>
         <skos:definition xml:lang="en">A physical embodiment of an expression of a work.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Person -->
+
+    <owl:Class rdf:about="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Person">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Person"/>
+        <rdfs:subClassOf rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:subClassOf rdf:resource="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Agent"/>
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
+        <rdfs:label xml:lang="en">mocho:Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Place -->
+
+    <owl:Class rdf:about="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Place">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Place"/>
+        <rdfs:subClassOf rdf:resource="http://www.europeana.eu/schemas/edm/Place"/>
+        <rdfs:label xml:lang="en">mocho:Place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ise-fizkarlsruhe.github.io/ddbkg/mocho#TimeSpan -->
+
+    <owl:Class rdf:about="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#TimeSpan">
+        <rdfs:subClassOf rdf:resource="http://www.europeana.eu/schemas/edm/TimeSpan"/>
+        <rdfs:label xml:lang="en">mocho:TimeSpan</rdfs:label>
     </owl:Class>
     
 
@@ -5936,6 +6078,35 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
     
 
 
+    <!-- https://www.ica.org/standards/RiC/ontology#Agent -->
+
+    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Agent">
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
+        <rdfs:comment xml:lang="en">A Person, or Group, or an entity created by a Person or Group
+         (Mechanism), or a Position, that acts in the world.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
+        <rdfs:label xml:lang="fr">Agent</rdfs:label>
+        <rdfs:label xml:lang="es">Agente</rdfs:label>
+        <rdfs:label xml:lang="de">Akteur</rdfs:label>
+        <rdfs:label xml:lang="en">rico:Agent</rdfs:label>
+        <skos:scopeNote xml:lang="en">An Agent may have one or more identities; an identity is a
+         constellation of properties or relations that together “identify” the Agent. A Person or
+         Group commonly has one identity, though each also may have one or more alternative
+         identities. Such alternative identities may be shared by more than one Person or Group.
+         Alternative identities include but are not limited to pseudonyms, heteronyms, DBA (Doing
+         Business As), and trade identities. An alternative identity should not be confused with a
+         Position in a Group, for example, presidents, prime ministers, governors, popes, royalty,
+         or bishops. Nor should an alternative identity be confused with a variant name or
+         identifier of the same identity. Agent also includes entities created by a Person or Group
+         that act on behalf of the creating Agent in an autonomous or semi-autonomous manner.
+         Examples of a Mechanism include software agents, robots, and space and underwater probes
+         that generate data (records) in the course of Activity assigned to and in conformance with
+         the instructions given to them by the creating Person or Group.</skos:scopeNote>
+    </owl:Class>
+    
+
+
     <!-- https://www.ica.org/standards/RiC/ontology#Concept -->
 
     <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Concept">
@@ -5967,6 +6138,28 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
          type of information a Record may comprise, its status of perfection, and its authenticity
          and reliability. Documentary form types exist in a specific social and cultural context,
          and within that context, are subject to change over time.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#Group -->
+
+    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Group">
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
+        <owl:disjointWith rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
+        <rdfs:comment xml:lang="en">Two or more Agents that act together as an Agent.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="en">Group</rdfs:label>
+        <rdfs:label xml:lang="fr">Groupe d’agents</rdfs:label>
+        <rdfs:label xml:lang="es">Grupo de agentes</rdfs:label>
+        <rdfs:label xml:lang="de">Gruppe</rdfs:label>
+        <rdfs:label xml:lang="en">rico:Group</rdfs:label>
+        <skos:scopeNote xml:lang="en">Group is a kind of Agent. A Group has a socially recognized
+         identity. Each member of the Group plays a particular role or roles (that is has a
+         particular Position) in the coordinated activity of the Group. Corporate bodies and
+         families are kinds of groups, though other kinds of groups are possible. For example, the
+         “electorate” -- all of the voters in a given election. Complex, large groups may be
+         subdivided into other groups.</skos:scopeNote>
     </owl:Class>
     
 
@@ -6022,6 +6215,38 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
          representation of it exists or is known to exist anymore. The relations between distinct
          instantiations can then be expressed wherever they coexist, and they can be related to the
          Record Resource they instantiate.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#Person -->
+
+    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Person">
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Agent"/>
+        <rdfs:comment xml:lang="en">An individual human being.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology"/>
+        <rdfs:label xml:lang="de">Person</rdfs:label>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+        <rdfs:label xml:lang="es">Persona</rdfs:label>
+        <rdfs:label xml:lang="fr">Personne</rdfs:label>
+        <rdfs:label xml:lang="en">rico:Person</rdfs:label>
+        <skos:scopeNote xml:lang="en">Person is a kind of Agent. Most commonly, a human being
+         (biological person) has a single socially constructed identity or persona. Less common
+         though not rare, one or more personae in addition to the original persona which emerges at
+         or near birth may be associated with the human being over the course of that human being’s
+         lifetime. Such &quot;alternative personae&quot; are most often created by the original person for
+         specific purposes. The original persona may, in everyday discourse, be regarded as “the
+         real person”. Under some circumstances, an alternative persona might eclipse or replace the
+         original person (Mark Twain eclipsing Samuel Clemens; John Wayne eclipsing Marion Mitchell
+         Morrison), that is, the alternative identity becomes the predominant identity. Less common
+         is when two or more persons collaborate to create a shared persona. A persona shared by two
+         or more persons constitutes a kind of group. Within the archival context, the description
+         of a person commonly will focus on the original associated persona, with alternative
+         personae noted. Exceptionally, an alternative persona may displace the original persona as
+         the focus of the description. Under some circumstances, for example, when record resources
+         are associated with two or more different personae of one person, describing the different
+         personae as separate though related persons may be desirable. Alternatively, a person may
+         change their identity over the course of their lifetime.</skos:scopeNote>
     </owl:Class>
     
 
@@ -7018,10 +7243,10 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
         <foaf:name>Alexandre Passant</foaf:name>
     </rdf:Description>
     <rdf:Description>
-        <foaf:name>Simon Reinhardt</foaf:name>
+        <foaf:name>George Fazekas</foaf:name>
     </rdf:Description>
     <rdf:Description>
-        <foaf:name>George Fazekas</foaf:name>
+        <foaf:name>Simon Reinhardt</foaf:name>
     </rdf:Description>
     
 

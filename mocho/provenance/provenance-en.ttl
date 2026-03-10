@@ -1,0 +1,14 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<https://ise-fizkarlsruhe.github.io/ddbkg/mocho/source/mocho-full.owl> a prov:Entity;
+	 dc:title "Middle Ontology for Cultural Heritage Objects (MOCHO)";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+.
+:agent0 a prov:Agent; foaf:name "Mary Ann Tan".
+:agent1 a prov:Agent; foaf:name "Genet Asefa Gesese".
+:agent2 a prov:Agent; foaf:name "Harald Sack".

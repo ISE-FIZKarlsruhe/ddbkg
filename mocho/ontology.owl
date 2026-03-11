@@ -9,15 +9,14 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:skos1="http://www.w3.org/2008/05/skos#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://github.com/anntanp/mocho-odk/mocho/mocho-full.owl">
-        <owl:versionIRI rdf:resource="https://github.com/anntanp/mocho-odk/mocho/releases/2026-03-10/mocho-full.owl"/>
+        <owl:versionIRI rdf:resource="https://github.com/anntanp/mocho-odk/mocho/releases/2026-03-11/mocho-full.owl"/>
         <terms:description>A middle ontology bridging the Europeana Data Model (EDM) as top-level ontology with domain ontologies: RDA, Records in Contexts Ontology (RiC-O), Music Ontology, Audio Commons Ontology (ACO), and CIDOC CRM via LRMoo/FRBRoo. The WEMI model (Work, Expression, Manifestation, Item) serves as the central conceptual framework, with RDA entity classes as the canonical middle-layer.
 </terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/deed.en"/>
         <terms:title xml:lang="en">Middle Ontology for Cultural Heritage Objects (MOCHO)</terms:title>
-        <owl:versionInfo>2026-03-10</owl:versionInfo>
+        <owl:versionInfo>2026-03-11</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -216,11 +215,12 @@
     
 
 
-    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
-        <rdfs:label xml:lang="en">rdfs:seeAlso</rdfs:label>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+        <skos:altLabel xml:lang="en">skos:altLabel</skos:altLabel>
+        <skos:definition xml:lang="en">Alternative Label</skos:definition>
     </owl:AnnotationProperty>
     
 
@@ -290,16 +290,6 @@
     
 
 
-    <!-- http://www.w3.org/2008/05/skos#note -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2008/05/skos#note">
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2008/05/skos#"/>
-        <rdfs:label xml:lang="en">skos:note</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -324,7 +314,9 @@
     <!-- http://purl.org/NET/c4dm/event.owl#factor -->
 
 
-    <owl:ObjectProperty rdf:about="http://purl.org/NET/c4dm/event.owl#factor"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/NET/c4dm/event.owl#factor">
+        <rdfs:label xml:lang="en">event:factor</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -396,6 +388,31 @@
     
 
 
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/contributor">
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <rdfs:comment xml:lang="en">The guidelines for using names of persons or organizations as creators apply to contributors.</rdfs:comment>
+        <rdfs:label xml:lang="en">dcterms:contributor</rdfs:label>
+        <skos:definition xml:lang="en">An entity responsible for making contributions to the resource.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/creator">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <rdfs:comment xml:lang="en">Recommended practice is to identify the creator with a URI. If this is not possible or feasible, a literal value that identifies the creator may be provided.</rdfs:comment>
+        <rdfs:label xml:lang="en">dcterms:creator</rdfs:label>
+        <skos:definition xml:lang="en">An entity responsible for making the resource.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/dc/terms/hasPart -->
 
 
@@ -408,7 +425,9 @@
     <!-- http://purl.org/dc/terms/isPartOf -->
 
 
-    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/isPartOf"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/isPartOf">
+        <rdfs:label xml:lang="en">dcterms:isPartOf</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -419,6 +438,18 @@
         <rdfs:domain rdf:resource="http://www.europeana.eu/schemas/edm/ProvidedCHO"/>
         <rdfs:range rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
         <rdfs:label xml:lang="en">dcterms:language</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/publisher">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <rdfs:label xml:lang="en">dcterms:publisher</rdfs:label>
+        <skos:definition xml:lang="en">An entity responsible for making the resource available.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -450,7 +481,6 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.org/NET/c4dm/event.owl#isFactorOf"/>
         <owl:inverseOf rdf:resource="http://purl.org/ontology/mo/arrangement_of"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/mo/MusicalWork"/>
-        <rdfs:range rdf:resource="http://purl.org/ontology/mo/Arrangement"/>
         <rdfs:comment>
         Associates a work to an arrangement event where it was arranged
     </rdfs:comment>
@@ -464,7 +494,6 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/mo/arrangement_of">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/NET/c4dm/event.owl#factor"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/mo/Arrangement"/>
         <rdfs:range rdf:resource="http://purl.org/ontology/mo/MusicalWork"/>
         <rdfs:comment>
                 Associates an arrangement event to a work
@@ -478,10 +507,9 @@
 
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/mo/artist">
-        <rdfs:domain rdf:resource="http://purl.org/ontology/mo/Membership"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:comment>Relates a membership event with the corresponding artist</rdfs:comment>
-        <rdfs:label>artist</rdfs:label>
+        <rdfs:label xml:lang="en">mo:artist</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -535,7 +563,7 @@
         <rdfs:domain rdf:resource="http://purl.org/ontology/mo/MusicArtist"/>
         <rdfs:range rdf:resource="http://purl.org/ontology/mo/MusicalManifestation"/>
         <rdfs:comment>Used to relate an person or a group of person who compiled the manifestation of a musical work.</rdfs:comment>
-        <rdfs:label>compiled</rdfs:label>
+        <rdfs:label xml:lang="en">mo:compiled</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -547,7 +575,7 @@
         <rdfs:domain rdf:resource="http://purl.org/ontology/mo/MusicalManifestation"/>
         <rdfs:range rdf:resource="http://purl.org/ontology/mo/MusicArtist"/>
         <rdfs:comment>Used to relate the manifestation of a musical work to a person or a group of person who compiled it.</rdfs:comment>
-        <rdfs:label>compiler</rdfs:label>
+        <rdfs:label xml:lang="en">mo:compiler</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -560,7 +588,6 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.org/NET/c4dm/event.owl#producedIn"/>
         <owl:inverseOf rdf:resource="http://purl.org/ontology/mo/produced_work"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/mo/MusicalWork"/>
-        <rdfs:range rdf:resource="http://purl.org/ontology/mo/Composition"/>
         <rdfs:comment>
         Associates a MusicalWork to the Composition event pertaining
         to its creation. For example, I might use this property to associate
@@ -577,7 +604,6 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/mo/composer">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/NET/c4dm/event.owl#agent"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/mo/Composition"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:comment>
         Associates a composition event to the actual composer. For example,
@@ -597,7 +623,6 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/bio/0.1/event"/>
         <owl:inverseOf rdf:resource="http://purl.org/ontology/mo/conductor"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:range rdf:resource="http://purl.org/ontology/mo/Performance"/>
         <rdfs:comment>Relates agents to the performances they were conducting</rdfs:comment>
         <rdfs:label>conducted</rdfs:label>
     </owl:ObjectProperty>
@@ -609,7 +634,6 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/mo/conductor">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/NET/c4dm/event.owl#agent"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/mo/Performance"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:comment>Relates a performance to the conductor involved</rdfs:comment>
         <rdfs:label xml:lang="en">mo:conductor</rdfs:label>
@@ -665,15 +689,6 @@ The artist usually selected the tracks, chose their sequence, and slightly chang
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/mo/engineer">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/NET/c4dm/event.owl#agent"/>
         <owl:inverseOf rdf:resource="http://purl.org/ontology/mo/engineered"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/ontology/mo/Performance"/>
-                    <rdf:Description rdf:about="http://purl.org/ontology/mo/Recording"/>
-                    <rdf:Description rdf:about="http://purl.org/ontology/mo/RecordingSession"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:comment>Relates a performance or a recording to the engineer involved</rdfs:comment>
         <rdfs:label xml:lang="en">mo:engineer</rdfs:label>
@@ -688,15 +703,6 @@ The artist usually selected the tracks, chose their sequence, and slightly chang
         <rdfs:subPropertyOf rdf:resource="http://purl.org/NET/c4dm/event.owl#isAgentIn"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/bio/0.1/event"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/ontology/mo/Performance"/>
-                    <rdf:Description rdf:about="http://purl.org/ontology/mo/Recording"/>
-                    <rdf:Description rdf:about="http://purl.org/ontology/mo/RecordingSession"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
         <rdfs:comment>Relates agents to the performances/recordings they were engineering in</rdfs:comment>
         <rdfs:label>engineered</rdfs:label>
     </owl:ObjectProperty>
@@ -719,10 +725,9 @@ The artist usually selected the tracks, chose their sequence, and slightly chang
 
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/mo/group">
-        <rdfs:domain rdf:resource="http://purl.org/ontology/mo/Membership"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
         <rdfs:comment>Relates a membership event with the corresponding group</rdfs:comment>
-        <rdfs:label>group</rdfs:label>
+        <rdfs:label xml:lang="en">mo:group</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -743,7 +748,7 @@ The artist usually selected the tracks, chose their sequence, and slightly chang
         <rdfs:domain rdf:resource="http://purl.org/ontology/mo/Signal"/>
         <rdfs:range rdf:resource="http://purl.org/ontology/mo/MusicArtist"/>
         <rdfs:comment>Adds an involved music artist, who interpreted, remixed, or otherwise modified an existing signal, which resulted in the signal that is here the subject of this relation.</rdfs:comment>
-        <rdfs:label>has interpeter</rdfs:label>
+        <rdfs:label xml:lang="en">mo:interpreter</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -771,7 +776,6 @@ The artist usually selected the tracks, chose their sequence, and slightly chang
         <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/bio/0.1/event"/>
         <owl:inverseOf rdf:resource="http://purl.org/ontology/mo/listener"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:range rdf:resource="http://purl.org/ontology/mo/Performance"/>
         <rdfs:comment>Relates agents to the performances they were listening in</rdfs:comment>
         <rdfs:label>listened</rdfs:label>
     </owl:ObjectProperty>
@@ -783,7 +787,6 @@ The artist usually selected the tracks, chose their sequence, and slightly chang
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/mo/listener">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/NET/c4dm/event.owl#agent"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/mo/Performance"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:comment>Relates a performance to the listener involved</rdfs:comment>
         <rdfs:label xml:lang="en">mo:listener</rdfs:label>
@@ -836,7 +839,6 @@ The artist usually selected the tracks, chose their sequence, and slightly chang
         <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/bio/0.1/event"/>
         <owl:inverseOf rdf:resource="http://purl.org/ontology/mo/performer"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:range rdf:resource="http://purl.org/ontology/mo/Performance"/>
         <rdfs:comment>Relates agents to the performances they were performing in</rdfs:comment>
         <rdfs:label>performed</rdfs:label>
     </owl:ObjectProperty>
@@ -848,7 +850,6 @@ The artist usually selected the tracks, chose their sequence, and slightly chang
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/mo/performer">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/NET/c4dm/event.owl#agent"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/mo/Performance"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:comment>Relates a performance to the performers involved</rdfs:comment>
         <rdfs:label xml:lang="en">mo:performer</rdfs:label>
@@ -902,7 +903,6 @@ The artist usually selected the tracks, chose their sequence, and slightly chang
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/mo/produced_signal">
         <owl:equivalentProperty rdf:resource="http://purl.org/ontology/mo/producesSignal"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/NET/c4dm/event.owl#product"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/mo/Recording"/>
         <rdfs:range rdf:resource="http://purl.org/ontology/mo/Signal"/>
         <rdfs:comment>
                 Associates a Recording to the outputted signal.
@@ -917,7 +917,6 @@ The artist usually selected the tracks, chose their sequence, and slightly chang
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/mo/produced_signal_group">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/NET/c4dm/event.owl#product"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/mo/RecordingSession"/>
         <rdfs:range rdf:resource="http://purl.org/ontology/mo/SignalGroup"/>
         <rdfs:comment>Associates a recording session with a group of master signals produced by it.</rdfs:comment>
         <rdfs:label>produced signal group</rdfs:label>
@@ -931,8 +930,6 @@ The artist usually selected the tracks, chose their sequence, and slightly chang
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/mo/produced_sound">
         <owl:equivalentProperty rdf:resource="http://purl.org/ontology/mo/producesSound"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/NET/c4dm/event.owl#product"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/mo/Performance"/>
-        <rdfs:range rdf:resource="http://purl.org/ontology/mo/Sound"/>
         <rdfs:comment>
                 Associates a Performance to a physical Sound that is being produced by it.
         </rdfs:comment>
@@ -947,7 +944,6 @@ The artist usually selected the tracks, chose their sequence, and slightly chang
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/mo/produced_work">
         <owl:equivalentProperty rdf:resource="http://purl.org/ontology/mo/producesWork"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/NET/c4dm/event.owl#product"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/mo/Composition"/>
         <rdfs:range rdf:resource="http://purl.org/ontology/mo/MusicalWork"/>
         <rdfs:comment>
                 Associates a composition event to the produced MusicalWork. For example,
@@ -1066,7 +1062,7 @@ The artist usually selected the tracks, chose their sequence, and slightly chang
         <rdfs:domain rdf:resource="http://purl.org/ontology/mo/MusicalManifestation"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:comment>Used to relate a musical manifestation to a person or a group of person who published it.</rdfs:comment>
-        <rdfs:label>publisher</rdfs:label>
+        <rdfs:label xml:lang="en">mo:publisher</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1098,7 +1094,6 @@ The artist usually selected the tracks, chose their sequence, and slightly chang
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/mo/recorded_as">
         <owl:inverseOf rdf:resource="http://purl.org/ontology/mo/records"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/mo/Performance"/>
         <rdfs:range rdf:resource="http://purl.org/ontology/mo/Signal"/>
         <rdfs:comment>
         This is a shortcut property, allowing to bypass all the Sound/Recording steps. This property
@@ -1119,8 +1114,6 @@ The artist usually selected the tracks, chose their sequence, and slightly chang
         <owl:equivalentProperty rdf:resource="http://purl.org/ontology/mo/usedInRecording"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/NET/c4dm/event.owl#isFactorOf"/>
         <owl:inverseOf rdf:resource="http://purl.org/ontology/mo/recording_of"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/mo/Sound"/>
-        <rdfs:range rdf:resource="http://purl.org/ontology/mo/Recording"/>
         <rdfs:comment>
             Associates a physical Sound to a Recording event where it is being used
         in order to produce a signal. For example, I might use this property to
@@ -1138,8 +1131,6 @@ The artist usually selected the tracks, chose their sequence, and slightly chang
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/mo/recording_of">
         <owl:equivalentProperty rdf:resource="http://purl.org/ontology/mo/usesSound"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/NET/c4dm/event.owl#factor"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/mo/Recording"/>
-        <rdfs:range rdf:resource="http://purl.org/ontology/mo/Sound"/>
         <rdfs:comment>
             Associates a Recording event to a physical Sound being recorded.
                 For example, I might use this property to
@@ -1156,7 +1147,6 @@ The artist usually selected the tracks, chose their sequence, and slightly chang
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/mo/records">
         <rdfs:domain rdf:resource="http://purl.org/ontology/mo/Signal"/>
-        <rdfs:range rdf:resource="http://purl.org/ontology/mo/Performance"/>
         <rdfs:comment>
         This is the inverse of the shortcut property recordedAs, allowing to relate directly a performance
         to a signal.
@@ -1171,7 +1161,6 @@ The artist usually selected the tracks, chose their sequence, and slightly chang
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/mo/release">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/NET/c4dm/event.owl#product"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/mo/ReleaseEvent"/>
         <rdfs:range rdf:resource="http://purl.org/ontology/mo/Release"/>
         <rdfs:comment>Associates a release with the corresponding release event</rdfs:comment>
         <rdfs:label>release</rdfs:label>
@@ -1300,7 +1289,6 @@ This involves taking just one other musical work and using audio editing to make
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/mo/singer">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/mo/performer"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/mo/Performance"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:comment>Relates a performance to an involved singer</rdfs:comment>
     </owl:ObjectProperty>
@@ -1357,18 +1345,6 @@ This involves taking just one other musical work and using audio editing to make
     
 
 
-    <!-- http://purl.org/ontology/mo/want_item -->
-
-
-    <owl:ObjectProperty rdf:about="http://purl.org/ontology/mo/want_item">
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
-        <rdfs:comment>A person, a group of person or an organization wanting an exemplar of a single manifestation.</rdfs:comment>
-        <rdfs:label>want_item</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.org/spar/fabio/hasManifestation -->
 
 
@@ -1382,7 +1358,7 @@ This involves taking just one other musical work and using audio editing to make
             <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#embodiment"/>
         </owl:propertyChainAxiom>
         <rdfs:comment xml:lang="en">A property linking a particular work to its manifestations.  This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model.</rdfs:comment>
-        <rdfs:label xml:lang="en">has manifestation</rdfs:label>
+        <rdfs:label xml:lang="en">fabio:hasManifestation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1424,7 +1400,7 @@ This involves taking just one other musical work and using audio editing to make
     <owl:ObjectProperty rdf:about="http://purl.org/spar/fabio/hasPrimarySubjectTerm">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/fabio/hasSubjectTerm"/>
         <rdfs:comment xml:lang="en">This property is used to associate a frbr:Endeavour to a term in a particular classification system - and the term is considered one of the main topics for the endeavour in consideration.</rdfs:comment>
-        <rdfs:label xml:lang="en">has primary subject term</rdfs:label>
+        <rdfs:label xml:lang="en">fabio:hasPrimarySubjectTerm</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1455,7 +1431,7 @@ This involves taking just one other musical work and using audio editing to make
         <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
         <rdfs:range rdf:resource="http://purl.org/spar/fabio/SubjectTerm"/>
         <rdfs:comment xml:lang="en">This property is used to associate a frbr:Endeavour to a term in a particular classification system.</rdfs:comment>
-        <rdfs:label xml:lang="en">has subject term</rdfs:label>
+        <rdfs:label xml:lang="en">fabio:hasSubjectTerm</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1472,7 +1448,7 @@ This involves taking just one other musical work and using audio editing to make
             <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#realizationOf"/>
         </owl:propertyChainAxiom>
         <rdfs:comment xml:lang="en">A property linking a particular manifestation to the work it is manifesting.  This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model.</rdfs:comment>
-        <rdfs:label xml:lang="en">is manifestation of</rdfs:label>
+        <rdfs:label xml:lang="en">fabio:isManifestationOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1850,7 +1826,6 @@ This property describes works that are intended to be an imitation another origi
         <rdfs:comment xml:lang="en">A part of an endeavour.</rdfs:comment>
         <rdfs:comment xml:lang="en">Meaning = has part.  As defined by FRBR (http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#part),  a property indicating that one entity includes another entity.</rdfs:comment>
         <rdfs:label xml:lang="en">has part</rdfs:label>
-        <skos1:note xml:lang="en">Unlike the FRBR version in RDF http://vocab.org/frbr/core.html the present version defines partonomy relationships transitive.</skos1:note>
     </owl:ObjectProperty>
     
 
@@ -1864,7 +1839,6 @@ This property describes works that are intended to be an imitation another origi
         <rdfs:comment xml:lang="en">An endeavour incorporating another endeavour.</rdfs:comment>
         <rdfs:comment xml:lang="en">Meaning = is part of.  As defined by FRBR (http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#partOf), a property indicating that one entity is a part of another entity.</rdfs:comment>
         <rdfs:label xml:lang="en">is part of</rdfs:label>
-        <skos1:note xml:lang="en">Unlike the FRBR version in RDF http://vocab.org/frbr/core.html the present version defines partonomy relationships transitive.</skos1:note>
     </owl:ObjectProperty>
     
 
@@ -1903,6 +1877,7 @@ This property describes works that are intended to be an imitation another origi
         <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
         <rdfs:comment xml:lang="en">A work realized through an expression.</rdfs:comment>
         <rdfs:comment xml:lang="en">As defined by FRBR (http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#realization), a property representing an expression that is an intellectual or artistic realization of a work.</rdfs:comment>
+        <rdfs:label xml:lang="en">frbr:realization</rdfs:label>
         <rdfs:label xml:lang="en">has realization</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1916,6 +1891,7 @@ This property describes works that are intended to be an imitation another origi
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:comment xml:lang="en">An expression that realizes a work.</rdfs:comment>
         <rdfs:comment xml:lang="en">As defined by FRBR (http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#realizationOf), a property representing the work that has been realized by an expression.</rdfs:comment>
+        <rdfs:label xml:lang="en">frbr:realizationOf</rdfs:label>
         <rdfs:label xml:lang="en">is realization of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1965,7 +1941,7 @@ The reconfiguration relationship is one in which one or more items are changed i
     <owl:ObjectProperty rdf:about="http://purl.org/vocab/frbr/core#relatedEndeavour">
         <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
         <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
-        <rdfs:label xml:lang="en">has related endeavour</rdfs:label>
+        <rdfs:label xml:lang="en">frbr:relatedEndeavor</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2020,7 +1996,8 @@ A reproduction indicates the relationship as it would be drawn from the first ma
         <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
         <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#ResponsibleEntity"/>
         <rdfs:comment xml:lang="en">Any endeavour having a particular entity that is responsible of it.</rdfs:comment>
-        <rdfs:label xml:lang="en">has responsible entity</rdfs:label>
+        <rdfs:label xml:lang="en">frbr:responsibleEntity</rdfs:label>
+        <skos:altLabel xml:lang="en">frbr:responsibleEntity</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -2080,7 +2057,9 @@ A revision has the intent to alter or update the content of the prior expression
             </owl:Class>
         </rdfs:range>
         <rdfs:comment xml:lang="en">A work linked to a particular subject it is talking about.</rdfs:comment>
-        <rdfs:label xml:lang="en">has subject</rdfs:label>
+        <rdfs:label xml:lang="en">frbr:subject</rdfs:label>
+        <skos:altLabel xml:lang="en">frbr:subject</skos:altLabel>
+        <skos:prefLabel xml:lang="en">frbr:subject</skos:prefLabel>
     </owl:ObjectProperty>
     
 
@@ -2290,7 +2269,9 @@ It allows to refer to a literal translation, in which the intent is to render th
     <!-- http://www.cidoc-crm.org/rdfs/cidoc-crm#P129_is_about -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/rdfs/cidoc-crm#P129_is_about"/>
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/rdfs/cidoc-crm#P129_is_about">
+        <rdfs:label xml:lang="en">crm:P129_is_about</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -2497,12 +2478,87 @@ It allows to refer to a literal translation, in which the intent is to render th
     
 
 
+    <!-- https://ise-fizkarlsruhe.github.io/ddbkg/mocho#contributor -->
+
+
+    <owl:ObjectProperty rdf:about="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#contributor">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:range rdf:resource="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Agent"/>
+        <rdfs:label xml:lang="en">mocho:contributor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://ise-fizkarlsruhe.github.io/ddbkg/mocho#creator -->
 
 
     <owl:ObjectProperty rdf:about="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#creator">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/NET/c4dm/event.owl#agent"/>
-        <rdfs:label xml:lang="en">mocho:contributor</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+        <rdfs:subPropertyOf rdf:resource="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#contributor"/>
+        <rdfs:range rdf:resource="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Agent"/>
+        <rdfs:label xml:lang="en">mocho:creator</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ise-fizkarlsruhe.github.io/ddbkg/mocho#hasManifestation -->
+
+
+    <owl:ObjectProperty rdf:about="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#hasManifestation">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/fabio/hasManifestation"/>
+        <owl:inverseOf rdf:resource="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#isManifestationOf"/>
+        <rdfs:domain rdf:resource="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Work"/>
+        <rdfs:range rdf:resource="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Manifestation"/>
+        <rdfs:label xml:lang="en">mocho:hasManifestation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ise-fizkarlsruhe.github.io/ddbkg/mocho#hasRealization -->
+
+
+    <owl:ObjectProperty rdf:about="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#hasRealization">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#realization"/>
+        <owl:inverseOf rdf:resource="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#isRealizationOf"/>
+        <rdfs:domain rdf:resource="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Work"/>
+        <rdfs:range rdf:resource="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Expression"/>
+        <rdfs:label xml:lang="en">mocho:hasRealization</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ise-fizkarlsruhe.github.io/ddbkg/mocho#isManifestationOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#isManifestationOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/fabio/isManifestationOf"/>
+        <rdfs:domain rdf:resource="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Manifestation"/>
+        <rdfs:range rdf:resource="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Work"/>
+        <rdfs:label xml:lang="en">mocho:isManifestationOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ise-fizkarlsruhe.github.io/ddbkg/mocho#isRealizationOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#isRealizationOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#realizationOf"/>
+        <rdfs:domain rdf:resource="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Expression"/>
+        <rdfs:range rdf:resource="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Work"/>
+        <rdfs:label xml:lang="en">mocho:isRealizationOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ise-fizkarlsruhe.github.io/ddbkg/mocho#publisher -->
+
+
+    <owl:ObjectProperty rdf:about="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#publisher">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/publisher"/>
+        <rdfs:subPropertyOf rdf:resource="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#contributor"/>
+        <rdfs:range rdf:resource="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Agent"/>
+        <rdfs:label xml:lang="en">mocho:publisher</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2516,7 +2572,7 @@ It allows to refer to a literal translation, in which the intent is to render th
         <rdfs:comment>Used to relate a person or a group of people who authored an audio manifestation.
 </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/ac-ontology/aco"/>
-        <rdfs:label>author</rdfs:label>
+        <rdfs:label xml:lang="en">aco:author</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2575,7 +2631,7 @@ It allows to refer to a literal translation, in which the intent is to render th
         <rdfs:comment>Used to relate a person or a group of people who compiled an audio manifestation.
 </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/ac-ontology/aco"/>
-        <rdfs:label>compiled</rdfs:label>
+        <rdfs:label xml:lang="en">aco:compiled</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2586,10 +2642,9 @@ It allows to refer to a literal translation, in which the intent is to render th
     <owl:ObjectProperty rdf:about="https://w3id.org/ac-ontology/aco#containerNode">
         <owl:inverseOf rdf:resource="https://w3id.org/ac-ontology/aco#nodeContent"/>
         <rdfs:domain rdf:resource="https://w3id.org/ac-ontology/aco#AudioManifestation"/>
-        <rdfs:range rdf:resource="https://w3id.org/ac-ontology/aco#AudioCollectionNode"/>
         <rdfs:comment>Associates an audio manifestation with the collection nodes that contain it.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/ac-ontology/aco"/>
-        <rdfs:label>container node</rdfs:label>
+        <rdfs:label xml:lang="en">aco:containerNode</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2617,7 +2672,6 @@ It allows to refer to a literal translation, in which the intent is to render th
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/ac-ontology/aco#memberNode"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/ac-ontology/aco#AudioCollection"/>
-        <rdfs:range rdf:resource="https://w3id.org/ac-ontology/aco#AudioCollectionFirstNode"/>
         <rdfs:comment>Associates an audio collection to its first node.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/ac-ontology/aco"/>
         <rdfs:label>first node</rdfs:label>
@@ -2646,7 +2700,6 @@ It allows to refer to a literal translation, in which the intent is to render th
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/ac-ontology/aco#memberNode"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/ac-ontology/aco#AudioCollection"/>
-        <rdfs:range rdf:resource="https://w3id.org/ac-ontology/aco#AudioCollectionLastNode"/>
         <rdfs:comment>Associates an audio collection to its last node.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/ac-ontology/aco"/>
         <rdfs:label>last node</rdfs:label>
@@ -2659,7 +2712,6 @@ It allows to refer to a literal translation, in which the intent is to render th
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ac-ontology/aco#memberNode">
         <rdfs:domain rdf:resource="https://w3id.org/ac-ontology/aco#AudioCollection"/>
-        <rdfs:range rdf:resource="https://w3id.org/ac-ontology/aco#AudioCollectionNode"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="https://w3id.org/ac-ontology/aco#memberNode"/>
             <rdf:Description rdf:about="https://w3id.org/ac-ontology/aco#nextNode"/>
@@ -2677,11 +2729,9 @@ It allows to refer to a literal translation, in which the intent is to render th
     <owl:ObjectProperty rdf:about="https://w3id.org/ac-ontology/aco#nextNode">
         <owl:inverseOf rdf:resource="https://w3id.org/ac-ontology/aco#previousNode"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ac-ontology/aco#AudioCollectionNonLastNode"/>
-        <rdfs:range rdf:resource="https://w3id.org/ac-ontology/aco#AudioCollectionNonFirstNode"/>
         <rdfs:comment>Associates a node with the next node in the collection.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/ac-ontology/aco"/>
-        <rdfs:label>next node</rdfs:label>
+        <rdfs:label xml:lang="en">aco:nextNode</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2691,7 +2741,6 @@ It allows to refer to a literal translation, in which the intent is to render th
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ac-ontology/aco#nodeContent">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ac-ontology/aco#AudioCollectionNode"/>
         <rdfs:range rdf:resource="https://w3id.org/ac-ontology/aco#AudioManifestation"/>
         <rdfs:comment>Associates a node with the actual content (an audio manifestation).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/ac-ontology/aco"/>
@@ -2721,8 +2770,6 @@ It allows to refer to a literal translation, in which the intent is to render th
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ac-ontology/aco#previousNode">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ac-ontology/aco#AudioCollectionNonFirstNode"/>
-        <rdfs:range rdf:resource="https://w3id.org/ac-ontology/aco#AudioCollectionNonLastNode"/>
         <rdfs:comment>Associates a node with the previous node in the collection.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/ac-ontology/aco"/>
         <rdfs:label>previous node</rdfs:label>
@@ -2734,7 +2781,6 @@ It allows to refer to a literal translation, in which the intent is to render th
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ac-ontology/aco#producedSignal">
-        <rdfs:domain rdf:resource="https://w3id.org/ac-ontology/aco#SignalProduction"/>
         <rdfs:range rdf:resource="https://w3id.org/ac-ontology/aco#Signal"/>
         <rdfs:comment>Associates a signal production event to the produced signal.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/ac-ontology/aco"/>
@@ -2747,7 +2793,6 @@ It allows to refer to a literal translation, in which the intent is to render th
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ac-ontology/aco#productionFrom">
-        <rdfs:domain rdf:resource="https://w3id.org/ac-ontology/aco#SignalProduction"/>
         <rdfs:range rdf:resource="https://w3id.org/ac-ontology/aco#Sound"/>
         <rdfs:comment>Associates a signal production act to a sound from which the signal was produced (e.g., if recording, the recorded sound).
 </rdfs:comment>
@@ -2806,7 +2851,6 @@ It allows to refer to a literal translation, in which the intent is to render th
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ac-ontology/aco#publishedAudioManifestation">
-        <rdfs:domain rdf:resource="https://w3id.org/ac-ontology/aco#AudioPublication"/>
         <rdfs:range rdf:resource="https://w3id.org/ac-ontology/aco#AudioManifestation"/>
         <rdfs:comment>Associates a publishing act to the audio manifestation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/ac-ontology/aco"/>
@@ -2820,7 +2864,6 @@ It allows to refer to a literal translation, in which the intent is to render th
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ac-ontology/aco#recordingOf">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/ac-ontology/aco#productionFrom"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ac-ontology/aco#Recording"/>
         <rdfs:range rdf:resource="https://w3id.org/ac-ontology/aco#Sound"/>
         <rdfs:comment>Associates a recording act to the recorded (physical) sound.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/ac-ontology/aco"/>
@@ -3792,7 +3835,6 @@ used to describe the order of an edm:ProvidedCHO or edm:PhysicalThing in a hiera
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/ac-ontology/aco#nodeIndex">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ac-ontology/aco#AudioCollectionNode"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment>Associates a node with its position in the collection.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/ac-ontology/aco"/>
@@ -3819,6 +3861,15 @@ used to describe the order of an edm:ProvidedCHO or edm:PhysicalThing in a hiera
     <owl:Class rdf:about="http://purl.org/NET/c4dm/event.owl#Event">
         <rdfs:isDefinedBy rdf:resource="https://smartcity.linkeddata.es/ontologies/purl.orgNETc4dmevent.owl.html"/>
         <rdfs:label xml:lang="en">event:Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/Agent -->
+
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/Agent">
+        <rdfs:label xml:lang="en">dcterms:Agent</rdfs:label>
     </owl:Class>
     
 
@@ -3896,109 +3947,13 @@ used to describe the order of an edm:ProvidedCHO or edm:PhysicalThing in a hiera
     
 
 
-    <!-- http://purl.org/ontology/mo/Arrangement -->
-
-
-    <owl:Class rdf:about="http://purl.org/ontology/mo/Arrangement">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
-        <rdfs:comment>
-        An arrangement event.
-        Takes as agent the arranger, and produces a score (informational object, not the actually published score).
-    </rdfs:comment>
-        <rdfs:label>arrangement</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/ontology/mo/Arranger -->
-
-
-    <owl:Class rdf:about="http://purl.org/ontology/mo/Arranger">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/NET/c4dm/event.owl#isAgentIn"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ontology/mo/Arrangement"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/NET/c4dm/event.owl#isAgentIn"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ontology/mo/Arrangement"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>arranger</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/ontology/mo/Composer -->
-
-
-    <owl:Class rdf:about="http://purl.org/ontology/mo/Composer">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/NET/c4dm/event.owl#isAgentIn"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ontology/mo/Composition"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/NET/c4dm/event.owl#isAgentIn"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ontology/mo/Composition"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>composer</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/ontology/mo/Composition -->
-
-
-    <owl:Class rdf:about="http://purl.org/ontology/mo/Composition">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
-        <rdfs:comment>
-        A composition event.
-        Takes as agent the composer himself.
-        It produces a MusicalWork, or a MusicalExpression (when the initial &quot;product&quot; is a score, for example), or both...
-    </rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">mo:Composition</rdfs:isDefinedBy>
-        <rdfs:label>composition</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/ontology/mo/Conductor -->
-
-
-    <owl:Class rdf:about="http://purl.org/ontology/mo/Conductor">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/mo/conducted"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ontology/mo/Performance"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/mo/conducted"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ontology/mo/Performance"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>conductor</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/ontology/mo/CorporateBody -->
 
 
     <owl:Class rdf:about="http://purl.org/ontology/mo/CorporateBody">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:comment>Organization or group of individuals and/or other organizations involved in the music market.</rdfs:comment>
-        <rdfs:label>corporate body</rdfs:label>
+        <rdfs:label xml:lang="en">mo:CorporateBody</rdfs:label>
     </owl:Class>
     
 
@@ -4035,29 +3990,7 @@ used to describe the order of an edm:ProvidedCHO or edm:PhysicalThing in a hiera
         <rdfs:comment>
                 Libretto
         </rdfs:comment>
-        <rdfs:label>libretto</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/ontology/mo/Listener -->
-
-
-    <owl:Class rdf:about="http://purl.org/ontology/mo/Listener">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/mo/listened"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ontology/mo/Performance"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/mo/listened"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ontology/mo/Performance"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>listened</rdfs:label>
+        <rdfs:label xml:lang="en">mo:Libretto</rdfs:label>
     </owl:Class>
     
 
@@ -4070,18 +4003,7 @@ used to describe the order of an edm:ProvidedCHO or edm:PhysicalThing in a hiera
         <rdfs:comment>
         Lyrics
     </rdfs:comment>
-        <rdfs:label>lyrics</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/ontology/mo/Membership -->
-
-
-    <owl:Class rdf:about="http://purl.org/ontology/mo/Membership">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
-        <rdfs:comment>A membership event, where one or several people belongs to a group during a particular time period.</rdfs:comment>
-        <rdfs:label>membership</rdfs:label>
+        <rdfs:label xml:lang="en">mo:Lyrics</rdfs:label>
     </owl:Class>
     
 
@@ -4111,7 +4033,7 @@ pause between them.
         A person or a group of people (or a computer :-) ), whose musical
         creative work shows sensitivity and imagination
     </rdfs:comment>
-        <rdfs:label>music artist</rdfs:label>
+        <rdfs:label xml:lang="en">mo:MusicArtist</rdfs:label>
     </owl:Class>
     
 
@@ -4123,7 +4045,7 @@ pause between them.
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/mo/MusicArtist"/>
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
         <rdfs:comment>Group of musicians, or musical ensemble, usually popular or folk, playing parts of or improvising off of a musical arrangement. </rdfs:comment>
-        <rdfs:label>music group</rdfs:label>
+        <rdfs:label xml:lang="en">mo:MusicGroup</rdfs:label>
     </owl:Class>
     
 
@@ -4132,7 +4054,7 @@ pause between them.
 
 
     <owl:Class rdf:about="http://purl.org/ontology/mo/MusicalExpression">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ac-ontology/aco#AudioExpression"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
         <rdfs:comment>
 The intellectual or artistic realization of a work in the form of alpha-numeric, musical, or choreographic notation, sound, etc., or any combination of such forms.
 
@@ -4153,7 +4075,7 @@ expressions (allowing to go deeply into the production process - `this performer
 particular time&apos;).
 
     </rdfs:comment>
-        <rdfs:label>musical expression</rdfs:label>
+        <rdfs:label xml:lang="en">mo:MusicalExpression</rdfs:label>
     </owl:Class>
     
 
@@ -4162,7 +4084,7 @@ particular time&apos;).
 
 
     <owl:Class rdf:about="http://purl.org/ontology/mo/MusicalItem">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ac-ontology/aco#AudioItem"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
         <rdfs:comment>A single exemplar of a musical expression.
 
 For example, it could be a single exemplar of a CD. This is normally an single object (a CD) possessed by somebody.
@@ -4171,7 +4093,7 @@ From the FRBR final report: The entity defined as item is a concrete entity. It 
 
 In terms of intellectual content and physical form, an item exemplifying a manifestation is normally the same as the manifestation itself. However, variations may occur from one item to another, even when the items exemplify the same manifestation, where those variations are the result of actions external to the intent of the producer of the manifestation (e.g., damage occurring after the item was produced, binding performed by a library, etc.).
     </rdfs:comment>
-        <rdfs:label>MusicalItem</rdfs:label>
+        <rdfs:label xml:lang="en">mo:MusicalItem</rdfs:label>
     </owl:Class>
     
 
@@ -4180,7 +4102,7 @@ In terms of intellectual content and physical form, an item exemplifying a manif
 
 
     <owl:Class rdf:about="http://purl.org/ontology/mo/MusicalManifestation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ac-ontology/aco#AudioManifestation"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
         <rdfs:comment>
 
 This entity is related to the edition/production/publication of a musical expression (musical manifestation are closely related with the music industry (their terms, concepts, definitions, methods (production, publication, etc.), etc.)
@@ -4207,7 +4129,7 @@ With the entity defined as manifestation we can describe the physical characteri
 Defining manifestation as an entity also enables us to draw relationships between specific manifestations of a work. We can use the relationships between manifestations to identify, for example, the specific publication that was used to create a microreproduction.
 
 </rdfs:comment>
-        <rdfs:label>musical manifestation</rdfs:label>
+        <rdfs:label xml:lang="en">mo:MusicalManifestation</rdfs:label>
     </owl:Class>
     
 
@@ -4229,45 +4151,7 @@ work #1 J. S. Bach&apos;s The art of the fugue
 
 
     </rdfs:comment>
-        <rdfs:label>musical work</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/ontology/mo/Performance -->
-
-
-    <owl:Class rdf:about="http://purl.org/ontology/mo/Performance">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
-        <rdfs:comment>
-        A performance event.
-        It might include as agents performers, engineers, conductors, or even listeners.
-        It might include as factors a score, a MusicalWork, musical instruments.
-        It might produce a sound:-)
-    </rdfs:comment>
-        <rdfs:label>performance</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/ontology/mo/Performer -->
-
-
-    <owl:Class rdf:about="http://purl.org/ontology/mo/Performer">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/mo/performed"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ontology/mo/Performance"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/mo/performed"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ontology/mo/Performance"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>performer</rdfs:label>
+        <rdfs:label xml:lang="en">mo:MusicalWork</rdfs:label>
     </owl:Class>
     
 
@@ -4278,7 +4162,7 @@ work #1 J. S. Bach&apos;s The art of the fugue
     <owl:Class rdf:about="http://purl.org/ontology/mo/PublishedLibretto">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/mo/MusicalManifestation"/>
         <rdfs:comment>A published libretto</rdfs:comment>
-        <rdfs:label>published libretto</rdfs:label>
+        <rdfs:label xml:lang="en">mo:PublishedLibretto</rdfs:label>
     </owl:Class>
     
 
@@ -4289,7 +4173,7 @@ work #1 J. S. Bach&apos;s The art of the fugue
     <owl:Class rdf:about="http://purl.org/ontology/mo/PublishedLyrics">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/mo/MusicalManifestation"/>
         <rdfs:comment>Published lyrics, as a book or as a text file, for example</rdfs:comment>
-        <rdfs:label>published lyrics</rdfs:label>
+        <rdfs:label xml:lang="en">mo:PublishedLyrics</rdfs:label>
     </owl:Class>
     
 
@@ -4300,7 +4184,7 @@ work #1 J. S. Bach&apos;s The art of the fugue
     <owl:Class rdf:about="http://purl.org/ontology/mo/PublishedScore">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/mo/MusicalManifestation"/>
         <rdfs:comment>A published score (subclass of MusicalManifestation)</rdfs:comment>
-        <rdfs:label>published score</rdfs:label>
+        <rdfs:label xml:lang="en">mo:PublishedScore</rdfs:label>
     </owl:Class>
     
 
@@ -4310,36 +4194,8 @@ work #1 J. S. Bach&apos;s The art of the fugue
 
     <owl:Class rdf:about="http://purl.org/ontology/mo/Record">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/mo/MusicalManifestation"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ac-ontology/aco#AudioCollection"/>
         <rdfs:comment>A published record (manifestation which first aim is to render the product of a recording)</rdfs:comment>
-        <rdfs:label>record</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/ontology/mo/Recording -->
-
-
-    <owl:Class rdf:about="http://purl.org/ontology/mo/Recording">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
-        <rdfs:comment>
-        A recording event.
-        Takes a sound as a factor to produce a signal (analog or digital).
-        The location of such events (if any) is the actual location of the corresponding
-        microphone or the &quot;recording device&quot;.
-    </rdfs:comment>
-        <rdfs:label>recording</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/ontology/mo/RecordingSession -->
-
-
-    <owl:Class rdf:about="http://purl.org/ontology/mo/RecordingSession">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
-        <rdfs:comment>A set of performances/recordings/mastering events. This event can be decomposed in its constituent events using event:sub_event</rdfs:comment>
-        <rdfs:label>recording session</rdfs:label>
+        <rdfs:label xml:lang="en">mo:Record</rdfs:label>
     </owl:Class>
     
 
@@ -4350,40 +4206,7 @@ work #1 J. S. Bach&apos;s The art of the fugue
     <owl:Class rdf:about="http://purl.org/ontology/mo/Release">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/mo/MusicalManifestation"/>
         <rdfs:comment>A specific release, with barcode, box, liner notes, cover art, and a number of records</rdfs:comment>
-        <rdfs:label>release</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/ontology/mo/ReleaseEvent -->
-
-
-    <owl:Class rdf:about="http://purl.org/ontology/mo/ReleaseEvent">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
-        <rdfs:comment>A release event, in a particular place (e.g. a country) at a particular time. Other factors of this event might include cover art, liner notes, box, etc. or a release grouping all these.</rdfs:comment>
-        <rdfs:label>release event</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/ontology/mo/ReleaseStatus -->
-
-
-    <owl:Class rdf:about="http://purl.org/ontology/mo/ReleaseStatus">
-        <rdfs:comment>Musical manifestation release status.</rdfs:comment>
-        <rdfs:label>release status</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/ontology/mo/ReleaseType -->
-
-
-    <owl:Class rdf:about="http://purl.org/ontology/mo/ReleaseType">
-        <rdfs:comment>
-        Release type of a particular manifestation, such as &quot;album&quot; or &quot;interview&quot;...
-    </rdfs:comment>
-        <rdfs:label>Release type</rdfs:label>
+        <rdfs:label xml:lang="en">mo:Release</rdfs:label>
     </owl:Class>
     
 
@@ -4397,7 +4220,7 @@ work #1 J. S. Bach&apos;s The art of the fugue
         Here, we are dealing with the informational object (the MusicalExpression), not the actually &quot;published&quot; score.
         This may be, for example, the product of an arrangement process.
     </rdfs:comment>
-        <rdfs:label>score</rdfs:label>
+        <rdfs:label xml:lang="en">mo:Score</rdfs:label>
     </owl:Class>
     
 
@@ -4410,7 +4233,7 @@ work #1 J. S. Bach&apos;s The art of the fugue
         <rdfs:comment>
         A subclass of MusicalExpression, representing a signal, for example a master signal produced by a performance and a recording.
     </rdfs:comment>
-        <rdfs:label>signal</rdfs:label>
+        <rdfs:label xml:lang="en">mo:Signal</rdfs:label>
     </owl:Class>
     
 
@@ -4423,7 +4246,7 @@ work #1 J. S. Bach&apos;s The art of the fugue
         <rdfs:comment>
         A musical expression representing a group of signals, for example a set of masters resulting from a whole recording/mastering session.
     </rdfs:comment>
-        <rdfs:label>signal group</rdfs:label>
+        <rdfs:label xml:lang="en">mo:SignalGroup</rdfs:label>
     </owl:Class>
     
 
@@ -4435,45 +4258,7 @@ work #1 J. S. Bach&apos;s The art of the fugue
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/mo/MusicArtist"/>
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:comment xml:lang="en">Single person whose musical creative work shows sensitivity and imagination.</rdfs:comment>
-        <rdfs:comment>Single person whose musical creative work shows sensitivity and imagination.</rdfs:comment>
         <rdfs:label xml:lang="en">mo:SoloMusicArtist</rdfs:label>
-        <rdfs:label>solo music artist</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/ontology/mo/Sound -->
-
-
-    <owl:Class rdf:about="http://purl.org/ontology/mo/Sound">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/mo/MusicalExpression"/>
-        <rdfs:comment>
-        A subclass of MusicalExpression, representing a sound. Realisation of a MusicalWork during a musical Performance.
-    </rdfs:comment>
-        <rdfs:label>sound</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/ontology/mo/SoundEngineer -->
-
-
-    <owl:Class rdf:about="http://purl.org/ontology/mo/SoundEngineer">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/mo/engineered"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ontology/mo/Performance"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/mo/engineered"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ontology/mo/Performance"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>sound engineer</rdfs:label>
     </owl:Class>
     
 
@@ -4484,29 +4269,7 @@ work #1 J. S. Bach&apos;s The art of the fugue
     <owl:Class rdf:about="http://purl.org/ontology/mo/Track">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/mo/MusicalManifestation"/>
         <rdfs:comment>A track on a particular record</rdfs:comment>
-        <rdfs:label>track</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/spar/fabio/AnalogStorageMedium -->
-
-
-    <owl:Class rdf:about="http://purl.org/spar/fabio/AnalogStorageMedium">
-        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/StorageMedium"/>
-        <rdfs:comment xml:lang="en">A means of storing information in non-digital form, e.g. paper, film (for analogue photographs or movies), magnetic tape (for analogue sound recordings or video recordings) or vinyl disc.</rdfs:comment>
-        <rdfs:label xml:lang="en">analog storage medium</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/spar/fabio/DigitalStorageMedium -->
-
-
-    <owl:Class rdf:about="http://purl.org/spar/fabio/DigitalStorageMedium">
-        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/StorageMedium"/>
-        <rdfs:comment xml:lang="en">A means of storing information in digital form, involving binary encoding of data in 0s and 1s, e.g. a computer random access memory, hard disc, USB stick, CD, DVD or digital magnetic tape.</rdfs:comment>
-        <rdfs:label xml:lang="en">digital storage medium</rdfs:label>
+        <rdfs:label xml:lang="en">mo:Track</rdfs:label>
     </owl:Class>
     
 
@@ -4542,9 +4305,8 @@ work #1 J. S. Bach&apos;s The art of the fugue
                 <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/Work"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:description xml:lang="en">A fabio:Expression can only have part or be part of another fabio:Expression.  Moreover, it can be a representation only of a fabio:Work, and  it can be embodied only in fabio:Manifestation(s).</dc:description>
         <rdfs:comment xml:lang="en">A subclass of FRBR expression, restricted to expressions of fabio:Works.  For your latest research paper, the preprint submitted to the publisher, and the final published version to which the publisher assigned a unique digital object identifier, are both expressions of the same work.  </rdfs:comment>
-        <rdfs:label xml:lang="en">expression</rdfs:label>
+        <rdfs:label xml:lang="en">fabio:Expression</rdfs:label>
     </owl:Class>
     
 
@@ -4574,9 +4336,8 @@ work #1 J. S. Bach&apos;s The art of the fugue
                 <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/Manifestation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:description xml:lang="en">A fabio:Item can only have part or be part of another fabio:Item. Moreover, it can be an exemplar only of a fabio:Manifestation.</dc:description>
         <rdfs:comment xml:lang="en">A subclass of FRBR item, restricted to exemplars of fabio:Manifestations.  An example of a fabio:Item is a printed copy of a journal article on your desk, or a PDF file of that article that you purchased from a publisher and that now resides in digital form on your computer hard drive.  </rdfs:comment>
-        <rdfs:label xml:lang="en">item</rdfs:label>
+        <rdfs:label xml:lang="en">fabio:Item</rdfs:label>
     </owl:Class>
     
 
@@ -4612,21 +4373,10 @@ work #1 J. S. Bach&apos;s The art of the fugue
                 <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/Item"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:description xml:lang="en">A fabio:Manifestation can only have part or be part of another fabio:Manifestation.  Moreover, it can be an embodiment only of a fabio:Expression and it can be exemplified only by fabio:Item(s).</dc:description>
         <rdfs:comment xml:lang="en">A subclass of FRBR manifestation, restricted to manifestations of fabio:Expressions. fabio:Manifestation specifically applies to electronic (digital) as well as to physical manifestations of expressions.  
 
 Examples of different manifestations of a single &apos;version of record&apos; expression of a scholarly work include an article in a print journal or the on-line version of that article as a web page.</rdfs:comment>
-        <rdfs:label xml:lang="en">manifestation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/spar/fabio/StorageMedium -->
-
-
-    <owl:Class rdf:about="http://purl.org/spar/fabio/StorageMedium">
-        <rdfs:comment xml:lang="en">A device for recording information or storing data.</rdfs:comment>
-        <rdfs:label xml:lang="en">storage medium</rdfs:label>
+        <rdfs:label xml:lang="en">fabio:Manifestation</rdfs:label>
     </owl:Class>
     
 
@@ -4643,7 +4393,7 @@ Examples of different manifestations of a single &apos;version of record&apos; e
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A concept that defines a term within the controlled vocabulary of a particular classification system, such as the ACM Computing Classification System or MeSH, the Medical Subject Headings, used as an annotation to describe the subject, meaning or content of an entity.</rdfs:comment>
-        <rdfs:label xml:lang="en">subject term</rdfs:label>
+        <rdfs:label xml:lang="en">fabio:SubjectTerm</rdfs:label>
     </owl:Class>
     
 
@@ -4659,7 +4409,6 @@ Examples of different manifestations of a single &apos;version of record&apos; e
                 <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/SubjectTerm"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:description xml:lang="en">A term dictionary is a collection of subject terms.</dc:description>
         <rdfs:comment xml:lang="en">A controlled vocabulary, usually referring to terms within a particular classification system, such as the ACM Computing Classification System or MeSH, the Medical Subject Headings, or a controlled vocabulary of disciplines.</rdfs:comment>
         <rdfs:label xml:lang="en">term dictionary</rdfs:label>
     </owl:Class>
@@ -4691,9 +4440,8 @@ Examples of different manifestations of a single &apos;version of record&apos; e
                 <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/Expression"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:description xml:lang="en">A fabio:Work can only have part or be part of another fabio:Work. Moreover, it can be realized only by fabio:Expression(s).</dc:description>
         <rdfs:comment xml:lang="en">A subclass of FRBR work, restricted to works that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define bibliographic references. FaBiO works, and their expressions and manifestations, are primarily textual publications such as books, magazines, newspapers and journals, and items of their content.  However, they also include datasets, computer algorithms, experimental protocols, formal specifications and vocabularies, legal records, governmental papers, technical and commercial reports and similar publications, and also bibliographies, reference lists, library catalogues and similar collections. For this reason, fabio:Work is not an equivalent class to frbr:ScholarlyWork.  An example of a fabio:Work is your latest research paper.</rdfs:comment>
-        <rdfs:label xml:lang="en">work</rdfs:label>
+        <rdfs:label xml:lang="en">fabio:Work</rdfs:label>
     </owl:Class>
     
 
@@ -4706,7 +4454,7 @@ Examples of different manifestations of a single &apos;version of record&apos; e
         <rdfs:comment xml:lang="en">An abstract notion or idea.
 
 The entity defined as concept encompasses a comprehensive range of abstractions that may be the subject of a work: fields of knowledge, disciplines, schools of thought (philosophies, religions, political ideologies, etc.), theories, processes, techniques, practices, etc.  A concept may be broad in nature or narrowly defined and precise. </rdfs:comment>
-        <rdfs:label xml:lang="en">concept</rdfs:label>
+        <rdfs:label xml:lang="en">frbr:Concept</rdfs:label>
     </owl:Class>
     
 
@@ -4720,7 +4468,7 @@ The entity defined as concept encompasses a comprehensive range of abstractions 
         <rdfs:comment xml:lang="en">An organization or group of individuals and/or organizations acting as a unit.
 
 The entity defined as corporate body encompasses organizations and groups of individuals and/or organizations that are identified by a particular name, including occasional groups and groups that are constituted as meetings, conferences, congresses, expeditions, exhibitions, festivals, fairs, etc.</rdfs:comment>
-        <rdfs:label xml:lang="en">corporate body</rdfs:label>
+        <rdfs:label xml:lang="en">frbr:CorporateBody</rdfs:label>
     </owl:Class>
     
 
@@ -4740,7 +4488,6 @@ The entity defined as corporate body encompasses organizations and groups of ind
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:comment xml:lang="en">It describes different aspects of user interests in the products of intellectual or artistic artifact.</rdfs:comment>
-        <rdfs:label xml:lang="en">endeavour</rdfs:label>
         <rdfs:label xml:lang="en">frbr:Endeavour</rdfs:label>
     </owl:Class>
     
@@ -4755,7 +4502,7 @@ The entity defined as corporate body encompasses organizations and groups of ind
         <rdfs:comment xml:lang="en">An action or occurrence.
 
 The entity defined as event encompasses a comprehensive range of actions and occurrences that may be the subject of a work: historical events, epochs, periods of time, etc. </rdfs:comment>
-        <rdfs:label xml:lang="en">event</rdfs:label>
+        <rdfs:label xml:lang="en">frbr:Event</rdfs:label>
     </owl:Class>
     
 
@@ -4813,7 +4560,6 @@ The entity defined as event encompasses a comprehensive range of actions and occ
         <rdfs:comment xml:lang="en">The intellectual or artistic realization of a work in the form of alpha-numeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.
 
 An expression is the specific intellectual or artistic form that a work takes each time it is &quot;realized.&quot; Expression encompasses, for example, the specific words, sentences, paragraphs, etc. that result from the realization of a work in the form of a text, or the particular sounds, phrasing, etc. resulting from the realization of a musical work.</rdfs:comment>
-        <rdfs:label xml:lang="en">expression</rdfs:label>
         <rdfs:label xml:lang="en">frbr:Expression</rdfs:label>
     </owl:Class>
     
@@ -4862,7 +4608,6 @@ An expression is the specific intellectual or artistic form that a work takes ea
 
 The entity defined as item is a concrete entity. It is in many instances a single physical object (e.g., a copy of a one-volume monograph, a single audio cassette, etc.). There are instances, however, where the entity defined as item comprises more than one physical object (e.g., a monograph issued as two separately bound volumes, a recording issued on three separate compact discs, etc.). </rdfs:comment>
         <rdfs:label xml:lang="en">frbr:Item</rdfs:label>
-        <rdfs:label xml:lang="en">item</rdfs:label>
     </owl:Class>
     
 
@@ -4919,7 +4664,6 @@ The entity defined as item is a concrete entity. It is in many instances a singl
 
 The entity defined as manifestation encompasses a wide range of materials and formats. As an entity, manifestation represents all the physical objects that bear the same characteristics, in respect to both intellectual content and physical form. </rdfs:comment>
         <rdfs:label xml:lang="en">frbr:Manifestation</rdfs:label>
-        <rdfs:label xml:lang="en">manifestation</rdfs:label>
     </owl:Class>
     
 
@@ -4932,7 +4676,7 @@ The entity defined as manifestation encompasses a wide range of materials and fo
         <rdfs:comment xml:lang="en">A material thing.
 
 The entity defined as object encompasses a comprehensive range of material things that may be the subject of a work: animate and inanimate objects occurring in nature; fixed, movable, and moving objects that are the product of human creation; objects that no longer exist. </rdfs:comment>
-        <rdfs:label xml:lang="en">object</rdfs:label>
+        <rdfs:label xml:lang="en">frbr:Object</rdfs:label>
     </owl:Class>
     
 
@@ -4943,7 +4687,7 @@ The entity defined as object encompasses a comprehensive range of material thing
     <owl:Class rdf:about="http://purl.org/vocab/frbr/core#Person">
         <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#ResponsibleEntity"/>
         <rdfs:comment xml:lang="en">An individual. The entity defined as person encompasses individuals that are deceased as well as those that are living.</rdfs:comment>
-        <rdfs:label xml:lang="en">person</rdfs:label>
+        <rdfs:label xml:lang="en">frbr:Person</rdfs:label>
     </owl:Class>
     
 
@@ -4957,7 +4701,7 @@ The entity defined as object encompasses a comprehensive range of material thing
         <rdfs:comment xml:lang="en">A location.
 
 The entity defined as place encompasses a comprehensive range of locations: terrestrial and extra-terrestrial; historical and contemporary; geographic features and geo-political jurisdictions. </rdfs:comment>
-        <rdfs:label xml:lang="en">place</rdfs:label>
+        <rdfs:label xml:lang="en">frbr:Place</rdfs:label>
     </owl:Class>
     
 
@@ -4967,7 +4711,7 @@ The entity defined as place encompasses a comprehensive range of locations: terr
 
     <owl:Class rdf:about="http://purl.org/vocab/frbr/core#ResponsibleEntity">
         <rdfs:comment xml:lang="en">It represents those responsible for the intellectual or artistic content, the physical production and dissemination, or the custodianship of any endeavour.</rdfs:comment>
-        <rdfs:label xml:lang="en">responsible entity</rdfs:label>
+        <rdfs:label xml:lang="en">frbr:ResponsibleEntity</rdfs:label>
     </owl:Class>
     
 
@@ -4977,7 +4721,7 @@ The entity defined as place encompasses a comprehensive range of locations: terr
 
     <owl:Class rdf:about="http://purl.org/vocab/frbr/core#Subject">
         <rdfs:comment xml:lang="en">It represents an additional set of entities that serve as the subjects of works.</rdfs:comment>
-        <rdfs:label xml:lang="en">subject</rdfs:label>
+        <rdfs:label xml:lang="en">frbr:Subject</rdfs:label>
     </owl:Class>
     
 
@@ -5025,7 +4769,6 @@ The entity defined as place encompasses a comprehensive range of locations: terr
 
 A work is an abstract entity; there is no single material object one can point to as the work. We recognize the work through individual realizations or expressions of the work, but the work itself exists only in the commonality of content between and among the various expressions of the work. When we speak of Homer&apos;s Iliad as a work, our point of reference is not a particular recitation or text of the work, but the intellectual creation that lies behind all the various expressions of the work. </rdfs:comment>
         <rdfs:label xml:lang="en">frbr:Work</rdfs:label>
-        <rdfs:label xml:lang="en">work</rdfs:label>
     </owl:Class>
     
 
@@ -5230,13 +4973,6 @@ A work is an abstract entity; there is no single material object one can point t
     
 
 
-    <!-- http://web.resource.org/cc/Work -->
-
-
-    <owl:Class rdf:about="http://web.resource.org/cc/Work"/>
-    
-
-
     <!-- http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing -->
 
 
@@ -5310,19 +5046,6 @@ Examples:
 In First Order Logic:
 - E89(x) ⇒ E28(x)</rdfs:comment>
         <rdfs:label xml:lang="en">crm:E89_Propositional_Object</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource -->
-
-
-    <owl:Class rdf:about="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource">
-        <dc:description xml:lang="en">An audiovisual MediaResource, which can be composed of one or more Tracks. A MediaResource is defined by an EditorialObject (Editorial Domain), which can be realised in Essences in one or more Formats for different delivery medias or platforms.</dc:description>
-        <dc:description xml:lang="de">Eine audiovisuelle MedienResource, die aus einer oder mehreren Spuren bestehen kann. Die MedienResource ist durch einen Medieninhalt definiert und kann durch Essenzen in einem oder mehreren Formaten für verschiedene Medien oder Plattformen realisiert werden.</dc:description>
-        <rdfs:label xml:lang="en">ec:MediaResource</rdfs:label>
-        <skos:definition xml:lang="en">a Resource that comprises encoded audio, video, graphics, data or text</skos:definition>
-        <skos:definition xml:lang="de">eine Resource, die aus kodierten Audio-, Video-, Grafik-, Daten- oder Textinhalten besteht</skos:definition>
     </owl:Class>
     
 
@@ -5729,7 +5452,6 @@ The notion of a SKOS concept is useful when describing the conceptual or intelle
 Note that, because SKOS is designed to be a vehicle for representing semi-formal KOS, such as thesauri and classification schemes, a certain amount of flexibility has been built in to the formal definition of this class.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">Concept</rdfs:label>
-        <rdfs:label xml:lang="en">concept</rdfs:label>
         <rdfs:label xml:lang="en">skos:Concept</rdfs:label>
         <skos:definition xml:lang="en">An idea or notion; a unit of thought.</skos:definition>
     </owl:Class>
@@ -5745,7 +5467,6 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
 The notion of a concept scheme is useful when dealing with data from an unknown source, and when dealing with data that describes two or more different knowledge organization systems. </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">Concept Scheme</rdfs:label>
-        <rdfs:label xml:lang="en">concept scheme</rdfs:label>
         <skos:definition xml:lang="en">A set of concepts, optionally including statements about semantic relationships between those concepts.</skos:definition>
         <skos:example xml:lang="en">Thesauri, classification schemes, subject heading lists, taxonomies, &apos;folksonomies&apos;, and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies.</skos:example>
         <skos:scopeNote xml:lang="en">A concept scheme may be defined to include concepts from different sources.</skos:scopeNote>
@@ -5785,6 +5506,7 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
 
 
     <owl:Class rdf:about="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Agent">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#ResponsibleEntity"/>
         <rdfs:subClassOf rdf:resource="http://rdaregistry.info/Elements/c/C10002"/>
         <rdfs:subClassOf rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
@@ -5815,6 +5537,7 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
         <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Concept"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Concept"/>
+        <rdfs:label xml:lang="en">mocho:Concept</rdfs:label>
     </owl:Class>
     
 
@@ -5851,6 +5574,7 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/ontology/mo/MusicalExpression"/>
+                    <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Expression"/>
                     <rdf:Description rdf:about="http://purl.org/vra/Inscription"/>
                     <rdf:Description rdf:about="http://rdaregistry.info/Elements/c/C10006"/>
                     <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
@@ -5861,6 +5585,16 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
                 </owl:unionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">mo:Expression rdfs:subClassOf [
+     owl:unionOf ( rdac:C10006
+                           frbr:Expression
+                           mo:MusicalExpression 
+                           vra:Inscription 
+                           crm:E73_Information_Object
+                           aco:AudioExpression
+                           rico:Record
+                           rico:RecordResource
+                           rico:RecordSet ) ] .</rdfs:comment>
         <rdfs:label xml:lang="en">mocho:Expression</rdfs:label>
         <skos:definition xml:lang="en">An intellectual or artistic realization of a work in the form of alpha-numeric, musical or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.</skos:definition>
         <skos:example xml:lang="en">Goethe&apos;s Faust in French</skos:example>
@@ -5887,6 +5621,7 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/ontology/mo/MusicalItem"/>
+                    <rdf:Description rdf:about="http://purl.org/spar/fabio/Item"/>
                     <rdf:Description rdf:about="http://rdaregistry.info/Elements/c/C10003"/>
                     <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing"/>
                     <rdf:Description rdf:about="https://w3id.org/ac-ontology/aco#AudioItem"/>
@@ -5910,6 +5645,7 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/ontology/mo/MusicalManifestation"/>
                     <rdf:Description rdf:about="http://purl.org/ontology/mo/Record"/>
+                    <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Manifestation"/>
                     <rdf:Description rdf:about="http://purl.org/vra/Image"/>
                     <rdf:Description rdf:about="http://rdaregistry.info/Elements/c/C10007"/>
                     <rdf:Description rdf:about="http://www.ebu.ch/metadata/ontologies/ebucoreplus#MediaResource"/>
@@ -6050,136 +5786,6 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
     
 
 
-    <!-- https://w3id.org/ac-ontology/aco#AudioCollectionFirstNode -->
-
-
-    <owl:Class rdf:about="https://w3id.org/ac-ontology/aco#AudioCollectionFirstNode">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ac-ontology/aco#AudioCollectionNode"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="https://w3id.org/ac-ontology/aco#firstNode"/>
-                    </rdf:Description>
-                </owl:onProperty>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>A node that is the first in the containing audio collection</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ac-ontology/aco"/>
-        <rdfs:label>First node</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ac-ontology/aco#AudioCollectionLastNode -->
-
-
-    <owl:Class rdf:about="https://w3id.org/ac-ontology/aco#AudioCollectionLastNode">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ac-ontology/aco#AudioCollectionNode"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="https://w3id.org/ac-ontology/aco#lastNode"/>
-                    </rdf:Description>
-                </owl:onProperty>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>A node that is the last in the containing audio collection</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ac-ontology/aco"/>
-        <rdfs:label>Last node</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ac-ontology/aco#AudioCollectionNode -->
-
-
-    <owl:Class rdf:about="https://w3id.org/ac-ontology/aco#AudioCollectionNode">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ac-ontology/aco#nodeContent"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ac-ontology/aco#nodeContent"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ac-ontology/aco#nodeIndex"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <owl:disjointUnionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/ac-ontology/aco#AudioCollectionFirstNode"/>
-            <rdf:Description rdf:about="https://w3id.org/ac-ontology/aco#AudioCollectionNonFirstNode"/>
-        </owl:disjointUnionOf>
-        <owl:disjointUnionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/ac-ontology/aco#AudioCollectionLastNode"/>
-            <rdf:Description rdf:about="https://w3id.org/ac-ontology/aco#AudioCollectionNonLastNode"/>
-        </owl:disjointUnionOf>
-        <rdfs:comment>A node of an audio collection. It encapsulates the actual content (ac:nodeContent), the position in the collection (ac:nodeIndex), and links to the previous and following node in the collection (ac:previousNode and ac:nextNode).
-</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ac-ontology/aco"/>
-        <rdfs:label>Node</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ac-ontology/aco#AudioCollectionNonFirstNode -->
-
-
-    <owl:Class rdf:about="https://w3id.org/ac-ontology/aco#AudioCollectionNonFirstNode">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ac-ontology/aco#AudioCollectionNode"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ac-ontology/aco#previousNode"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ac-ontology/aco#previousNode"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>A node that is not the first in the containing audio collection</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ac-ontology/aco"/>
-        <rdfs:label>Any node but the first</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ac-ontology/aco#AudioCollectionNonLastNode -->
-
-
-    <owl:Class rdf:about="https://w3id.org/ac-ontology/aco#AudioCollectionNonLastNode">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ac-ontology/aco#AudioCollectionNode"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ac-ontology/aco#nextNode"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ac-ontology/aco#nextNode"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>A node that is not the last in the containing audio collection</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ac-ontology/aco"/>
-        <rdfs:label>Any node but the last</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/ac-ontology/aco#AudioExpression -->
 
 
@@ -6188,7 +5794,7 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
         <rdfs:comment>The specific intellectual or artistic form that a work takes each time it is 	“realized”, in the audio domain (e.g., the recording or synthesis of music or sounds).
 </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/ac-ontology/aco"/>
-        <rdfs:label>Audio expression</rdfs:label>
+        <rdfs:label xml:lang="en">aco:AudioExpression</rdfs:label>
     </owl:Class>
     
 
@@ -6197,11 +5803,11 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
 
 
     <owl:Class rdf:about="https://w3id.org/ac-ontology/aco#AudioFile">
-        <rdfs:subClassOf rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource"/>
+        <rdfs:subClassOf rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucoreplus#MediaResource"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/ac-ontology/aco#AudioItem"/>
         <rdfs:comment>A concrete audio file (encoded in some format)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/ac-ontology/aco"/>
-        <rdfs:label>Audio file</rdfs:label>
+        <rdfs:label xml:lang="en">aco:AudioFile</rdfs:label>
     </owl:Class>
     
 
@@ -6214,7 +5820,7 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
         <rdfs:comment>A concrete exemplar of an audio manifestation (e.g., a copy of a CD or a specific media file).
 </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/ac-ontology/aco"/>
-        <rdfs:label>Audio item</rdfs:label>
+        <rdfs:label xml:lang="en">aco:AudioItem</rdfs:label>
     </owl:Class>
     
 
@@ -6224,23 +5830,10 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
 
     <owl:Class rdf:about="https://w3id.org/ac-ontology/aco#AudioManifestation">
         <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
-        <rdfs:subClassOf rdf:resource="http://web.resource.org/cc/Work"/>
         <rdfs:comment>The physical embodiment of an audio expression (e.g., a musical track, a sound, an album).
 </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/ac-ontology/aco"/>
-        <rdfs:label>Audio manifestation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ac-ontology/aco#AudioPublication -->
-
-
-    <owl:Class rdf:about="https://w3id.org/ac-ontology/aco#AudioPublication">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
-        <rdfs:comment>The act of publishing some audio content as an audio manifestation.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ac-ontology/aco"/>
-        <rdfs:label>Audio publication</rdfs:label>
+        <rdfs:label xml:lang="en">aco:AudioManifestation</rdfs:label>
     </owl:Class>
     
 
@@ -6257,18 +5850,6 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
     
 
 
-    <!-- https://w3id.org/ac-ontology/aco#Recording -->
-
-
-    <owl:Class rdf:about="https://w3id.org/ac-ontology/aco#Recording">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ac-ontology/aco#SignalProduction"/>
-        <rdfs:comment>The act of recording some sound to produce a signal.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ac-ontology/aco"/>
-        <rdfs:label>Recording</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/ac-ontology/aco#Signal -->
 
 
@@ -6278,19 +5859,6 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
 </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/ac-ontology/aco"/>
         <rdfs:label>Signal</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ac-ontology/aco#SignalProduction -->
-
-
-    <owl:Class rdf:about="https://w3id.org/ac-ontology/aco#SignalProduction">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
-        <rdfs:comment>The act of producing a signal (e.g., through a recording or a synthesis).
-</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ac-ontology/aco"/>
-        <rdfs:label>Signal production</rdfs:label>
     </owl:Class>
     
 
@@ -6340,6 +5908,7 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
         <rdfs:label xml:lang="es">Agente</rdfs:label>
         <rdfs:label xml:lang="de">Akteur</rdfs:label>
         <rdfs:label xml:lang="en">rico:Agent</rdfs:label>
+        <skos:prefLabel xml:lang="en">rico:Agent</skos:prefLabel>
         <skos:scopeNote xml:lang="en">An Agent may have one or more identities; an identity is a
          constellation of properties or relations that together “identify” the Agent. A Person or
          Group commonly has one identity, though each also may have one or more alternative
@@ -6404,6 +5973,7 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
         <rdfs:label xml:lang="es">Grupo de agentes</rdfs:label>
         <rdfs:label xml:lang="de">Gruppe</rdfs:label>
         <rdfs:label xml:lang="en">rico:Group</rdfs:label>
+        <skos:prefLabel xml:lang="en">rico:Group</skos:prefLabel>
         <skos:scopeNote xml:lang="en">Group is a kind of Agent. A Group has a socially recognized
          identity. Each member of the Group plays a particular role or roles (that is has a
          particular Position) in the coordinated activity of the Group. Corporate bodies and
@@ -6480,6 +6050,7 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
         <rdfs:label xml:lang="es">Persona</rdfs:label>
         <rdfs:label xml:lang="fr">Personne</rdfs:label>
         <rdfs:label xml:lang="en">rico:Person</rdfs:label>
+        <skos:prefLabel xml:lang="en">rico:Person</skos:prefLabel>
         <skos:scopeNote xml:lang="en">Person is a kind of Agent. Most commonly, a human being
          (biological person) has a single socially constructed identity or persona. Less common
          though not rare, one or more personae in addition to the original persona which emerges at
@@ -6708,13 +6279,24 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
     <rdf:Description rdf:about="http://purl.org/dc/terms/license">
         <rdfs:comment xml:lang="en">A legal document giving official permission to do something with the resource.</rdfs:comment>
         <rdfs:label xml:lang="en">dcterms:license</rdfs:label>
-        <rdfs:label xml:lang="en">has license</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/title">
         <rdfs:comment xml:lang="en">A name given to a resource.  Typically, the title will be the name by which the resource is formally known.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:label xml:lang="en">dcterms:title</rdfs:label>
-        <rdfs:label xml:lang="en">has title</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/ontology/mo/Composition">
+        <rdfs:isDefinedBy xml:lang="en">mo:Composition</rdfs:isDefinedBy>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource">
+        <dc:description xml:lang="en">An audiovisual MediaResource, which can be composed of one or more Tracks. A MediaResource is defined by an EditorialObject (Editorial Domain), which can be realised in Essences in one or more Formats for different delivery medias or platforms.</dc:description>
+        <dc:description xml:lang="de">Eine audiovisuelle MedienResource, die aus einer oder mehreren Spuren bestehen kann. Die MedienResource ist durch einen Medieninhalt definiert und kann durch Essenzen in einem oder mehreren Formaten für verschiedene Medien oder Plattformen realisiert werden.</dc:description>
+        <rdfs:label xml:lang="en">ec:MediaResource</rdfs:label>
+        <skos:definition xml:lang="en">a Resource that comprises encoded audio, video, graphics, data or text</skos:definition>
+        <skos:definition xml:lang="de">eine Resource, die aus kodierten Audio-, Video-, Grafik-, Daten- oder Textinhalten besteht</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+        <rdfs:label xml:lang="en">rdfs:seeAlso</rdfs:label>
     </rdf:Description>
     
 

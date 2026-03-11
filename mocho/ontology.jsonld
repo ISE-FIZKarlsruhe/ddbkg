@@ -1,146 +1,5 @@
 [ {
-  "@id" : "_:genid1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/ontology/mo/Performance"
-    }, {
-      "@id" : "http://purl.org/ontology/mo/Recording"
-    }, {
-      "@id" : "http://purl.org/ontology/mo/RecordingSession"
-    } ]
-  } ]
-}, {
   "@id" : "_:genid100",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid104"
-    }, {
-      "@id" : "_:genid102"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid102",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Expression"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#partOf"
-  } ]
-}, {
-  "@id" : "_:genid104",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Expression"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#part"
-  } ]
-}, {
-  "@id" : "_:genid105",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://purl.org/spar/fabio/Manifestation"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#embodiment"
-  } ]
-}, {
-  "@id" : "_:genid106",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://purl.org/spar/fabio/Work"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#realizationOf"
-  } ]
-}, {
-  "@id" : "_:genid107",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid111"
-    }, {
-      "@id" : "_:genid109"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid109",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Item"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#partOf"
-  } ]
-}, {
-  "@id" : "_:genid111",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Item"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#part"
-  } ]
-}, {
-  "@id" : "_:genid112",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://purl.org/spar/fabio/Manifestation"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#exemplarOf"
-  } ]
-}, {
-  "@id" : "_:genid113",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid117"
-    }, {
-      "@id" : "_:genid115"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid115",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#partOf"
-  } ]
-}, {
-  "@id" : "_:genid117",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#part"
-  } ]
-}, {
-  "@id" : "_:genid118",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://purl.org/spar/fabio/Expression"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#embodimentOf"
-  } ]
-}, {
-  "@id" : "_:genid119",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://purl.org/spar/fabio/Item"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#exemplar"
-  } ]
-}, {
-  "@id" : "_:genid120",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
@@ -149,7 +8,7 @@
     "@id" : "http://purl.org/spar/fabio/TermDictionary"
   } ]
 }, {
-  "@id" : "_:genid121",
+  "@id" : "_:genid101",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://purl.org/spar/fabio/SubjectTerm"
@@ -158,17 +17,17 @@
     "@id" : "http://purl.org/spar/fabio/isSchemeOf"
   } ]
 }, {
-  "@id" : "_:genid122",
+  "@id" : "_:genid102",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid126"
+      "@id" : "_:genid106"
     }, {
-      "@id" : "_:genid124"
+      "@id" : "_:genid104"
     } ]
   } ]
 }, {
-  "@id" : "_:genid124",
+  "@id" : "_:genid104",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Work"
@@ -177,7 +36,7 @@
     "@id" : "http://purl.org/vocab/frbr/core#partOf"
   } ]
 }, {
-  "@id" : "_:genid126",
+  "@id" : "_:genid106",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Work"
@@ -186,7 +45,7 @@
     "@id" : "http://purl.org/vocab/frbr/core#part"
   } ]
 }, {
-  "@id" : "_:genid127",
+  "@id" : "_:genid107",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://purl.org/spar/fabio/Expression"
@@ -195,7 +54,7 @@
     "@id" : "http://purl.org/vocab/frbr/core#realization"
   } ]
 }, {
-  "@id" : "_:genid128",
+  "@id" : "_:genid108",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -209,279 +68,289 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid133",
+  "@id" : "_:genid113",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://purl.org/vocab/frbr/core#Endeavour"
     }, {
-      "@id" : "_:genid137"
+      "@id" : "_:genid117"
     }, {
-      "@id" : "_:genid135"
+      "@id" : "_:genid115"
     } ]
   } ]
 }, {
-  "@id" : "_:genid135",
+  "@id" : "_:genid115",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#realizationOf"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Work"
+  } ]
+}, {
+  "@id" : "_:genid117",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#embodiment"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
+  } ]
+}, {
+  "@id" : "_:genid119",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/vocab/frbr/core#Endeavour"
+    }, {
+      "@id" : "_:genid123"
+    }, {
+      "@id" : "_:genid121"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid121",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#Expression"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#partOf"
+  } ]
+}, {
+  "@id" : "_:genid123",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#Expression"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#part"
+  } ]
+}, {
+  "@id" : "_:genid125",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#embodiment"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
+  } ]
+}, {
+  "@id" : "_:genid126",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#realizationOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#Work"
+  } ]
+}, {
+  "@id" : "_:genid127",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/vocab/frbr/core#Endeavour"
+    }, {
+      "@id" : "_:genid129"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid129",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#exemplarOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
+  } ]
+}, {
+  "@id" : "_:genid131",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/vocab/frbr/core#Endeavour"
+    }, {
+      "@id" : "_:genid135"
+    }, {
+      "@id" : "_:genid133"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid133",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#Item"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#partOf"
+  } ]
+}, {
+  "@id" : "_:genid135",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#Item"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#part"
   } ]
 }, {
   "@id" : "_:genid137",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#embodiment"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
-  } ]
-}, {
-  "@id" : "_:genid139",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/vocab/frbr/core#Endeavour"
-    }, {
-      "@id" : "_:genid143"
-    }, {
-      "@id" : "_:genid141"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid141",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Expression"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#partOf"
-  } ]
-}, {
-  "@id" : "_:genid143",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Expression"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#part"
-  } ]
-}, {
-  "@id" : "_:genid145",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#embodiment"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
-  } ]
-}, {
-  "@id" : "_:genid146",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#realizationOf"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Work"
-  } ]
-}, {
-  "@id" : "_:genid147",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/vocab/frbr/core#Endeavour"
-    }, {
-      "@id" : "_:genid149"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid149",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#exemplarOf"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
   } ]
 }, {
-  "@id" : "_:genid151",
+  "@id" : "_:genid138",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://purl.org/vocab/frbr/core#Endeavour"
     }, {
-      "@id" : "_:genid155"
+      "@id" : "_:genid142"
     }, {
-      "@id" : "_:genid153"
+      "@id" : "_:genid140"
     } ]
   } ]
 }, {
-  "@id" : "_:genid153",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Item"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#partOf"
-  } ]
-}, {
-  "@id" : "_:genid155",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Item"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#part"
-  } ]
-}, {
-  "@id" : "_:genid157",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#exemplarOf"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
-  } ]
-}, {
-  "@id" : "_:genid158",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/vocab/frbr/core#Endeavour"
-    }, {
-      "@id" : "_:genid162"
-    }, {
-      "@id" : "_:genid160"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid160",
+  "@id" : "_:genid140",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#exemplar"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Item"
+  } ]
+}, {
+  "@id" : "_:genid142",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#embodimentOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#Expression"
+  } ]
+}, {
+  "@id" : "_:genid144",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/vocab/frbr/core#Endeavour"
+    }, {
+      "@id" : "_:genid148"
+    }, {
+      "@id" : "_:genid146"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid146",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#partOf"
+  } ]
+}, {
+  "@id" : "_:genid148",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#part"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/vocab/frbr/core#Expression"
+    }, {
+      "@id" : "http://purl.org/vocab/frbr/core#Work"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid150",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#embodimentOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#Expression"
+  } ]
+}, {
+  "@id" : "_:genid151",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#exemplar"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#Item"
+  } ]
+}, {
+  "@id" : "_:genid152",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/vocab/frbr/core#Endeavour"
+    }, {
+      "@id" : "_:genid154"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid154",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#realization"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#Expression"
+  } ]
+}, {
+  "@id" : "_:genid156",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/vocab/frbr/core#Endeavour"
+    }, {
+      "@id" : "_:genid160"
+    }, {
+      "@id" : "_:genid158"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid158",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#Work"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#partOf"
+  } ]
+}, {
+  "@id" : "_:genid160",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#Work"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#part"
   } ]
 }, {
   "@id" : "_:genid162",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#embodimentOf"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Expression"
-  } ]
-}, {
-  "@id" : "_:genid164",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/vocab/frbr/core#Endeavour"
-    }, {
-      "@id" : "_:genid168"
-    }, {
-      "@id" : "_:genid166"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid166",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#partOf"
-  } ]
-}, {
-  "@id" : "_:genid168",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#part"
-  } ]
-}, {
-  "@id" : "_:genid170",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#embodimentOf"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Expression"
-  } ]
-}, {
-  "@id" : "_:genid171",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#exemplar"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Item"
-  } ]
-}, {
-  "@id" : "_:genid172",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/vocab/frbr/core#Endeavour"
-    }, {
-      "@id" : "_:genid174"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid174",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#realization"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Expression"
   } ]
 }, {
-  "@id" : "_:genid176",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/vocab/frbr/core#Endeavour"
-    }, {
-      "@id" : "_:genid180"
-    }, {
-      "@id" : "_:genid178"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid178",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Work"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#partOf"
-  } ]
-}, {
-  "@id" : "_:genid180",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Work"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#part"
-  } ]
-}, {
-  "@id" : "_:genid182",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#realization"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Expression"
-  } ]
-}, {
-  "@id" : "_:genid183",
+  "@id" : "_:genid163",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.ebu.ch/metadata/ontologies/ebucoreplus#title"
@@ -490,7 +359,7 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "_:genid184",
+  "@id" : "_:genid164",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -503,7 +372,7 @@
     "@id" : "http://www.ebu.ch/metadata/ontologies/ebucoreplus#aspectRatio"
   } ]
 }, {
-  "@id" : "_:genid185",
+  "@id" : "_:genid165",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -513,7 +382,7 @@
     "@id" : "http://www.europeana.eu/schemas/edm/aggregatedCHO"
   } ]
 }, {
-  "@id" : "_:genid186",
+  "@id" : "_:genid166",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.europeana.eu/schemas/edm/aggregatedCHO"
@@ -522,7 +391,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ]
 }, {
-  "@id" : "_:genid187",
+  "@id" : "_:genid167",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -532,32 +401,34 @@
     "@id" : "http://www.europeana.eu/schemas/edm/happenedAt"
   } ]
 }, {
-  "@id" : "_:genid188",
+  "@id" : "_:genid168",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#complementOf" : [ {
     "@id" : "http://www.europeana.eu/schemas/edm/InformationResource"
   } ]
 }, {
-  "@id" : "_:genid189",
+  "@id" : "_:genid169",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "_:genid190"
+    "@id" : "_:genid170"
   } ]
 }, {
-  "@id" : "_:genid190",
+  "@id" : "_:genid170",
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "http://www.europeana.eu/schemas/edm/aggregatedCHO"
   } ]
 }, {
-  "@id" : "_:genid191",
+  "@id" : "_:genid171",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
       "@id" : "http://purl.org/ontology/mo/MusicalExpression"
+    }, {
+      "@id" : "http://purl.org/vocab/frbr/core#Expression"
     }, {
       "@id" : "http://purl.org/vra/Inscription"
     }, {
@@ -575,11 +446,23 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid200",
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/vocab/frbr/core#Expression"
+    }, {
+      "@id" : "http://purl.org/vocab/frbr/core#Work"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid181",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
       "@id" : "http://purl.org/ontology/mo/MusicalItem"
+    }, {
+      "@id" : "http://purl.org/spar/fabio/Item"
     }, {
       "@id" : "http://rdaregistry.info/Elements/c/C10003"
     }, {
@@ -591,13 +474,15 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid206",
+  "@id" : "_:genid188",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
       "@id" : "http://purl.org/ontology/mo/MusicalManifestation"
     }, {
       "@id" : "http://purl.org/ontology/mo/Record"
+    }, {
+      "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
     }, {
       "@id" : "http://purl.org/vra/Image"
     }, {
@@ -611,7 +496,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid214",
+  "@id" : "_:genid197",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -639,7 +524,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid226",
+  "@id" : "_:genid209",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/ac-ontology/aco#firstNode"
@@ -648,36 +533,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ]
 }, {
-  "@id" : "_:genid227",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#lastNode"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "_:genid228",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#cardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#firstNode"
-  } ]
-}, {
-  "@id" : "_:genid229",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#cardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#lastNode"
-  } ]
-}, {
-  "@id" : "_:genid23",
+  "@id" : "_:genid21",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -687,129 +543,61 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid230",
+  "@id" : "_:genid210",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ac-ontology/aco#lastNode"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "_:genid211",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "_:genid231"
-  } ]
-}, {
-  "@id" : "_:genid231",
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/ac-ontology/aco#firstNode"
   } ]
 }, {
-  "@id" : "_:genid232",
+  "@id" : "_:genid212",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "_:genid233"
-  } ]
-}, {
-  "@id" : "_:genid233",
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/ac-ontology/aco#lastNode"
   } ]
 }, {
-  "@id" : "_:genid234",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#nodeContent"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "_:genid235",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#cardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#nodeContent"
-  } ]
-}, {
-  "@id" : "_:genid236",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#cardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#nodeIndex"
-  } ]
-}, {
-  "@id" : "_:genid241",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#previousNode"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "_:genid242",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#cardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#previousNode"
-  } ]
-}, {
-  "@id" : "_:genid243",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#nextNode"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "_:genid244",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#cardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#nextNode"
-  } ]
-}, {
-  "@id" : "_:genid245",
+  "@id" : "_:genid213",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Organization"
   } ]
 }, {
-  "@id" : "_:genid246",
+  "@id" : "_:genid214",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Person"
   } ]
 }, {
-  "@id" : "_:genid247",
+  "@id" : "_:genid215",
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Alexandre Passant"
   } ]
 }, {
-  "@id" : "_:genid248",
+  "@id" : "_:genid216",
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "George Fazekas"
   } ]
 }, {
-  "@id" : "_:genid249",
+  "@id" : "_:genid217",
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Simon Reinhardt"
   } ]
 }, {
-  "@id" : "_:genid250",
+  "@id" : "_:genid218",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -823,7 +611,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid26",
+  "@id" : "_:genid24",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -833,7 +621,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid29",
+  "@id" : "_:genid27",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -843,7 +631,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid32",
+  "@id" : "_:genid30",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -853,27 +641,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid35",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/vocab/frbr/core#Expression"
-    }, {
-      "@id" : "http://purl.org/vocab/frbr/core#Work"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid38",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/vocab/frbr/core#Expression"
-    }, {
-      "@id" : "http://purl.org/vocab/frbr/core#Work"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid41",
+  "@id" : "_:genid33",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -883,7 +651,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid44",
+  "@id" : "_:genid36",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -893,7 +661,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid47",
+  "@id" : "_:genid39",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -905,19 +673,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/ontology/mo/Performance"
-    }, {
-      "@id" : "http://purl.org/ontology/mo/Recording"
-    }, {
-      "@id" : "http://purl.org/ontology/mo/RecordingSession"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid51",
+  "@id" : "_:genid43",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -927,7 +683,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid54",
+  "@id" : "_:genid46",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -937,7 +693,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid57",
+  "@id" : "_:genid49",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -947,7 +703,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid60",
+  "@id" : "_:genid52",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -957,7 +713,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid63",
+  "@id" : "_:genid55",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -967,7 +723,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid66",
+  "@id" : "_:genid58",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -977,7 +733,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid69",
+  "@id" : "_:genid61",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -987,7 +743,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid72",
+  "@id" : "_:genid64",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -997,27 +753,27 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid75",
+  "@id" : "_:genid67",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.europeana.eu/schemas/edm/ProvidedCHO"
     }, {
-      "@id" : "_:genid77"
+      "@id" : "_:genid69"
     } ]
   } ]
 }, {
-  "@id" : "_:genid77",
+  "@id" : "_:genid69",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.openarchives.org/ore/terms/Proxy"
     }, {
-      "@id" : "_:genid79"
+      "@id" : "_:genid71"
     } ]
   } ]
 }, {
-  "@id" : "_:genid79",
+  "@id" : "_:genid71",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.openarchives.org/ore/terms/proxyFor"
@@ -1026,7 +782,7 @@
     "@id" : "http://www.europeana.eu/schemas/edm/ProvidedCHO"
   } ]
 }, {
-  "@id" : "_:genid82",
+  "@id" : "_:genid74",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -1038,112 +794,133 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid88",
+  "@id" : "_:genid80",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid84"
+    }, {
+      "@id" : "_:genid82"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid82",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/NET/c4dm/event.owl#isAgentIn"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#Expression"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/ontology/mo/Arrangement"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#partOf"
+  } ]
+}, {
+  "@id" : "_:genid84",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#Expression"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#part"
+  } ]
+}, {
+  "@id" : "_:genid85",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://purl.org/spar/fabio/Manifestation"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#embodiment"
+  } ]
+}, {
+  "@id" : "_:genid86",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://purl.org/spar/fabio/Work"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#realizationOf"
+  } ]
+}, {
+  "@id" : "_:genid87",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid91"
+    }, {
+      "@id" : "_:genid89"
+    } ]
   } ]
 }, {
   "@id" : "_:genid89",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/NET/c4dm/event.owl#isAgentIn"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#Item"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/ontology/mo/Arrangement"
-  } ]
-}, {
-  "@id" : "_:genid90",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/NET/c4dm/event.owl#isAgentIn"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/ontology/mo/Composition"
+    "@id" : "http://purl.org/vocab/frbr/core#partOf"
   } ]
 }, {
   "@id" : "_:genid91",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/NET/c4dm/event.owl#isAgentIn"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#Item"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/ontology/mo/Composition"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#part"
   } ]
 }, {
   "@id" : "_:genid92",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/ontology/mo/conducted"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://purl.org/spar/fabio/Manifestation"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/ontology/mo/Performance"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#exemplarOf"
   } ]
 }, {
   "@id" : "_:genid93",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/ontology/mo/conducted"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/ontology/mo/Performance"
-  } ]
-}, {
-  "@id" : "_:genid94",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/ontology/mo/listened"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/ontology/mo/Performance"
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid97"
+    }, {
+      "@id" : "_:genid95"
+    } ]
   } ]
 }, {
   "@id" : "_:genid95",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/ontology/mo/listened"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/ontology/mo/Performance"
-  } ]
-}, {
-  "@id" : "_:genid96",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/ontology/mo/performed"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/ontology/mo/Performance"
+    "@id" : "http://purl.org/vocab/frbr/core#partOf"
   } ]
 }, {
   "@id" : "_:genid97",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/ontology/mo/performed"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/ontology/mo/Performance"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#part"
   } ]
 }, {
   "@id" : "_:genid98",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/ontology/mo/engineered"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://purl.org/spar/fabio/Expression"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/ontology/mo/Performance"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#embodimentOf"
   } ]
 }, {
   "@id" : "_:genid99",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/ontology/mo/engineered"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://purl.org/spar/fabio/Item"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/ontology/mo/Performance"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#exemplar"
   } ]
 }, {
   "@id" : "http://purl.org/NET/c4dm/event.owl#Event",
@@ -1164,7 +941,11 @@
   } ]
 }, {
   "@id" : "http://purl.org/NET/c4dm/event.owl#factor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "event:factor"
+  } ]
 }, {
   "@id" : "http://purl.org/NET/c4dm/event.owl#isAgentIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
@@ -1395,6 +1176,13 @@
     "@value" : "dc:title"
   } ]
 }, {
+  "@id" : "http://purl.org/dc/terms/Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "dcterms:Agent"
+  } ]
+}, {
   "@id" : "http://purl.org/dc/terms/LinguisticSystem",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1487,6 +1275,24 @@
     "@value" : "A bibliographic reference for the resource."
   } ]
 }, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The guidelines for using names of persons or organizations as creators apply to contributors."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "dcterms:contributor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/dc/terms/Agent"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "An entity responsible for making contributions to the resource."
+  } ]
+}, {
   "@id" : "http://purl.org/dc/terms/created",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1500,6 +1306,27 @@
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Date of creation of the resource."
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Recommended practice is to identify the creator with a URI. If this is not possible or feasible, a literal value that identifies the creator may be provided."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "dcterms:creator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/dc/terms/Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/contributor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "An entity responsible for making the resource."
   } ]
 }, {
   "@id" : "http://purl.org/dc/terms/date",
@@ -1550,7 +1377,11 @@
   } ]
 }, {
   "@id" : "http://purl.org/dc/terms/isPartOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "dcterms:isPartOf"
+  } ]
 }, {
   "@id" : "http://purl.org/dc/terms/issued",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
@@ -1585,9 +1416,23 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "dcterms:license"
-  }, {
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "has license"
+    "@value" : "dcterms:publisher"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/dc/terms/Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/contributor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "An entity responsible for making the resource available."
   } ]
 }, {
   "@id" : "http://purl.org/dc/terms/rights",
@@ -1641,9 +1486,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "dcterms:title"
-  }, {
-    "@language" : "en",
-    "@value" : "has title"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/mo/AnalogSignal",
@@ -1661,74 +1503,10 @@
     "@id" : "http://purl.org/ontology/mo/DigitalSignal"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/mo/Arrangement",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "\n        An arrangement event.\n        Takes as agent the arranger, and produces a score (informational object, not the actually published score).\n    "
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "arrangement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/NET/c4dm/event.owl#Event"
-  } ]
-}, {
-  "@id" : "http://purl.org/ontology/mo/Arranger",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "arranger"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/Agent"
-  }, {
-    "@id" : "_:genid89"
-  } ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid88"
-  } ]
-}, {
-  "@id" : "http://purl.org/ontology/mo/Composer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "composer"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/Agent"
-  }, {
-    "@id" : "_:genid91"
-  } ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid90"
-  } ]
-}, {
   "@id" : "http://purl.org/ontology/mo/Composition",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "\n        A composition event.\n        Takes as agent the composer himself.\n        It produces a MusicalWork, or a MusicalExpression (when the initial \"product\" is a score, for example), or both...\n    "
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
     "@value" : "mo:Composition"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "composition"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/NET/c4dm/event.owl#Event"
-  } ]
-}, {
-  "@id" : "http://purl.org/ontology/mo/Conductor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "conductor"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/Agent"
-  }, {
-    "@id" : "_:genid93"
-  } ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid92"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/mo/CorporateBody",
@@ -1737,7 +1515,8 @@
     "@value" : "Organization or group of individuals and/or other organizations involved in the music market."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "corporate body"
+    "@language" : "en",
+    "@value" : "mo:CorporateBody"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Organization"
@@ -1773,24 +1552,11 @@
     "@value" : "\n                Libretto\n        "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "libretto"
+    "@language" : "en",
+    "@value" : "mo:Libretto"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/mo/MusicalExpression"
-  } ]
-}, {
-  "@id" : "http://purl.org/ontology/mo/Listener",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "listened"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/Agent"
-  }, {
-    "@id" : "_:genid95"
-  } ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid94"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/mo/Lyrics",
@@ -1799,22 +1565,11 @@
     "@value" : "\n        Lyrics\n    "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "lyrics"
+    "@language" : "en",
+    "@value" : "mo:Lyrics"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/mo/MusicalExpression"
-  } ]
-}, {
-  "@id" : "http://purl.org/ontology/mo/Membership",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A membership event, where one or several people belongs to a group during a particular time period."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "membership"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/NET/c4dm/event.owl#Event"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/mo/Movement",
@@ -1835,7 +1590,8 @@
     "@value" : "\n        A person or a group of people (or a computer :-) ), whose musical\n        creative work shows sensitivity and imagination\n    "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "music artist"
+    "@language" : "en",
+    "@value" : "mo:MusicArtist"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Agent"
@@ -1847,7 +1603,8 @@
     "@value" : "Group of musicians, or musical ensemble, usually popular or folk, playing parts of or improvising off of a musical arrangement. "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "music group"
+    "@language" : "en",
+    "@value" : "mo:MusicGroup"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/mo/MusicArtist"
@@ -1861,10 +1618,11 @@
     "@value" : "\nThe intellectual or artistic realization of a work in the form of alpha-numeric, musical, or choreographic notation, sound, etc., or any combination of such forms.\n\n\nFor example:\n\nWork #1 Franz Schubert's Trout quintet\n\n    * Expression #1 the composer's score\n    * Expression #2 sound issued from the performance by the Amadeus Quartet and Hephzibah Menuhin on piano\n    * Expression #3 sound issued from the performance by the Cleveland Quartet and Yo-Yo Ma on the cello\n    * . . . .\n\nThe Music Ontology defines the following sub-concepts of a MusicalExpression, which should be used instead of MusicalExpression itself: Score (the\nresult of an arrangement), Sound (produced during a performance), Signal. However, it is possible to stick to FRBR and bypass the worflow\nmechanism this ontology defines by using the core FRBR properties on such objects. But it is often better to use events to interconnect such\nexpressions (allowing to go deeply into the production process - `this performer was playing this particular instrument at that\nparticular time').\n\n    "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "musical expression"
+    "@language" : "en",
+    "@value" : "mo:MusicalExpression"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#AudioExpression"
+    "@id" : "http://purl.org/vocab/frbr/core#Expression"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/mo/MusicalItem",
@@ -1873,10 +1631,11 @@
     "@value" : "A single exemplar of a musical expression.\n\nFor example, it could be a single exemplar of a CD. This is normally an single object (a CD) possessed by somebody.\n\nFrom the FRBR final report: The entity defined as item is a concrete entity. It is in many instances a single physical object (e.g., a copy of a one-volume monograph, a single audio cassette, etc.). There are instances, however, where the entity defined as item comprises more than one physical object (e.g., a monograph issued as two separately bound volumes, a recording issued on three separate compact discs, etc.).\n\nIn terms of intellectual content and physical form, an item exemplifying a manifestation is normally the same as the manifestation itself. However, variations may occur from one item to another, even when the items exemplify the same manifestation, where those variations are the result of actions external to the intent of the producer of the manifestation (e.g., damage occurring after the item was produced, binding performed by a library, etc.).\n    "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "MusicalItem"
+    "@language" : "en",
+    "@value" : "mo:MusicalItem"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#AudioItem"
+    "@id" : "http://purl.org/vocab/frbr/core#Item"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/mo/MusicalManifestation",
@@ -1885,10 +1644,11 @@
     "@value" : "\n\nThis entity is related to the edition/production/publication of a musical expression (musical manifestation are closely related with the music industry (their terms, concepts, definitions, methods (production, publication, etc.), etc.)\n\nFrom the FRBR final report: The entity defined as manifestation encompasses a wide range of materials, including manuscripts, books, periodicals, maps, posters, sound recordings, films, video recordings, CD-ROMs, multimedia kits, etc. As an entity, manifestation represents all the physical objects that bear the same characteristics, in respect to both intellectual content and physical form.\n\n\nWork #1 J. S. Bach's Six suites for unaccompanied cello\n\n    * Expression #1 sound issued during the performance by Janos Starker recorded in 1963 and 1965\n          o Manifestation #1 recordings released on 33 1/3 rpm sound discs in 1965 by Mercury\n          o Manifestation #2 recordings re-released on compact disc in 1991 by Mercury\n    * Expression #2 sound issued during the performances by Yo-Yo Ma recorded in 1983\n          o Manifestation #1 recordings released on 33 1/3 rpm sound discs in 1983 by CBS Records\n          o Manifestation #2 recordings re-released on compact disc in 1992 by CBS Records\n\n\nChanges that occur deliberately or even inadvertently in the production process that affect the copies result, strictly speaking, in a new manifestation. A manifestation resulting from such a change may be identified as a particular \"state\" or \"issue\" of the publication.\n\nChanges that occur to an individual copy after the production process is complete (e.g., the loss of a page, rebinding, etc.) are not considered to result in a new manifestation. That copy is simply considered to be an exemplar (or item) of the manifestation that deviates from the copy as produced.\n\nWith the entity defined as manifestation we can describe the physical characteristics of a set of items and the characteristics associated with the production and distribution of that set of items that may be important factors in enabling users to choose a manifestation appropriate to their physical needs and constraints, and to identify and acquire a copy of that manifestation.\n\nDefining manifestation as an entity also enables us to draw relationships between specific manifestations of a work. We can use the relationships between manifestations to identify, for example, the specific publication that was used to create a microreproduction.\n\n"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "musical manifestation"
+    "@language" : "en",
+    "@value" : "mo:MusicalManifestation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#AudioManifestation"
+    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/mo/MusicalWork",
@@ -1897,36 +1657,11 @@
     "@value" : "\n    Distinct intellectual or artistic musical creation.\n\nFrom the FRBR final report: A work is an abstract entity; there is no single material object one can point to as the work. We recognize the work through individual realizations or expressions of the work, but the work itself exists only in the commonality of\ncontent between and among the various expressions of the work. When we speak of Homer's Iliad as a work, our point of reference is not a particular recitation or text of the work, but the intellectual creation that lies behind all the various expressions of the work.\n\nFor example:\n\nwork #1 J. S. Bach's The art of the fugue\n\n\n    "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "musical work"
+    "@language" : "en",
+    "@value" : "mo:MusicalWork"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Work"
-  } ]
-}, {
-  "@id" : "http://purl.org/ontology/mo/Performance",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "\n        A performance event.\n        It might include as agents performers, engineers, conductors, or even listeners.\n        It might include as factors a score, a MusicalWork, musical instruments.\n        It might produce a sound:-)\n    "
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "performance"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/NET/c4dm/event.owl#Event"
-  } ]
-}, {
-  "@id" : "http://purl.org/ontology/mo/Performer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "performer"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/Agent"
-  }, {
-    "@id" : "_:genid97"
-  } ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid96"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/mo/PublishedLibretto",
@@ -1935,7 +1670,8 @@
     "@value" : "A published libretto"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "published libretto"
+    "@language" : "en",
+    "@value" : "mo:PublishedLibretto"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/mo/MusicalManifestation"
@@ -1947,7 +1683,8 @@
     "@value" : "Published lyrics, as a book or as a text file, for example"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "published lyrics"
+    "@language" : "en",
+    "@value" : "mo:PublishedLyrics"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/mo/MusicalManifestation"
@@ -1959,7 +1696,8 @@
     "@value" : "A published score (subclass of MusicalManifestation)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "published score"
+    "@language" : "en",
+    "@value" : "mo:PublishedScore"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/mo/MusicalManifestation"
@@ -1971,36 +1709,11 @@
     "@value" : "A published record (manifestation which first aim is to render the product of a recording)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "record"
+    "@language" : "en",
+    "@value" : "mo:Record"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/mo/MusicalManifestation"
-  }, {
-    "@id" : "https://w3id.org/ac-ontology/aco#AudioCollection"
-  } ]
-}, {
-  "@id" : "http://purl.org/ontology/mo/Recording",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "\n        A recording event.\n        Takes a sound as a factor to produce a signal (analog or digital).\n        The location of such events (if any) is the actual location of the corresponding\n        microphone or the \"recording device\".\n    "
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "recording"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/NET/c4dm/event.owl#Event"
-  } ]
-}, {
-  "@id" : "http://purl.org/ontology/mo/RecordingSession",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A set of performances/recordings/mastering events. This event can be decomposed in its constituent events using event:sub_event"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "recording session"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/NET/c4dm/event.owl#Event"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/mo/Release",
@@ -2009,40 +1722,11 @@
     "@value" : "A specific release, with barcode, box, liner notes, cover art, and a number of records"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "release"
+    "@language" : "en",
+    "@value" : "mo:Release"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/mo/MusicalManifestation"
-  } ]
-}, {
-  "@id" : "http://purl.org/ontology/mo/ReleaseEvent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A release event, in a particular place (e.g. a country) at a particular time. Other factors of this event might include cover art, liner notes, box, etc. or a release grouping all these."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "release event"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/NET/c4dm/event.owl#Event"
-  } ]
-}, {
-  "@id" : "http://purl.org/ontology/mo/ReleaseStatus",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Musical manifestation release status."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "release status"
-  } ]
-}, {
-  "@id" : "http://purl.org/ontology/mo/ReleaseType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "\n        Release type of a particular manifestation, such as \"album\" or \"interview\"...\n    "
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Release type"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/mo/Score",
@@ -2051,7 +1735,8 @@
     "@value" : "\n        Here, we are dealing with the informational object (the MusicalExpression), not the actually \"published\" score.\n        This may be, for example, the product of an arrangement process.\n    "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "score"
+    "@language" : "en",
+    "@value" : "mo:Score"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/mo/MusicalExpression"
@@ -2063,7 +1748,8 @@
     "@value" : "\n        A subclass of MusicalExpression, representing a signal, for example a master signal produced by a performance and a recording.\n    "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "signal"
+    "@language" : "en",
+    "@value" : "mo:Signal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/mo/MusicalExpression"
@@ -2075,7 +1761,8 @@
     "@value" : "\n        A musical expression representing a group of signals, for example a set of masters resulting from a whole recording/mastering session.\n    "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "signal group"
+    "@language" : "en",
+    "@value" : "mo:SignalGroup"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/mo/MusicalExpression"
@@ -2086,47 +1773,15 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Single person whose musical creative work shows sensitivity and imagination."
-  }, {
-    "@value" : "Single person whose musical creative work shows sensitivity and imagination."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "mo:SoloMusicArtist"
-  }, {
-    "@value" : "solo music artist"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/mo/MusicArtist"
   }, {
     "@id" : "http://xmlns.com/foaf/0.1/Person"
-  } ]
-}, {
-  "@id" : "http://purl.org/ontology/mo/Sound",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "\n        A subclass of MusicalExpression, representing a sound. Realisation of a MusicalWork during a musical Performance.\n    "
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "sound"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/NET/c4dm/event.owl#Event"
-  }, {
-    "@id" : "http://purl.org/ontology/mo/MusicalExpression"
-  } ]
-}, {
-  "@id" : "http://purl.org/ontology/mo/SoundEngineer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "sound engineer"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/Agent"
-  }, {
-    "@id" : "_:genid99"
-  } ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid98"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/mo/Track",
@@ -2135,7 +1790,8 @@
     "@value" : "A track on a particular record"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "track"
+    "@language" : "en",
+    "@value" : "mo:Track"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/mo/MusicalManifestation"
@@ -2152,9 +1808,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "arranged in"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://purl.org/ontology/mo/Arrangement"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/NET/c4dm/event.owl#isFactorOf"
   } ],
@@ -2166,9 +1819,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\n                Associates an arrangement event to a work\n        "
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/mo/Arrangement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "arrangement of"
@@ -2185,11 +1835,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Relates a membership event with the corresponding artist"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/mo/Membership"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "artist"
+    "@language" : "en",
+    "@value" : "mo:artist"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Agent"
@@ -2240,7 +1888,8 @@
     "@id" : "http://purl.org/ontology/mo/MusicArtist"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "compiled"
+    "@language" : "en",
+    "@value" : "mo:compiled"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://purl.org/ontology/mo/MusicalManifestation"
@@ -2258,7 +1907,8 @@
     "@id" : "http://purl.org/ontology/mo/MusicalManifestation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "compiler"
+    "@language" : "en",
+    "@value" : "mo:compiler"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://purl.org/ontology/mo/MusicArtist"
@@ -2275,9 +1925,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "composed in"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://purl.org/ontology/mo/Composition"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/NET/c4dm/event.owl#producedIn"
   } ],
@@ -2292,9 +1939,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\n        Associates a composition event to the actual composer. For example,\n        this property could link the event corresponding to the composition of the\n        Magic Flute in 1782 to Mozart himself (who obviously has a FOAF profile:-) ).\n    "
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/mo/Composition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "composer"
@@ -2317,9 +1961,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "conducted"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://purl.org/ontology/mo/Performance"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/NET/c4dm/event.owl#isAgentIn"
   }, {
@@ -2333,9 +1974,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Relates a performance to the conductor involved"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/mo/Performance"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2404,9 +2042,6 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Relates a performance or a recording to the engineer involved"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid1"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "mo:engineer"
@@ -2431,9 +2066,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "engineered"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid5"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/NET/c4dm/event.owl#isAgentIn"
@@ -2461,11 +2093,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Relates a membership event with the corresponding group"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/mo/Membership"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "group"
+    "@language" : "en",
+    "@value" : "mo:group"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Group"
@@ -2486,7 +2116,8 @@
     "@id" : "http://purl.org/ontology/mo/Signal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has interpeter"
+    "@language" : "en",
+    "@value" : "mo:interpreter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://purl.org/ontology/mo/MusicArtist"
@@ -2518,9 +2149,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "listened"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://purl.org/ontology/mo/Performance"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/NET/c4dm/event.owl#isAgentIn"
   }, {
@@ -2534,9 +2162,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Relates a performance to the listener involved"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/mo/Performance"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2605,9 +2230,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "performed"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://purl.org/ontology/mo/Performance"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/NET/c4dm/event.owl#isAgentIn"
   }, {
@@ -2621,9 +2243,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Relates a performance to the performers involved"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/mo/Performance"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2689,9 +2308,6 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\n                Associates a Recording to the outputted signal.\n        "
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/mo/Recording"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "produced signal"
   } ],
@@ -2710,9 +2326,6 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Associates a recording session with a group of master signals produced by it."
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/mo/RecordingSession"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "produced signal group"
   } ],
@@ -2728,14 +2341,8 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\n                Associates a Performance to a physical Sound that is being produced by it.\n        "
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/mo/Performance"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "produced sound"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://purl.org/ontology/mo/Sound"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/NET/c4dm/event.owl#product"
@@ -2748,9 +2355,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\n                Associates a composition event to the produced MusicalWork. For example,\n                this property could link the event corresponding to the composition of the\n                Magic Flute in 1782 to the Magic Flute musical work itself. This musical work\n                can then be used in particular performances.\n        "
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/mo/Composition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "produced work"
@@ -2867,7 +2471,8 @@
     "@id" : "http://purl.org/ontology/mo/MusicalManifestation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "publisher"
+    "@language" : "en",
+    "@value" : "mo:publisher"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Agent"
@@ -2902,9 +2507,6 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\n        This is a shortcut property, allowing to bypass all the Sound/Recording steps. This property\n        allows to directly link a Performance to the recorded Signal. This is recommended for \"normal\"\n        users. However, advanced users wanting to express things such as the location of the microphone will\n        have to create this shortcut as well as the whole workflow, in order to let the \"normal\" users access\n        simply the, well, simple information:-) .\n    "
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/mo/Performance"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "recorded as"
   } ],
@@ -2920,14 +2522,8 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\n            Associates a physical Sound to a Recording event where it is being used\n        in order to produce a signal. For example, I might use this property to\n        associate the sound produced by a particular performance of the magic flute\n        to a given recording, done using my cell-phone.\n    "
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/mo/Sound"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "recorded in"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://purl.org/ontology/mo/Recording"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/NET/c4dm/event.owl#isFactorOf"
@@ -2944,14 +2540,8 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\n            Associates a Recording event to a physical Sound being recorded.\n                For example, I might use this property to\n                associate a given recording, done using my cell phone, to the\n        sound produced by a particular performance of the magic flute.\n    "
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/mo/Recording"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "recorded sound"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://purl.org/ontology/mo/Sound"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/NET/c4dm/event.owl#factor"
@@ -2970,18 +2560,12 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "records"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://purl.org/ontology/mo/Performance"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/mo/release",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Associates a release with the corresponding release event"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/mo/ReleaseEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "release"
@@ -3130,9 +2714,6 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Relates a performance to an involved singer"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/mo/Performance"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Agent"
   } ],
@@ -3191,128 +2772,62 @@
   "@id" : "http://purl.org/ontology/mo/usesSound",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
-  "@id" : "http://purl.org/ontology/mo/want_item",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A person, a group of person or an organization wanting an exemplar of a single manifestation."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/Agent"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "want_item"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Item"
-  } ]
-}, {
-  "@id" : "http://purl.org/spar/fabio/AnalogStorageMedium",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A means of storing information in non-digital form, e.g. paper, film (for analogue photographs or movies), magnetic tape (for analogue sound recordings or video recordings) or vinyl disc."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "analog storage medium"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/spar/fabio/StorageMedium"
-  } ]
-}, {
-  "@id" : "http://purl.org/spar/fabio/DigitalStorageMedium",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A means of storing information in digital form, involving binary encoding of data in 0s and 1s, e.g. a computer random access memory, hard disc, USB stick, CD, DVD or digital magnetic tape."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "digital storage medium"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/spar/fabio/StorageMedium"
-  } ]
-}, {
   "@id" : "http://purl.org/spar/fabio/Expression",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@language" : "en",
-    "@value" : "A fabio:Expression can only have part or be part of another fabio:Expression.  Moreover, it can be a representation only of a fabio:Work, and  it can be embodied only in fabio:Manifestation(s)."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A subclass of FRBR expression, restricted to expressions of fabio:Works.  For your latest research paper, the preprint submitted to the publisher, and the final published version to which the publisher assigned a unique digital object identifier, are both expressions of the same work.  "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "expression"
+    "@value" : "fabio:Expression"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Expression"
   }, {
-    "@id" : "_:genid100"
+    "@id" : "_:genid80"
   }, {
-    "@id" : "_:genid105"
+    "@id" : "_:genid85"
   }, {
-    "@id" : "_:genid106"
+    "@id" : "_:genid86"
   } ]
 }, {
   "@id" : "http://purl.org/spar/fabio/Item",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@language" : "en",
-    "@value" : "A fabio:Item can only have part or be part of another fabio:Item. Moreover, it can be an exemplar only of a fabio:Manifestation."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A subclass of FRBR item, restricted to exemplars of fabio:Manifestations.  An example of a fabio:Item is a printed copy of a journal article on your desk, or a PDF file of that article that you purchased from a publisher and that now resides in digital form on your computer hard drive.  "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "item"
+    "@value" : "fabio:Item"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Item"
   }, {
-    "@id" : "_:genid107"
+    "@id" : "_:genid87"
   }, {
-    "@id" : "_:genid112"
+    "@id" : "_:genid92"
   } ]
 }, {
   "@id" : "http://purl.org/spar/fabio/Manifestation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@language" : "en",
-    "@value" : "A fabio:Manifestation can only have part or be part of another fabio:Manifestation.  Moreover, it can be an embodiment only of a fabio:Expression and it can be exemplified only by fabio:Item(s)."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A subclass of FRBR manifestation, restricted to manifestations of fabio:Expressions. fabio:Manifestation specifically applies to electronic (digital) as well as to physical manifestations of expressions.  \n\nExamples of different manifestations of a single 'version of record' expression of a scholarly work include an article in a print journal or the on-line version of that article as a web page."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "manifestation"
+    "@value" : "fabio:Manifestation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
   }, {
-    "@id" : "_:genid113"
+    "@id" : "_:genid93"
   }, {
-    "@id" : "_:genid118"
+    "@id" : "_:genid98"
   }, {
-    "@id" : "_:genid119"
-  } ]
-}, {
-  "@id" : "http://purl.org/spar/fabio/StorageMedium",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A device for recording information or storing data."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "storage medium"
+    "@id" : "_:genid99"
   } ]
 }, {
   "@id" : "http://purl.org/spar/fabio/SubjectTerm",
@@ -3323,20 +2838,16 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "subject term"
+    "@value" : "fabio:SubjectTerm"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   }, {
-    "@id" : "_:genid120"
+    "@id" : "_:genid100"
   } ]
 }, {
   "@id" : "http://purl.org/spar/fabio/TermDictionary",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@language" : "en",
-    "@value" : "A term dictionary is a collection of subject terms."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A controlled vocabulary, usually referring to terms within a particular classification system, such as the ACM Computing Classification System or MeSH, the Medical Subject Headings, or a controlled vocabulary of disciplines."
@@ -3348,29 +2859,25 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
   }, {
-    "@id" : "_:genid121"
+    "@id" : "_:genid101"
   } ]
 }, {
   "@id" : "http://purl.org/spar/fabio/Work",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@language" : "en",
-    "@value" : "A fabio:Work can only have part or be part of another fabio:Work. Moreover, it can be realized only by fabio:Expression(s)."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A subclass of FRBR work, restricted to works that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define bibliographic references. FaBiO works, and their expressions and manifestations, are primarily textual publications such as books, magazines, newspapers and journals, and items of their content.  However, they also include datasets, computer algorithms, experimental protocols, formal specifications and vocabularies, legal records, governmental papers, technical and commercial reports and similar publications, and also bibliographies, reference lists, library catalogues and similar collections. For this reason, fabio:Work is not an equivalent class to frbr:ScholarlyWork.  An example of a fabio:Work is your latest research paper."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "work"
+    "@value" : "fabio:Work"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Work"
   }, {
-    "@id" : "_:genid122"
+    "@id" : "_:genid102"
   }, {
-    "@id" : "_:genid127"
+    "@id" : "_:genid107"
   } ]
 }, {
   "@id" : "http://purl.org/spar/fabio/hasManifestation",
@@ -3384,7 +2891,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "has manifestation"
+    "@value" : "fabio:hasManifestation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
@@ -3460,7 +2967,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "has primary subject term"
+    "@value" : "fabio:hasPrimarySubjectTerm"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/spar/fabio/hasSubjectTerm"
@@ -3507,7 +3014,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "has subject term"
+    "@value" : "fabio:hasSubjectTerm"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://purl.org/spar/fabio/SubjectTerm"
@@ -3527,7 +3034,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "is manifestation of"
+    "@value" : "fabio:isManifestationOf"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Work"
@@ -3633,7 +3140,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "concept"
+    "@value" : "frbr:Concept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Subject"
@@ -3647,7 +3154,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "corporate body"
+    "@value" : "frbr:CorporateBody"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#ResponsibleEntity"
@@ -3664,13 +3171,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "endeavour"
-  }, {
-    "@language" : "en",
     "@value" : "frbr:Endeavour"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid128"
+    "@id" : "_:genid108"
   } ]
 }, {
   "@id" : "http://purl.org/vocab/frbr/core#Event",
@@ -3681,7 +3185,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "event"
+    "@value" : "frbr:Event"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Subject"
@@ -3697,17 +3201,14 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "expression"
-  }, {
-    "@language" : "en",
     "@value" : "frbr:Expression"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Endeavour"
   }, {
-    "@id" : "_:genid145"
+    "@id" : "_:genid125"
   }, {
-    "@id" : "_:genid146"
+    "@id" : "_:genid126"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Item"
@@ -3717,9 +3218,9 @@
     "@id" : "http://purl.org/vocab/frbr/core#Work"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid133"
+    "@id" : "_:genid113"
   }, {
-    "@id" : "_:genid139"
+    "@id" : "_:genid119"
   } ]
 }, {
   "@id" : "http://purl.org/vocab/frbr/core#Item",
@@ -3731,14 +3232,11 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "frbr:Item"
-  }, {
-    "@language" : "en",
-    "@value" : "item"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Endeavour"
   }, {
-    "@id" : "_:genid157"
+    "@id" : "_:genid137"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
@@ -3746,9 +3244,9 @@
     "@id" : "http://purl.org/vocab/frbr/core#Work"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid147"
+    "@id" : "_:genid127"
   }, {
-    "@id" : "_:genid151"
+    "@id" : "_:genid131"
   } ]
 }, {
   "@id" : "http://purl.org/vocab/frbr/core#Manifestation",
@@ -3760,24 +3258,21 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "frbr:Manifestation"
-  }, {
-    "@language" : "en",
-    "@value" : "manifestation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Endeavour"
   }, {
-    "@id" : "_:genid170"
+    "@id" : "_:genid150"
   }, {
-    "@id" : "_:genid171"
+    "@id" : "_:genid151"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Work"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid158"
+    "@id" : "_:genid138"
   }, {
-    "@id" : "_:genid164"
+    "@id" : "_:genid144"
   } ]
 }, {
   "@id" : "http://purl.org/vocab/frbr/core#Object",
@@ -3788,7 +3283,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "object"
+    "@value" : "frbr:Object"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Subject"
@@ -3802,7 +3297,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "person"
+    "@value" : "frbr:Person"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#ResponsibleEntity"
@@ -3816,7 +3311,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "place"
+    "@value" : "frbr:Place"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Subject"
@@ -3832,7 +3327,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "responsible entity"
+    "@value" : "frbr:ResponsibleEntity"
   } ]
 }, {
   "@id" : "http://purl.org/vocab/frbr/core#Subject",
@@ -3843,7 +3338,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "subject"
+    "@value" : "frbr:Subject"
   } ]
 }, {
   "@id" : "http://purl.org/vocab/frbr/core#Work",
@@ -3855,9 +3350,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "frbr:Work"
-  }, {
-    "@language" : "en",
-    "@value" : "work"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Endeavour"
@@ -3866,12 +3358,12 @@
   }, {
     "@id" : "http://www.europeana.eu/schemas/edm/InformationResource"
   }, {
-    "@id" : "_:genid182"
+    "@id" : "_:genid162"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid172"
+    "@id" : "_:genid152"
   }, {
-    "@id" : "_:genid176"
+    "@id" : "_:genid156"
   } ]
 }, {
   "@id" : "http://purl.org/vocab/frbr/core#abridgement",
@@ -3918,14 +3410,14 @@
     "@value" : "A work/expression adapted in another one.\n\nThis property describe the modification of an original work that is sufficient in degree to warrant their being considered as new works, rather than simply different expressions of the same work. If there exists a relation of this kind among two different expressions, they always refer to different works."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid23"
+    "@id" : "_:genid15"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has adaption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid26"
+    "@id" : "_:genid18"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#relatedEndeavour"
@@ -4029,14 +3521,14 @@
     "@value" : "An expression work/expression having another one as complement.\n\nThis property describes works that are intended to be combined with or inserted into the related work. In other words, they are intended to be integrated in some way with the other work, but were not part of the original conception of that prior work. If there exists a relation of this kind among two different expressions, then they always refer to different works."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid29"
+    "@id" : "_:genid21"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has complement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid32"
+    "@id" : "_:genid24"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#relatedEndeavour"
@@ -4186,14 +3678,14 @@
     "@value" : "An work/expression imitated in another one.\n\nThis property describes works that are intended to be an imitation another original work that is sufficient in degree to warrant their being considered as new works, rather than simply different expressions of the same work. If there exists a relation of this kind among two different expressions, then they always refer to different works."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid35"
+    "@id" : "_:genid27"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has imitation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid38"
+    "@id" : "_:genid30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#relatedEndeavour"
@@ -4268,10 +3760,6 @@
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#partOf"
-  } ],
-  "http://www.w3.org/2008/05/skos#note" : [ {
-    "@language" : "en",
-    "@value" : "Unlike the FRBR version in RDF http://vocab.org/frbr/core.html the present version defines partonomy relationships transitive."
   } ]
 }, {
   "@id" : "http://purl.org/vocab/frbr/core#partOf",
@@ -4289,10 +3777,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#relatedEndeavour"
-  } ],
-  "http://www.w3.org/2008/05/skos#note" : [ {
-    "@language" : "en",
-    "@value" : "Unlike the FRBR version in RDF http://vocab.org/frbr/core.html the present version defines partonomy relationships transitive."
   } ]
 }, {
   "@id" : "http://purl.org/vocab/frbr/core#producer",
@@ -4343,6 +3827,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
+    "@value" : "frbr:realization"
+  }, {
+    "@language" : "en",
     "@value" : "has realization"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
@@ -4365,6 +3852,9 @@
     "@value" : "As defined by FRBR (http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#realizationOf), a property representing the work that has been realized by an expression."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "frbr:realizationOf"
+  }, {
     "@language" : "en",
     "@value" : "is realization of"
   } ],
@@ -4430,7 +3920,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "has related endeavour"
+    "@value" : "frbr:relatedEndeavor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Endeavour"
@@ -4443,14 +3933,14 @@
     "@value" : "A manifestation/item reproduced in another one.\n\nA reproduction indicates the relationship as it would be drawn from the first manifestation/item in the relationship to the second manifestation/item in the relationship."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid41"
+    "@id" : "_:genid33"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has reproduction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid44"
+    "@id" : "_:genid36"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#relatedEndeavour"
@@ -4484,7 +3974,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "has responsible entity"
+    "@value" : "frbr:responsibleEntity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#ResponsibleEntity"
@@ -4494,6 +3984,10 @@
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#responsibleEntityOf"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "frbr:responsibleEntity"
   } ]
 }, {
   "@id" : "http://purl.org/vocab/frbr/core#responsibleEntityOf",
@@ -4558,16 +4052,24 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "has subject"
+    "@value" : "frbr:subject"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid47"
+    "@id" : "_:genid39"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#subjectOf"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "frbr:subject"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "frbr:subject"
   } ]
 }, {
   "@id" : "http://purl.org/vocab/frbr/core#subjectOf",
@@ -4591,14 +4093,14 @@
     "@value" : "An expression work/expression having another one as successor.\n\nThe successor type of relationship involves a kind of linear progression of content from one work/expression to the other. In some cases, the content of the successor may be closely connected to the content of the preceding work, which would result in a work that is referential. In others, such as with loosely connected parts of a trilogy, the successor will be autonomous. Serial publications that result from the merger or split of their predecessors and stand on their own without requiring reference to the predecessor are also examples of autonomous works that fall within the successor relationship type. If there exists a relation of this kind among two different expressions, then they always refer to different works."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid51"
+    "@id" : "_:genid43"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has successor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid54"
+    "@id" : "_:genid46"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#relatedEndeavour"
@@ -4628,14 +4130,14 @@
     "@value" : "A work/expression summarized in another one.\n\nThis property describe the summarization of an original work that is sufficient in degree to warrant their being considered as new works, rather than simply different expressions of the same work. If there exists a relation of this kind among two different expressions, they always refer to different works."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid57"
+    "@id" : "_:genid49"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has summarization"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid60"
+    "@id" : "_:genid52"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#relatedEndeavour"
@@ -4665,14 +4167,14 @@
     "@value" : "An expression work/expression having another one as supplement.\n\nThe supplement relationship type involves works/expressions that are intended to be used in conjunction with another work/expression. Some of these, such as indices, concordances, teachers' guides, glosses, and instruction manuals for electronic resources will be so closely associated with the content of the related work/expression that they are useless without the other work/expression."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid63"
+    "@id" : "_:genid55"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has supplement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid66"
+    "@id" : "_:genid58"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#relatedEndeavour"
@@ -4702,14 +4204,14 @@
     "@value" : "An work/expression transformed in another one.\n\nThis property describes the transformation of an original work or expression into another work or expression that is sufficiently different in degree to warrant the product of the transformation being considered as a new work or expression, rather than simply a different expression of the original work. If there exists a frbr:transformation relation between two different expressions, then they always relate to different works."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid69"
+    "@id" : "_:genid61"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has transformation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid72"
+    "@id" : "_:genid64"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#relatedEndeavour"
@@ -5039,9 +4541,6 @@
     "@value" : "schema:CreativeWork"
   } ]
 }, {
-  "@id" : "http://web.resource.org/cc/Work",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
   "@id" : "http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -5079,7 +4578,11 @@
   } ]
 }, {
   "@id" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#P129_is_about",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "crm:P129_is_about"
+  } ]
 }, {
   "@id" : "http://www.deutsche-digitale-bibliothek.de/edm/aggregationEntity",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
@@ -5115,7 +4618,6 @@
   } ]
 }, {
   "@id" : "http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@language" : "en",
     "@value" : "An audiovisual MediaResource, which can be composed of one or more Tracks. A MediaResource is defined by an EditorialObject (Editorial Domain), which can be realised in Essences in one or more Formats for different delivery medias or platforms."
@@ -5203,7 +4705,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.ebu.ch/metadata/ontologies/ebucoreplus#Asset"
   }, {
-    "@id" : "_:genid183"
+    "@id" : "_:genid163"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -5300,7 +4802,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.ebu.ch/metadata/ontologies/ebucoreplus#Resource"
   }, {
-    "@id" : "_:genid184"
+    "@id" : "_:genid164"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -5502,10 +5004,10 @@
   }, {
     "@id" : "http://www.openarchives.org/ore/terms/Aggregation"
   }, {
-    "@id" : "_:genid186"
+    "@id" : "_:genid166"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid185"
+    "@id" : "_:genid165"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
@@ -5562,7 +5064,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.europeana.eu/schemas/edm/NonInformationResource"
   }, {
-    "@id" : "_:genid187"
+    "@id" : "_:genid167"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
@@ -5600,7 +5102,7 @@
     "@value" : "edm:NonInformationResource"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid188"
+    "@id" : "_:genid168"
   } ]
 }, {
   "@id" : "http://www.europeana.eu/schemas/edm/PhysicalThing",
@@ -5630,7 +5132,7 @@
     "@value" : "edm:ProvidedCHO"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid189"
+    "@id" : "_:genid169"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
@@ -5718,7 +5220,7 @@
   "@id" : "http://www.europeana.eu/schemas/edm/isRelatedTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid75"
+    "@id" : "_:genid67"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -5761,7 +5263,7 @@
   "@id" : "http://www.europeana.eu/schemas/edm/wasPresentAt",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid82"
+    "@id" : "_:genid74"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -5815,7 +5317,6 @@
   } ]
 }, {
   "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "rdfs:seeAlso"
@@ -5860,9 +5361,6 @@
     "@value" : "Concept"
   }, {
     "@language" : "en",
-    "@value" : "concept"
-  }, {
-    "@language" : "en",
     "@value" : "skos:Concept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -5888,9 +5386,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Concept Scheme"
-  }, {
-    "@language" : "en",
-    "@value" : "concept scheme"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -5903,6 +5398,17 @@
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "en",
     "@value" : "A concept scheme may be defined to include concepts from different sources."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#altLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "skos:altLabel"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Alternative Label"
   } ]
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#broader",
@@ -6067,16 +5573,6 @@
     "@id" : "http://www.w3.org/2004/02/skos/core"
   } ]
 }, {
-  "@id" : "http://www.w3.org/2008/05/skos#note",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://www.w3.org/2008/05/skos#"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "skos:note"
-  } ]
-}, {
   "@id" : "http://www.w3.org/ns/dcat#version",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
@@ -6117,10 +5613,10 @@
     "@value" : "Middle Ontology for Cultural Heritage Objects (MOCHO)"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://github.com/anntanp/mocho-odk/mocho/releases/2026-03-10/mocho-full.owl"
+    "@id" : "https://github.com/anntanp/mocho-odk/mocho/releases/2026-03-11/mocho-full.owl"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "2026-03-10"
+    "@value" : "2026-03-11"
   } ]
 }, {
   "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Agent",
@@ -6130,6 +5626,8 @@
     "@value" : "mocho:Agent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/dc/terms/Agent"
+  }, {
     "@id" : "http://purl.org/vocab/frbr/core#ResponsibleEntity"
   }, {
     "@id" : "http://rdaregistry.info/Elements/c/C10002"
@@ -6159,6 +5657,10 @@
 }, {
   "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Concept",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "mocho:Concept"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Concept"
   }, {
@@ -6197,12 +5699,16 @@
 }, {
   "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Expression",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "mo:Expression rdfs:subClassOf [\n     owl:unionOf ( rdac:C10006\n                           frbr:Expression\n                           mo:MusicalExpression \n                           vra:Inscription \n                           crm:E73_Information_Object\n                           aco:AudioExpression\n                           rico:Record\n                           rico:RecordResource\n                           rico:RecordSet ) ] ."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "mocho:Expression"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid191"
+    "@id" : "_:genid171"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -6232,7 +5738,7 @@
     "@value" : "mocho:Item"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid200"
+    "@id" : "_:genid181"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -6250,7 +5756,7 @@
     "@value" : "mocho:Manifestation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid206"
+    "@id" : "_:genid188"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -6304,7 +5810,7 @@
     "@value" : "mocho:Work"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid214"
+    "@id" : "_:genid197"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -6315,14 +5821,117 @@
     "@value" : "Goethe's Faust"
   } ]
 }, {
-  "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#creator",
+  "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#contributor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "mocho:contributor"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Agent"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/NET/c4dm/event.owl#agent"
+    "@id" : "http://purl.org/dc/terms/contributor"
+  } ]
+}, {
+  "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "mocho:creator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/creator"
+  }, {
+    "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#contributor"
+  } ]
+}, {
+  "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#hasManifestation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "mocho:hasManifestation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Manifestation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/spar/fabio/hasManifestation"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#isManifestationOf"
+  } ]
+}, {
+  "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#hasRealization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "mocho:hasRealization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Expression"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#realization"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#isRealizationOf"
+  } ]
+}, {
+  "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#isManifestationOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Manifestation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "mocho:isManifestationOf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/spar/fabio/isManifestationOf"
+  } ]
+}, {
+  "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#isRealizationOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Expression"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "mocho:isRealizationOf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#realizationOf"
+  } ]
+}, {
+  "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "mocho:publisher"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/publisher"
+  }, {
+    "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#contributor"
   } ]
 }, {
   "@id" : "https://w3id.org/ac-ontology/aco#AnalogSignal",
@@ -6372,117 +5981,13 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/ac-ontology/aco#AudioManifestation"
   }, {
-    "@id" : "_:genid226"
+    "@id" : "_:genid209"
   }, {
-    "@id" : "_:genid227"
+    "@id" : "_:genid210"
   }, {
-    "@id" : "_:genid228"
+    "@id" : "_:genid211"
   }, {
-    "@id" : "_:genid229"
-  } ]
-}, {
-  "@id" : "https://w3id.org/ac-ontology/aco#AudioCollectionFirstNode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A node that is the first in the containing audio collection"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "First node"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#AudioCollectionNode"
-  }, {
-    "@id" : "_:genid230"
-  } ]
-}, {
-  "@id" : "https://w3id.org/ac-ontology/aco#AudioCollectionLastNode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A node that is the last in the containing audio collection"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Last node"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#AudioCollectionNode"
-  }, {
-    "@id" : "_:genid232"
-  } ]
-}, {
-  "@id" : "https://w3id.org/ac-ontology/aco#AudioCollectionNode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A node of an audio collection. It encapsulates the actual content (ac:nodeContent), the position in the collection (ac:nodeIndex), and links to the previous and following node in the collection (ac:previousNode and ac:nextNode).\n"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Node"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid234"
-  }, {
-    "@id" : "_:genid235"
-  }, {
-    "@id" : "_:genid236"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/ac-ontology/aco#AudioCollectionFirstNode"
-    }, {
-      "@id" : "https://w3id.org/ac-ontology/aco#AudioCollectionNonFirstNode"
-    } ]
-  }, {
-    "@list" : [ {
-      "@id" : "https://w3id.org/ac-ontology/aco#AudioCollectionLastNode"
-    }, {
-      "@id" : "https://w3id.org/ac-ontology/aco#AudioCollectionNonLastNode"
-    } ]
-  } ]
-}, {
-  "@id" : "https://w3id.org/ac-ontology/aco#AudioCollectionNonFirstNode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A node that is not the first in the containing audio collection"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Any node but the first"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#AudioCollectionNode"
-  }, {
-    "@id" : "_:genid241"
-  }, {
-    "@id" : "_:genid242"
-  } ]
-}, {
-  "@id" : "https://w3id.org/ac-ontology/aco#AudioCollectionNonLastNode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A node that is not the last in the containing audio collection"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Any node but the last"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#AudioCollectionNode"
-  }, {
-    "@id" : "_:genid243"
-  }, {
-    "@id" : "_:genid244"
+    "@id" : "_:genid212"
   } ]
 }, {
   "@id" : "https://w3id.org/ac-ontology/aco#AudioExpression",
@@ -6494,7 +5999,8 @@
     "@id" : "https://w3id.org/ac-ontology/aco"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Audio expression"
+    "@language" : "en",
+    "@value" : "aco:AudioExpression"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Expression"
@@ -6509,10 +6015,11 @@
     "@id" : "https://w3id.org/ac-ontology/aco"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Audio file"
+    "@language" : "en",
+    "@value" : "aco:AudioFile"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource"
+    "@id" : "http://www.ebu.ch/metadata/ontologies/ebucoreplus#MediaResource"
   }, {
     "@id" : "https://w3id.org/ac-ontology/aco#AudioItem"
   } ]
@@ -6526,7 +6033,8 @@
     "@id" : "https://w3id.org/ac-ontology/aco"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Audio item"
+    "@language" : "en",
+    "@value" : "aco:AudioItem"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Item"
@@ -6541,27 +6049,11 @@
     "@id" : "https://w3id.org/ac-ontology/aco"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Audio manifestation"
+    "@language" : "en",
+    "@value" : "aco:AudioManifestation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
-  }, {
-    "@id" : "http://web.resource.org/cc/Work"
-  } ]
-}, {
-  "@id" : "https://w3id.org/ac-ontology/aco#AudioPublication",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The act of publishing some audio content as an audio manifestation."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Audio publication"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/NET/c4dm/event.owl#Event"
   } ]
 }, {
   "@id" : "https://w3id.org/ac-ontology/aco#DigitalSignal",
@@ -6579,21 +6071,6 @@
     "@id" : "https://w3id.org/ac-ontology/aco#Signal"
   } ]
 }, {
-  "@id" : "https://w3id.org/ac-ontology/aco#Recording",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The act of recording some sound to produce a signal."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Recording"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#SignalProduction"
-  } ]
-}, {
   "@id" : "https://w3id.org/ac-ontology/aco#Signal",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -6607,21 +6084,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/ac-ontology/aco#AudioExpression"
-  } ]
-}, {
-  "@id" : "https://w3id.org/ac-ontology/aco#SignalProduction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The act of producing a signal (e.g., through a recording or a synthesis).\n"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Signal production"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/NET/c4dm/event.owl#Event"
   } ]
 }, {
   "@id" : "https://w3id.org/ac-ontology/aco#Sound",
@@ -6651,7 +6113,8 @@
     "@id" : "https://w3id.org/ac-ontology/aco"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "author"
+    "@language" : "en",
+    "@value" : "aco:author"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ac-ontology/aco#AudioManifestation"
@@ -6732,7 +6195,8 @@
     "@id" : "https://w3id.org/ac-ontology/aco"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "compiled"
+    "@language" : "en",
+    "@value" : "aco:compiled"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ac-ontology/aco#AudioManifestation"
@@ -6750,10 +6214,8 @@
     "@id" : "https://w3id.org/ac-ontology/aco"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "container node"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#AudioCollectionNode"
+    "@language" : "en",
+    "@value" : "aco:containerNode"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/ac-ontology/aco#nodeContent"
@@ -6794,9 +6256,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "first node"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#AudioCollectionFirstNode"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/ac-ontology/aco#memberNode"
   } ]
@@ -6833,9 +6292,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "last node"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#AudioCollectionLastNode"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/ac-ontology/aco#memberNode"
   } ]
@@ -6854,9 +6310,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "member node"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#AudioCollectionNode"
-  } ],
   "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
     "@list" : [ {
       "@id" : "https://w3id.org/ac-ontology/aco#memberNode"
@@ -6870,17 +6323,12 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Associates a node with the next node in the collection."
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#AudioCollectionNonLastNode"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/ac-ontology/aco"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "next node"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#AudioCollectionNonFirstNode"
+    "@language" : "en",
+    "@value" : "aco:nextNode"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/ac-ontology/aco#previousNode"
@@ -6890,9 +6338,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Associates a node with the actual content (an audio manifestation)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#AudioCollectionNode"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/ac-ontology/aco"
@@ -6908,9 +6353,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Associates a node with its position in the collection."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#AudioCollectionNode"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/ac-ontology/aco"
@@ -6948,26 +6390,17 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Associates a node with the previous node in the collection."
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#AudioCollectionNonFirstNode"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/ac-ontology/aco"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "previous node"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#AudioCollectionNonLastNode"
   } ]
 }, {
   "@id" : "https://w3id.org/ac-ontology/aco#producedSignal",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Associates a signal production event to the produced signal."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#SignalProduction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/ac-ontology/aco"
@@ -6983,9 +6416,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Associates a signal production act to a sound from which the signal was produced (e.g., if recording, the recorded sound).\n"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#SignalProduction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/ac-ontology/aco"
@@ -7065,9 +6495,6 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Associates a publishing act to the audio manifestation."
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#AudioPublication"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/ac-ontology/aco"
   } ],
@@ -7082,9 +6509,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Associates a recording act to the recorded (physical) sound."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ac-ontology/aco#Recording"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/ac-ontology/aco"
@@ -7148,6 +6572,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.ica.org/standards/RiC/ontology#Thing"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "rico:Agent"
   } ],
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "en",
@@ -7232,6 +6660,10 @@
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://www.ica.org/standards/RiC/ontology#Person"
   } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "rico:Group"
+  } ],
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "en",
     "@value" : "Group is a kind of Agent. A Group has a socially recognized\n         identity. Each member of the Group plays a particular role or roles (that is has a\n         particular Position) in the coordinated activity of the Group. Corporate bodies and\n         families are kinds of groups, though other kinds of groups are possible. For example, the\n         “electorate” -- all of the voters in a given election. Complex, large groups may be\n         subdivided into other groups."
@@ -7288,6 +6720,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.ica.org/standards/RiC/ontology#Agent"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "rico:Person"
   } ],
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "en",

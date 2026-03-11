@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://ise-fizkarlsruhe.github.io/ddbkg/mocho/source/mocho-full.owl","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://ise-fizkarlsruhe.github.io/ddbkg/mocho/source/mocho-full.owl","name":"Middle Ontology for Cultural Heritage Objects (MOCHO)", "headline":"***MOCHO***, or **M**iddle **O**ntology for Cross-domain **C**ultural **H**eritage **O**bjects, is a reusable alignment layer between the Europeana Data Model (EDM) [1] and GLAM-spanning domain ontologies. MOCHO defines WEMI-typed entities and four alignment patterns. WEMI stands for Work, Expression, Manifestation, Item, and is a conceptual model that first appeared in FRBR for describing bibliographic resources [2].", "dateReleased":"Wed Mar 11 12:12:14 UTC 2026", "version":"2026-03-10", "license":"https://creativecommons.org/licenses/by/4.0/deed.en", "author":[{"@type":"Person","name":"Mary Ann Tan"}], "contributor":[{"@type":"Person","name":"Genet Asefa Gesese"},{"@type":"Person","name":"Harald Sack"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://ise-fizkarlsruhe.github.io/ddbkg/mocho/source/mocho-full.owl","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://ise-fizkarlsruhe.github.io/ddbkg/mocho/source/mocho-full.owl","name":"Middle Ontology for Cultural Heritage Objects (MOCHO)", "headline":"***MOCHO***, or **M**iddle **O**ntology for Cross-domain **C**ultural **H**eritage **O**bjects, is a reusable alignment layer between the Europeana Data Model (EDM) [1] and GLAM-spanning domain ontologies. MOCHO defines WEMI-typed entities and four alignment patterns. WEMI stands for Work, Expression, Manifestation, Item, and is a conceptual model that first appeared in FRBR for describing bibliographic resources [2].", "dateReleased":"Wed Mar 11 17:39:55 UTC 2026", "version":"2026-03-10", "license":"https://creativecommons.org/licenses/by/4.0/deed.en", "author":[{"@type":"Person","name":"Mary Ann Tan"}], "contributor":[{"@type":"Person","name":"Genet Asefa Gesese"},{"@type":"Person","name":"Harald Sack"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -96,8 +96,16 @@ $(function(){
 <div>
 <span>Ontology Specification Draft</span>
 </div>
-</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
-***MOCHO***, or **M**iddle **O**ntology for Cross-domain **C**ultural **H**eritage **O**bjects, is a reusable alignment layer between the Europeana Data Model (EDM) [1] and GLAM-spanning domain ontologies. MOCHO defines WEMI-typed entities and four alignment patterns. WEMI stands for Work, Expression, Manifestation, Item, and is a conceptual model that first appeared in FRBR for describing bibliographic resources [2].</span>
+</div>     <div id="abstract">
+<h2>Abstract</h2>
+<p>
+  <strong><em>MOCHO</em></strong>, or <strong>M</strong>id-level <strong>O</strong>ntology for
+  Cross-domain <strong>C</strong>ultural <strong>H</strong>eritage <strong>O</strong>bjects, is a
+  reusable alignment layer between the Europeana Data Model (EDM) <a href="#ref-1">[1]</a> and
+  GLAM-spanning domain ontologies. MOCHO defines WEMI-typed entities and four alignment patterns.
+  WEMI stands for Work, Expression, Manifestation, Item, and is a conceptual model that first
+  appeared in FRBR for describing bibliographic resources <a href="#ref-2">[2]</a>.
+</p>
 </div>
 <div id="toc"></div> 
 
@@ -107,9 +115,19 @@ $(function(){
 
 <span class="markdown">
 The Deutsche Digitale Bibliothek (DDB) aggregates objects from libraries, archives, museums, audiovisual archives, and other cultural institutions into a single portal, representing all objects uniformly as `edm:ProvidedCHO` in the Europeana Data Model (EDM). This structural uniformity enables cross-domain indexing but prevents cross-domain discovery: a printed book edition, a film still, and an opera recording inspired by the same literary work are typed identically, with no node to express that they are realizations of the same intellectual creation.
-
-MOCHO addresses this gap as a reusable alignment layer between EDM and GLAM-spanning domain ontologies — including RDA, CIDOC CRM, VRA Core, RiC-O, LIO, Music Ontology, ACO, and EBUCorePlus. It types objects at the WEMI level: **Work** (abstract intellectual creation), **Expression** (a specific realization), **Manifestation** (a physical or digital embodiment), and **Item** (an individual copy). Figure 1 shows MOCHO's position between EDM and the domain ontologies.
 </span>
+
+<p>
+MOCHO addresses this gap as a reusable alignment layer between EDM and GLAM-spanning domain
+ontologies — including RDA <a href="#ref-3">[3]</a>, CIDOC CRM <a href="#ref-4">[4]</a>,
+VRA Core 4.0 <a href="#ref-5">[5]</a>, RiC-O <a href="#ref-6">[6]</a>,
+LIO <a href="#ref-7">[7]</a>, Music Ontology <a href="#ref-8">[8]</a>,
+ACO <a href="#ref-9">[9]</a>, and EBUCorePlus <a href="#ref-10">[10]</a>.
+It types objects at the WEMI level: <strong>Work</strong> (abstract intellectual creation),
+<strong>Expression</strong> (a specific realization), <strong>Manifestation</strong>
+(a physical or digital embodiment), and <strong>Item</strong> (an individual copy).
+Figure 1 shows MOCHO's position between EDM and the domain ontologies.
+</p>
 
 <figure style="text-align:center; margin:2em 0">
   <img src="images/mocho-overview.png"
@@ -207,7 +225,7 @@ Table 3 summarizes the WEMI-level class equivalents across the eight ontologies.
           <td style="border:1px solid #ccc; padding:6px 8px">EBUCorePlus</td>
           <td style="border:1px solid #ccc; padding:6px 8px"><code>ec:EditorialWork</code>≈</td>
           <td style="border:1px solid #ccc; padding:6px 8px">—<sup>X</sup></td>
-          <td style="border:1px solid #ccc; padding:6px 8px"><code>ec:MediaResource</code>, <code>ec:Essence</code></td>
+          <td style="border:1px solid #ccc; padding:6px 8px"><code>ec:MediaResource</code></td>
           <td style="border:1px solid #ccc; padding:6px 8px">—</td>
         </tr>
       </tbody>
@@ -4075,7 +4093,7 @@ This section provides details for each class and property defined by Middle Onto
   <h3>mocho:Expression<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Expression</p>
   <div class="comment">
-   <span class="markdown">mo:Expression rdfs:subClassOf [ owl:unionOf ( rdac:C10006 frbr:Expression mo:MusicalExpression vra:Inscription crm:E73_Information_Object aco:AudioExpression rico:Record rico:RecordResource rico:RecordSet ) ] .</span>
+   <span class="markdown">In the SemDH 2026 submission, it was mentioned that MOCHO's WEMI classes are model as Subclass-UnionOf, c.f. every instance of mocho:Expression must be an instance of one of the domain classes. It is a necessary condition for mocho:Expression, but the domain instance are not automatically classified as mocho:Expression. It has to be explicitly asserted that x is an instance of mocho:Expression.</span>
   </div>
   <div class="comment">
    <span class="markdown">An intellectual or artistic realization of a work in the form of alpha-numeric, musical or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.</span>
@@ -4123,6 +4141,9 @@ This section provides details for each class and property defined by Middle Onto
   <h3>mocho:Item<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Item</p>
   <div class="comment">
+   <span class="markdown">In the SemDH 2026 submission, it was mentioned that MOCHO's WEMI classes are model as Subclass-UnionOf, c.f. every instance of mocho:Item must be an instance of one of the domain classes. It is a necessary condition for mocho:Item, but the domain instance are not automatically classified as mocho:Item. It has to be explicitly asserted that x is an instance of mocho:Item.</span>
+  </div>
+  <div class="comment">
    <span class="markdown">A single exemplar or instance of a manifestation.</span>
   </div>
   <dl>
@@ -4143,6 +4164,9 @@ This section provides details for each class and property defined by Middle Onto
  <div class="entity" id="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Manifestation">
   <h3>mocho:Manifestation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Manifestation</p>
+  <div class="comment">
+   <span class="markdown">In the SemDH 2026 submission, it was mentioned that MOCHO's WEMI classes are model as Subclass-UnionOf, c.f. every instance of mocho:Manifestation must be an instance of one of the domain classes. It is a necessary condition for mocho:Manifestation, but the domain instance are not automatically classified as mocho:Manifestation. It has to be explicitly asserted that x is an instance of mocho:Manifestation.</span>
+  </div>
   <div class="comment">
    <span class="markdown">A physical embodiment of an expression of a work.</span>
   </div>
@@ -4204,6 +4228,9 @@ This section provides details for each class and property defined by Middle Onto
  <div class="entity" id="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Work">
   <h3>mocho:Work<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Work</p>
+  <div class="comment">
+   <span class="markdown">In the SemDH 2026 submission, it was mentioned that MOCHO's WEMI classes are model as Subclass-UnionOf, c.f. every instance of mocho:Work must be an instance of one of the domain classes. It is a necessary condition for mocho:Work, but the domain instance are not automatically classified as mocho:Work. It has to be explicitly asserted that x is an instance of mocho:Work.</span>
+  </div>
   <div class="comment">
    <span class="markdown">A distinct intellectual or artistic creation, that is, the intellectual or artistic content.</span>
   </div>
@@ -12047,12 +12074,44 @@ This section provides details for each class and property defined by Middle Onto
 <!--REFERENCES SECTION-->
   <div id="references">
 <h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
 
-[1] Europeana Foundation, Definition of the Europeana Data Model v5.2.7, Technical Report, Europeana, 2016. URL: https://pro.europeana.eu/files/Europeana_Professional/Share_your_data/Technical_requirements/EDM_Documentation/EDM_Definition_v5.2.7_042016.pdf.
+<p id="ref-1"><strong>[1]</strong> Europeana Foundation, EDM OWL ontology.
+  <a href="https://github.com/hugomanguinhas/europeana_ld/tree/master/ld-edm/src/main/resources/etc/owl"
+     target="_blank">https://github.com/hugomanguinhas/europeana_ld</a>.</p>
 
-[2] IFLA Study Group (ISG), Functional Requirements for Bibliographic Records - Final Report, K. G. Saur, Berlin, Boston, 1998. URL: https://doi.org/10.1515/9783110962451. doi:doi:10.1515/9783110962451.
-</span>
+<p id="ref-2"><strong>[2]</strong> IFLA Study Group (ISG), Functional Requirements for Bibliographic Records — Final Report,
+  K. G. Saur, Berlin, Boston, 1998.
+  <a href="https://doi.org/10.1515/9783110962451" target="_blank">https://doi.org/10.1515/9783110962451</a>.</p>
+
+<p id="ref-3"><strong>[3]</strong> RDA Steering Committee, RDA Vocabularies release 5.4.9.
+  <a href="https://github.com/RDARegistry/RDA-Vocabularies/releases/tag/v5.4.9"
+     target="_blank">https://github.com/RDARegistry/RDA-Vocabularies/releases/tag/v5.4.9</a>.</p>
+
+<p id="ref-4"><strong>[4]</strong> CIDOC CRM Special Interest Group, CIDOC CRM (ECRM OWL encoding).
+  <a href="https://github.com/erlangen-crm/ecrm/blob/master/ecrm_240307.owl"
+     target="_blank">https://github.com/erlangen-crm/ecrm/blob/master/ecrm_240307.owl</a>.</p>
+
+<p id="ref-5"><strong>[5]</strong> Visual Resources Association, VRA Core 4.0 Ontology.
+  <a href="http://purl.org/vra/" target="_blank">http://purl.org/vra/</a>.</p>
+
+<p id="ref-6"><strong>[6]</strong> International Council on Archives (ICA-EGAD), Records in Contexts Ontology (RiC-O) v1.1.
+  <a href="https://github.com/ICA-EGAD/RiC-O/blob/master/ontology/current-version/RiC-O_1-1.rdf"
+     target="_blank">https://github.com/ICA-EGAD/RiC-O/blob/master/ontology/current-version/RiC-O_1-1.rdf</a>.</p>
+
+<p id="ref-7"><strong>[7]</strong> P. Hayes, M. Warren, A Lightweight Ontology for Describing Images,
+  in: <em>Linked Data Meets Artificial Intelligence</em>, Papers from the 2010 AAAI Spring Symposium,
+  Technical Report SS-10-07, 2010.</p>
+
+<p id="ref-8"><strong>[8]</strong> Y. Raimond et al., Music Ontology.
+  <a href="https://github.com/motools/musicontology/tree/master/rdf"
+     target="_blank">https://github.com/motools/musicontology/tree/master/rdf</a>.</p>
+
+<p id="ref-9"><strong>[9]</strong> M. Ceriani, G. Fazekas, Audio Commons Ontology (ACO).
+  <a href="https://w3id.org/ac-ontology/aco#" target="_blank">https://w3id.org/ac-ontology/aco#</a>.</p>
+
+<p id="ref-10"><strong>[10]</strong> European Broadcasting Union, EBUCorePlus Ontology.
+  <a href="https://github.com/ebu/ebucoreplus/tree/main/ontology/EBUCorePlus"
+     target="_blank">https://github.com/ebu/ebucoreplus/tree/main/ontology/EBUCorePlus</a>.</p>
 
 </div>
 <div id="acknowledgments">

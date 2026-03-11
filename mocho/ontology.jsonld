@@ -3988,6 +3988,10 @@
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
     "@value" : "frbr:responsibleEntity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "frbr:responsibleEntity"
   } ]
 }, {
   "@id" : "http://purl.org/vocab/frbr/core#responsibleEntityOf",
@@ -5701,7 +5705,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "mo:Expression rdfs:subClassOf [\n     owl:unionOf ( rdac:C10006\n                           frbr:Expression\n                           mo:MusicalExpression \n                           vra:Inscription \n                           crm:E73_Information_Object\n                           aco:AudioExpression\n                           rico:Record\n                           rico:RecordResource\n                           rico:RecordSet ) ] ."
+    "@value" : "In the SemDH 2026 submission, it was mentioned that MOCHO's WEMI classes are model as Subclass-UnionOf, c.f. every instance of mocho:Expression must be an instance of one of the domain classes. It is a necessary condition for mocho:Expression, but the domain instance are not automatically classified as mocho:Expression. It has to be explicitly asserted that x is an instance of mocho:Expression."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -5733,6 +5737,10 @@
 }, {
   "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Item",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "In the SemDH 2026 submission, it was mentioned that MOCHO's WEMI classes are model as Subclass-UnionOf, c.f. every instance of mocho:Item must be an instance of one of the domain classes. It is a necessary condition for mocho:Item, but the domain instance are not automatically classified as mocho:Item. It has to be explicitly asserted that x is an instance of mocho:Item."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "mocho:Item"
@@ -5751,6 +5759,10 @@
 }, {
   "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Manifestation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "In the SemDH 2026 submission, it was mentioned that MOCHO's WEMI classes are model as Subclass-UnionOf, c.f. every instance of mocho:Manifestation must be an instance of one of the domain classes. It is a necessary condition for mocho:Manifestation, but the domain instance are not automatically classified as mocho:Manifestation. It has to be explicitly asserted that x is an instance of mocho:Manifestation."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "mocho:Manifestation"
@@ -5805,6 +5817,10 @@
 }, {
   "@id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Work",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "In the SemDH 2026 submission, it was mentioned that MOCHO's WEMI classes are model as Subclass-UnionOf, c.f. every instance of mocho:Work must be an instance of one of the domain classes. It is a necessary condition for mocho:Work, but the domain instance are not automatically classified as mocho:Work. It has to be explicitly asserted that x is an instance of mocho:Work."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "mocho:Work"
@@ -6714,9 +6730,6 @@
   }, {
     "@language" : "fr",
     "@value" : "Personne"
-  }, {
-    "@language" : "en",
-    "@value" : "rico:Person"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.ica.org/standards/RiC/ontology#Agent"

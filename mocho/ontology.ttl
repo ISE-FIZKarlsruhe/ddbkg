@@ -1349,7 +1349,8 @@ A reproduction indicates the relationship as it would be drawn from the first ma
                                                     rdfs:range <http://purl.org/vocab/frbr/core#ResponsibleEntity> ;
                                                     rdfs:comment "Any endeavour having a particular entity that is responsible of it."@en ;
                                                     rdfs:label "frbr:responsibleEntity"@en ;
-                                                    <http://www.w3.org/2004/02/skos/core#altLabel> "frbr:responsibleEntity"@en .
+                                                    <http://www.w3.org/2004/02/skos/core#altLabel> "frbr:responsibleEntity"@en ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "frbr:responsibleEntity"@en .
 
 
 ###  http://purl.org/vocab/frbr/core#responsibleEntityOf
@@ -3926,16 +3927,7 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
                                                                                             <https://www.ica.org/standards/RiC/ontology#RecordSet>
                                                                                           )
                                                                             ] ;
-                                                            rdfs:comment """mo:Expression rdfs:subClassOf [
-     owl:unionOf ( rdac:C10006
-                           frbr:Expression
-                           mo:MusicalExpression 
-                           vra:Inscription 
-                           crm:E73_Information_Object
-                           aco:AudioExpression
-                           rico:Record
-                           rico:RecordResource
-                           rico:RecordSet ) ] ."""@en ;
+                                                            rdfs:comment "In the SemDH 2026 submission, it was mentioned that MOCHO's WEMI classes are model as Subclass-UnionOf, c.f. every instance of mocho:Expression must be an instance of one of the domain classes. It is a necessary condition for mocho:Expression, but the domain instance are not automatically classified as mocho:Expression. It has to be explicitly asserted that x is an instance of mocho:Expression."@en ;
                                                             rdfs:label "mocho:Expression"@en ;
                                                             <http://www.w3.org/2004/02/skos/core#definition> "An intellectual or artistic realization of a work in the form of alpha-numeric, musical or choreographic notation, sound, image, object, movement, etc., or any combination of such forms."@en ;
                                                             <http://www.w3.org/2004/02/skos/core#example> "Goethe's Faust in French"@en .
@@ -3959,6 +3951,7 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
                                                                                       <https://www.ica.org/standards/RiC/ontology#Instantiation>
                                                                                     )
                                                                       ] ;
+                                                      rdfs:comment "In the SemDH 2026 submission, it was mentioned that MOCHO's WEMI classes are model as Subclass-UnionOf, c.f. every instance of mocho:Item must be an instance of one of the domain classes. It is a necessary condition for mocho:Item, but the domain instance are not automatically classified as mocho:Item. It has to be explicitly asserted that x is an instance of mocho:Item."@en ;
                                                       rdfs:label "mocho:Item"@en ;
                                                       <http://www.w3.org/2004/02/skos/core#definition> "A single exemplar or instance of a manifestation."@en ;
                                                       <http://www.w3.org/2004/02/skos/core#example> "A copy of Goethe's Faust"@en .
@@ -3977,6 +3970,7 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
                                                                                                <https://www.ica.org/standards/RiC/ontology#Instantiation>
                                                                                              )
                                                                                ] ;
+                                                               rdfs:comment "In the SemDH 2026 submission, it was mentioned that MOCHO's WEMI classes are model as Subclass-UnionOf, c.f. every instance of mocho:Manifestation must be an instance of one of the domain classes. It is a necessary condition for mocho:Manifestation, but the domain instance are not automatically classified as mocho:Manifestation. It has to be explicitly asserted that x is an instance of mocho:Manifestation."@en ;
                                                                rdfs:label "mocho:Manifestation"@en ;
                                                                <http://www.w3.org/2004/02/skos/core#definition> "A physical embodiment of an expression of a work."@en .
 
@@ -4020,6 +4014,7 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
                                                                                       <https://www.ica.org/standards/RiC/ontology#RecordSet>
                                                                                     )
                                                                       ] ;
+                                                      rdfs:comment "In the SemDH 2026 submission, it was mentioned that MOCHO's WEMI classes are model as Subclass-UnionOf, c.f. every instance of mocho:Work must be an instance of one of the domain classes. It is a necessary condition for mocho:Work, but the domain instance are not automatically classified as mocho:Work. It has to be explicitly asserted that x is an instance of mocho:Work."@en ;
                                                       rdfs:label "mocho:Work"@en ;
                                                       <http://www.w3.org/2004/02/skos/core#definition> "A distinct intellectual or artistic creation, that is, the intellectual or artistic content."@en ;
                                                       <http://www.w3.org/2004/02/skos/core#example> "Goethe's Faust"@en .
@@ -4272,8 +4267,7 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
                                                     rdfs:label "Person"@de ,
                                                                "Person"@en ,
                                                                "Persona"@es ,
-                                                               "Personne"@fr ,
-                                                               "rico:Person"@en ;
+                                                               "Personne"@fr ;
                                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "rico:Person"@en ;
                                                     <http://www.w3.org/2004/02/skos/core#scopeNote> """Person is a kind of Agent. Most commonly, a human being
          (biological person) has a single socially constructed identity or persona. Less common

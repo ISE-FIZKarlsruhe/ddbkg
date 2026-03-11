@@ -1172,6 +1172,7 @@ _:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://purl.org/vocab/frbr/core#responsibleEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Any endeavour having a particular entity that is responsible of it."@en .
 <http://purl.org/vocab/frbr/core#responsibleEntity> <http://www.w3.org/2000/01/rdf-schema#label> "frbr:responsibleEntity"@en .
 <http://purl.org/vocab/frbr/core#responsibleEntity> <http://www.w3.org/2004/02/skos/core#altLabel> "frbr:responsibleEntity"@en .
+<http://purl.org/vocab/frbr/core#responsibleEntity> <http://www.w3.org/2004/02/skos/core#prefLabel> "frbr:responsibleEntity"@en .
 # 
 # http://purl.org/vocab/frbr/core#responsibleEntityOf
 <http://purl.org/vocab/frbr/core#responsibleEntityOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -3325,7 +3326,7 @@ _:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/mo/MusicalExpression> .
 _:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Expression> <http://www.w3.org/2000/01/rdf-schema#comment> "mo:Expression rdfs:subClassOf [\n     owl:unionOf ( rdac:C10006\n                           frbr:Expression\n                           mo:MusicalExpression \n                           vra:Inscription \n                           crm:E73_Information_Object\n                           aco:AudioExpression\n                           rico:Record\n                           rico:RecordResource\n                           rico:RecordSet ) ] ."@en .
+<https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Expression> <http://www.w3.org/2000/01/rdf-schema#comment> "In the SemDH 2026 submission, it was mentioned that MOCHO's WEMI classes are model as Subclass-UnionOf, c.f. every instance of mocho:Expression must be an instance of one of the domain classes. It is a necessary condition for mocho:Expression, but the domain instance are not automatically classified as mocho:Expression. It has to be explicitly asserted that x is an instance of mocho:Expression."@en .
 <https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Expression> <http://www.w3.org/2000/01/rdf-schema#label> "mocho:Expression"@en .
 <https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Expression> <http://www.w3.org/2004/02/skos/core#definition> "An intellectual or artistic realization of a work in the form of alpha-numeric, musical or choreographic notation, sound, image, object, movement, etc., or any combination of such forms."@en .
 <https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Expression> <http://www.w3.org/2004/02/skos/core#example> "Goethe's Faust in French"@en .
@@ -3359,6 +3360,7 @@ _:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/mo/MusicalItem> .
 _:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Item> <http://www.w3.org/2000/01/rdf-schema#comment> "In the SemDH 2026 submission, it was mentioned that MOCHO's WEMI classes are model as Subclass-UnionOf, c.f. every instance of mocho:Item must be an instance of one of the domain classes. It is a necessary condition for mocho:Item, but the domain instance are not automatically classified as mocho:Item. It has to be explicitly asserted that x is an instance of mocho:Item."@en .
 <https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Item> <http://www.w3.org/2000/01/rdf-schema#label> "mocho:Item"@en .
 <https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Item> <http://www.w3.org/2004/02/skos/core#definition> "A single exemplar or instance of a manifestation."@en .
 <https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Item> <http://www.w3.org/2004/02/skos/core#example> "A copy of Goethe's Faust"@en .
@@ -3392,6 +3394,7 @@ _:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/mo/MusicalManifestation> .
 _:genid196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Manifestation> <http://www.w3.org/2000/01/rdf-schema#comment> "In the SemDH 2026 submission, it was mentioned that MOCHO's WEMI classes are model as Subclass-UnionOf, c.f. every instance of mocho:Manifestation must be an instance of one of the domain classes. It is a necessary condition for mocho:Manifestation, but the domain instance are not automatically classified as mocho:Manifestation. It has to be explicitly asserted that x is an instance of mocho:Manifestation."@en .
 <https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Manifestation> <http://www.w3.org/2000/01/rdf-schema#label> "mocho:Manifestation"@en .
 <https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Manifestation> <http://www.w3.org/2004/02/skos/core#definition> "A physical embodiment of an expression of a work."@en .
 # 
@@ -3453,6 +3456,7 @@ _:genid207 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid208 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/mo/MusicalWork> .
 _:genid208 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Work> <http://www.w3.org/2000/01/rdf-schema#comment> "In the SemDH 2026 submission, it was mentioned that MOCHO's WEMI classes are model as Subclass-UnionOf, c.f. every instance of mocho:Work must be an instance of one of the domain classes. It is a necessary condition for mocho:Work, but the domain instance are not automatically classified as mocho:Work. It has to be explicitly asserted that x is an instance of mocho:Work."@en .
 <https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Work> <http://www.w3.org/2000/01/rdf-schema#label> "mocho:Work"@en .
 <https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Work> <http://www.w3.org/2004/02/skos/core#definition> "A distinct intellectual or artistic creation, that is, the intellectual or artistic content."@en .
 <https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Work> <http://www.w3.org/2004/02/skos/core#example> "Goethe's Faust"@en .
@@ -3618,7 +3622,6 @@ _:genid212 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://www.ica.org/standards/RiC/ontology#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
 <https://www.ica.org/standards/RiC/ontology#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Persona"@es .
 <https://www.ica.org/standards/RiC/ontology#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Personne"@fr .
-<https://www.ica.org/standards/RiC/ontology#Person> <http://www.w3.org/2000/01/rdf-schema#label> "rico:Person"@en .
 <https://www.ica.org/standards/RiC/ontology#Person> <http://www.w3.org/2004/02/skos/core#prefLabel> "rico:Person"@en .
 <https://www.ica.org/standards/RiC/ontology#Person> <http://www.w3.org/2004/02/skos/core#scopeNote> "Person is a kind of Agent. Most commonly, a human being\n         (biological person) has a single socially constructed identity or persona. Less common\n         though not rare, one or more personae in addition to the original persona which emerges at\n         or near birth may be associated with the human being over the course of that human being’s\n         lifetime. Such \"alternative personae\" are most often created by the original person for\n         specific purposes. The original persona may, in everyday discourse, be regarded as “the\n         real person”. Under some circumstances, an alternative persona might eclipse or replace the\n         original person (Mark Twain eclipsing Samuel Clemens; John Wayne eclipsing Marion Mitchell\n         Morrison), that is, the alternative identity becomes the predominant identity. Less common\n         is when two or more persons collaborate to create a shared persona. A persona shared by two\n         or more persons constitutes a kind of group. Within the archival context, the description\n         of a person commonly will focus on the original associated persona, with alternative\n         personae noted. Exceptionally, an alternative persona may displace the original persona as\n         the focus of the description. Under some circumstances, for example, when record resources\n         are associated with two or more different personae of one person, describing the different\n         personae as separate though related persons may be desirable. Alternatively, a person may\n         change their identity over the course of their lifetime."@en .
 # 

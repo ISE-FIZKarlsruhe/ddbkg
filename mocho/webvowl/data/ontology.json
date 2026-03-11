@@ -46,7 +46,7 @@
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "42",
+    "id" : "52",
     "type" : "owl:Class"
   }, {
     "id" : "59",
@@ -97,16 +97,16 @@
     "id" : "206",
     "type" : "owl:Class"
   }, {
-    "id" : "257",
-    "type" : "owl:unionOf"
-  }, {
     "id" : "95",
     "type" : "owl:Class"
   }, {
-    "id" : "106",
+    "id" : "257",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "261",
     "type" : "owl:Class"
   }, {
-    "id" : "262",
+    "id" : "106",
     "type" : "owl:Class"
   }, {
     "id" : "111",
@@ -124,10 +124,10 @@
     "id" : "5",
     "type" : "owl:Class"
   }, {
-    "id" : "273",
+    "id" : "21",
     "type" : "owl:Class"
   }, {
-    "id" : "21",
+    "id" : "273",
     "type" : "owl:Class"
   }, {
     "id" : "24",
@@ -199,10 +199,10 @@
     "id" : "381",
     "type" : "owl:unionOf"
   }, {
-    "id" : "302",
+    "id" : "303",
     "type" : "owl:unionOf"
   }, {
-    "id" : "301",
+    "id" : "302",
     "type" : "owl:unionOf"
   }, {
     "id" : "17",
@@ -268,7 +268,7 @@
     "id" : "415",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "81",
+    "id" : "79",
     "type" : "owl:Class"
   }, {
     "id" : "256",
@@ -322,7 +322,7 @@
     "id" : "425",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "80",
+    "id" : "81",
     "type" : "owl:Thing"
   }, {
     "id" : "215",
@@ -388,13 +388,13 @@
     "id" : "489",
     "type" : "owl:Thing"
   }, {
-    "id" : "362",
+    "id" : "363",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "359",
+    "id" : "360",
     "type" : "owl:Thing"
   }, {
-    "id" : "366",
+    "id" : "367",
     "type" : "rdfs:Literal"
   }, {
     "id" : "334",
@@ -403,19 +403,19 @@
     "id" : "152",
     "type" : "owl:Class"
   }, {
-    "id" : "30",
+    "id" : "236",
     "type" : "owl:Class"
   }, {
-    "id" : "238",
+    "id" : "30",
     "type" : "owl:Class"
   }, {
     "id" : "97",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
+    "id" : "105",
     "type" : "owl:Class"
   }, {
-    "id" : "105",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
     "id" : "193",
@@ -439,7 +439,7 @@
     "id" : "253",
     "type" : "owl:Class"
   }, {
-    "id" : "261",
+    "id" : "262",
     "type" : "owl:Class"
   }, {
     "id" : "314",
@@ -469,7 +469,7 @@
     "id" : "16",
     "type" : "owl:Class"
   }, {
-    "id" : "237",
+    "id" : "235",
     "type" : "owl:Class"
   }, {
     "id" : "26",
@@ -529,7 +529,7 @@
     "id" : "308",
     "type" : "owl:Class"
   }, {
-    "id" : "235",
+    "id" : "238",
     "type" : "owl:Class"
   }, {
     "id" : "578",
@@ -589,11 +589,6 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "an Asset in the form of content related information about a MediaResource that may or may not exist.",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
         "language" : "de",
         "value" : "ein Asset in Form von inhaltsbezogenen Informationen über eine MediaResource, die existieren kann oder auch nicht.",
         "type" : "label"
@@ -601,6 +596,11 @@
         "identifier" : "definition",
         "language" : "fr",
         "value" : "un actif sous forme d'informations liées au contenu d'une MediaResource qui peut ou non exister.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "an Asset in the form of content related information about a MediaResource that may or may not exist.",
         "type" : "label"
       } ],
       "example" : [ {
@@ -610,13 +610,13 @@
         "type" : "label"
       }, {
         "identifier" : "example",
-        "language" : "en",
-        "value" : "- a group of EditorialObjects\n- a single \"work of the mind\", a piece\n- a segment of a \"work of the mind\"",
+        "language" : "fr",
+        "value" : "- un groupe d'EditorialObjects\n- une \"œuvre de l'esprit\" unique, un morceau\n- un segment d'une \"œuvre de l'esprit\".",
         "type" : "label"
       }, {
         "identifier" : "example",
-        "language" : "fr",
-        "value" : "- un groupe d'EditorialObjects\n- une \"œuvre de l'esprit\" unique, un morceau\n- un segment d'une \"œuvre de l'esprit\".",
+        "language" : "en",
+        "value" : "- a group of EditorialObjects\n- a single \"work of the mind\", a piece\n- a segment of a \"work of the mind\"",
         "type" : "label"
       } ]
     },
@@ -666,7 +666,7 @@
     "comment" : {
       "en" : "The intellectual or artistic realization of a work in the form of alpha-numeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.\n\nAn expression is the specific intellectual or artistic form that a work takes each time it is \"realized.\" Expression encompasses, for example, the specific words, sentences, paragraphs, etc. that result from the realization of a work in the form of a text, or the particular sounds, phrasing, etc. resulting from the realization of a musical work."
     },
-    "attributes" : [ "external", "intersection" ],
+    "attributes" : [ "intersection", "external" ],
     "id" : "25",
     "superClasses" : [ "26" ]
   }, {
@@ -681,8 +681,8 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "fr",
-        "value" : "un objet médiatique destiné à être publié et consommé, auquel sont attribués des droits d'auteur et des droits de reproduction, et qui représente une valeur.",
+        "language" : "en",
+        "value" : "a media object that is intended for publication and consumption, attributed with author's rights and copyrights, and representing value.",
         "type" : "label"
       }, {
         "identifier" : "definition",
@@ -691,14 +691,14 @@
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "a media object that is intended for publication and consumption, attributed with author's rights and copyrights, and representing value.",
+        "language" : "fr",
+        "value" : "un objet médiatique destiné à être publié et consommé, auquel sont attribués des droits d'auteur et des droits de reproduction, et qui représente une valeur.",
         "type" : "label"
       } ],
       "example" : [ {
         "identifier" : "example",
-        "language" : "de",
-        "value" : "- ein Film auf Band im Archiv\n- eine digitale Tonaufnahme mit Urheberrecht und Copyright\n- ein Buch\n- eine Sammlung von Büchern",
+        "language" : "fr",
+        "value" : "- un film sur bande dans les archives\n- un enregistrement audio numérique avec droits d'auteur et copyright associés\n- un livre\n- une collection de livres",
         "type" : "label"
       }, {
         "identifier" : "example",
@@ -707,8 +707,8 @@
         "type" : "label"
       }, {
         "identifier" : "example",
-        "language" : "fr",
-        "value" : "- un film sur bande dans les archives\n- un enregistrement audio numérique avec droits d'auteur et copyright associés\n- un livre\n- une collection de livres",
+        "language" : "de",
+        "value" : "- ein Film auf Band im Archiv\n- eine digitale Tonaufnahme mit Urheberrecht und Copyright\n- ein Buch\n- eine Sammlung von Büchern",
         "type" : "label"
       } ]
     },
@@ -733,7 +733,7 @@
       "undefined" : "\n        A musical expression representing a group of signals, for example a set of masters resulting from a whole recording/mastering session.\n    "
     },
     "attributes" : [ "external" ],
-    "id" : "42",
+    "id" : "52",
     "superClasses" : [ "27" ]
   }, {
     "iri" : "http://purl.org/spar/fabio/TermDictionary",
@@ -801,7 +801,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "33",
-    "superClasses" : [ "34", "81" ]
+    "superClasses" : [ "34", "79" ]
   }, {
     "iri" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Event",
     "baseIri" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho",
@@ -864,19 +864,6 @@
     "id" : "121",
     "superClasses" : [ "122", "123", "101" ]
   }, {
-    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing",
-    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "E24_Physical_Human-Made_Thing",
-      "en" : "crm:E24_Physical_Human-Made_Thing"
-    },
-    "comment" : {
-      "en" : "Scope note:\nThis class comprises all persistent physical items of any size that are purposely created by human activity. This class comprises, besides others, human-made objects, such as a sword, and human-made features, such as rock art. For example, a “cup and ring” carving on bedrock is regarded as instance of E24 Physical Human-Made Thing.\nInstances of E24 Physical Human-Made Thing may be the result of modifying pre-existing physical things, preserving larger parts or most of the original matter and structure, which poses the question if they are new or even human-made, the respective interventions of production made on such original material should be obvious and sufficient to regard that the product has a new, distinct identity and intended function and is human-made. Substantial continuity of the previous matter and structure in the new product can be documented by describing the production process also as an instance of E81 Transformation.\nWhereas interventions of conservation and repair are not regarded to produce a new instance of E24 Physical Human-Made Thing, the results of preparation of natural history specimens that substantially change their natural or original state should be regarded as instances of E24 Physical Human-Made Things, including the uncovering of petrified biological features from a solid piece of stone. On the other side, scribbling a museum number on a natural object should not be regarded to make it human-made. This notwithstanding, parts, sections, segments, or features of an instance of E24 Physical Human-Made Thing may continue to be non-human-made and preserved during the production process, for example natural pearls used as a part of an eardrop.\n\nExamples:\n- the Forth Railway Bridge (Shipway, Bouch, Baker and Fowler, 1990).\n- the Channel Tunnel (E25) (Holliday, Marcou and Vickerman, 1991)\n- the Palace of Knossos (Evans, 1921)\n- the Colosseum in Rome, Italy (Hopkins and Beard, 2011)\n- the Historical Collection of the Museum Benaki in Athens (E78) (Georgoula, 2005)\n- the Rosetta Stone (E22)\n- my paperback copy of Crime & Punishment (E22) (fictitious)\n- the computer disk at ICS-FORTH that stores the canonical Definition of the CIDOC CRM v.3.2 (E22)\n- my empty DVD disk (E22) (fictitious)\n\nIn First Order Logic:\n- E24(x) ⇒ E18(x)\n- E24(x) ⇒ E71(x)"
-    },
-    "attributes" : [ "external" ],
-    "id" : "139"
-  }, {
     "iri" : "http://purl.org/dc/terms/ProvenanceStatement",
     "baseIri" : "http://purl.org/dc/terms",
     "instances" : 0,
@@ -891,6 +878,19 @@
     "label" : {
       "IRI-based" : "ProvenanceStatement",
       "en" : "dcterms:ProvenanceStatement"
+    },
+    "attributes" : [ "external" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E24_Physical_Human-Made_Thing",
+      "en" : "crm:E24_Physical_Human-Made_Thing"
+    },
+    "comment" : {
+      "en" : "Scope note:\nThis class comprises all persistent physical items of any size that are purposely created by human activity. This class comprises, besides others, human-made objects, such as a sword, and human-made features, such as rock art. For example, a “cup and ring” carving on bedrock is regarded as instance of E24 Physical Human-Made Thing.\nInstances of E24 Physical Human-Made Thing may be the result of modifying pre-existing physical things, preserving larger parts or most of the original matter and structure, which poses the question if they are new or even human-made, the respective interventions of production made on such original material should be obvious and sufficient to regard that the product has a new, distinct identity and intended function and is human-made. Substantial continuity of the previous matter and structure in the new product can be documented by describing the production process also as an instance of E81 Transformation.\nWhereas interventions of conservation and repair are not regarded to produce a new instance of E24 Physical Human-Made Thing, the results of preparation of natural history specimens that substantially change their natural or original state should be regarded as instances of E24 Physical Human-Made Things, including the uncovering of petrified biological features from a solid piece of stone. On the other side, scribbling a museum number on a natural object should not be regarded to make it human-made. This notwithstanding, parts, sections, segments, or features of an instance of E24 Physical Human-Made Thing may continue to be non-human-made and preserved during the production process, for example natural pearls used as a part of an eardrop.\n\nExamples:\n- the Forth Railway Bridge (Shipway, Bouch, Baker and Fowler, 1990).\n- the Channel Tunnel (E25) (Holliday, Marcou and Vickerman, 1991)\n- the Palace of Knossos (Evans, 1921)\n- the Colosseum in Rome, Italy (Hopkins and Beard, 2011)\n- the Historical Collection of the Museum Benaki in Athens (E78) (Georgoula, 2005)\n- the Rosetta Stone (E22)\n- my paperback copy of Crime & Punishment (E22) (fictitious)\n- the computer disk at ICS-FORTH that stores the canonical Definition of the CIDOC CRM v.3.2 (E22)\n- my empty DVD disk (E22) (fictitious)\n\nIn First Order Logic:\n- E24(x) ⇒ E18(x)\n- E24(x) ⇒ E71(x)"
     },
     "attributes" : [ "external" ],
     "id" : "140"
@@ -982,6 +982,20 @@
     "id" : "206",
     "superClasses" : [ "241", "193" ]
   }, {
+    "iri" : "http://purl.org/ontology/mo/PublishedLibretto",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PublishedLibretto",
+      "en" : "mo:PublishedLibretto"
+    },
+    "comment" : {
+      "undefined" : "A published libretto"
+    },
+    "attributes" : [ "external" ],
+    "id" : "95",
+    "superClasses" : [ "72" ]
+  }, {
     "iri" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Expression",
     "baseIri" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho",
     "instances" : 0,
@@ -1005,36 +1019,10 @@
     },
     "union" : [ "100", "25", "7", "258", "27", "259", "174", "78", "15" ],
     "comment" : {
-      "en" : "mo:Expression rdfs:subClassOf [\n     owl:unionOf ( rdac:C10006\n                           frbr:Expression\n                           mo:MusicalExpression \n                           vra:Inscription \n                           crm:E73_Information_Object\n                           aco:AudioExpression\n                           rico:Record\n                           rico:RecordResource\n                           rico:RecordSet ) ] ."
+      "en" : "In the SemDH 2026 submission, it was mentioned that MOCHO's WEMI classes are model as Subclass-UnionOf, c.f. every instance of mocho:Expression must be an instance of one of the domain classes. It is a necessary condition for mocho:Expression, but the domain instance are not automatically classified as mocho:Expression. It has to be explicitly asserted that x is an instance of mocho:Expression."
     },
     "attributes" : [ "union", "external" ],
     "id" : "257"
-  }, {
-    "iri" : "http://purl.org/ontology/mo/PublishedLibretto",
-    "baseIri" : "http://purl.org/ontology/mo",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PublishedLibretto",
-      "en" : "mo:PublishedLibretto"
-    },
-    "comment" : {
-      "undefined" : "A published libretto"
-    },
-    "attributes" : [ "external" ],
-    "id" : "95",
-    "superClasses" : [ "72" ]
-  }, {
-    "iri" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Agent",
-    "baseIri" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Agent",
-      "en" : "mocho:Agent"
-    },
-    "subClasses" : [ "105", "108", "81" ],
-    "attributes" : [ "external" ],
-    "id" : "106",
-    "superClasses" : [ "111", "99", "261", "125", "13", "230" ]
   }, {
     "iri" : "http://purl.org/ontology/mo/Score",
     "baseIri" : "http://purl.org/ontology/mo",
@@ -1047,8 +1035,20 @@
       "undefined" : "\n        Here, we are dealing with the informational object (the MusicalExpression), not the actually \"published\" score.\n        This may be, for example, the product of an arrangement process.\n    "
     },
     "attributes" : [ "external" ],
-    "id" : "262",
+    "id" : "261",
     "superClasses" : [ "27" ]
+  }, {
+    "iri" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Agent",
+    "baseIri" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent",
+      "en" : "mocho:Agent"
+    },
+    "subClasses" : [ "105", "108", "79" ],
+    "attributes" : [ "external" ],
+    "id" : "106",
+    "superClasses" : [ "111", "99", "262", "125", "13", "230" ]
   }, {
     "iri" : "http://purl.org/dc/terms/Agent",
     "baseIri" : "http://purl.org/dc/terms",
@@ -1120,7 +1120,7 @@
       "IRI-based" : "C10011",
       "en" : "rdac:C10011 Collective Agent"
     },
-    "subClasses" : [ "34", "81", "89" ],
+    "subClasses" : [ "34", "79", "89" ],
     "attributes" : [ "external" ],
     "id" : "90",
     "superClasses" : [ "13" ]
@@ -1156,20 +1156,6 @@
     "attributes" : [ "external" ],
     "id" : "5"
   }, {
-    "iri" : "http://purl.org/ontology/mo/MusicalItem",
-    "baseIri" : "http://purl.org/ontology/mo",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MusicalItem",
-      "en" : "mo:MusicalItem"
-    },
-    "comment" : {
-      "undefined" : "A single exemplar of a musical expression.\n\nFor example, it could be a single exemplar of a CD. This is normally an single object (a CD) possessed by somebody.\n\nFrom the FRBR final report: The entity defined as item is a concrete entity. It is in many instances a single physical object (e.g., a copy of a one-volume monograph, a single audio cassette, etc.). There are instances, however, where the entity defined as item comprises more than one physical object (e.g., a monograph issued as two separately bound volumes, a recording issued on three separate compact discs, etc.).\n\nIn terms of intellectual content and physical form, an item exemplifying a manifestation is normally the same as the manifestation itself. However, variations may occur from one item to another, even when the items exemplify the same manifestation, where those variations are the result of actions external to the intent of the producer of the manifestation (e.g., damage occurring after the item was produced, binding performed by a library, etc.).\n    "
-    },
-    "attributes" : [ "external" ],
-    "id" : "273",
-    "superClasses" : [ "126" ]
-  }, {
     "iri" : "http://rdaregistry.info/Elements/c/C10012",
     "baseIri" : "http://rdaregistry.info/Elements/c",
     "instances" : 0,
@@ -1193,6 +1179,20 @@
     "attributes" : [ "external" ],
     "id" : "21",
     "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://purl.org/ontology/mo/MusicalItem",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MusicalItem",
+      "en" : "mo:MusicalItem"
+    },
+    "comment" : {
+      "undefined" : "A single exemplar of a musical expression.\n\nFor example, it could be a single exemplar of a CD. This is normally an single object (a CD) possessed by somebody.\n\nFrom the FRBR final report: The entity defined as item is a concrete entity. It is in many instances a single physical object (e.g., a copy of a one-volume monograph, a single audio cassette, etc.). There are instances, however, where the entity defined as item comprises more than one physical object (e.g., a monograph issued as two separately bound volumes, a recording issued on three separate compact discs, etc.).\n\nIn terms of intellectual content and physical form, an item exemplifying a manifestation is normally the same as the manifestation itself. However, variations may occur from one item to another, even when the items exemplify the same manifestation, where those variations are the result of actions external to the intent of the producer of the manifestation (e.g., damage occurring after the item was produced, binding performed by a library, etc.).\n    "
+    },
+    "attributes" : [ "external" ],
+    "id" : "273",
+    "superClasses" : [ "126" ]
   }, {
     "iri" : "http://purl.org/ontology/mo/MusicalWork",
     "baseIri" : "http://purl.org/ontology/mo",
@@ -1251,13 +1251,13 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Eine physische Verkörperung einer Expression eines Werks.",
+        "language" : "en",
+        "value" : "A physical embodiment of an expression of a work.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "A physical embodiment of an expression of a work.",
+        "language" : "de",
+        "value" : "Eine physische Verkörperung einer Expression eines Werks.",
         "type" : "label"
       } ]
     },
@@ -1313,13 +1313,13 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Ein einzelnes Exemplar oder ein Beispiel einer Manifestation.",
+        "language" : "en",
+        "value" : "A single exemplar or instance of a manifestation.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "A single exemplar or instance of a manifestation.",
+        "language" : "de",
+        "value" : "Ein einzelnes Exemplar oder ein Beispiel einer Manifestation.",
         "type" : "label"
       } ]
     },
@@ -1446,7 +1446,7 @@
     "comment" : {
       "en" : "A distinct intellectual or artistic creation.\n\nA work is an abstract entity; there is no single material object one can point to as the work. We recognize the work through individual realizations or expressions of the work, but the work itself exists only in the commonality of content between and among the various expressions of the work. When we speak of Homer's Iliad as a work, our point of reference is not a particular recitation or text of the work, but the intellectual creation that lies behind all the various expressions of the work. "
     },
-    "attributes" : [ "external", "intersection" ],
+    "attributes" : [ "intersection", "external" ],
     "id" : "76",
     "superClasses" : [ "305", "26", "75" ]
   }, {
@@ -1458,6 +1458,17 @@
         "identifier" : "note",
         "language" : "en",
         "value" : "An instance of EuropeanaAggregation is created at ingestion time for each different Cultural Heritage Object recognized by Europeana. Such instance is associated to the Cultural Heritage Object that it is about, by the property edm:aggregatedCHO",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "Rationale: This class is used in Europeana to gather in a single conceptual unit all the information about a Cultural Heritage Object, necessary for all operations on these objects.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "Obligation and Occurence: The relation between the Cultural Heritage Objects represented in Europeana and the instances of the class EuropeanaAggregation is one-to-one, in the data maintained by Europeana: every Cultural Heritage Object is represented by an instance of EuropeanaAggregation, and every instance of EuropeanaAggregation represent a Cultural Heritage Object.",
         "type" : "label"
       } ],
       "example" : [ {
@@ -1474,17 +1485,6 @@
         "identifier" : "example",
         "language" : "en",
         "value" : "The journal \"Le Temps\" is a Cultural Heritage Object represented in Europeana by one EuropeanaAggregation instance",
-        "type" : "label"
-      } ],
-      "scopeNote" : [ {
-        "identifier" : "scopeNote",
-        "language" : "en",
-        "value" : "Obligation and Occurence: The relation between the Cultural Heritage Objects represented in Europeana and the instances of the class EuropeanaAggregation is one-to-one, in the data maintained by Europeana: every Cultural Heritage Object is represented by an instance of EuropeanaAggregation, and every instance of EuropeanaAggregation represent a Cultural Heritage Object.",
-        "type" : "label"
-      }, {
-        "identifier" : "scopeNote",
-        "language" : "en",
-        "value" : "Rationale: This class is used in Europeana to gather in a single conceptual unit all the information about a Cultural Heritage Object, necessary for all operations on these objects.",
         "type" : "label"
       } ]
     },
@@ -1533,7 +1533,7 @@
     "comment" : {
       "en" : "A single exemplar of a manifestation.\n\nThe entity defined as item is a concrete entity. It is in many instances a single physical object (e.g., a copy of a one-volume monograph, a single audio cassette, etc.). There are instances, however, where the entity defined as item comprises more than one physical object (e.g., a monograph issued as two separately bound volumes, a recording issued on three separate compact discs, etc.). "
     },
-    "attributes" : [ "external", "intersection" ],
+    "attributes" : [ "intersection", "external" ],
     "id" : "126",
     "superClasses" : [ "26" ]
   }, {
@@ -1670,12 +1670,12 @@
     "instances" : 0,
     "union" : [ "76", "25" ],
     "attributes" : [ "anonymous", "union" ],
-    "id" : "302"
+    "id" : "303"
   }, {
     "instances" : 0,
     "union" : [ "76", "25" ],
     "attributes" : [ "anonymous", "union" ],
-    "id" : "301"
+    "id" : "302"
   }, {
     "iri" : "https://w3id.org/ac-ontology/aco#AnalogSignal",
     "baseIri" : "https://w3id.org/ac-ontology/aco",
@@ -1810,7 +1810,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "108",
-    "superClasses" : [ "251", "306", "375", "106", "179" ]
+    "superClasses" : [ "251", "306", "106", "375", "179" ]
   }, {
     "iri" : "http://www.europeana.eu/schemas/edm/EuropeanaObject",
     "baseIri" : "http://www.europeana.eu/schemas/edm",
@@ -1824,12 +1824,12 @@
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "An annotation created by a user through the Europeana portal",
+        "value" : "Any content created by the users through the service made available by Europeana for that purpose",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "Any content created by the users through the service made available by Europeana for that purpose",
+        "value" : "An annotation created by a user through the Europeana portal",
         "type" : "label"
       } ],
       "scopeNote" : [ {
@@ -1894,7 +1894,7 @@
     },
     "subClasses" : [ "33" ],
     "attributes" : [ "external" ],
-    "id" : "81",
+    "id" : "79",
     "superClasses" : [ "253", "90", "147", "106" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
@@ -1952,7 +1952,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "183",
-    "superClasses" : [ "179", "113" ]
+    "superClasses" : [ "113", "179" ]
   }, {
     "iri" : "http://purl.org/ontology/mo/MusicArtist",
     "baseIri" : "http://purl.org/ontology/mo",
@@ -1975,6 +1975,11 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
+        "language" : "en",
+        "value" : "an EditorialObject describing a \"work of the mind\", a piece.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
         "language" : "fr",
         "value" : "un objet éditorial décrivant une \"œuvre de l'esprit\", une pièce.",
         "type" : "label"
@@ -1983,13 +1988,13 @@
         "language" : "de",
         "value" : "ein Medieninhalt, der ein geistiges Werk, ein \"Stück\" ist",
         "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "an EditorialObject describing a \"work of the mind\", a piece.",
-        "type" : "label"
       } ],
       "example" : [ {
+        "identifier" : "example",
+        "language" : "de",
+        "value" : "- ein Film nach einem Drehbuch\n- ein Hörspiel auf der Grundlage eines Spielbuchs\n- eine Nachrichtensendung mit mehreren Beiträgen\n- ein Beitrag in einer Nachrichtensendung\n- eine Folge einer Serie",
+        "type" : "label"
+      }, {
         "identifier" : "example",
         "language" : "fr",
         "value" : "- un film basé sur un livret de jeu\n- un feuilleton radiophonique basé sur un livret de jeu\n- un journal télévisé avec plusieurs sujets\n- un article dans un journal télévisé\n- un épisode d'une série",
@@ -1998,11 +2003,6 @@
         "identifier" : "example",
         "language" : "en",
         "value" : "- a film based on a playbook\n- a radio drama based on a playbook\n- a news programme with several items\n- an item in a news programme\n- an episode of a series",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "de",
-        "value" : "- ein Film nach einem Drehbuch\n- ein Hörspiel auf der Grundlage eines Spielbuchs\n- eine Nachrichtensendung mit mehreren Beiträgen\n- ein Beitrag in einer Nachrichtensendung\n- eine Folge einer Serie",
         "type" : "label"
       } ]
     },
@@ -2093,7 +2093,7 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "80",
+    "id" : "81",
     "label" : {
       "undefined" : "Thing"
     }
@@ -2139,7 +2139,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "249",
-    "superClasses" : [ "261" ]
+    "superClasses" : [ "262" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "id" : "436",
@@ -2230,7 +2230,7 @@
     "label" : {
       "de" : "Akteur",
       "IRI-based" : "Agent",
-      "en" : "Agent",
+      "en" : "rico:Agent",
       "fr" : "Agent",
       "es" : "Agente"
     },
@@ -2248,23 +2248,23 @@
     "annotations" : {
       "scopeNote" : [ {
         "identifier" : "scopeNote",
-        "language" : "en",
+        "language" : "undefined",
         "value" : "Rationale: This class is a domain of edm:wasPresentAt",
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
-        "language" : "undefined",
+        "language" : "en",
         "value" : "Rationale: This class is a domain of edm:wasPresentAt",
         "type" : "label"
       } ],
       "example" : [ {
         "identifier" : "example",
-        "language" : "undefined",
+        "language" : "en",
         "value" : "Leonardo da Vinci, the British Museum, W3C",
         "type" : "label"
       }, {
         "identifier" : "example",
-        "language" : "en",
+        "language" : "undefined",
         "value" : "Leonardo da Vinci, the British Museum, W3C",
         "type" : "label"
       } ]
@@ -2326,7 +2326,12 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "en",
-        "value" : "The 2nd World War, the act of painting Mona Lisa, the change of custody of Mona Lisa.",
+        "value" : "the act of painting Mona Lisa",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "the 2nd World War",
         "type" : "label"
       }, {
         "identifier" : "example",
@@ -2336,12 +2341,7 @@
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "the act of painting Mona Lisa",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "the 2nd World War",
+        "value" : "The 2nd World War, the act of painting Mona Lisa, the change of custody of Mona Lisa.",
         "type" : "label"
       } ],
       "scopeNote" : [ {
@@ -2375,7 +2375,7 @@
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "362",
+    "id" : "363",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -2383,13 +2383,13 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "359",
+    "id" : "360",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "366",
+    "id" : "367",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -2416,18 +2416,6 @@
     "id" : "152",
     "superClasses" : [ "72" ]
   }, {
-    "iri" : "http://www.europeana.eu/schemas/edm/TimeSpan",
-    "baseIri" : "http://www.europeana.eu/schemas/edm",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "TimeSpan",
-      "en" : "edm:TimeSpan"
-    },
-    "subClasses" : [ "235" ],
-    "attributes" : [ "external" ],
-    "id" : "30",
-    "superClasses" : [ "423", "31" ]
-  }, {
     "iri" : "https://w3id.org/lio/v1#PictorialElement",
     "baseIri" : "https://w3id.org/lio/v1",
     "instances" : 0,
@@ -2435,12 +2423,24 @@
       "IRI-based" : "PictorialElement",
       "en" : "lio:PictorialElement"
     },
-    "subClasses" : [ "237" ],
+    "subClasses" : [ "235" ],
     "comment" : {
       "en" : "Any visual entity; any graphical item, part, or visual property of an image or part of an image, including the image itself. Examples include lines, areas, colors and textures. Pictorial elements may have arbitrarily complex shapes and may be implicit, e.g. lines of perspective or outlined white spaces. Rectangular regions of an image are pictorial elements, and the entire image is also. Thus, Image is a subclass of PictorialElement. PictorialElements may be included in one another, giving a simple mereology of visual forms, with the property visualPartOf. Non-visual properties such as date or manner of creation are not considered to be PictorialElements. A property or aspect of an image can be considered to be a PictorialElment when it can be apprehended by vision alone."
     },
     "attributes" : [ "external" ],
-    "id" : "238"
+    "id" : "236"
+  }, {
+    "iri" : "http://www.europeana.eu/schemas/edm/TimeSpan",
+    "baseIri" : "http://www.europeana.eu/schemas/edm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TimeSpan",
+      "en" : "edm:TimeSpan"
+    },
+    "subClasses" : [ "238" ],
+    "attributes" : [ "external" ],
+    "id" : "30",
+    "superClasses" : [ "423", "31" ]
   }, {
     "iri" : "http://purl.org/ontology/mo/CorporateBody",
     "baseIri" : "http://purl.org/ontology/mo",
@@ -2456,6 +2456,17 @@
     "attributes" : [ "external" ],
     "id" : "97",
     "superClasses" : [ "286" ]
+  }, {
+    "iri" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#CorporateBody",
+    "baseIri" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CorporateBody",
+      "en" : "mocho:CorporateBody"
+    },
+    "attributes" : [ "external" ],
+    "id" : "105",
+    "superClasses" : [ "89", "249", "106" ]
   }, {
     "iri" : "https://www.ica.org/standards/RiC/ontology#Instantiation",
     "baseIri" : "https://www.ica.org/standards/RiC/ontology",
@@ -2481,17 +2492,6 @@
     "attributes" : [ "external" ],
     "id" : "9",
     "superClasses" : [ "36" ]
-  }, {
-    "iri" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#CorporateBody",
-    "baseIri" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "CorporateBody",
-      "en" : "mocho:CorporateBody"
-    },
-    "attributes" : [ "external" ],
-    "id" : "105",
-    "superClasses" : [ "89", "249", "106" ]
   }, {
     "iri" : "https://w3id.org/ac-ontology/aco#AudioItem",
     "baseIri" : "https://w3id.org/ac-ontology/aco",
@@ -2554,7 +2554,7 @@
       "IRI-based" : "MusicalExpression",
       "en" : "mo:MusicalExpression"
     },
-    "subClasses" : [ "475", "506", "114", "262", "42" ],
+    "subClasses" : [ "475", "506", "114", "261", "52" ],
     "comment" : {
       "undefined" : "\nThe intellectual or artistic realization of a work in the form of alpha-numeric, musical, or choreographic notation, sound, etc., or any combination of such forms.\n\n\nFor example:\n\nWork #1 Franz Schubert's Trout quintet\n\n    * Expression #1 the composer's score\n    * Expression #2 sound issued from the performance by the Amadeus Quartet and Hephzibah Menuhin on piano\n    * Expression #3 sound issued from the performance by the Cleveland Quartet and Yo-Yo Ma on the cello\n    * . . . .\n\nThe Music Ontology defines the following sub-concepts of a MusicalExpression, which should be used instead of MusicalExpression itself: Score (the\nresult of an arrangement), Sound (produced during a performance), Signal. However, it is possible to stick to FRBR and bypass the worflow\nmechanism this ontology defines by using the core FRBR properties on such objects. But it is often better to use events to interconnect such\nexpressions (allowing to go deeply into the production process - `this performer was playing this particular instrument at that\nparticular time').\n\n    "
     },
@@ -2575,7 +2575,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "375",
-    "superClasses" : [ "261" ]
+    "superClasses" : [ "262" ]
   }, {
     "iri" : "https://www.ica.org/standards/RiC/ontology#RecordSetType",
     "baseIri" : "https://www.ica.org/standards/RiC/ontology",
@@ -2622,11 +2622,11 @@
     "label" : {
       "de" : "Gruppe",
       "IRI-based" : "Group",
-      "en" : "Group",
+      "en" : "rico:Group",
       "fr" : "Groupe d’agents",
       "es" : "Grupo de agentes"
     },
-    "subClasses" : [ "81" ],
+    "subClasses" : [ "79" ],
     "comment" : {
       "en" : "Two or more Agents that act together as an Agent."
     },
@@ -2646,7 +2646,7 @@
       "en" : "It represents those responsible for the intellectual or artistic content, the physical production and dissemination, or the custodianship of any endeavour."
     },
     "attributes" : [ "external" ],
-    "id" : "261"
+    "id" : "262"
   }, {
     "iri" : "https://w3id.org/ac-ontology/aco#AudioClip",
     "baseIri" : "https://w3id.org/ac-ontology/aco",
@@ -2719,11 +2719,6 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "eine Resource, die aus kodierten Audio-, Video-, Grafik-, Daten- oder Textinhalten besteht",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
         "language" : "en",
         "value" : "a Resource that comprises encoded audio, video, graphics, data or text",
         "type" : "label"
@@ -2732,16 +2727,21 @@
         "language" : "fr",
         "value" : "une ressource qui comprend du son, de la vidéo, des graphiques, des données ou du texte codés.",
         "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "eine Resource, die aus kodierten Audio-, Video-, Grafik-, Daten- oder Textinhalten besteht",
+        "type" : "label"
       } ],
       "example" : [ {
         "identifier" : "example",
-        "language" : "en",
-        "value" : "- an audio CD\n- an audio track on a CD\n- an audio file\n- a video file\n- a video DVD",
+        "language" : "de",
+        "value" : "- eine Audio-CD\n- ein Audiotitel auf einer CD\n- eine Audiodatei\n- eine Videodatei\n- eine Video-DVD",
         "type" : "label"
       }, {
         "identifier" : "example",
-        "language" : "de",
-        "value" : "- eine Audio-CD\n- ein Audiotitel auf einer CD\n- eine Audiodatei\n- eine Videodatei\n- eine Video-DVD",
+        "language" : "en",
+        "value" : "- an audio CD\n- an audio track on a CD\n- an audio file\n- a video file\n- a video DVD",
         "type" : "label"
       }, {
         "identifier" : "example",
@@ -2753,7 +2753,7 @@
     "label" : {
       "de" : "MedienResource",
       "IRI-based" : "MediaResource",
-      "en" : "ec:MediaResource",
+      "en" : "Media resource",
       "fr" : "Resource médiatique"
     },
     "subClasses" : [ "206" ],
@@ -2792,16 +2792,16 @@
         "value" : "A set of concepts, optionally including statements about semantic relationships between those concepts.",
         "type" : "label"
       } ],
-      "scopeNote" : [ {
-        "identifier" : "scopeNote",
-        "language" : "en",
-        "value" : "A concept scheme may be defined to include concepts from different sources.",
-        "type" : "label"
-      } ],
       "example" : [ {
         "identifier" : "example",
         "language" : "en",
         "value" : "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "A concept scheme may be defined to include concepts from different sources.",
         "type" : "label"
       } ]
     },
@@ -2832,6 +2832,9 @@
       "en" : "mocho:Manifestation"
     },
     "union" : [ "151", "9", "92", "130", "162", "241", "72", "150" ],
+    "comment" : {
+      "en" : "In the SemDH 2026 submission, it was mentioned that MOCHO's WEMI classes are model as Subclass-UnionOf, c.f. every instance of mocho:Manifestation must be an instance of one of the domain classes. It is a necessary condition for mocho:Manifestation, but the domain instance are not automatically classified as mocho:Manifestation. It has to be explicitly asserted that x is an instance of mocho:Manifestation."
+    },
     "attributes" : [ "union", "external" ],
     "id" : "402"
   }, {
@@ -2868,8 +2871,8 @@
       "en" : "An image. Any PictorialElement that is considered to be a complete image. Typically the main subject of an ImageSnippets description will be in this class. An image can be a visualPartOf another image."
     },
     "attributes" : [ "external" ],
-    "id" : "237",
-    "superClasses" : [ "238" ]
+    "id" : "235",
+    "superClasses" : [ "236" ]
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#Endeavour",
     "baseIri" : "http://purl.org/vocab/frbr/core",
@@ -2959,24 +2962,24 @@
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "eine Sache, die in einem medienbezogenen Arbeitsablauf erstellt, veröffentlicht, verbreitet und konsumiert wird",
+        "language" : "fr",
+        "value" : "une Chose qui est créée, publiée, distribuée et consommée dans un flux de travail lié aux médias",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "fr",
-        "value" : "une Chose qui est créée, publiée, distribuée et consommée dans un flux de travail lié aux médias",
+        "language" : "de",
+        "value" : "eine Sache, die in einem medienbezogenen Arbeitsablauf erstellt, veröffentlicht, verbreitet und konsumiert wird",
         "type" : "label"
       } ],
       "example" : [ {
         "identifier" : "example",
-        "language" : "en",
-        "value" : "- a paper document\n- a digital document\n- a digital picture\n- a vinyl record\n- an audio CD\n- an audio tape\n- a video tape\n- a film dvd",
+        "language" : "fr",
+        "value" : "- un document papier\n- un document numérique\n- une image numérique\n- un disque vynil\n- un CD audio\n- une bande audio\n- une cassette vidéo\n- un dvd de film",
         "type" : "label"
       }, {
         "identifier" : "example",
-        "language" : "fr",
-        "value" : "- un document papier\n- un document numérique\n- une image numérique\n- un disque vynil\n- un CD audio\n- une bande audio\n- une cassette vidéo\n- un dvd de film",
+        "language" : "en",
+        "value" : "- a paper document\n- a digital document\n- a digital picture\n- a vinyl record\n- an audio CD\n- an audio tape\n- a video tape\n- a film dvd",
         "type" : "label"
       }, {
         "identifier" : "example",
@@ -2988,7 +2991,7 @@
     "label" : {
       "de" : "Resource",
       "IRI-based" : "Resource",
-      "en" : "Resource",
+      "en" : "ec:Resource",
       "fr" : "Resource"
     },
     "subClasses" : [ "241" ],
@@ -3026,7 +3029,7 @@
     },
     "label" : {
       "IRI-based" : "Concept",
-      "en" : "skos:Concept"
+      "en" : "Concept"
     },
     "subClasses" : [ "528", "121" ],
     "comment" : {
@@ -3058,7 +3061,7 @@
     "comment" : {
       "en" : "The physical embodiment of an expression of a work.\n\nThe entity defined as manifestation encompasses a wide range of materials and formats. As an entity, manifestation represents all the physical objects that bear the same characteristics, in respect to both intellectual content and physical form. "
     },
-    "attributes" : [ "external", "intersection" ],
+    "attributes" : [ "intersection", "external" ],
     "id" : "150",
     "superClasses" : [ "26" ]
   }, {
@@ -3089,7 +3092,7 @@
       "en" : "edm:NonInformationResource"
     },
     "subClasses" : [ "181", "30", "86", "122", "210", "230", "438", "87" ],
-    "attributes" : [ "external", "complement" ],
+    "attributes" : [ "complement", "external" ],
     "id" : "423",
     "complement" : [ "305" ]
   }, {
@@ -3212,7 +3215,7 @@
       "en" : "mocho:TimeSpan"
     },
     "attributes" : [ "external" ],
-    "id" : "235",
+    "id" : "238",
     "superClasses" : [ "30" ]
   }, {
     "iri" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Item",
@@ -3236,7 +3239,10 @@
       "IRI-based" : "Item",
       "en" : "mocho:Item"
     },
-    "union" : [ "9", "4", "193", "308", "273", "139" ],
+    "union" : [ "9", "4", "193", "308", "273", "140" ],
+    "comment" : {
+      "en" : "In the SemDH 2026 submission, it was mentioned that MOCHO's WEMI classes are model as Subclass-UnionOf, c.f. every instance of mocho:Item must be an instance of one of the domain classes. It is a necessary condition for mocho:Item, but the domain instance are not automatically classified as mocho:Item. It has to be explicitly asserted that x is an instance of mocho:Item."
+    },
     "attributes" : [ "union", "external" ],
     "id" : "578"
   }, {
@@ -3436,7 +3442,7 @@
     "label" : {
       "IRI-based" : "Group"
     },
-    "subClasses" : [ "81", "149" ],
+    "subClasses" : [ "79", "149" ],
     "attributes" : [ "external" ],
     "id" : "147"
   }, {
@@ -3461,7 +3467,10 @@
       "IRI-based" : "Work",
       "en" : "mocho:Work"
     },
-    "union" : [ "76", "237", "170", "2", "100", "258", "259", "75", "19", "24", "177" ],
+    "union" : [ "76", "235", "170", "2", "100", "258", "259", "75", "19", "24", "177" ],
+    "comment" : {
+      "en" : "In the SemDH 2026 submission, it was mentioned that MOCHO's WEMI classes are model as Subclass-UnionOf, c.f. every instance of mocho:Work must be an instance of one of the domain classes. It is a necessary condition for mocho:Work, but the domain instance are not automatically classified as mocho:Work. It has to be explicitly asserted that x is an instance of mocho:Work."
+    },
     "attributes" : [ "union", "external" ],
     "id" : "401"
   } ],
@@ -3499,10 +3508,10 @@
     "id" : "39",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "43",
+    "id" : "42",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "47",
+    "id" : "46",
     "type" : "owl:objectProperty"
   }, {
     "id" : "53",
@@ -3514,7 +3523,7 @@
     "id" : "63",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "79",
+    "id" : "80",
     "type" : "owl:objectProperty"
   }, {
     "id" : "82",
@@ -3565,13 +3574,13 @@
     "id" : "124",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "127",
     "type" : "owl:objectProperty"
   }, {
     "id" : "129",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "56",
     "type" : "owl:objectProperty"
   }, {
     "id" : "132",
@@ -3652,7 +3661,7 @@
     "id" : "188",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "51",
+    "id" : "50",
     "type" : "owl:objectProperty"
   }, {
     "id" : "192",
@@ -3718,7 +3727,7 @@
     "id" : "234",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "236",
+    "id" : "237",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "239",
@@ -3811,10 +3820,10 @@
     "id" : "296",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "300",
+    "id" : "68",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "68",
+    "id" : "301",
     "type" : "owl:objectProperty"
   }, {
     "id" : "172",
@@ -3862,10 +3871,10 @@
     "id" : "264",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "131",
+    "id" : "327",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "328",
+    "id" : "131",
     "type" : "owl:objectProperty"
   }, {
     "id" : "329",
@@ -3905,16 +3914,16 @@
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "348",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
-    "id" : "350",
+    "id" : "349",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "54",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "354",
-    "type" : "owl:disjointWith"
+    "id" : "353",
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "355",
     "type" : "owl:someValuesFrom"
@@ -3922,16 +3931,16 @@
     "id" : "356",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "357",
+    "id" : "358",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "358",
+    "id" : "359",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "360",
+    "id" : "361",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "361",
+    "id" : "362",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "191",
@@ -3943,14 +3952,14 @@
     "id" : "143",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "365",
+    "id" : "366",
     "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "367",
-    "type" : "owl:disjointWith"
   }, {
     "id" : "368",
     "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "369",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "370",
     "type" : "owl:disjointWith"
@@ -3979,7 +3988,7 @@
     "id" : "380",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "363",
+    "id" : "364",
     "type" : "owl:objectProperty"
   }, {
     "id" : "385",
@@ -4033,10 +4042,10 @@
     "id" : "418",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "217",
+    "id" : "419",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "419",
+    "id" : "217",
     "type" : "owl:objectProperty"
   }, {
     "id" : "422",
@@ -4048,7 +4057,7 @@
     "id" : "424",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "364",
+    "id" : "365",
     "type" : "owl:objectProperty"
   }, {
     "id" : "427",
@@ -4057,16 +4066,16 @@
     "id" : "429",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "303",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "430",
+    "id" : "304",
     "type" : "owl:objectProperty"
   }, {
     "id" : "344",
     "type" : "owl:objectProperty"
   }, {
     "id" : "432",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "431",
     "type" : "owl:objectProperty"
   }, {
     "id" : "435",
@@ -4153,7 +4162,7 @@
     "id" : "196",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "52",
+    "id" : "51",
     "type" : "owl:objectProperty"
   }, {
     "id" : "491",
@@ -4201,7 +4210,7 @@
     "id" : "465",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "46",
+    "id" : "45",
     "type" : "owl:objectProperty"
   }, {
     "id" : "466",
@@ -4264,10 +4273,10 @@
     "id" : "511",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "352",
+    "id" : "351",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "48",
+    "id" : "47",
     "type" : "owl:objectProperty"
   }, {
     "id" : "298",
@@ -4294,16 +4303,16 @@
     "id" : "513",
     "type" : "owl:datatypeProperty"
   }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "459",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "300",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "49",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "304",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "50",
     "type" : "owl:objectProperty"
   }, {
     "id" : "200",
@@ -4324,7 +4333,7 @@
     "id" : "517",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "431",
+    "id" : "430",
     "type" : "owl:objectProperty"
   }, {
     "id" : "37",
@@ -4342,7 +4351,7 @@
     "id" : "521",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "44",
+    "id" : "43",
     "type" : "owl:objectProperty"
   }, {
     "id" : "404",
@@ -4387,10 +4396,10 @@
     "id" : "514",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "369",
+    "id" : "357",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "45",
+    "id" : "44",
     "type" : "owl:objectProperty"
   }, {
     "id" : "529",
@@ -4450,10 +4459,10 @@
     "id" : "542",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "353",
+    "id" : "195",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "195",
+    "id" : "352",
     "type" : "owl:objectProperty"
   }, {
     "id" : "490",
@@ -4615,7 +4624,7 @@
     "id" : "335",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "347",
+    "id" : "354",
     "type" : "owl:objectProperty"
   }, {
     "id" : "581",
@@ -4726,7 +4735,7 @@
     "comment" : {
       "en" : "Connects two Instantiations which may be considered as equivalent.\n         This relation is symmetric."
     },
-    "attributes" : [ "external", "symmetric", "object" ],
+    "attributes" : [ "object", "symmetric", "external" ],
     "id" : "8"
   }, {
     "range" : "5",
@@ -4774,7 +4783,7 @@
     "comment" : {
       "en" : "Connects a Thing to a Thing of which it was a constitutive or\n         component part in the past."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "35"
   }, {
     "iri" : "http://www.deutsche-digitale-bibliothek.de/edm/aggregationEntity",
@@ -4803,11 +4812,11 @@
       "IRI-based" : "hasMet",
       "en" : "edm:hasMet"
     },
-    "superproperty" : [ "44" ],
+    "superproperty" : [ "43" ],
     "domain" : "40",
-    "subproperty" : [ "45", "46" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "43"
+    "subproperty" : [ "44", "45" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "42"
   }, {
     "iri" : "http://purl.org/NET/c4dm/event.owl#agent",
     "baseIri" : "http://purl.org/NET/c4dm/event.owl",
@@ -4817,9 +4826,9 @@
       "en" : "event:agent"
     },
     "domain" : "40",
-    "subproperty" : [ "48", "49", "50", "51", "52" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "47"
+    "subproperty" : [ "47", "48", "49", "50", "51" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "46"
   }, {
     "iri" : "https://www.ica.org/standards/RiC/ontology#followsInTime",
     "inverse" : "54",
@@ -4837,7 +4846,7 @@
     "comment" : {
       "en" : "Inverse of 'precedes in time' object property. This is a\n         transitive relation."
     },
-    "attributes" : [ "transitive", "external", "object" ],
+    "attributes" : [ "object", "transitive", "external" ],
     "id" : "53"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#complementOf",
@@ -4852,7 +4861,7 @@
     "comment" : {
       "en" : "It identifies the work/expression of that is a complement of another one."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "61"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
@@ -4863,7 +4872,7 @@
     },
     "domain" : "40",
     "subproperty" : [ "64", "65", "66", "67", "68", "69", "70" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "63"
   }, {
     "iri" : "https://w3id.org/ac-ontology/aco#producedSignal",
@@ -4881,12 +4890,12 @@
       "IRI-based" : "producedSignal",
       "undefined" : "produced signal"
     },
-    "domain" : "80",
+    "domain" : "81",
     "comment" : {
       "undefined" : "Associates a signal production event to the produced signal."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "79"
+    "attributes" : [ "object", "external" ],
+    "id" : "80"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#creator",
     "inverse" : "83",
@@ -4901,7 +4910,7 @@
     "comment" : {
       "en" : "A work linked to its creator."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "82"
   }, {
     "range" : "90",
@@ -4926,7 +4935,7 @@
     "comment" : {
       "en" : "The owner of a particular item."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "93"
   }, {
     "range" : "72",
@@ -4955,7 +4964,7 @@
     "id" : "107"
   }, {
     "range" : "106",
-    "domain" : "81",
+    "domain" : "79",
     "attributes" : [ "anonymous", "object" ],
     "id" : "109"
   }, {
@@ -4976,7 +4985,7 @@
     "comment" : {
       "undefined" : "Used to relate an artist who djmixed a musical work or the expression of a musical work.\n\nThe artist usually selected the tracks, chose their sequence, and slightly changed them by fading (so that one track blends in smoothly with the other) or pitching (so that the tempo of one track matches the tempo of the following track). This applies to a 'Mixtape' in which all tracks were DJ-mixed together into one single long track. "
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "112"
   }, {
     "range" : "90",
@@ -4985,7 +4994,7 @@
     "id" : "116"
   }, {
     "range" : "90",
-    "domain" : "81",
+    "domain" : "79",
     "attributes" : [ "anonymous", "object" ],
     "id" : "117"
   }, {
@@ -5012,7 +5021,7 @@
     "comment" : {
       "en" : "Connects a Record Resource to a Record Resource, when the first is\n         used as a source of information for producing the content of the second one."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "118"
   }, {
     "iri" : "http://purl.org/ontology/mo/sell_item",
@@ -5026,8 +5035,25 @@
     "comment" : {
       "undefined" : "A person, a group of person or an organization selling an exemplar of a single manifestation."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "124"
+  }, {
+    "iri" : "https://www.ica.org/standards/RiC/ontology#isReplyTo",
+    "baseIri" : "https://www.ica.org/standards/RiC/ontology",
+    "range" : "100",
+    "label" : {
+      "IRI-based" : "isReplyTo",
+      "en" : "is reply to",
+      "fr" : "est une réponse à",
+      "es" : "es contestación de"
+    },
+    "superproperty" : [ "120", "53" ],
+    "domain" : "100",
+    "comment" : {
+      "en" : "Inverse of 'has reply' object property."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "56"
   }, {
     "iri" : "https://www.ica.org/standards/RiC/ontology#hasCopy",
     "inverse" : "58",
@@ -5052,7 +5078,7 @@
     "comment" : {
       "en" : "Connects a Record Resource to a copy of that Record\n         Resource."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "127"
   }, {
     "iri" : "https://w3id.org/ac-ontology/aco#publishedAs",
@@ -5075,25 +5101,8 @@
     "comment" : {
       "undefined" : "Link an expression to its publication as manifestation.\n"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "129"
-  }, {
-    "iri" : "https://www.ica.org/standards/RiC/ontology#isReplyTo",
-    "baseIri" : "https://www.ica.org/standards/RiC/ontology",
-    "range" : "100",
-    "label" : {
-      "IRI-based" : "isReplyTo",
-      "en" : "is reply to",
-      "fr" : "est une réponse à",
-      "es" : "es contestación de"
-    },
-    "superproperty" : [ "120", "53" ],
-    "domain" : "100",
-    "comment" : {
-      "en" : "Inverse of 'has reply' object property."
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "56"
   }, {
     "iri" : "http://purl.org/ontology/mo/interpreter",
     "baseIri" : "http://purl.org/ontology/mo",
@@ -5107,7 +5116,7 @@
     "comment" : {
       "undefined" : "Adds an involved music artist, who interpreted, remixed, or otherwise modified an existing signal, which resulted in the signal that is here the subject of this relation."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "132"
   }, {
     "iri" : "http://purl.org/ontology/mo/compilation_of",
@@ -5121,7 +5130,7 @@
     "comment" : {
       "undefined" : "Indicates that a musical manifestation is a compilation of several Signals."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "135"
   }, {
     "iri" : "http://purl.org/dc/terms/language",
@@ -5132,7 +5141,7 @@
       "en" : "dcterms:language"
     },
     "domain" : "137",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "136"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#reproductionOf",
@@ -5147,7 +5156,7 @@
     "comment" : {
       "en" : "It identifies the manifestation/item of a reproduced one."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "141"
   }, {
     "iri" : "http://purl.org/ontology/mo/producesSignal",
@@ -5158,7 +5167,7 @@
       "IRI-based" : "producesSignal"
     },
     "domain" : "40",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "142"
   }, {
     "range" : "72",
@@ -5167,7 +5176,7 @@
     "id" : "144"
   }, {
     "range" : "147",
-    "domain" : "81",
+    "domain" : "79",
     "attributes" : [ "anonymous", "object" ],
     "id" : "146"
   }, {
@@ -5208,7 +5217,7 @@
     "comment" : {
       "en" : "This property expresses the fact that a concept is a part of a scheme."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "65"
   }, {
     "iri" : "http://www.europeana.eu/schemas/edm/wasPresentAt",
@@ -5218,9 +5227,9 @@
       "IRI-based" : "wasPresentAt",
       "en" : "edm:wasPresentAt"
     },
-    "superproperty" : [ "44" ],
+    "superproperty" : [ "43" ],
     "domain" : "154",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "153"
   }, {
     "iri" : "https://w3id.org/ac-ontology/aco#nodeContent",
@@ -5242,7 +5251,7 @@
     "comment" : {
       "undefined" : "Associates a node with the actual content (an audio manifestation)."
     },
-    "attributes" : [ "functional", "external", "object" ],
+    "attributes" : [ "object", "functional", "external" ],
     "id" : "155"
   }, {
     "range" : "114",
@@ -5276,7 +5285,7 @@
     "comment" : {
       "en" : "Connects an Instantiation to one of its present or past component\n         instantiations."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "164"
   }, {
     "range" : "163",
@@ -5296,7 +5305,7 @@
     "comment" : {
       "undefined" : "Indicates a part of a musical manifestation - in this particular case, a track."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "171"
   }, {
     "range" : "163",
@@ -5321,10 +5330,10 @@
       "IRI-based" : "happenedAt",
       "en" : "edm:happenedAt"
     },
-    "superproperty" : [ "44" ],
+    "superproperty" : [ "43" ],
     "cardinality" : "1",
     "domain" : "86",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "180"
   }, {
     "range" : "179",
@@ -5357,7 +5366,7 @@
     "comment" : {
       "en" : "Inverse of 'has or had component' object property."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "165"
   }, {
     "range" : "114",
@@ -5373,13 +5382,13 @@
       "IRI-based" : "engineer",
       "en" : "mo:engineer"
     },
-    "superproperty" : [ "47" ],
+    "superproperty" : [ "46" ],
     "domain" : "190",
     "comment" : {
       "undefined" : "Relates a performance or a recording to the engineer involved"
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "51"
+    "attributes" : [ "object", "external" ],
+    "id" : "50"
   }, {
     "iri" : "https://w3id.org/ac-ontology/aco#availableAs",
     "inverse" : "194",
@@ -5403,7 +5412,7 @@
     "comment" : {
       "undefined" : "Relates an audio manifestation to an audio item (e.g., a media file).\n"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "192"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#summarizationOf",
@@ -5418,7 +5427,7 @@
     "comment" : {
       "en" : "It identifies the original work/expression of a summarized one."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "197"
   }, {
     "iri" : "http://purl.org/NET/c4dm/event.owl#factor",
@@ -5430,7 +5439,7 @@
     },
     "domain" : "40",
     "subproperty" : [ "199", "200" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "198"
   }, {
     "iri" : "http://purl.org/dc/terms/alternative",
@@ -5466,7 +5475,7 @@
     "comment" : {
       "en" : "Connects an Instantiation to another Instantiation of which it is\n         a direct component."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "203"
   }, {
     "range" : "193",
@@ -5531,7 +5540,7 @@
     "comment" : {
       "undefined" : "Associates an audio collection to its nodes."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "214"
   }, {
     "iri" : "https://www.ica.org/standards/RiC/ontology#hadPart",
@@ -5550,7 +5559,7 @@
     "comment" : {
       "en" : "Connects a Thing to a Thing that was a constitutive or component\n         part of that Thing in the past."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "218"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#supplementOf",
@@ -5565,7 +5574,7 @@
     "comment" : {
       "en" : "It identifies the work/expression of a particular supplement of it."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "219"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#reproduction",
@@ -5581,7 +5590,7 @@
     "comment" : {
       "en" : "A manifestation/item reproduced in another one.\n\nA reproduction indicates the relationship as it would be drawn from the first manifestation/item in the relationship to the second manifestation/item in the relationship."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "220"
   }, {
     "iri" : "http://purl.org/dc/terms/extent",
@@ -5622,7 +5631,7 @@
     "comment" : {
       "en" : "Inverse of 'precedes or preceded' object property."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "55"
   }, {
     "iri" : "http://purl.org/ontology/mo/sampled_version",
@@ -5637,7 +5646,7 @@
     "comment" : {
       "undefined" : "\n        Associates an analog signal with a sampled version of it\n    "
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "227"
   }, {
     "range" : "230",
@@ -5658,7 +5667,7 @@
     "comment" : {
       "undefined" : "\n        Links a musical expression (e.g. a signal or a score) to one of its manifestations (e.g. a track on a particular record or a published score).\n    "
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "231"
   }, {
     "range" : "86",
@@ -5666,15 +5675,15 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "233"
   }, {
-    "range" : "30",
+    "range" : "236",
     "domain" : "235",
     "attributes" : [ "anonymous", "object" ],
     "id" : "234"
   }, {
-    "range" : "238",
-    "domain" : "237",
+    "range" : "30",
+    "domain" : "238",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "236"
+    "id" : "237"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#producer",
     "inverse" : "240",
@@ -5689,7 +5698,7 @@
     "comment" : {
       "en" : "A manifestation linked to its prodecer."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "239"
   }, {
     "range" : "97",
@@ -5715,7 +5724,7 @@
     "comment" : {
       "undefined" : "\n        Associates a work to an arrangement event where it was arranged\n    "
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "244"
   }, {
     "range" : "87",
@@ -5784,7 +5793,7 @@
     "comment" : {
       "en" : "Connects two Instantiations. This relation is\n         symmetric."
     },
-    "attributes" : [ "external", "symmetric", "object" ],
+    "attributes" : [ "object", "symmetric", "external" ],
     "id" : "11"
   }, {
     "iri" : "http://purl.org/ontology/mo/composed_in",
@@ -5801,7 +5810,7 @@
     "comment" : {
       "undefined" : "\n        Associates a MusicalWork to the Composition event pertaining\n        to its creation. For example, I might use this property to associate\n        the Magic Flute to its composition event, occuring during 1782 and having as\n        a mo:composer Mozart.\n    "
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "263"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#reconfiguration",
@@ -5817,7 +5826,7 @@
     "comment" : {
       "en" : "An item reconfigured in another one.\n\nThe reconfiguration relationship is one in which one or more items are changed in such a way that a new item or items result. Most commonly, an item of one manifestation is bound with an item of a different manifestation to make a new item. "
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "267"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#abridgement",
@@ -5833,7 +5842,7 @@
     "comment" : {
       "en" : "An expression abridged in another one.\n\nIn the abridged expression some content of the previous expression is removed, but the result does not alter the content to the extent that it becomes a new work. The expressions resulting from such modification are generally autonomous in nature (i.e., they do not normally require reference to the prior expression in order to be used or understood). "
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "269"
   }, {
     "iri" : "https://www.ica.org/standards/RiC/ontology#isEquivalentTo",
@@ -5851,7 +5860,7 @@
     "comment" : {
       "en" : "Connects two Things that are considered equivalent."
     },
-    "attributes" : [ "external", "symmetric", "object" ],
+    "attributes" : [ "object", "symmetric", "external" ],
     "id" : "10"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#adaptionOf",
@@ -5866,7 +5875,7 @@
     "comment" : {
       "en" : "It identifies the work/expression of an adapted one."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "271"
   }, {
     "iri" : "http://purl.org/ontology/mo/item",
@@ -5880,7 +5889,7 @@
     "comment" : {
       "undefined" : "\n                Relates a musical manifestation to a musical item (this album, and my particular cd) holding the\n                entire manifestation, and not just a part of it.\n        "
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "272"
   }, {
     "range" : "160",
@@ -5888,7 +5897,7 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "276"
   }, {
-    "range" : "81",
+    "range" : "79",
     "domain" : "33",
     "attributes" : [ "anonymous", "object" ],
     "id" : "278"
@@ -5927,7 +5936,7 @@
     "comment" : {
       "en" : "Connects a Thing to a Thing that is a direct constitutive or\n         component part of that Thing."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "281"
   }, {
     "range" : "113",
@@ -5983,30 +5992,20 @@
     "superproperty" : [ "298" ],
     "domain" : "297",
     "subproperty" : [ "299" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "296"
-  }, {
-    "iri" : "http://purl.org/vocab/frbr/core#transformation",
-    "inverse" : "303",
-    "baseIri" : "http://purl.org/vocab/frbr/core",
-    "range" : "302",
-    "label" : {
-      "IRI-based" : "transformation",
-      "en" : "has transformation"
-    },
-    "superproperty" : [ "62" ],
-    "domain" : "301",
-    "comment" : {
-      "en" : "An work/expression transformed in another one.\n\nThis property describes the transformation of an original work or expression into another work or expression that is sufficiently different in degree to warrant the product of the transformation being considered as a new work or expression, rather than simply a different expression of the original work. If there exists a frbr:transformation relation between two different expressions, then they always relate to different works."
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "300"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#responsibleEntity",
     "inverse" : "69",
     "baseIri" : "http://purl.org/vocab/frbr/core",
-    "range" : "261",
+    "range" : "262",
     "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "frbr:responsibleEntity",
+        "type" : "label"
+      } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
@@ -6020,12 +6019,28 @@
     },
     "superproperty" : [ "63" ],
     "domain" : "26",
-    "subproperty" : [ "304", "82", "239" ],
+    "subproperty" : [ "300", "82", "239" ],
     "comment" : {
       "en" : "Any endeavour having a particular entity that is responsible of it."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "68"
+  }, {
+    "iri" : "http://purl.org/vocab/frbr/core#transformation",
+    "inverse" : "304",
+    "baseIri" : "http://purl.org/vocab/frbr/core",
+    "range" : "303",
+    "label" : {
+      "IRI-based" : "transformation",
+      "en" : "has transformation"
+    },
+    "superproperty" : [ "62" ],
+    "domain" : "302",
+    "comment" : {
+      "en" : "An work/expression transformed in another one.\n\nThis property describes the transformation of an original work or expression into another work or expression that is sufficiently different in degree to warrant the product of the transformation being considered as a new work or expression, rather than simply a different expression of the original work. If there exists a frbr:transformation relation between two different expressions, then they always relate to different works."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "301"
   }, {
     "iri" : "http://purl.org/ontology/mo/has_track",
     "equivalent" : [ "171" ],
@@ -6035,7 +6050,7 @@
       "IRI-based" : "has_track"
     },
     "domain" : "40",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "172"
   }, {
     "range" : "126",
@@ -6062,7 +6077,7 @@
     "comment" : {
       "en" : "The most generic relation, is related to, connects any Thing to\n         any other Thing. This relation is symmetric."
     },
-    "attributes" : [ "external", "symmetric", "object" ],
+    "attributes" : [ "object", "symmetric", "external" ],
     "id" : "226"
   }, {
     "range" : "130",
@@ -6121,7 +6136,7 @@
     "comment" : {
       "undefined" : "Indicates that a work or the expression of a work has translated or transliterated into another expression of a work."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "323"
   }, {
     "iri" : "http://purl.org/ontology/mo/produced_work",
@@ -6137,25 +6152,8 @@
     "comment" : {
       "undefined" : "\n                Associates a composition event to the produced MusicalWork. For example,\n                this property could link the event corresponding to the composition of the\n                Magic Flute in 1782 to the Magic Flute musical work itself. This musical work\n                can then be used in particular performances.\n        "
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "264"
-  }, {
-    "iri" : "http://purl.org/vocab/frbr/core#embodiment",
-    "inverse" : "327",
-    "baseIri" : "http://purl.org/vocab/frbr/core",
-    "range" : "150",
-    "label" : {
-      "IRI-based" : "embodiment",
-      "en" : "has embodiment"
-    },
-    "superproperty" : [ "62" ],
-    "domain" : "25",
-    "subproperty" : [ "129", "231" ],
-    "comment" : {
-      "en" : "An expression embodied in a manifestation."
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "131"
   }, {
     "iri" : "https://www.ica.org/standards/RiC/ontology#isOrWasDigitalInstantiationOf",
     "baseIri" : "https://www.ica.org/standards/RiC/ontology",
@@ -6171,8 +6169,25 @@
     "comment" : {
       "en" : "Inverse of 'has or had digital instantiation' object\n         property."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "328"
+    "attributes" : [ "object", "external" ],
+    "id" : "327"
+  }, {
+    "iri" : "http://purl.org/vocab/frbr/core#embodiment",
+    "inverse" : "328",
+    "baseIri" : "http://purl.org/vocab/frbr/core",
+    "range" : "150",
+    "label" : {
+      "IRI-based" : "embodiment",
+      "en" : "has embodiment"
+    },
+    "superproperty" : [ "62" ],
+    "domain" : "25",
+    "subproperty" : [ "129", "231" ],
+    "comment" : {
+      "en" : "An expression embodied in a manifestation."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "131"
   }, {
     "range" : "305",
     "domain" : "76",
@@ -6197,7 +6212,7 @@
       "IRI-based" : "producesWork"
     },
     "domain" : "40",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "326"
   }, {
     "iri" : "http://purl.org/ontology/mo/recorded_as",
@@ -6213,7 +6228,7 @@
     "comment" : {
       "undefined" : "\n        This is a shortcut property, allowing to bypass all the Sound/Recording steps. This property\n        allows to directly link a Performance to the recorded Signal. This is recommended for \"normal\"\n        users. However, advanced users wanting to express things such as the location of the microphone will\n        have to create this shortcut as well as the whole workflow, in order to let the \"normal\" users access\n        simply the, well, simple information:-) .\n    "
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "333"
   }, {
     "iri" : "http://purl.org/ontology/mo/produced",
@@ -6228,7 +6243,7 @@
     "comment" : {
       "undefined" : "Used to relate an person or a group of person who produced the manifestation of a work."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "337"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#realizerOf",
@@ -6243,7 +6258,7 @@
     "comment" : {
       "en" : "The realizer of a particular expression."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "339"
   }, {
     "iri" : "https://www.ica.org/standards/RiC/ontology#precedesOrPreceded",
@@ -6269,7 +6284,7 @@
     "comment" : {
       "en" : "Connects a Thing to a Thing that follows or followed it in some\n         sequence."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "225"
   }, {
     "iri" : "http://www.ebu.ch/metadata/ontologies/ebucoreplus#title",
@@ -6287,7 +6302,7 @@
       "fr" : "Titre"
     },
     "domain" : "0",
-    "attributes" : [ "datatype", "external", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "341"
   }, {
     "iri" : "http://purl.org/dc/terms/subject",
@@ -6310,7 +6325,7 @@
     "comment" : {
       "en" : "Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "342"
   }, {
     "iri" : "https://w3id.org/ac-ontology/aco#previousNode",
@@ -6332,27 +6347,11 @@
     "comment" : {
       "undefined" : "Associates a node with the previous node in the collection."
     },
-    "attributes" : [ "functional", "external", "object" ],
+    "attributes" : [ "object", "functional", "external" ],
     "id" : "345"
   }, {
-    "iri" : "http://purl.org/vocab/frbr/core#embodimentOf",
-    "baseIri" : "http://purl.org/vocab/frbr/core",
-    "range" : "25",
-    "label" : {
-      "IRI-based" : "embodimentOf",
-      "en" : "is embodiment of"
-    },
-    "superproperty" : [ "62" ],
-    "domain" : "150",
-    "subproperty" : [ "347" ],
-    "comment" : {
-      "en" : "A manifestation that embodies an expression."
-    },
-    "attributes" : [ "external", "someValues", "object" ],
-    "id" : "346"
-  }, {
     "iri" : "http://purl.org/vocab/frbr/core#exemplar",
-    "inverse" : "349",
+    "inverse" : "347",
     "baseIri" : "http://purl.org/vocab/frbr/core",
     "range" : "126",
     "label" : {
@@ -6365,25 +6364,30 @@
     "comment" : {
       "en" : "A manifestation exemplified in an item."
     },
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "346"
+  }, {
+    "range" : "76",
+    "domain" : "150",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "348"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#realization",
-    "inverse" : "351",
+    "inverse" : "350",
     "baseIri" : "http://purl.org/vocab/frbr/core",
     "range" : "25",
     "label" : {
       "IRI-based" : "realization",
-      "en" : "frbr:realization"
+      "en" : "has realization"
     },
     "superproperty" : [ "62" ],
     "domain" : "76",
-    "subproperty" : [ "352" ],
+    "subproperty" : [ "351" ],
     "comment" : {
-      "en" : "As defined by FRBR (http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#realization), a property representing an expression that is an intellectual or artistic realization of a work."
+      "en" : "A work realized through an expression."
     },
-    "attributes" : [ "external", "someValues", "object" ],
-    "id" : "350"
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "349"
   }, {
     "iri" : "https://www.ica.org/standards/RiC/ontology#precedesInTime",
     "baseIri" : "https://www.ica.org/standards/RiC/ontology",
@@ -6404,17 +6408,28 @@
     },
     "superproperty" : [ "225" ],
     "domain" : "36",
-    "subproperty" : [ "127", "353", "260" ],
+    "subproperty" : [ "127", "352", "260" ],
     "comment" : {
       "en" : "Connects a Thing to a Thing that follows it in chronological\n         order. This is a transitive relation."
     },
-    "attributes" : [ "transitive", "external", "object" ],
+    "attributes" : [ "object", "transitive", "external" ],
     "id" : "54"
   }, {
-    "range" : "76",
+    "iri" : "http://purl.org/vocab/frbr/core#embodimentOf",
+    "baseIri" : "http://purl.org/vocab/frbr/core",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "embodimentOf",
+      "en" : "is embodiment of"
+    },
+    "superproperty" : [ "62" ],
     "domain" : "150",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "354"
+    "subproperty" : [ "354" ],
+    "comment" : {
+      "en" : "As defined by FRBR (http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#embodimentOf), a property representing an expression that is embodied by a manifestation."
+    },
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "353"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#exemplarOf",
     "baseIri" : "http://purl.org/vocab/frbr/core",
@@ -6427,32 +6442,31 @@
     "domain" : "126",
     "subproperty" : [ "194" ],
     "comment" : {
-      "en" : "As defined by FRBR (http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#embodimentOf), a property representing a manifestation that is exemplified by an item."
+      "en" : "An item that exemplifies a manifestation."
     },
-    "attributes" : [ "functional", "external", "someValues", "object" ],
+    "attributes" : [ "someValues", "object", "functional", "external" ],
     "id" : "355"
   }, {
-    "iri" : "http://purl.org/vocab/frbr/core#embodiment",
-    "inverse" : "327",
+    "iri" : "http://purl.org/vocab/frbr/core#realizationOf",
     "baseIri" : "http://purl.org/vocab/frbr/core",
-    "range" : "150",
+    "range" : "76",
     "label" : {
-      "IRI-based" : "embodiment",
-      "en" : "has embodiment"
+      "IRI-based" : "realizationOf",
+      "en" : "is realization of"
     },
     "superproperty" : [ "62" ],
     "domain" : "25",
-    "subproperty" : [ "129", "231" ],
+    "subproperty" : [ "357" ],
     "comment" : {
-      "en" : "An expression embodied in a manifestation."
+      "en" : "An expression that realizes a work."
     },
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "someValues", "object", "functional", "external" ],
     "id" : "356"
   }, {
     "range" : "150",
     "domain" : "126",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "357"
+    "id" : "358"
   }, {
     "iri" : "http://www.europeana.eu/schemas/edm/provider",
     "baseIri" : "http://www.europeana.eu/schemas/edm",
@@ -6461,18 +6475,18 @@
       "IRI-based" : "provider",
       "en" : "edm:provider"
     },
-    "domain" : "359",
-    "attributes" : [ "external", "object" ],
-    "id" : "358"
+    "domain" : "360",
+    "attributes" : [ "object", "external" ],
+    "id" : "359"
   }, {
     "range" : "76",
     "domain" : "126",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "360"
+    "id" : "361"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#version",
     "baseIri" : "http://www.w3.org/ns/dcat",
-    "range" : "362",
+    "range" : "363",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -6486,7 +6500,7 @@
     },
     "domain" : "40",
     "attributes" : [ "datatype", "external" ],
-    "id" : "361"
+    "id" : "362"
   }, {
     "iri" : "http://purl.org/ontology/mo/engineered",
     "baseIri" : "http://purl.org/ontology/mo",
@@ -6495,12 +6509,12 @@
       "IRI-based" : "engineered",
       "undefined" : "engineered"
     },
-    "superproperty" : [ "363", "364" ],
+    "superproperty" : [ "364", "365" ],
     "domain" : "125",
     "comment" : {
       "undefined" : "Relates agents to the performances/recordings they were engineering in"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "191"
   }, {
     "iri" : "http://purl.org/ontology/mo/producer",
@@ -6514,7 +6528,7 @@
     "comment" : {
       "undefined" : "Used to relate the manifestation of a work to a person or a group of person who produced it."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "338"
   }, {
     "iri" : "http://purl.org/ontology/mo/produced_signal",
@@ -6530,12 +6544,12 @@
     "comment" : {
       "undefined" : "\n                Associates a Recording to the outputted signal.\n        "
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "143"
   }, {
     "iri" : "http://www.deutsche-digitale-bibliothek.de/edm/hierarchyPosition",
     "baseIri" : "http://www.deutsche-digitale-bibliothek.de/edm",
-    "range" : "366",
+    "range" : "367",
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
@@ -6550,30 +6564,31 @@
     },
     "domain" : "40",
     "attributes" : [ "datatype", "external" ],
-    "id" : "365"
+    "id" : "366"
   }, {
-    "range" : "150",
-    "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "367"
-  }, {
-    "iri" : "http://purl.org/vocab/frbr/core#realizationOf",
+    "iri" : "http://purl.org/vocab/frbr/core#embodiment",
+    "inverse" : "328",
     "baseIri" : "http://purl.org/vocab/frbr/core",
-    "range" : "76",
+    "range" : "150",
     "label" : {
-      "IRI-based" : "realizationOf",
-      "en" : "frbr:realizationOf"
+      "IRI-based" : "embodiment",
+      "en" : "has embodiment"
     },
     "superproperty" : [ "62" ],
     "domain" : "25",
-    "subproperty" : [ "369" ],
+    "subproperty" : [ "129", "231" ],
     "comment" : {
-      "en" : "An expression that realizes a work."
+      "en" : "An expression embodied in a manifestation."
     },
-    "attributes" : [ "functional", "external", "someValues", "object" ],
+    "attributes" : [ "someValues", "object", "external" ],
     "id" : "368"
   }, {
     "range" : "76",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "369"
+  }, {
+    "range" : "150",
     "domain" : "25",
     "attributes" : [ "anonymous", "object" ],
     "id" : "370"
@@ -6622,7 +6637,7 @@
     "comment" : {
       "en" : "Connects a Record Resource to an Instantiation, which either may\n         exist or may have been lost or destroyed."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "311"
   }, {
     "range" : "73",
@@ -6648,8 +6663,8 @@
     },
     "domain" : "40",
     "subproperty" : [ "382", "191", "383", "384" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "363"
+    "attributes" : [ "object", "external" ],
+    "id" : "364"
   }, {
     "iri" : "http://purl.org/ontology/mo/tribute_to",
     "baseIri" : "http://purl.org/ontology/mo",
@@ -6662,7 +6677,7 @@
     "comment" : {
       "undefined" : "Indicates a musical work or the expression of a musical work that is a tribute to an artist - normally consisting of music being composed by the artist but performed by other artists. "
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "385"
   }, {
     "iri" : "http://purl.org/ontology/mo/sampledVersionOf",
@@ -6673,7 +6688,7 @@
       "IRI-based" : "sampledVersionOf"
     },
     "domain" : "40",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "386"
   }, {
     "iri" : "https://www.ica.org/standards/RiC/ontology#hadComponent",
@@ -6691,7 +6706,7 @@
     "comment" : {
       "en" : "Connects an Instantiation to another Instantiation that was its\n         component in the past."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "168"
   }, {
     "iri" : "http://purl.org/ontology/mo/recordedAs",
@@ -6703,7 +6718,7 @@
       "IRI-based" : "recordedAs"
     },
     "domain" : "334",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "336"
   }, {
     "iri" : "http://purl.org/spar/fabio/hasRepresentation",
@@ -6719,7 +6734,7 @@
     "comment" : {
       "en" : "A property linking a particular expression to its items.  This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "393"
   }, {
     "iri" : "https://www.ica.org/standards/RiC/ontology#hasOrHadDerivedInstantiation",
@@ -6746,7 +6761,7 @@
     "comment" : {
       "en" : "Connects an instantiation to an instantiation that is derived from\n         it, whether it exists or has been lost or destroyed."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "260"
   }, {
     "iri" : "http://purl.org/ontology/mo/release",
@@ -6761,7 +6776,7 @@
     "comment" : {
       "undefined" : "Associates a release with the corresponding release event"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "398"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#creatorOf",
@@ -6776,7 +6791,7 @@
     "comment" : {
       "en" : "The creator of a particular work."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "83"
   }, {
     "iri" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#hasManifestation",
@@ -6789,7 +6804,7 @@
     },
     "superproperty" : [ "404" ],
     "domain" : "401",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "400"
   }, {
     "range" : "251",
@@ -6831,7 +6846,7 @@
     "comment" : {
       "en" : "Connects a Thing to a constitutive or component part of that\n         Thing."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "166"
   }, {
     "iri" : "http://purl.org/spar/fabio/hasPrimarySubjectTerm",
@@ -6846,7 +6861,7 @@
     "comment" : {
       "en" : "This property is used to associate a frbr:Endeavour to a term in a particular classification system - and the term is considered one of the main topics for the endeavour in consideration."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "414"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#complement",
@@ -6862,7 +6877,7 @@
     "comment" : {
       "en" : "An expression work/expression having another one as complement.\n\nThis property describes works that are intended to be combined with or inserted into the related work. In other words, they are intended to be integrated in some way with the other work, but were not part of the original conception of that prior work. If there exists a relation of this kind among two different expressions, then they always refer to different works."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "416"
   }, {
     "iri" : "https://www.ica.org/standards/RiC/ontology#recordResourceHasSourceOfInformation",
@@ -6887,7 +6902,7 @@
     "comment" : {
       "en" : "Connects a Record Resource to a Record Resource, when the second\n         one is used as a source of information for producing the content of the first\n         one."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "119"
   }, {
     "iri" : "https://www.ica.org/standards/RiC/ontology#migratedFrom",
@@ -6905,8 +6920,31 @@
     "comment" : {
       "en" : "Inverse of 'migrated into' object property."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "418"
+  }, {
+    "iri" : "https://w3id.org/ac-ontology/aco#recordingOf",
+    "baseIri" : "https://w3id.org/ac-ontology/aco",
+    "range" : "186",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ac-ontology/aco",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "recordingOf",
+      "undefined" : "recording of"
+    },
+    "superproperty" : [ "421" ],
+    "domain" : "420",
+    "comment" : {
+      "undefined" : "Associates a recording act to the recorded (physical) sound."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "419"
   }, {
     "iri" : "https://w3id.org/ac-ontology/aco#lastNode",
     "baseIri" : "https://w3id.org/ac-ontology/aco",
@@ -6929,31 +6967,8 @@
     "comment" : {
       "undefined" : "Associates an audio collection to its last node."
     },
-    "attributes" : [ "functional", "external", "object" ],
+    "attributes" : [ "object", "functional", "external" ],
     "id" : "217"
-  }, {
-    "iri" : "https://w3id.org/ac-ontology/aco#recordingOf",
-    "baseIri" : "https://w3id.org/ac-ontology/aco",
-    "range" : "186",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/ac-ontology/aco",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "recordingOf",
-      "undefined" : "recording of"
-    },
-    "superproperty" : [ "421" ],
-    "domain" : "420",
-    "comment" : {
-      "undefined" : "Associates a recording act to the recorded (physical) sound."
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "419"
   }, {
     "iri" : "http://www.europeana.eu/schemas/edm/rights",
     "baseIri" : "http://www.europeana.eu/schemas/edm",
@@ -6963,7 +6978,7 @@
       "en" : "edm:rights"
     },
     "domain" : "40",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "422"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#responsibleEntityOf",
@@ -6979,7 +6994,7 @@
     "comment" : {
       "en" : "An entity that is resposible for a particular endeavour."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "69"
   }, {
     "iri" : "http://purl.org/ontology/mo/publisher",
@@ -6993,7 +7008,7 @@
     "comment" : {
       "undefined" : "Used to relate a musical manifestation to a person or a group of person who published it."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "424"
   }, {
     "iri" : "http://purl.org/vocab/bio/0.1/event",
@@ -7004,8 +7019,8 @@
     },
     "domain" : "40",
     "subproperty" : [ "382", "191", "383", "384" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "364"
+    "attributes" : [ "object", "external" ],
+    "id" : "365"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#broader",
     "inverse" : "428",
@@ -7023,7 +7038,7 @@
       "IRI-based" : "broader"
     },
     "domain" : "40",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "427"
   }, {
     "iri" : "http://purl.org/ontology/mo/preview",
@@ -7037,7 +7052,7 @@
     "comment" : {
       "undefined" : "\n                Relates a musical manifestation to a musical item (this album, and my particular cd), which holds\n                a preview of the manifestation (eg. one track for an album, or a snippet for a track)\n        "
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "429"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#transformationOf",
@@ -7052,8 +7067,21 @@
     "comment" : {
       "en" : "It identifies the original work/expression of a trasformed one."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "303"
+    "attributes" : [ "object", "external" ],
+    "id" : "304"
+  }, {
+    "iri" : "http://purl.org/dc/elements/1.1/subject",
+    "baseIri" : "http://purl.org/dc/elements/1.1",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "subject",
+      "en" : "dc:subject"
+    },
+    "superproperty" : [ "430" ],
+    "domain" : "40",
+    "subproperty" : [ "431", "342" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "344"
   }, {
     "iri" : "http://purl.org/ontology/mo/published",
     "inverse" : "424",
@@ -7067,21 +7095,8 @@
     "comment" : {
       "undefined" : "Used to relate an person or a group of person who published the manifestation of a work."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "430"
-  }, {
-    "iri" : "http://purl.org/dc/elements/1.1/subject",
-    "baseIri" : "http://purl.org/dc/elements/1.1",
-    "range" : "40",
-    "label" : {
-      "IRI-based" : "subject",
-      "en" : "dc:subject"
-    },
-    "superproperty" : [ "431" ],
-    "domain" : "40",
-    "subproperty" : [ "432", "342" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "344"
+    "attributes" : [ "object", "external" ],
+    "id" : "432"
   }, {
     "iri" : "http://www.europeana.eu/schemas/edm/aggregatedCHO",
     "baseIri" : "http://www.europeana.eu/schemas/edm",
@@ -7093,8 +7108,8 @@
     "superproperty" : [ "344", "433", "434" ],
     "cardinality" : "1",
     "domain" : "324",
-    "attributes" : [ "external", "object" ],
-    "id" : "432"
+    "attributes" : [ "object", "external" ],
+    "id" : "431"
   }, {
     "iri" : "http://purl.org/ontology/mo/possess_item",
     "baseIri" : "http://purl.org/ontology/mo",
@@ -7107,7 +7122,7 @@
     "comment" : {
       "undefined" : "A person, a group of person or an organization possessing an exemplar of a single manifestation."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "435"
   }, {
     "iri" : "http://purl.org/spar/fabio/hasPlaceOfPublication",
@@ -7121,7 +7136,7 @@
     "comment" : {
       "en" : "The place (usually, the city) where the publisher of a particular bibliographic resource is located."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "439"
   }, {
     "iri" : "http://purl.org/ontology/mo/usedInRecording",
@@ -7132,7 +7147,7 @@
       "IRI-based" : "usedInRecording"
     },
     "domain" : "40",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "440"
   }, {
     "range" : "36",
@@ -7158,7 +7173,7 @@
     "comment" : {
       "en" : "This property expresses the fact that a scheme contains a concept."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "64"
   }, {
     "range" : "36",
@@ -7179,7 +7194,7 @@
     "comment" : {
       "en" : "An expression work/expression having another one as supplement.\n\nThe supplement relationship type involves works/expressions that are intended to be used in conjunction with another work/expression. Some of these, such as indices, concordances, teachers' guides, glosses, and instruction manuals for electronic resources will be so closely associated with the content of the related work/expression that they are useless without the other work/expression."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "446"
   }, {
     "range" : "36",
@@ -7210,24 +7225,24 @@
       "en" : "frbr:relatedEndeavor"
     },
     "domain" : "26",
-    "subproperty" : [ "327", "452", "453", "416", "454", "446", "455", "456", "457", "458", "459", "404", "270", "300", "460", "461", "219", "220", "462", "61", "268", "463", "464", "465", "393", "466", "467", "197", "468", "267", "303", "469", "269", "195", "349", "271", "470", "471", "351", "131", "394", "141" ],
-    "attributes" : [ "external", "object" ],
+    "subproperty" : [ "328", "452", "453", "416", "454", "446", "455", "456", "457", "458", "459", "404", "270", "301", "460", "461", "219", "220", "462", "61", "268", "463", "464", "465", "393", "466", "467", "197", "468", "267", "304", "469", "269", "195", "347", "271", "470", "471", "350", "131", "394", "141" ],
+    "attributes" : [ "object", "external" ],
     "id" : "62"
   }, {
     "iri" : "http://purl.org/ontology/mo/performed",
-    "inverse" : "52",
+    "inverse" : "51",
     "baseIri" : "http://purl.org/ontology/mo",
     "range" : "190",
     "label" : {
       "IRI-based" : "performed",
       "undefined" : "performed"
     },
-    "superproperty" : [ "363", "364" ],
+    "superproperty" : [ "364", "365" ],
     "domain" : "125",
     "comment" : {
       "undefined" : "Relates agents to the performances they were performing in"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "383"
   }, {
     "iri" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#creator",
@@ -7239,7 +7254,7 @@
     },
     "superproperty" : [ "473", "474" ],
     "domain" : "417",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "472"
   }, {
     "iri" : "http://purl.org/ontology/mo/record",
@@ -7253,7 +7268,7 @@
     "comment" : {
       "undefined" : "Associates a release with the records it contains. A single release can be associated with multiple records, for example for a multi-disc release."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "476"
   }, {
     "iri" : "http://purl.org/ontology/mo/group",
@@ -7267,7 +7282,7 @@
     "comment" : {
       "undefined" : "Relates a membership event with the corresponding group"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "477"
   }, {
     "iri" : "https://w3id.org/ac-ontology/aco#nodeIndex",
@@ -7289,7 +7304,7 @@
     "comment" : {
       "undefined" : "Associates a node with its position in the collection."
     },
-    "attributes" : [ "functional", "datatype", "external" ],
+    "attributes" : [ "datatype", "functional", "external" ],
     "id" : "479"
   }, {
     "iri" : "https://www.ica.org/standards/RiC/ontology#isRecordResourceAssociatedWithRecordResource",
@@ -7311,11 +7326,11 @@
     },
     "superproperty" : [ "226" ],
     "domain" : "100",
-    "subproperty" : [ "56", "353", "128", "118", "119" ],
+    "subproperty" : [ "56", "352", "128", "118", "119" ],
     "comment" : {
       "en" : "Connects two Record Resources. This relation is\n         symmetric."
     },
-    "attributes" : [ "external", "symmetric", "object" ],
+    "attributes" : [ "object", "symmetric", "external" ],
     "id" : "120"
   }, {
     "range" : "25",
@@ -7346,7 +7361,7 @@
     "comment" : {
       "undefined" : "\n        Relates a musical manifestation to a musical item (this album, and my particular cd). By using\n        this property, there is no assumption on wether the full content is available on the linked item.\n        To be explicit about this, you can use a sub-property, such as mo:item (the full manifestation\n        is available on that item) or mo:preview (only a part of the manifestation is available on\n        that item).\n\n        This is a subproperty of frbr:examplar.\n    "
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "274"
   }, {
     "range" : "25",
@@ -7385,7 +7400,7 @@
     "comment" : {
       "en" : "Recommended practice is to identify the creator with a URI. If this is not possible or feasible, a literal value that identifies the creator may be provided."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "473"
   }, {
     "iri" : "https://w3id.org/ac-ontology/aco#originalFile",
@@ -7408,7 +7423,7 @@
     "comment" : {
       "undefined" : "Relates an audio clip to the original published audio file (if there is such thing).\n"
     },
-    "attributes" : [ "functional", "external", "object" ],
+    "attributes" : [ "object", "functional", "external" ],
     "id" : "196"
   }, {
     "iri" : "http://purl.org/ontology/mo/performer",
@@ -7418,14 +7433,14 @@
       "IRI-based" : "performer",
       "en" : "mo:performer"
     },
-    "superproperty" : [ "47" ],
+    "superproperty" : [ "46" ],
     "domain" : "190",
     "subproperty" : [ "490" ],
     "comment" : {
       "undefined" : "Relates a performance to the performers involved"
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "52"
+    "attributes" : [ "object", "external" ],
+    "id" : "51"
   }, {
     "iri" : "http://purl.org/ontology/mo/publicationOf",
     "equivalent" : [ "492" ],
@@ -7435,7 +7450,7 @@
       "IRI-based" : "publicationOf"
     },
     "domain" : "40",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "491"
   }, {
     "iri" : "https://w3id.org/ac-ontology/aco#productionFrom",
@@ -7458,7 +7473,7 @@
     "comment" : {
       "undefined" : "Associates a signal production act to a sound from which the signal was produced (e.g., if recording, the recorded sound).\n"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "421"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#revisionOf",
@@ -7473,7 +7488,7 @@
     "comment" : {
       "en" : "It identifies the previous expression of a revised one."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "456"
   }, {
     "iri" : "https://www.ica.org/standards/RiC/ontology#wasComponentOf",
@@ -7490,7 +7505,7 @@
     "comment" : {
       "en" : "Connects an Instantiation to another Instantiation of which it was\n         a component in the past."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "38"
   }, {
     "iri" : "http://purl.org/ontology/mo/compiled",
@@ -7505,7 +7520,7 @@
     "comment" : {
       "undefined" : "Used to relate an person or a group of person who compiled the manifestation of a musical work."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "493"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#abridgementOf",
@@ -7520,23 +7535,23 @@
     "comment" : {
       "en" : "It identifies the entire expression of an abridged one."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "270"
   }, {
     "iri" : "http://purl.org/ontology/mo/listened",
-    "inverse" : "48",
+    "inverse" : "47",
     "baseIri" : "http://purl.org/ontology/mo",
     "range" : "190",
     "label" : {
       "IRI-based" : "listened",
       "undefined" : "listened"
     },
-    "superproperty" : [ "363", "364" ],
+    "superproperty" : [ "364", "365" ],
     "domain" : "125",
     "comment" : {
       "undefined" : "Relates agents to the performances they were listening in"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "382"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#narrower",
@@ -7554,7 +7569,7 @@
       "IRI-based" : "narrower"
     },
     "domain" : "40",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "428"
   }, {
     "iri" : "http://purl.org/NET/c4dm/event.owl#isFactorOf",
@@ -7565,7 +7580,7 @@
     },
     "domain" : "40",
     "subproperty" : [ "244", "441" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "246"
   }, {
     "iri" : "http://www.deutsche-digitale-bibliothek.de/edm/hierarchyType",
@@ -7601,7 +7616,7 @@
     "comment" : {
       "undefined" : "\n            Associates a physical Sound to a Recording event where it is being used\n        in order to produce a signal. For example, I might use this property to\n        associate the sound produced by a particular performance of the magic flute\n        to a given recording, done using my cell-phone.\n    "
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "441"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#translationOf",
@@ -7616,7 +7631,7 @@
     "comment" : {
       "en" : "It identifies the original expression of a translated one."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "463"
   }, {
     "iri" : "http://purl.org/ontology/mo/compiler",
@@ -7630,7 +7645,7 @@
     "comment" : {
       "undefined" : "Used to relate the manifestation of a musical work to a person or a group of person who compiled it."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "494"
   }, {
     "iri" : "http://purl.org/ontology/mo/signal",
@@ -7640,11 +7655,11 @@
       "IRI-based" : "signal",
       "undefined" : "signal"
     },
-    "domain" : "42",
+    "domain" : "52",
     "comment" : {
       "undefined" : "Associates a group of signals with one of the signals it contains"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "496"
   }, {
     "iri" : "http://purl.org/spar/fabio/isManifestationOf",
@@ -7660,7 +7675,7 @@
     "comment" : {
       "en" : "A property linking a particular manifestation to the work it is manifesting.  This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "465"
   }, {
     "iri" : "http://purl.org/dc/elements/1.1/publisher",
@@ -7669,10 +7684,10 @@
     "label" : {
       "IRI-based" : "publisher"
     },
-    "superproperty" : [ "43" ],
+    "superproperty" : [ "42" ],
     "domain" : "40",
-    "attributes" : [ "external", "object" ],
-    "id" : "46"
+    "attributes" : [ "object", "external" ],
+    "id" : "45"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#successor",
     "inverse" : "454",
@@ -7687,7 +7702,7 @@
     "comment" : {
       "en" : "An expression work/expression having another one as successor.\n\nThe successor type of relationship involves a kind of linear progression of content from one work/expression to the other. In some cases, the content of the successor may be closely connected to the content of the preceding work, which would result in a work that is referential. In others, such as with loosely connected parts of a trilogy, the successor will be autonomous. Serial publications that result from the merger or split of their predecessors and stand on their own without requiring reference to the predecessor are also examples of autonomous works that fall within the successor relationship type. If there exists a relation of this kind among two different expressions, then they always refer to different works."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "466"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#subjectOf",
@@ -7702,11 +7717,11 @@
     "comment" : {
       "en" : "A subject a work talks abbout."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "70"
   }, {
     "iri" : "https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation",
-    "inverse" : "328",
+    "inverse" : "327",
     "baseIri" : "https://www.ica.org/standards/RiC/ontology",
     "range" : "9",
     "annotations" : {
@@ -7728,7 +7743,7 @@
     "comment" : {
       "en" : "Connects a record resource to one of its digital instantiations,\n         whether it exists or has been lost or destroyed."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "376"
   }, {
     "iri" : "https://www.ica.org/standards/RiC/ontology#hasComponentTransitive",
@@ -7747,7 +7762,7 @@
     "comment" : {
       "en" : "Connects an Instantiation to another Instantiation that is,\n         directly or indirectly, a component of that Instantiation. This is a transitive\n         relation."
     },
-    "attributes" : [ "transitive", "external", "object" ],
+    "attributes" : [ "object", "transitive", "external" ],
     "id" : "167"
   }, {
     "iri" : "http://purl.org/dc/terms/created",
@@ -7780,7 +7795,7 @@
     },
     "domain" : "40",
     "subproperty" : [ "499" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "498"
   }, {
     "range" : "72",
@@ -7805,7 +7820,7 @@
     "comment" : {
       "en" : "A property linking a particular item to the expression it represents.  This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "394"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/name",
@@ -7835,7 +7850,7 @@
     "comment" : {
       "en" : "It identifies the previous work/expression of a succeeded one."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "454"
   }, {
     "iri" : "https://w3id.org/ac-ontology/aco#firstNode",
@@ -7860,7 +7875,7 @@
     "comment" : {
       "undefined" : "Associates an audio collection to its first node."
     },
-    "attributes" : [ "functional", "external", "object" ],
+    "attributes" : [ "object", "functional", "external" ],
     "id" : "216"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#imitationOf",
@@ -7875,7 +7890,7 @@
     "comment" : {
       "en" : "It identifies the work/expression of an imitated one."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "458"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
@@ -7894,24 +7909,24 @@
       "IRI-based" : "hasTopConcept"
     },
     "domain" : "40",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "507"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#realization",
-    "inverse" : "351",
+    "inverse" : "350",
     "baseIri" : "http://purl.org/vocab/frbr/core",
     "range" : "25",
     "label" : {
       "IRI-based" : "realization",
-      "en" : "frbr:realization"
+      "en" : "has realization"
     },
     "superproperty" : [ "62" ],
     "domain" : "76",
-    "subproperty" : [ "352" ],
+    "subproperty" : [ "351" ],
     "comment" : {
-      "en" : "As defined by FRBR (http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#realization), a property representing an expression that is an intellectual or artistic realization of a work."
+      "en" : "A work realized through an expression."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "460"
   }, {
     "iri" : "https://w3id.org/ac-ontology/aco#author",
@@ -7933,7 +7948,7 @@
     "comment" : {
       "undefined" : "Used to relate a person or a group of people who authored an audio manifestation.\n"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "509"
   }, {
     "iri" : "http://purl.org/ontology/mo/publication_of",
@@ -7949,7 +7964,7 @@
     "comment" : {
       "undefined" : "Link a particular manifestation to the related signal, score, libretto, or lyrics"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "492"
   }, {
     "iri" : "http://www.europeana.eu/schemas/edm/occurredAt",
@@ -7959,9 +7974,9 @@
       "IRI-based" : "occurredAt",
       "en" : "edm:occurredAt"
     },
-    "superproperty" : [ "44" ],
+    "superproperty" : [ "43" ],
     "domain" : "86",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "510"
   }, {
     "iri" : "http://www.openarchives.org/ore/terms/proxyFor",
@@ -7971,11 +7986,11 @@
       "IRI-based" : "proxyFor"
     },
     "domain" : "40",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "511"
   }, {
     "iri" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#hasRealization",
-    "inverse" : "369",
+    "inverse" : "357",
     "baseIri" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho",
     "range" : "257",
     "label" : {
@@ -7984,8 +7999,8 @@
     },
     "superproperty" : [ "460" ],
     "domain" : "401",
-    "attributes" : [ "external", "object" ],
-    "id" : "352"
+    "attributes" : [ "object", "external" ],
+    "id" : "351"
   }, {
     "iri" : "http://purl.org/ontology/mo/listener",
     "baseIri" : "http://purl.org/ontology/mo",
@@ -7994,13 +8009,13 @@
       "IRI-based" : "listener",
       "en" : "mo:listener"
     },
-    "superproperty" : [ "47" ],
+    "superproperty" : [ "46" ],
     "domain" : "190",
     "comment" : {
       "undefined" : "Relates a performance to the listener involved"
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "48"
+    "attributes" : [ "object", "external" ],
+    "id" : "47"
   }, {
     "iri" : "http://purl.org/dc/terms/contributor",
     "baseIri" : "http://purl.org/dc/terms",
@@ -8022,7 +8037,7 @@
     "comment" : {
       "en" : "The guidelines for using names of persons or organizations as creators apply to contributors."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "298"
   }, {
     "iri" : "http://purl.org/ontology/mo/arrangement_of",
@@ -8037,7 +8052,7 @@
     "comment" : {
       "undefined" : "\n                Associates an arrangement event to a work\n        "
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "199"
   }, {
     "iri" : "http://purl.org/spar/fabio/hasPortrayal",
@@ -8053,7 +8068,7 @@
     "comment" : {
       "en" : "A property linking a particular work to its items.  This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "469"
   }, {
     "iri" : "https://w3id.org/ac-ontology/aco#availableItemOf",
@@ -8071,12 +8086,12 @@
       "IRI-based" : "availableItemOf",
       "undefined" : "available item of"
     },
-    "superproperty" : [ "349" ],
+    "superproperty" : [ "347" ],
     "domain" : "193",
     "comment" : {
       "undefined" : "Relates an audio item (e.g., a media file) to the corresponding audio manifestation.\n"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "194"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#partOf",
@@ -8089,9 +8104,9 @@
     "superproperty" : [ "62" ],
     "domain" : "40",
     "comment" : {
-      "en" : "An endeavour incorporating another endeavour."
+      "en" : "Meaning = is part of.  As defined by FRBR (http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#partOf), a property indicating that one entity is a part of another entity."
     },
-    "attributes" : [ "transitive", "external", "object" ],
+    "attributes" : [ "object", "transitive", "external" ],
     "id" : "470"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#subject",
@@ -8121,7 +8136,7 @@
     "comment" : {
       "en" : "A work linked to a particular subject it is talking about."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "66"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#translation",
@@ -8137,7 +8152,7 @@
     "comment" : {
       "en" : "An expression translated in another one.\n\nIt allows to refer to a literal translation, in which the intent is to render the intellectual content of the previous expression as accurately as possible."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "452"
   }, {
     "iri" : "http://www.ebu.ch/metadata/ontologies/ebucoreplus#aspectRatio",
@@ -8159,6 +8174,21 @@
     "attributes" : [ "datatype", "external" ],
     "id" : "513"
   }, {
+    "iri" : "http://purl.org/ontology/mo/composer",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "125",
+    "label" : {
+      "IRI-based" : "composer",
+      "undefined" : "composer"
+    },
+    "superproperty" : [ "46" ],
+    "domain" : "190",
+    "comment" : {
+      "undefined" : "\n        Associates a composition event to the actual composer. For example,\n        this property could link the event corresponding to the composition of the\n        Magic Flute in 1782 to Mozart himself (who obviously has a FOAF profile:-) ).\n    "
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "48"
+  }, {
     "iri" : "http://purl.org/vocab/frbr/core#arrangement",
     "inverse" : "462",
     "baseIri" : "http://purl.org/vocab/frbr/core",
@@ -8172,23 +8202,8 @@
     "comment" : {
       "en" : "An expression arranged in another one.\n\nIn the arranged expression some content of the previous expression is changed in some way, but the result does not alter the content to the extent that it becomes a new work. The expressions resulting from such modification are generally autonomous in nature (i.e., they do not normally require reference to the prior expression in order to be used or understood)."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "459"
-  }, {
-    "iri" : "http://purl.org/ontology/mo/composer",
-    "baseIri" : "http://purl.org/ontology/mo",
-    "range" : "125",
-    "label" : {
-      "IRI-based" : "composer",
-      "undefined" : "composer"
-    },
-    "superproperty" : [ "47" ],
-    "domain" : "190",
-    "comment" : {
-      "undefined" : "\n        Associates a composition event to the actual composer. For example,\n        this property could link the event corresponding to the composition of the\n        Magic Flute in 1782 to Mozart himself (who obviously has a FOAF profile:-) ).\n    "
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "49"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#owner",
     "inverse" : "93",
@@ -8203,8 +8218,8 @@
     "comment" : {
       "en" : "An item linked to its owner."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "304"
+    "attributes" : [ "object", "external" ],
+    "id" : "300"
   }, {
     "iri" : "http://purl.org/ontology/mo/conductor",
     "baseIri" : "http://purl.org/ontology/mo",
@@ -8213,13 +8228,13 @@
       "IRI-based" : "conductor",
       "en" : "mo:conductor"
     },
-    "superproperty" : [ "47" ],
+    "superproperty" : [ "46" ],
     "domain" : "190",
     "comment" : {
       "undefined" : "Relates a performance to the conductor involved"
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "50"
+    "attributes" : [ "object", "external" ],
+    "id" : "49"
   }, {
     "iri" : "http://purl.org/ontology/mo/recording_of",
     "equivalent" : [ "514" ],
@@ -8234,7 +8249,7 @@
     "comment" : {
       "undefined" : "\n            Associates a Recording event to a physical Sound being recorded.\n                For example, I might use this property to\n                associate a given recording, done using my cell phone, to the\n        sound produced by a particular performance of the magic flute.\n    "
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "200"
   }, {
     "iri" : "http://purl.org/ontology/mo/sampler",
@@ -8249,7 +8264,7 @@
     "comment" : {
       "undefined" : "Used to relate the signal of a musical work to an artist who sampled it."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "134"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#reconfigurationOf",
@@ -8264,7 +8279,7 @@
     "comment" : {
       "en" : "It identifies the manifestation of a reconfigured one."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "268"
   }, {
     "iri" : "https://www.ica.org/standards/RiC/ontology#hasGeneticLinkToRecordResource",
@@ -8290,7 +8305,7 @@
     "comment" : {
       "en" : "Connects two Record Resources when there is a genetic link between\n         them. Genetic in this sense is as defined by diplomatics, i.e. the process by which a\n         Record Resource is developed. This relation is symmetric."
     },
-    "attributes" : [ "external", "symmetric", "object" ],
+    "attributes" : [ "object", "symmetric", "external" ],
     "id" : "128"
   }, {
     "iri" : "http://purl.org/ontology/mo/lyrics",
@@ -8304,7 +8319,7 @@
     "comment" : {
       "undefined" : "Associates lyrics with a musical work"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "516"
   }, {
     "iri" : "http://purl.org/ontology/mo/sampled",
@@ -8319,7 +8334,7 @@
     "comment" : {
       "undefined" : "Used to relate an artist who sampled a Signal."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "517"
   }, {
     "iri" : "http://www.europeana.eu/schemas/edm/isRelatedTo",
@@ -8330,9 +8345,9 @@
       "en" : "edm:isRelatedTo"
     },
     "domain" : "40",
-    "subproperty" : [ "344", "44" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "431"
+    "subproperty" : [ "344", "43" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "430"
   }, {
     "iri" : "https://www.ica.org/standards/RiC/ontology#isOrWasPartOf",
     "baseIri" : "https://www.ica.org/standards/RiC/ontology",
@@ -8349,7 +8364,7 @@
     "comment" : {
       "en" : "Inverse of 'has or had part' relation."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "37"
   }, {
     "iri" : "https://www.ica.org/standards/RiC/ontology#isOrWasDerivedFromInstantiation",
@@ -8367,7 +8382,7 @@
     "comment" : {
       "en" : "Inverse of 'has or had derived instantiation' object\n         property."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "57"
   }, {
     "iri" : "https://www.ica.org/standards/RiC/ontology#isOrWasAnalogueInstantiationOf",
@@ -8384,7 +8399,7 @@
     "comment" : {
       "en" : "Inverse of 'has or had analogue instantiation' object\n         property."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "519"
   }, {
     "iri" : "https://w3id.org/ac-ontology/aco#containerNode",
@@ -8407,7 +8422,7 @@
     "comment" : {
       "undefined" : "Associates an audio manifestation with the collection nodes that contain it."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "520"
   }, {
     "iri" : "https://w3id.org/ac-ontology/aco#encodes",
@@ -8430,7 +8445,7 @@
     "comment" : {
       "undefined" : "Associates a MusicalItem (a track on a particular CD, an audio file, a stream somewhere) to the signal it encodes.\n"
     },
-    "attributes" : [ "functional", "external", "object" ],
+    "attributes" : [ "object", "functional", "external" ],
     "id" : "521"
   }, {
     "iri" : "http://purl.org/dc/elements/1.1/relation",
@@ -8439,11 +8454,11 @@
     "label" : {
       "IRI-based" : "relation"
     },
-    "superproperty" : [ "431" ],
+    "superproperty" : [ "430" ],
     "domain" : "40",
-    "subproperty" : [ "153", "180", "43", "510" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "44"
+    "subproperty" : [ "153", "180", "42", "510" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "43"
   }, {
     "iri" : "http://purl.org/spar/fabio/hasManifestation",
     "inverse" : "465",
@@ -8459,7 +8474,7 @@
     "comment" : {
       "en" : "A property linking a particular work to its manifestations.  This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "404"
   }, {
     "iri" : "http://www.ebu.ch/metadata/ontologies/ebucoreplus#contentDescription",
@@ -8496,7 +8511,7 @@
     },
     "domain" : "40",
     "subproperty" : [ "398", "143", "524", "525", "264" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "325"
   }, {
     "iri" : "http://purl.org/NET/c4dm/event.owl#producedIn",
@@ -8507,7 +8522,7 @@
     },
     "domain" : "40",
     "subproperty" : [ "263" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "265"
   }, {
     "iri" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#publisher",
@@ -8519,7 +8534,7 @@
     },
     "superproperty" : [ "474", "296" ],
     "domain" : "417",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "299"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
@@ -8537,7 +8552,7 @@
       "IRI-based" : "topConceptOf"
     },
     "domain" : "40",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "508"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#producerOf",
@@ -8552,7 +8567,7 @@
     "comment" : {
       "en" : "The producer of a particular manifestation."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "240"
   }, {
     "iri" : "http://www.openarchives.org/ore/terms/aggregates",
@@ -8563,8 +8578,8 @@
       "en" : "ore:aggregates"
     },
     "domain" : "40",
-    "subproperty" : [ "432" ],
-    "attributes" : [ "external", "object" ],
+    "subproperty" : [ "431" ],
+    "attributes" : [ "object", "external" ],
     "id" : "434"
   }, {
     "iri" : "http://purl.org/ontology/mo/productOfComposition",
@@ -8575,7 +8590,7 @@
       "IRI-based" : "productOfComposition"
     },
     "domain" : "40",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "266"
   }, {
     "iri" : "http://www.cidoc-crm.org/rdfs/cidoc-crm#P129_is_about",
@@ -8586,8 +8601,8 @@
       "en" : "crm:P129_is_about"
     },
     "domain" : "40",
-    "subproperty" : [ "432" ],
-    "attributes" : [ "external", "object" ],
+    "subproperty" : [ "431" ],
+    "attributes" : [ "object", "external" ],
     "id" : "433"
   }, {
     "iri" : "https://w3id.org/ac-ontology/aco#publishedAudioManifestation",
@@ -8609,7 +8624,7 @@
     "comment" : {
       "undefined" : "Associates a publishing act to the audio manifestation."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "526"
   }, {
     "iri" : "http://purl.org/ontology/mo/exchange_item",
@@ -8623,7 +8638,7 @@
     "comment" : {
       "undefined" : "A person, a group of person or an organization exchanging an exemplar of a single manifestation."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "527"
   }, {
     "iri" : "http://purl.org/ontology/mo/publishedAs",
@@ -8634,7 +8649,7 @@
       "IRI-based" : "publishedAs"
     },
     "domain" : "40",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "232"
   }, {
     "iri" : "http://purl.org/ontology/mo/usesSound",
@@ -8645,7 +8660,7 @@
       "IRI-based" : "usesSound"
     },
     "domain" : "40",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "514"
   }, {
     "iri" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#isRealizationOf",
@@ -8655,10 +8670,10 @@
       "IRI-based" : "isRealizationOf",
       "en" : "mocho:isRealizationOf"
     },
-    "superproperty" : [ "351" ],
+    "superproperty" : [ "350" ],
     "domain" : "257",
-    "attributes" : [ "external", "object" ],
-    "id" : "369"
+    "attributes" : [ "object", "external" ],
+    "id" : "357"
   }, {
     "iri" : "http://purl.org/dc/elements/1.1/coverage",
     "baseIri" : "http://purl.org/dc/elements/1.1",
@@ -8675,13 +8690,13 @@
       "IRI-based" : "coverage",
       "en" : "dc:coverage"
     },
-    "superproperty" : [ "43" ],
+    "superproperty" : [ "42" ],
     "domain" : "40",
     "comment" : {
       "en" : "Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods may be used in preference to numeric identifiers such as sets of coordinates or date ranges. Because coverage is so broadly defined, it is preferable to use the more specific subproperties Temporal Coverage and Spatial Coverage."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "45"
+    "attributes" : [ "object", "external" ],
+    "id" : "44"
   }, {
     "range" : "150",
     "domain" : "72",
@@ -8721,7 +8736,7 @@
     "comment" : {
       "en" : "Connects a record resource to one of its analogue instantiations,\n         whether it exists or has been lost or destroyed."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "377"
   }, {
     "range" : "423",
@@ -8743,7 +8758,7 @@
     },
     "superproperty" : [ "465" ],
     "domain" : "402",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "403"
   }, {
     "range" : "423",
@@ -8789,7 +8804,7 @@
     "comment" : {
       "undefined" : "A related signal from which the described signal is derived."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "499"
   }, {
     "iri" : "https://www.ica.org/standards/RiC/ontology#isDirectPartOf",
@@ -8815,7 +8830,7 @@
     "comment" : {
       "en" : "Connects a Thing to a Thing of which it is direct constitutive or\n         component part."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "204"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#part",
@@ -8829,9 +8844,9 @@
     "superproperty" : [ "62" ],
     "domain" : "40",
     "comment" : {
-      "en" : "Meaning = has part.  As defined by FRBR (http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#part),  a property indicating that one entity includes another entity."
+      "en" : "A part of an endeavour."
     },
-    "attributes" : [ "transitive", "external", "object" ],
+    "attributes" : [ "object", "transitive", "external" ],
     "id" : "467"
   }, {
     "iri" : "https://www.ica.org/standards/RiC/ontology#migratedInto",
@@ -8856,7 +8871,7 @@
     "comment" : {
       "en" : "Connects an Instantiation to a version it has been migrated\n         into."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "397"
   }, {
     "iri" : "http://purl.org/ontology/mo/produced_sound",
@@ -8872,7 +8887,7 @@
     "comment" : {
       "undefined" : "\n                Associates a Performance to a physical Sound that is being produced by it.\n        "
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "524"
   }, {
     "iri" : "http://purl.org/ontology/mo/artist",
@@ -8886,8 +8901,25 @@
     "comment" : {
       "undefined" : "Relates a membership event with the corresponding artist"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "542"
+  }, {
+    "iri" : "http://purl.org/vocab/frbr/core#exemplar",
+    "inverse" : "347",
+    "baseIri" : "http://purl.org/vocab/frbr/core",
+    "range" : "126",
+    "label" : {
+      "IRI-based" : "exemplar",
+      "en" : "has exemplar"
+    },
+    "superproperty" : [ "62" ],
+    "domain" : "150",
+    "subproperty" : [ "192", "274" ],
+    "comment" : {
+      "en" : "A manifestation exemplified in an item."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "195"
   }, {
     "iri" : "https://www.ica.org/standards/RiC/ontology#hasReply",
     "inverse" : "56",
@@ -8904,25 +8936,8 @@
     "comment" : {
       "en" : "Connects a Record Resource to a reply, usually in the form of\n         correspondence."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "353"
-  }, {
-    "iri" : "http://purl.org/vocab/frbr/core#exemplar",
-    "inverse" : "349",
-    "baseIri" : "http://purl.org/vocab/frbr/core",
-    "range" : "126",
-    "label" : {
-      "IRI-based" : "exemplar",
-      "en" : "has exemplar"
-    },
-    "superproperty" : [ "62" ],
-    "domain" : "150",
-    "subproperty" : [ "192", "274" ],
-    "comment" : {
-      "en" : "A manifestation exemplified in an item."
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "195"
+    "attributes" : [ "object", "external" ],
+    "id" : "352"
   }, {
     "iri" : "http://purl.org/ontology/mo/singer",
     "baseIri" : "http://purl.org/ontology/mo",
@@ -8930,12 +8945,12 @@
     "label" : {
       "IRI-based" : "singer"
     },
-    "superproperty" : [ "52" ],
+    "superproperty" : [ "51" ],
     "domain" : "190",
     "comment" : {
       "undefined" : "Relates a performance to an involved singer"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "490"
   }, {
     "range" : "251",
@@ -8955,7 +8970,7 @@
   }, {
     "iri" : "http://purl.org/ontology/mo/produced_signal_group",
     "baseIri" : "http://purl.org/ontology/mo",
-    "range" : "42",
+    "range" : "52",
     "label" : {
       "IRI-based" : "produced_signal_group",
       "undefined" : "produced signal group"
@@ -8965,7 +8980,7 @@
     "comment" : {
       "undefined" : "Associates a recording session with a group of master signals produced by it."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "525"
   }, {
     "range" : "181",
@@ -9022,7 +9037,7 @@
     "comment" : {
       "en" : "Connects a Thing to a Thing that is, directly or indirectly, a\n         constitutive or component part of that Thing. This is a transitive relation."
     },
-    "attributes" : [ "transitive", "external", "object" ],
+    "attributes" : [ "object", "transitive", "external" ],
     "id" : "282"
   }, {
     "range" : "26",
@@ -9046,11 +9061,11 @@
     },
     "superproperty" : [ "226" ],
     "domain" : "9",
-    "subproperty" : [ "519", "328" ],
+    "subproperty" : [ "519", "327" ],
     "comment" : {
       "en" : "Inverse of 'has or had instantiation' object\n         property."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "310"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#imitation",
@@ -9066,7 +9081,7 @@
     "comment" : {
       "en" : "An work/expression imitated in another one.\n\nThis property describes works that are intended to be an imitation another original work that is sufficient in degree to warrant their being considered as new works, rather than simply different expressions of the same work. If there exists a relation of this kind among two different expressions, then they always refer to different works."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "457"
   }, {
     "iri" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#contributor",
@@ -9079,7 +9094,7 @@
     "superproperty" : [ "298" ],
     "domain" : "417",
     "subproperty" : [ "472", "299" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "474"
   }, {
     "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#long",
@@ -9102,22 +9117,22 @@
     "id" : "555"
   }, {
     "iri" : "http://purl.org/ontology/mo/conducted",
-    "inverse" : "50",
+    "inverse" : "49",
     "baseIri" : "http://purl.org/ontology/mo",
     "range" : "190",
     "label" : {
       "IRI-based" : "conducted",
       "undefined" : "conducted"
     },
-    "superproperty" : [ "363", "364" ],
+    "superproperty" : [ "364", "365" ],
     "domain" : "125",
     "comment" : {
       "undefined" : "Relates agents to the performances they were conducting"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "384"
   }, {
-    "range" : "261",
+    "range" : "262",
     "domain" : "106",
     "attributes" : [ "anonymous", "object" ],
     "id" : "556"
@@ -9150,7 +9165,7 @@
       "en" : "dcterms:isPartOf"
     },
     "domain" : "40",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "561"
   }, {
     "range" : "60",
@@ -9187,20 +9202,20 @@
     "comment" : {
       "undefined" : "Used to relate a person or a group of people who compiled an audio manifestation.\n"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "565"
   }, {
     "range" : "253",
-    "domain" : "81",
+    "domain" : "79",
     "attributes" : [ "anonymous", "object" ],
     "id" : "566"
   }, {
-    "range" : "261",
+    "range" : "262",
     "domain" : "249",
     "attributes" : [ "anonymous", "object" ],
     "id" : "567"
   }, {
-    "range" : "261",
+    "range" : "262",
     "domain" : "375",
     "attributes" : [ "anonymous", "object" ],
     "id" : "568"
@@ -9237,7 +9252,7 @@
     "comment" : {
       "en" : "A work/expression adapted in another one.\n\nThis property describe the modification of an original work that is sufficient in degree to warrant their being considered as new works, rather than simply different expressions of the same work. If there exists a relation of this kind among two different expressions, they always refer to different works."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "468"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#summarization",
@@ -9253,7 +9268,7 @@
     "comment" : {
       "en" : "A work/expression summarized in another one.\n\nThis property describe the summarization of an original work that is sufficient in degree to warrant their being considered as new works, rather than simply different expressions of the same work. If there exists a relation of this kind among two different expressions, they always refer to different works."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "471"
   }, {
     "range" : "74",
@@ -9277,7 +9292,7 @@
     "id" : "573"
   }, {
     "range" : "27",
-    "domain" : "262",
+    "domain" : "261",
     "attributes" : [ "anonymous", "object" ],
     "id" : "574"
   }, {
@@ -9288,11 +9303,11 @@
       "IRI-based" : "homepage"
     },
     "domain" : "40",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "575"
   }, {
     "range" : "27",
-    "domain" : "42",
+    "domain" : "52",
     "attributes" : [ "anonymous", "object" ],
     "id" : "576"
   }, {
@@ -9310,7 +9325,7 @@
     "comment" : {
       "en" : "Inverse of 'has copy' object property."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "58"
   }, {
     "range" : "375",
@@ -9331,7 +9346,7 @@
     "comment" : {
       "en" : "An expression revised in another one.\n\nA revision has the intent to alter or update the content of the prior expression, but without changing the content so much that it becomes a new work."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "453"
   }, {
     "iri" : "http://purl.org/ontology/mo/availableAs",
@@ -9342,7 +9357,7 @@
       "IRI-based" : "availableAs"
     },
     "domain" : "40",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "483"
   }, {
     "iri" : "https://www.ica.org/standards/RiC/ontology#isComponentOfTransitive",
@@ -9360,7 +9375,7 @@
     "comment" : {
       "en" : "Connects an Instantiation to another Instantiation of which it is,\n         directly or indirectly, a component. This is a transitive relation."
     },
-    "attributes" : [ "transitive", "external", "object" ],
+    "attributes" : [ "object", "transitive", "external" ],
     "id" : "187"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#alternate",
@@ -9376,7 +9391,7 @@
     "comment" : {
       "en" : "A manifestation having another one as alternate.\n\nThe alternate relationship involves manifestations that effectively serve as alternates for each other. The alternate relationship obtains, for example, when a publication, sound recording, video, etc. is issued in more than one format or when it is released simultaneously by different publishers in different countries."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "461"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#arrangementOf",
@@ -9391,7 +9406,7 @@
     "comment" : {
       "en" : "It identifies the original expression of an arranged one."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "462"
   }, {
     "iri" : "https://w3id.org/ac-ontology/aco#published",
@@ -9413,7 +9428,7 @@
     "comment" : {
       "undefined" : "Used to relate a person or a group of people who published an audio manifestation.\n"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "579"
   }, {
     "iri" : "https://w3id.org/ac-ontology/aco#nextNode",
@@ -9436,7 +9451,7 @@
     "comment" : {
       "undefined" : "Associates a node with the next node in the collection."
     },
-    "attributes" : [ "functional", "external", "object" ],
+    "attributes" : [ "object", "functional", "external" ],
     "id" : "580"
   }, {
     "iri" : "https://www.ica.org/standards/RiC/ontology#isPartOfTransitive",
@@ -9462,7 +9477,7 @@
     "comment" : {
       "en" : "Connects a Thing to a Thing of which it is a a constitutive or\n         component part, directly or indirectly. This is a transitive relation."
     },
-    "attributes" : [ "transitive", "external", "object" ],
+    "attributes" : [ "object", "transitive", "external" ],
     "id" : "518"
   }, {
     "iri" : "http://purl.org/ontology/mo/records",
@@ -9476,7 +9491,7 @@
     "comment" : {
       "undefined" : "\n        This is the inverse of the shortcut property recordedAs, allowing to relate directly a performance\n        to a signal.\n    "
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "335"
   }, {
     "iri" : "https://w3id.org/ac-ontology/aco#publicationOf",
@@ -9495,13 +9510,13 @@
       "IRI-based" : "publicationOf",
       "undefined" : "publication of"
     },
-    "superproperty" : [ "327" ],
+    "superproperty" : [ "328" ],
     "domain" : "130",
     "comment" : {
       "undefined" : "Link a particular manifestation to the related expression (e.g., a signal or a sound).\n"
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "347"
+    "attributes" : [ "object", "external" ],
+    "id" : "354"
   }, {
     "iri" : "http://purl.org/dc/terms/hasPart",
     "baseIri" : "http://purl.org/dc/terms",
@@ -9511,7 +9526,7 @@
       "en" : "dcterms:hasPart"
     },
     "domain" : "40",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "581"
   }, {
     "iri" : "https://w3id.org/ac-ontology/aco#isEncodedBy",
@@ -9533,7 +9548,7 @@
     "comment" : {
       "undefined" : "Associates a signal to a MusicalItem (a track on a particular CD, an audio file, a stream somewhere) that encodes it.\n"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "522"
   }, {
     "iri" : "https://www.ica.org/standards/RiC/ontology#hasDirectComponent",
@@ -9551,7 +9566,7 @@
     "comment" : {
       "en" : "Connects an Instantiation to another Instantiation that is its\n         direct component."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "283"
   }, {
     "iri" : "http://purl.org/ontology/mo/producesSound",
@@ -9562,7 +9577,7 @@
       "IRI-based" : "producesSound"
     },
     "domain" : "40",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "541"
   }, {
     "iri" : "http://purl.org/ontology/mo/remixer",
@@ -9577,7 +9592,7 @@
     "comment" : {
       "undefined" : "Used to relate a musical work or the expression of a musical work to an artist who remixed it.\n\nThis involves taking just one other musical work and using audio editing to make it sound like a significantly different, but usually still recognisable, song. It can be used to link an artist to a single song that they remixed, or, if they remixed an entire musical work."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "133"
   }, {
     "iri" : "http://purl.org/ontology/mo/remixed",
@@ -9592,7 +9607,7 @@
     "comment" : {
       "undefined" : "Used to relate an artist who remixed a musical work or the expression of a musical work.\n\nThis involves taking just one other musical work and using audio editing to make it sound like a significantly different, but usually still recognisable, song. It can be used to link an artist to a single song that they remixed, or, if they remixed an entire musical work."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "582"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#alternateOf",
@@ -9607,11 +9622,11 @@
     "comment" : {
       "en" : "It identifies the manifestation of an alternative one."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "455"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#embodiment",
-    "inverse" : "327",
+    "inverse" : "328",
     "baseIri" : "http://purl.org/vocab/frbr/core",
     "range" : "175",
     "label" : {
@@ -9624,7 +9639,7 @@
     "comment" : {
       "en" : "An expression embodied in a manifestation."
     },
-    "attributes" : [ "allValues", "external", "object" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "583"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#exemplarOf",
@@ -9638,9 +9653,9 @@
     "domain" : "308",
     "subproperty" : [ "194" ],
     "comment" : {
-      "en" : "As defined by FRBR (http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#embodimentOf), a property representing a manifestation that is exemplified by an item."
+      "en" : "An item that exemplifies a manifestation."
     },
-    "attributes" : [ "allValues", "functional", "external", "object" ],
+    "attributes" : [ "object", "allValues", "functional", "external" ],
     "id" : "584"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#embodimentOf",
@@ -9652,15 +9667,15 @@
     },
     "superproperty" : [ "62" ],
     "domain" : "175",
-    "subproperty" : [ "347" ],
+    "subproperty" : [ "354" ],
     "comment" : {
-      "en" : "A manifestation that embodies an expression."
+      "en" : "As defined by FRBR (http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#embodimentOf), a property representing an expression that is embodied by a manifestation."
     },
-    "attributes" : [ "allValues", "external", "object" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "585"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#exemplar",
-    "inverse" : "349",
+    "inverse" : "347",
     "baseIri" : "http://purl.org/vocab/frbr/core",
     "range" : "308",
     "label" : {
@@ -9673,7 +9688,7 @@
     "comment" : {
       "en" : "A manifestation exemplified in an item."
     },
-    "attributes" : [ "allValues", "external", "object" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "586"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#inScheme",
@@ -9708,7 +9723,7 @@
     "comment" : {
       "en" : "This property expresses the fact that a concept is a part of a scheme."
     },
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "someValues", "object", "external" ],
     "id" : "587"
   }, {
     "iri" : "http://purl.org/spar/fabio/isSchemeOf",
@@ -9724,7 +9739,7 @@
     "comment" : {
       "en" : "This property expresses the fact that a scheme contains a concept."
     },
-    "attributes" : [ "allValues", "external", "object" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "588"
   }, {
     "iri" : "https://w3id.org/ac-ontology/aco#collectionAsList",
@@ -9747,24 +9762,24 @@
     "comment" : {
       "undefined" : "Convenience alias of ac:firstNode to attache an ac:AudioCollection to an rdf:List that holds the members"
     },
-    "attributes" : [ "functional", "external", "object" ],
+    "attributes" : [ "object", "functional", "external" ],
     "id" : "505"
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#realization",
-    "inverse" : "351",
+    "inverse" : "350",
     "baseIri" : "http://purl.org/vocab/frbr/core",
     "range" : "28",
     "label" : {
       "IRI-based" : "realization",
-      "en" : "frbr:realization"
+      "en" : "has realization"
     },
     "superproperty" : [ "62" ],
     "domain" : "315",
-    "subproperty" : [ "352" ],
+    "subproperty" : [ "351" ],
     "comment" : {
-      "en" : "As defined by FRBR (http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#realization), a property representing an expression that is an intellectual or artistic realization of a work."
+      "en" : "A work realized through an expression."
     },
-    "attributes" : [ "allValues", "external", "object" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "589"
   }, {
     "range" : "87",
@@ -9782,15 +9797,15 @@
     "range" : "315",
     "label" : {
       "IRI-based" : "realizationOf",
-      "en" : "frbr:realizationOf"
+      "en" : "is realization of"
     },
     "superproperty" : [ "62" ],
     "domain" : "28",
-    "subproperty" : [ "369" ],
+    "subproperty" : [ "357" ],
     "comment" : {
       "en" : "An expression that realizes a work."
     },
-    "attributes" : [ "allValues", "functional", "external", "object" ],
+    "attributes" : [ "object", "allValues", "functional", "external" ],
     "id" : "592"
   }, {
     "iri" : "http://purl.org/spar/fabio/isPortrayalOf",
@@ -9805,7 +9820,7 @@
     "comment" : {
       "en" : "A property linking a particular item to the work it portrays.  This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "464"
   }, {
     "iri" : "http://purl.org/ontology/mo/other_release_of",
@@ -9819,7 +9834,7 @@
     "comment" : {
       "undefined" : "Indicates that two musical manifestations are essentially the same."
     },
-    "attributes" : [ "external", "symmetric", "object" ],
+    "attributes" : [ "object", "symmetric", "external" ],
     "id" : "593"
   }, {
     "iri" : "http://purl.org/ontology/mo/sampled_version_of",
@@ -9835,7 +9850,7 @@
     "comment" : {
       "undefined" : "\n        Associates a digital signal with the analog version of it\n    "
     },
-    "attributes" : [ "functional", "external", "object" ],
+    "attributes" : [ "object", "functional", "external" ],
     "id" : "228"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/maker",
@@ -9845,7 +9860,7 @@
       "IRI-based" : "maker"
     },
     "domain" : "40",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "594"
   }, {
     "iri" : "http://purl.org/ontology/mo/djmixed_by",
@@ -9859,7 +9874,7 @@
     "comment" : {
       "undefined" : "Used to relate a work or the expression of a work to an artist who djmixed it.\n\nThe artist usually selected the tracks, chose their sequence, and slightly changed them by fading (so that one track blends in smoothly with the other) or pitching (so that the tempo of one track matches the tempo of the following track). This applies to a 'Mixtape' in which all tracks were DJ-mixed together into one single long track. "
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "115"
   }, {
     "iri" : "http://purl.org/ontology/mo/movement",
@@ -9873,7 +9888,7 @@
     "comment" : {
       "undefined" : "Indicates that a musical work has movements"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "595"
   }, {
     "iri" : "http://purl.org/spar/fabio/hasSubjectTerm",
@@ -9889,7 +9904,7 @@
     "comment" : {
       "en" : "This property is used to associate a frbr:Endeavour to a term in a particular classification system."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "67"
   } ]
 }

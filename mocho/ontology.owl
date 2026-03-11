@@ -1998,6 +1998,7 @@ A reproduction indicates the relationship as it would be drawn from the first ma
         <rdfs:comment xml:lang="en">Any endeavour having a particular entity that is responsible of it.</rdfs:comment>
         <rdfs:label xml:lang="en">frbr:responsibleEntity</rdfs:label>
         <skos:altLabel xml:lang="en">frbr:responsibleEntity</skos:altLabel>
+        <skos:prefLabel xml:lang="en">frbr:responsibleEntity</skos:prefLabel>
     </owl:ObjectProperty>
     
 
@@ -5585,16 +5586,7 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
                 </owl:unionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">mo:Expression rdfs:subClassOf [
-     owl:unionOf ( rdac:C10006
-                           frbr:Expression
-                           mo:MusicalExpression 
-                           vra:Inscription 
-                           crm:E73_Information_Object
-                           aco:AudioExpression
-                           rico:Record
-                           rico:RecordResource
-                           rico:RecordSet ) ] .</rdfs:comment>
+        <rdfs:comment xml:lang="en">In the SemDH 2026 submission, it was mentioned that MOCHO&apos;s WEMI classes are model as Subclass-UnionOf, c.f. every instance of mocho:Expression must be an instance of one of the domain classes. It is a necessary condition for mocho:Expression, but the domain instance are not automatically classified as mocho:Expression. It has to be explicitly asserted that x is an instance of mocho:Expression.</rdfs:comment>
         <rdfs:label xml:lang="en">mocho:Expression</rdfs:label>
         <skos:definition xml:lang="en">An intellectual or artistic realization of a work in the form of alpha-numeric, musical or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.</skos:definition>
         <skos:example xml:lang="en">Goethe&apos;s Faust in French</skos:example>
@@ -5629,6 +5621,7 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
                 </owl:unionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">In the SemDH 2026 submission, it was mentioned that MOCHO&apos;s WEMI classes are model as Subclass-UnionOf, c.f. every instance of mocho:Item must be an instance of one of the domain classes. It is a necessary condition for mocho:Item, but the domain instance are not automatically classified as mocho:Item. It has to be explicitly asserted that x is an instance of mocho:Item.</rdfs:comment>
         <rdfs:label xml:lang="en">mocho:Item</rdfs:label>
         <skos:definition xml:lang="en">A single exemplar or instance of a manifestation.</skos:definition>
         <skos:example xml:lang="en">A copy of Goethe&apos;s Faust</skos:example>
@@ -5654,6 +5647,7 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
                 </owl:unionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">In the SemDH 2026 submission, it was mentioned that MOCHO&apos;s WEMI classes are model as Subclass-UnionOf, c.f. every instance of mocho:Manifestation must be an instance of one of the domain classes. It is a necessary condition for mocho:Manifestation, but the domain instance are not automatically classified as mocho:Manifestation. It has to be explicitly asserted that x is an instance of mocho:Manifestation.</rdfs:comment>
         <rdfs:label xml:lang="en">mocho:Manifestation</rdfs:label>
         <skos:definition xml:lang="en">A physical embodiment of an expression of a work.</skos:definition>
     </owl:Class>
@@ -5716,6 +5710,7 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
                 </owl:unionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">In the SemDH 2026 submission, it was mentioned that MOCHO&apos;s WEMI classes are model as Subclass-UnionOf, c.f. every instance of mocho:Work must be an instance of one of the domain classes. It is a necessary condition for mocho:Work, but the domain instance are not automatically classified as mocho:Work. It has to be explicitly asserted that x is an instance of mocho:Work.</rdfs:comment>
         <rdfs:label xml:lang="en">mocho:Work</rdfs:label>
         <skos:definition xml:lang="en">A distinct intellectual or artistic creation, that is, the intellectual or artistic content.</skos:definition>
         <skos:example xml:lang="en">Goethe&apos;s Faust</skos:example>
@@ -6049,7 +6044,6 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
         <rdfs:label xml:lang="en">Person</rdfs:label>
         <rdfs:label xml:lang="es">Persona</rdfs:label>
         <rdfs:label xml:lang="fr">Personne</rdfs:label>
-        <rdfs:label xml:lang="en">rico:Person</rdfs:label>
         <skos:prefLabel xml:lang="en">rico:Person</skos:prefLabel>
         <skos:scopeNote xml:lang="en">Person is a kind of Agent. Most commonly, a human being
          (biological person) has a single socially constructed identity or persona. Less common

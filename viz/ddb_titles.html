@@ -50,7 +50,7 @@
     const SHELF_Y    = 430;
     const SHELF_H    = 22;
     const START_X    = 60;
-    const SVG_H      = 560;
+    const SVG_H      = 490;
 
     // Latin share of Leipzig Meßnovitäten (new titles at the fair)
     // Source: quantitative data from Wittmann / Goldfriedrich
@@ -315,19 +315,19 @@
               if (mx < START_X || mx > SVG_W - START_X) return null;
               return (
                 <g key={year}>
-                  <line x1={mx} y1={line2 ? 95 : 86} x2={mx} y2={SHELF_Y}
+                  <line x1={mx} y1={line2 ? 121 : 112} x2={mx} y2={SHELF_Y}
                         stroke={T.eraStroke} strokeWidth="0.8" strokeDasharray="3,3"/>
-                  <text x={mx} y={74} fill={T.eraLabel} fontSize="7.5"
+                  <text x={mx} y={100} fill={T.eraLabel} fontSize="7.5"
                         fontFamily={T.font} textAnchor="middle" letterSpacing="0.3">
                     {label}
                   </text>
                   {line2 && (
-                    <text x={mx} y={83} fill={T.eraLabel} fontSize="7.5"
+                    <text x={mx} y={109} fill={T.eraLabel} fontSize="7.5"
                           fontFamily={T.font} textAnchor="middle" letterSpacing="0.3">
                       {line2}
                     </text>
                   )}
-                  <text x={mx} y={line2 ? 92 : 83} fill={T.eraYear} fontSize="7"
+                  <text x={mx} y={line2 ? 118 : 109} fill={T.eraYear} fontSize="7"
                         fontFamily={T.font} textAnchor="middle">
                     {year}
                   </text>
@@ -340,8 +340,8 @@
               const lx = yearToX(year);
               return (
                 <g key={`lat-${year}`}>
-                  <circle cx={lx} cy={92} r={1.5} fill={T.eraLabel} opacity="0.55"/>
-                  <text x={lx} y={102} fill={T.eraLabel} fontSize="6.5"
+                  <circle cx={lx} cy={128} r={1.5} fill={T.eraLabel} opacity="0.55"/>
+                  <text x={lx} y={138} fill={T.eraLabel} fontSize="6.5"
                         fontFamily={T.font} textAnchor="middle" opacity="0.7">
                     Lat. {pct}
                   </text>
@@ -427,45 +427,41 @@
             </text>
             <text x={SVG_W / 2} y={54} fill={T.subtitleFill} fontSize="9"
                   fontFamily={T.font} textAnchor="middle" letterSpacing="1">
-              <tspan fontWeight="bold">Height</tspan>
+              <tspan fontWeight="bold" fill={T.titleFill}>Height</tspan>
               {' · objects per period  |  '}
-              <tspan fontWeight="bold">Band shade</tspan>
-              {' · deviation from corpus-wide average token-length proportion'}
+              <tspan fontWeight="bold" fill={T.titleFill}>Band shade</tspan>
+              {' · per-band share vs. corpus average'}
             </text>
 
-            {/* ── band legend ──────────────────────────────────────────────── */}
-            <text x={30} y={SVG_H - 86} fill={T.lgTitle} fontSize="7.5"
-                  fontFamily={T.font} fontWeight={T.titleWeight} letterSpacing="1.2">
-              BANDS (bottom → top)
-            </text>
+            {/* ── header legend ────────────────────────────────────────────── */}
             {[
-              { label: 'Short  ≤ 4 tok',  color: T.bands.short  },
-              { label: 'Medium 5–14 tok', color: T.bands.medium },
-              { label: 'Long   ≥ 15 tok', color: T.bands.long   },
+              { label: 'Short ≤ 4',    color: T.bands.short  },
+              { label: 'Medium 5–14',  color: T.bands.medium },
+              { label: 'Long ≥ 15',    color: T.bands.long   },
             ].map(({ label, color }, i) => {
               const [r, g, b_] = hexToRgb(color);
               const lighter = rgbToHex(r + (1-r)*0.35, g + (1-g)*0.35, b_ + (1-b_)*0.35);
               const darker  = rgbToHex(r * 0.6,        g * 0.6,        b_ * 0.6);
+              const gx = SVG_W / 2 + (i - 1) * 115;
               return (
                 <g key={label}>
                   <defs>
-                    <linearGradient id={`lg${i}`} x1="0" y1="0" x2="1" y2="0">
+                    <linearGradient id={`hdr${i}`} x1="0" y1="0" x2="1" y2="0">
                       <stop offset="0%"   stopColor={lighter}/>
                       <stop offset="50%"  stopColor={color}/>
                       <stop offset="100%" stopColor={darker}/>
                     </linearGradient>
                   </defs>
-                  <rect x={30} y={SVG_H - 76 + i * 18} width={32} height={11}
-                        fill={`url(#lg${i})`} rx="1"
-                        stroke={T.lgStroke} strokeWidth="0.5"/>
-                  <text x={67} y={SVG_H - 67 + i * 18} fill={T.lgText}
-                        fontSize="8" fontFamily={T.font}>{label}</text>
+                  <rect x={gx - 12} y={63} width={24} height={10}
+                        fill={`url(#hdr${i})`} rx="1" stroke={T.lgStroke} strokeWidth="0.5"/>
+                  <text x={gx + 15} y={72} fill={T.lgText} fontSize="7.5"
+                        fontFamily={T.font}>{label}</text>
                 </g>
               );
             })}
-            <text fill={T.lgAnnotation} fontSize="7" fontFamily={T.font}>
-              <tspan x={30} y={SVG_H - 20}>← below avg</tspan>
-              <tspan x={30} y={SVG_H - 11}>above avg →</tspan>
+            <text x={SVG_W / 2} y={83} fill={T.lgAnnotation} fontSize="6.5"
+                  fontFamily={T.font} textAnchor="middle">
+              lighter ← below avg · above avg → darker
             </text>
           </svg>
 

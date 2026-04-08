@@ -52,6 +52,14 @@
     const START_X    = 60;
     const SVG_H      = 560;
 
+    // Latin share of Leipzig Meßnovitäten (new titles at the fair)
+    // Source: quantitative data from Wittmann / Goldfriedrich
+    const LATIN_SHARE = [
+      { year: 1740, pct: '27.7%' },
+      { year: 1770, pct: '14.3%' },
+      { year: 1800, pct:  '4.0%' },
+    ];
+
     const ERA_MARKERS = [
       { label: 'Gutenberg',      year: 1450 },  // pre-1500, won't display
       { label: 'Flugschriften',  year: 1517 },  // Luther's 95 Theses → pamphlet explosion
@@ -59,6 +67,8 @@
       { label: '30YW begins',    year: 1618 },  // Thirty Years' War start
       { label: '30YW ends',      year: 1648 },  // Peace of Westphalia
       { label: 'Lpz. Messe',     year: 1700 },  // Leipzig overtakes Frankfurt
+      { label: 'Aufklärung',     year: 1765 },  // commercial shift; title lengths begin to fall
+      { label: 'Weimarer Klass.', year: 1786 },  // Weimarer Klassik begins; Werther (1774) already published
       { label: 'WWI',            year: 1914 },
       { label: 'WWII',           year: 1939 },
     ];
@@ -318,6 +328,20 @@
                   <text x={mx} y={83} fill={T.eraYear} fontSize="7"
                         fontFamily={T.font} textAnchor="middle">
                     {year}
+                  </text>
+                </g>
+              );
+            })}
+
+            {/* ── Latin share annotations ─────────────────────────────────── */}
+            {T.eraMarkers && LATIN_SHARE.map(({ year, pct }) => {
+              const lx = yearToX(year);
+              return (
+                <g key={`lat-${year}`}>
+                  <circle cx={lx} cy={92} r={1.5} fill={T.eraLabel} opacity="0.55"/>
+                  <text x={lx} y={102} fill={T.eraLabel} fontSize="6.5"
+                        fontFamily={T.font} textAnchor="middle" opacity="0.7">
+                    Lat. {pct}
                   </text>
                 </g>
               );

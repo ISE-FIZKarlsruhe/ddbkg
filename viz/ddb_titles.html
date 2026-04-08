@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DDB Title Token Lengths — B&W</title>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    body { margin: 0; background: #e8e2d8; display: flex; justify-content: center; padding: 40px 0; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script>
+    window.TITLE_DATA = {"total_titles":4477780,"year_source":{"dates_column":4002222,"title_fallback":46461,"no_year":429097},"year_range":[1400,2029],"bucket_size":25,"length_thresholds":{"short_max":4,"medium_max":14},"overall":{"short":1269034,"medium":2110610,"long":1098136,"median_all_tokens":8,"median_content_tokens":5},"bucketed":{"1500\u20131524":{"short":1824,"medium":4854,"long":5531,"total":12209,"median_all_tokens":13,"median_content_tokens":7},"1525\u20131549":{"short":3233,"medium":10034,"long":10634,"total":23901,"median_all_tokens":13,"median_content_tokens":7},"1550\u20131574":{"short":5163,"medium":14251,"long":14388,"total":33802,"median_all_tokens":12,"median_content_tokens":6},"1575\u20131599":{"short":5443,"medium":15921,"long":15943,"total":37307,"median_all_tokens":12,"median_content_tokens":6},"1600\u20131624":{"short":8514,"medium":21223,"long":28150,"total":57887,"median_all_tokens":14,"median_content_tokens":7},"1625\u20131649":{"short":6478,"medium":11794,"long":18523,"total":36795,"median_all_tokens":15,"median_content_tokens":8},"1650\u20131674":{"short":9230,"medium":19485,"long":27602,"total":56317,"median_all_tokens":14,"median_content_tokens":7},"1675\u20131699":{"short":10298,"medium":22560,"long":32865,"total":65723,"median_all_tokens":15,"median_content_tokens":7},"1700\u20131724":{"short":19155,"medium":42472,"long":50960,"total":112587,"median_all_tokens":13,"median_content_tokens":6},"1725\u20131749":{"short":23232,"medium":49450,"long":53120,"total":125802,"median_all_tokens":12,"median_content_tokens":6},"1750\u20131774":{"short":40415,"medium":81176,"long":61460,"total":183051,"median_all_tokens":10,"median_content_tokens":5},"1775\u20131799":{"short":144136,"medium":162820,"long":99060,"total":406016,"median_all_tokens":7,"median_content_tokens":4},"1800\u20131824":{"short":49965,"medium":81966,"long":63655,"total":195586,"median_all_tokens":9,"median_content_tokens":5},"1825\u20131849":{"short":72563,"medium":162407,"long":83959,"total":318929,"median_all_tokens":7,"median_content_tokens":5},"1850\u20131874":{"short":88852,"medium":178563,"long":97249,"total":364664,"median_all_tokens":9,"median_content_tokens":5},"1875\u20131899":{"short":179839,"medium":232233,"long":91742,"total":503814,"median_all_tokens":6,"median_content_tokens":4},"1900\u20131924":{"short":239540,"medium":308312,"long":76453,"total":624305,"median_all_tokens":6,"median_content_tokens":4},"1925\u20131949":{"short":96259,"medium":121474,"long":49952,"total":267685,"median_all_tokens":7,"median_content_tokens":4},"1950\u20131974":{"short":39353,"medium":46464,"long":22033,"total":107850,"median_all_tokens":7,"median_content_tokens":4},"1975\u20131999":{"short":33380,"medium":54271,"long":18806,"total":106457,"median_all_tokens":8,"median_content_tokens":5},"2000\u20132024":{"short":35531,"medium":249255,"long":115783,"total":400569,"median_all_tokens":11,"median_content_tokens":6},"2025\u20132049":{"short":7,"medium":7,"long":5,"total":19,"median_all_tokens":8,"median_content_tokens":5}}};
+  </script>
+
+  <script type="text/babel">
+    const { useRef, useState } = React;
+    const rawData = window.TITLE_DATA;
+
+    // ── layout ──────────────────────────────────────────────────────────────
+    const BOOK_W     = 44;
+    const BOOK_GAP   = 5;
+    const MAX_BOOK_H = 300;
+    const MIN_BOOK_H = 28;
+    const SHELF_Y    = 430;
+    const START_X    = 60;
+    const SVG_H      = 560;
+
+    // Historical era markers
+    const ERA_MARKERS = [
+      { label: 'Gutenberg',        year: 1450 },
+      { label: 'Reformation',      year: 1517 },
+      { label: 'French Rev.',      year: 1789 },
+      { label: 'Industrialisation',year: 1840 },
+      { label: 'WWI',              year: 1914 },
+    ];
+
+    // ── band base lightness and deviation encoding ───────────────────────────
+    // Base: short=84% (pale), medium=52% (grey), long=20% (dark)
+    // Deviation: positive (above corpus avg) → darker; negative → lighter.
+    // Each band shifts ±12% lightness, keeping bands visually distinct.
+    const BAND_BASE = { short: 84, medium: 52, long: 20 };
+    const SPINE_HL  = 'hsl(0,0%,90%)';
+    const SPINE_SH  = 'hsl(0,0%,12%)';
+
+    function bandColor(base, dev, maxDev) {
+      const t = maxDev > 0 ? dev / maxDev : 0;
+      const l = Math.min(base + 12, Math.max(base - 12, base - t * 12));
+      return `hsl(0,0%,${l.toFixed(0)}%)`;
+    }
+
+    function fmt(n) {
+      if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(2)}M`;
+      if (n >= 1_000)     return `${(n / 1_000).toFixed(1)}k`;
+      return String(n);
+    }
+
+    // ── component ───────────────────────────────────────────────────────────
+
+    function TitleLengthLibrary() {
+      const containerRef = useRef(null);
+      const [tooltip, setTooltip] = useState(null);
+
+      const buckets = Object.entries(rawData.bucketed)
+        .filter(([, v]) => v.total > 100)
+        .map(([label, v]) => ({ label, ...v }));
+
+      const maxTotal = Math.max(...buckets.map(b => b.total));
+      const SVG_W = START_X * 2 + buckets.length * (BOOK_W + BOOK_GAP) - BOOK_GAP;
+
+      const bookH = (total) => Math.max(MIN_BOOK_H, (total / maxTotal) * MAX_BOOK_H);
+
+      const corpusTotal    = buckets.reduce((s, b) => s + b.total,  0);
+      const corpusShortPct = buckets.reduce((s, b) => s + b.short,  0) / corpusTotal;
+      const corpusMedPct   = buckets.reduce((s, b) => s + b.medium, 0) / corpusTotal;
+      const corpusLongPct  = buckets.reduce((s, b) => s + b.long,   0) / corpusTotal;
+      const maxShortDev = Math.max(...buckets.map(b => Math.abs(b.short/b.total  - corpusShortPct)));
+      const maxMedDev   = Math.max(...buckets.map(b => Math.abs(b.medium/b.total - corpusMedPct)));
+      const maxLongDev  = Math.max(...buckets.map(b => Math.abs(b.long/b.total   - corpusLongPct)));
+
+      function yearToX(year) {
+        const firstYear = 1500;
+        const bucketIdx = (year - firstYear) / 25;
+        return START_X + bucketIdx * (BOOK_W + BOOK_GAP) + BOOK_W / 2;
+      }
+
+      function handleMouseMove(e, book) {
+        if (!containerRef.current) return;
+        const rect = containerRef.current.getBoundingClientRect();
+        setTooltip({ book, x: e.clientX - rect.left + 14, y: e.clientY - rect.top - 10 });
+      }
+
+      const tallest = buckets.reduce((a, b) => b.total > a.total ? b : a);
+      const tallestIdx = buckets.indexOf(tallest);
+      const tallestX = START_X + tallestIdx * (BOOK_W + BOOK_GAP);
+      const tallestH = bookH(tallest.total);
+
+      return (
+        <div ref={containerRef} style={{ position: 'relative', display: 'inline-block', background: '#f4f0e8' }}>
+          <svg width={SVG_W} height={SVG_H} viewBox={`0 0 ${SVG_W} ${SVG_H}`}
+               style={{ display: 'block' }}>
+            <defs>
+              <pattern id="grain" width="4" height="60" patternUnits="userSpaceOnUse">
+                <line x1="1"   y1="0" x2="0.5" y2="60" stroke="rgba(0,0,0,0.07)"  strokeWidth="0.6"/>
+                <line x1="3.2" y1="0" x2="2.8" y2="60" stroke="rgba(255,255,255,0.12)" strokeWidth="0.4"/>
+              </pattern>
+              <linearGradient id="shelf" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%"   stopColor="#6a6a6a"/>
+                <stop offset="20%"  stopColor="#4a4a4a"/>
+                <stop offset="100%" stopColor="#2a2a2a"/>
+              </linearGradient>
+              <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%"   stopColor="#f8f4ec"/>
+                <stop offset="100%" stopColor="#ede8de"/>
+              </linearGradient>
+            </defs>
+
+            <rect width={SVG_W} height={SVG_H} fill="url(#paper)"/>
+
+            {/* ── era markers ─────────────────────────────────────────── */}
+            {ERA_MARKERS.map(({ label, year }) => {
+              const mx = yearToX(year);
+              if (mx < START_X || mx > SVG_W - START_X) return null;
+              return (
+                <g key={label}>
+                  <line x1={mx} y1={80} x2={mx} y2={SHELF_Y}
+                        stroke="rgba(0,0,0,0.12)" strokeWidth="0.8" strokeDasharray="3,3"/>
+                  <text x={mx} y={74} fill="rgba(0,0,0,0.35)" fontSize="7.5"
+                        fontFamily="Georgia,serif" textAnchor="middle" letterSpacing="0.3">
+                    {label}
+                  </text>
+                  <text x={mx} y={83} fill="rgba(0,0,0,0.25)" fontSize="7"
+                        fontFamily="Georgia,serif" textAnchor="middle">
+                    {year}
+                  </text>
+                </g>
+              );
+            })}
+
+            {/* ── books ───────────────────────────────────────────────── */}
+            {buckets.map((b, i) => {
+              const bh = bookH(b.total);
+              const bx = START_X + i * (BOOK_W + BOOK_GAP);
+              const by = SHELF_Y - bh;
+
+              const shortPct = b.short  / b.total;
+              const medPct   = b.medium / b.total;
+              const longPct  = b.long   / b.total;
+
+              const longH  = Math.max(0, longPct  * bh);
+              const medH   = Math.max(0, medPct   * bh);
+              const shortH = Math.max(0, bh - longH - medH);
+
+              const shortColor = bandColor(BAND_BASE.short,  shortPct - corpusShortPct, maxShortDev);
+              const medColor   = bandColor(BAND_BASE.medium, medPct   - corpusMedPct,   maxMedDev);
+              const longColor  = bandColor(BAND_BASE.long,   longPct  - corpusLongPct,  maxLongDev);
+
+              return (
+                <g key={b.label}
+                   onMouseMove={(e) => handleMouseMove(e, b)}
+                   onMouseLeave={() => setTooltip(null)}
+                   style={{ cursor: 'crosshair' }}>
+
+                  <rect x={bx+2} y={by+2} width={BOOK_W} height={bh}
+                        fill="rgba(0,0,0,0.18)" rx="2"/>
+
+                  {/* stacked bands: bottom=short, mid=medium, top=long */}
+                  <rect x={bx} y={by + longH + medH} width={BOOK_W} height={shortH}
+                        fill={shortColor} rx="1"/>
+                  <rect x={bx} y={by + longH} width={BOOK_W} height={medH}
+                        fill={medColor}/>
+                  <rect x={bx} y={by} width={BOOK_W} height={longH}
+                        fill={longColor} rx="1" ry="1"/>
+
+                  <rect x={bx} y={by} width={BOOK_W} height={bh}
+                        fill="url(#grain)" rx="1" opacity="0.6"/>
+                  <rect x={bx} y={by} width={5} height={bh}
+                        fill={SPINE_HL} rx="1" opacity="0.5"/>
+                  <rect x={bx+BOOK_W-4} y={by} width={4} height={bh}
+                        fill={SPINE_SH} rx="1" opacity="0.4"/>
+                  <rect x={bx+2} y={by} width={BOOK_W-4} height={3}
+                        fill="rgba(255,255,255,0.75)" rx="1"/>
+                  <rect x={bx+1} y={by+bh-5} width={BOOK_W-2} height={5}
+                        fill="rgba(0,0,0,0.2)" rx="1"/>
+
+                  {/* Spine label — two horizontal lines at the bottom */}
+                  {(() => {
+                    const [start, end] = b.label.split('\u2013');
+                    const cx      = bx + BOOK_W / 2;
+                    const bottomY = by + bh - 7;
+                    const fill    = 'rgba(0,0,0,0.6)';
+                    const props   = { fill, fontSize: '7', fontFamily: "Georgia,'Times New Roman',serif", textAnchor: 'middle' };
+                    return (
+                      <>
+                        <text x={cx} y={bottomY - 9} {...props}>{start} –</text>
+                        <text x={cx} y={bottomY}     {...props}>{end}</text>
+                      </>
+                    );
+                  })()}
+                </g>
+              );
+            })}
+
+            {/* ── scale callout ───────────────────────────────────────── */}
+            <line x1={tallestX + BOOK_W / 2} y1={SHELF_Y - tallestH - 6}
+                  x2={tallestX + BOOK_W / 2} y2={SHELF_Y - tallestH - 18}
+                  stroke="rgba(0,0,0,0.4)" strokeWidth="0.8"/>
+            <text x={tallestX + BOOK_W / 2} y={SHELF_Y - tallestH - 22}
+                  fill="rgba(0,0,0,0.5)" fontSize="8.5"
+                  fontFamily="Georgia,serif" textAnchor="middle">
+              {fmt(tallest.total)}
+            </text>
+
+            {/* ── shelf ───────────────────────────────────────────────── */}
+            <rect x={18} y={SHELF_Y}    width={SVG_W-36} height={20} fill="url(#shelf)" rx="2"/>
+            <rect x={18} y={SHELF_Y}    width={SVG_W-36} height={2}  fill="rgba(255,255,255,0.25)" rx="1"/>
+            <rect x={18} y={SHELF_Y+20} width={SVG_W-36} height={7}  fill="rgba(0,0,0,0.35)" rx="2"/>
+
+            {/* ── title ───────────────────────────────────────────────── */}
+            <text x={SVG_W/2} y={36} fill="rgba(0,0,0,0.75)" fontSize="14"
+                  fontFamily="Georgia,'Times New Roman',serif"
+                  textAnchor="middle" letterSpacing="3">
+              DDB TITLE TOKEN LENGTHS · 1500 – 2024
+            </text>
+            <text x={SVG_W/2} y={54} fill="rgba(0,0,0,0.38)" fontSize="9"
+                  fontFamily="Georgia,serif" textAnchor="middle" letterSpacing="1.5">
+              Height · objects per period  ·  Band shade · deviation from corpus-wide average proportion
+            </text>
+
+            {/* ── band legend ─────────────────────────────────────────── */}
+            <text x={30} y={SVG_H-86} fill="rgba(0,0,0,0.45)" fontSize="7.5"
+                  fontFamily="Georgia,serif" letterSpacing="1">
+              BANDS (bottom → top)
+            </text>
+            {[
+              { label: 'Short  \u2264 4 tok',  base: BAND_BASE.short  },
+              { label: 'Medium 5\u201314 tok', base: BAND_BASE.medium },
+              { label: 'Long   \u2265 15 tok', base: BAND_BASE.long   },
+            ].map(({ label, base }, i) => (
+              <g key={label}>
+                <defs>
+                  <linearGradient id={`lg${i}`} x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%"   stopColor={`hsl(0,0%,${base+12}%)`}/>
+                    <stop offset="50%"  stopColor={`hsl(0,0%,${base}%)`}/>
+                    <stop offset="100%" stopColor={`hsl(0,0%,${base-12}%)`}/>
+                  </linearGradient>
+                </defs>
+                <rect x={30} y={SVG_H-76+i*18} width={32} height={11}
+                      fill={`url(#lg${i})`} rx="1"
+                      stroke="rgba(0,0,0,0.15)" strokeWidth="0.5"/>
+                <text x={67} y={SVG_H-67+i*18} fill="rgba(0,0,0,0.5)" fontSize="8"
+                      fontFamily="Georgia,serif">{label}</text>
+              </g>
+            ))}
+            <text x={30}  y={SVG_H-18} fill="rgba(0,0,0,0.28)" fontSize="7"
+                  fontFamily="Georgia,serif">\u2190 below avg</text>
+            <text x={62}  y={SVG_H-18} fill="rgba(0,0,0,0.28)" fontSize="7"
+                  fontFamily="Georgia,serif" textAnchor="middle">above avg \u2192</text>
+          </svg>
+
+          {/* Tooltip */}
+          {tooltip && (
+            <div style={{
+              position: 'absolute', left: tooltip.x, top: tooltip.y,
+              background: 'rgba(252,249,244,0.98)',
+              border: '1px solid rgba(0,0,0,0.2)',
+              borderRadius: '3px', padding: '9px 13px',
+              color: '#1a1a1a',
+              fontFamily: "Georgia,'Times New Roman',serif",
+              fontSize: '11px', lineHeight: '1.75',
+              pointerEvents: 'none', whiteSpace: 'nowrap',
+              zIndex: 20, boxShadow: '0 3px 12px rgba(0,0,0,0.18)',
+            }}>
+              <div style={{ fontWeight: 'bold', marginBottom: 3, letterSpacing: '0.5px' }}>
+                {tooltip.book.label}
+              </div>
+              <div>{fmt(tooltip.book.total)} objects</div>
+              <div style={{ marginTop: 5, color: 'rgba(0,0,0,0.55)', fontSize: '10px' }}>
+                Short  (\u2264 4):  {fmt(tooltip.book.short)}  ({((tooltip.book.short  / tooltip.book.total) * 100).toFixed(0)}%)
+              </div>
+              <div style={{ color: 'rgba(0,0,0,0.55)', fontSize: '10px' }}>
+                Medium (5\u201314): {fmt(tooltip.book.medium)} ({((tooltip.book.medium / tooltip.book.total) * 100).toFixed(0)}%)
+              </div>
+              <div style={{ color: 'rgba(0,0,0,0.55)', fontSize: '10px' }}>
+                Long   (\u2265 15): {fmt(tooltip.book.long)}   ({((tooltip.book.long   / tooltip.book.total) * 100).toFixed(0)}%)
+              </div>
+              <div style={{ marginTop: 5, color: 'rgba(0,0,0,0.4)', fontSize: '10px' }}>
+                Median tokens: {tooltip.book.median_all_tokens}
+              </div>
+            </div>
+          )}
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<TitleLengthLibrary />);
+  </script>
+</body>
+</html>

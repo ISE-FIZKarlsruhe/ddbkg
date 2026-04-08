@@ -61,16 +61,16 @@
     ];
 
     const ERA_MARKERS = [
-      { label: 'Gutenberg',      year: 1450 },  // pre-1500, won't display
-      { label: 'Flugschriften',  year: 1517 },  // Luther's 95 Theses → pamphlet explosion
-      { label: 'FBM Katalog',    year: 1564 },  // first Frankfurt Messkatalog
-      { label: '30YW begins',    year: 1618 },  // Thirty Years' War start
-      { label: '30YW ends',      year: 1648 },  // Peace of Westphalia
-      { label: 'Lpz. Messe',     year: 1700 },  // Leipzig overtakes Frankfurt
-      { label: 'Aufklärung',     year: 1765 },  // commercial shift; title lengths begin to fall
-      { label: 'Weimarer Klass.', year: 1786 },  // Weimarer Klassik begins; Werther (1774) already published
-      { label: 'WWI',            year: 1914 },
-      { label: 'WWII',           year: 1939 },
+      { label: 'Gutenberg',                          year: 1450 },  // pre-1500, won't display
+      { label: 'Luthers 95 Thesen',                  year: 1517 },  // pamphlet explosion
+      { label: 'Frankfurter',  line2: 'Messkatalog', year: 1564 },  // first FBM catalogue
+      { label: '30Y War',      line2: 'begins',       year: 1618 },  // Thirty Years' War start
+      { label: '30Y War',      line2: 'ends',         year: 1648 },  // Peace of Westphalia
+      { label: 'Leipzig',      line2: 'Messe',        year: 1700 },  // Leipzig overtakes Frankfurt
+      { label: 'Aufklärung',                          year: 1765 },  // commercial shift
+      { label: 'Weimarer',     line2: 'Klassik',      year: 1786 },  // Weimarer Klassik begins
+      { label: 'WWI',                                 year: 1914 },
+      { label: 'WWII',                                year: 1939 },
     ];
 
     // ── themes ─────────────────────────────────────────────────────────────────────
@@ -270,10 +270,6 @@
         setTooltip({ book, x: e.clientX - rect.left + 14, y: e.clientY - rect.top - 10 });
       }
 
-      const tallest    = buckets.reduce((a, b) => b.total > a.total ? b : a);
-      const tallestIdx = buckets.indexOf(tallest);
-      const tallestX   = START_X + tallestIdx * (BOOK_W + BOOK_GAP);
-      const tallestH   = bookH(tallest.total);
 
       return (
         <div ref={containerRef} style={{ position: 'relative', display: 'inline-block', background: T.bg }}>
@@ -314,18 +310,24 @@
             ))}
 
             {/* ── era markers ─────────────────────────────────────────────── */}
-            {T.eraMarkers && ERA_MARKERS.map(({ label, year }) => {
+            {T.eraMarkers && ERA_MARKERS.map(({ label, line2, year }) => {
               const mx = yearToX(year);
               if (mx < START_X || mx > SVG_W - START_X) return null;
               return (
-                <g key={label}>
-                  <line x1={mx} y1={80} x2={mx} y2={SHELF_Y}
+                <g key={year}>
+                  <line x1={mx} y1={line2 ? 95 : 86} x2={mx} y2={SHELF_Y}
                         stroke={T.eraStroke} strokeWidth="0.8" strokeDasharray="3,3"/>
                   <text x={mx} y={74} fill={T.eraLabel} fontSize="7.5"
                         fontFamily={T.font} textAnchor="middle" letterSpacing="0.3">
                     {label}
                   </text>
-                  <text x={mx} y={83} fill={T.eraYear} fontSize="7"
+                  {line2 && (
+                    <text x={mx} y={83} fill={T.eraLabel} fontSize="7.5"
+                          fontFamily={T.font} textAnchor="middle" letterSpacing="0.3">
+                      {line2}
+                    </text>
+                  )}
+                  <text x={mx} y={line2 ? 92 : 83} fill={T.eraYear} fontSize="7"
                         fontFamily={T.font} textAnchor="middle">
                     {year}
                   </text>
@@ -398,18 +400,6 @@
               );
             })}
 
-            {/* ── scale callout ───────────────────────────────────────────── */}
-            {T.scaleCallout && <>
-              <line x1={tallestX + BOOK_W / 2} y1={SHELF_Y - tallestH - 6}
-                    x2={tallestX + BOOK_W / 2} y2={SHELF_Y - tallestH - 18}
-                    stroke={T.scaleStroke} strokeWidth="0.8"/>
-              <text x={tallestX + BOOK_W / 2} y={SHELF_Y - tallestH - 22}
-                    fill={T.scaleFill} fontSize="8.5" fontFamily={T.font}
-                    fontWeight={T.titleWeight} textAnchor="middle">
-                {fmt(tallest.total)}
-              </text>
-            </>}
-
             {/* ── shelf ───────────────────────────────────────────────────── */}
             <rect x={18} y={SHELF_Y}         width={SVG_W-36} height={SHELF_H} fill="url(#shelf)" rx="2"/>
             <rect x={18} y={SHELF_Y}         width={SVG_W-36} height={2}       fill={T.shelfEdge} rx="1"/>
@@ -433,7 +423,7 @@
             <text x={SVG_W / 2} y={36} fill={T.titleFill} fontSize="14"
                   fontFamily={T.font} fontWeight={T.titleWeight}
                   textAnchor="middle" letterSpacing="3">
-              DDB's German Bibliographic Title Length by 25-Year Periods
+              DDB as a Mirror of the German Book Trade: Bibliographic Title Length, 1500–2024
             </text>
             <text x={SVG_W / 2} y={54} fill={T.subtitleFill} fontSize="9"
                   fontFamily={T.font} textAnchor="middle" letterSpacing="1">

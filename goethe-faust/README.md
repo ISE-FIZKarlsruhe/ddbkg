@@ -71,3 +71,20 @@ See [`scripts/README.md`](https://github.com/ISE-FIZKarlsruhe/ddbkg/blob/main/go
 - The 2000–2024 temporal bucket is dominated by Goethe-Universität Frankfurt institutional records (theses, working papers) rather than cultural-heritage items about Goethe or *Faust*.
 - 2,552 pre-1600 records are excluded from `fig_years.png` but retained in `years-analysis.json`.
 - 1 ID was permanently unavailable (HTTP 404) and is absent from the JSONL.
+
+## Citation
+
+If you use this corpus, please cite:
+
+Mary Ann Tan, Genet Asefa Gesese, and Harald Sack. "Navigating Babel: A Mid-Level Ontology for Cross-Domain Cultural Heritage Discovery." In *Proceedings of the Third International Workshop on Semantic Digital Humanities (SemDH 2026)*, ESWC 2026, Dubrovnik, Croatia, 2026 (forthcoming).
+
+```bibtex
+@inproceedings{tan2026navigating,
+  author    = {Tan, Mary Ann and Gesese, Genet Asefa and Sack, Harald},
+  title     = {{Navigating Babel: A Mid-Level Ontology for Cross-Domain Cultural Heritage Discovery}},
+  booktitle = {{Proceedings of the Third International Workshop on Semantic Digital Humanities (SemDH 2026)}},
+  year      = {2026},
+  address   = {Dubrovnik, Croatia},
+  note      = {ESWC 2026. Forthcoming.},
+}
+```

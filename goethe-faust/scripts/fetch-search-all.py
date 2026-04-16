@@ -28,8 +28,13 @@ Notes
 """
 
 import json
+import os
 import urllib.request
 import time
+
+API_KEY = os.environ.get("DDB_API_KEY")
+if not API_KEY:
+    raise SystemExit("DDB_API_KEY environment variable is not set")
 
 API = "https://api.deutsche-digitale-bibliothek.de/2/search/index/search/select"
 QUERY = "q=goethe"
@@ -45,7 +50,7 @@ base = None
 start = 1
 
 while start < TOTAL:
-    url = f"{API}?{QUERY}&start={start}&rows={ROWS}"
+    url = f"{API}?{QUERY}&start={start}&rows={ROWS}&oauth_consumer_key={API_KEY}"
     print(f"Fetching start={start} rows={ROWS} ({len(all_docs)}/{TOTAL} docs so far)...")
     print(url)
     with urllib.request.urlopen(url) as resp:

@@ -8,6 +8,11 @@ API_BASE="https://api.deutsche-digitale-bibliothek.de/2/items"
 OUTPUT_DIR="items"
 JSONL_FILE="items-all-goethe-faust.json"
 
+if [[ -z "$DDB_API_KEY" ]]; then
+    echo "Error: DDB_API_KEY environment variable is not set" >&2
+    exit 1
+fi
+
 mkdir -p "$OUTPUT_DIR"
 trap 'rm -f "$JSONL_IDS_TMP"' EXIT
 
@@ -60,7 +65,7 @@ while IFS= read -r uuid; do
         continue
     fi
 
-    http_code=$(curl -s -w "%{http_code}" -o "$output_file.tmp" "$API_BASE/$uuid")
+    http_code=$(curl -s -w "%{http_code}" -o "$output_file.tmp" "$API_BASE/$uuid?oauth_consumer_key=$DDB_API_KEY")
 
     if [[ "$http_code" == "200" ]]; then
         python3 -m json.tool "$output_file.tmp" > "$output_file"

@@ -14,9 +14,11 @@ and merges them into a single JSON file.
 
 - **Input**: DDB Solr API (live network access required)
 - **Output**: `data/ddb-search-goethe-all.json`
-- **Usage**: `python scripts/fetch-search-all.py`
-- **Notes**: `TOTAL` must match the actual result count; update if the
-  dataset changes. 0.3 s delay between requests to avoid rate-limiting.
+- **Usage**: `DDB_API_KEY=your_key python scripts/fetch-search-all.py`
+- **Notes**: Requires `DDB_API_KEY` environment variable (passed as
+  `oauth_consumer_key`). `TOTAL` must match the actual result count;
+  update if the dataset changes. 0.3 s delay between requests to avoid
+  rate-limiting.
 
 ### `build_dataframe.py`
 Builds a flat per-object DataFrame from the raw JSONL.
@@ -195,11 +197,13 @@ already present in the JSONL. Must be run from the `data/` directory.
   `data/items-all-goethe-faust.json`
 - **Usage**:
   ```
-  cd data && bash ../scripts/fetch-items.sh ids-all-goethe-faust.txt
-  cd data && bash ../scripts/fetch-items.sh ids-missing.txt   # re-fetch gap
+  cd data && DDB_API_KEY=your_key bash ../scripts/fetch-items.sh ids-all-goethe-faust.txt
+  cd data && DDB_API_KEY=your_key bash ../scripts/fetch-items.sh ids-missing.txt   # re-fetch gap
   ```
-- **Notes**: 0.2 s delay between requests. HTTP failures are logged but do not
-  abort the run; failed IDs can be re-fetched by running again.
+- **Notes**: Requires `DDB_API_KEY` environment variable (passed as
+  `oauth_consumer_key`). 0.2 s delay between requests. HTTP failures are
+  logged but do not abort the run; failed IDs can be re-fetched by running
+  again.
 
 ### `find_missing_items.py`
 Compares `ids-all-goethe-faust.txt` against `items-all-goethe-faust.json` and

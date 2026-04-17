@@ -47552,7 +47552,7 @@ A work is an abstract entity; there is no single material object one can point t
         <rdfs:subClassOf rdf:resource="http://schema.org/CreativeWork"/>
         <rdfs:comment>A Image</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/vra/Image"/>
-        <rdfs:label>Image</rdfs:label>
+        <rdfs:label>vra:Image</rdfs:label>
     </owl:Class>
     
 
@@ -48750,6 +48750,38 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
     
 
 
+    <!-- https://ise-fizkarlsruhe.github.io/ddbkg/mocho#ImageObject -->
+
+    <owl:Class rdf:about="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#ImageObject">
+        <rdfs:subClassOf rdf:resource="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Manifestation"/>
+        <rdfs:comment xml:lang="en">A digital image carrier at Manifestation level: a scan, online image file, or digital reproduction.</rdfs:comment>
+        <rdfs:label xml:lang="en">mocho:ImageObject</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ise-fizkarlsruhe.github.io/ddbkg/mocho#ImageWork -->
+
+    <owl:Class rdf:about="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#ImageWork">
+        <rdfs:subClassOf rdf:resource="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Work"/>
+        <rdfs:comment xml:lang="en">A photographic or visual image artifact treated as a Work-level entity: the photograph, slide, negative, or postcard is itself the creative artifact collected and described. 
+
+Distinct from vra:Image (used for documentation images of artworks) in that mocho:ImageWork makes the Work-level WEMI commitment explicit via its subClassOf chain.</rdfs:comment>
+        <rdfs:label xml:lang="en">mocho:ImageWork</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ise-fizkarlsruhe.github.io/ddbkg/mocho#ImmovableWork -->
+
+    <owl:Class rdf:about="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#ImmovableWork">
+        <rdfs:subClassOf rdf:resource="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Work"/>
+        <rdfs:comment xml:lang="en">A cultural heritage object fixed in the built environment: buildings, monuments, memorials, and architectural sites. Distinct from moveable built objects (furniture, stage sets) which remain vra:Work. Analogous to CIDOC-CRM crm:E25 Human-Made Feature.</rdfs:comment>
+        <rdfs:label xml:lang="en">mocho:ImmovableWork</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Item -->
 
     <owl:Class rdf:about="https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Item">
@@ -48782,7 +48814,6 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
                     <rdf:Description rdf:about="http://purl.org/ontology/mo/MusicalManifestation"/>
                     <rdf:Description rdf:about="http://purl.org/ontology/mo/Record"/>
                     <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Manifestation"/>
-                    <rdf:Description rdf:about="http://purl.org/vra/Image"/>
                     <rdf:Description rdf:about="http://rdaregistry.info/Elements/c/C10007"/>
                     <rdf:Description rdf:about="http://www.ebu.ch/metadata/ontologies/ebucoreplus#MediaResource"/>
                     <rdf:Description rdf:about="https://w3id.org/ac-ontology/aco#AudioManifestation"/>
@@ -48838,11 +48869,10 @@ The notion of a concept scheme is useful when dealing with data from an unknown 
                     <rdf:Description rdf:about="http://purl.org/ontology/mo/MusicalWork"/>
                     <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Work"/>
                     <rdf:Description rdf:about="http://purl.org/vra/Collection"/>
+                    <rdf:Description rdf:about="http://purl.org/vra/Image"/>
                     <rdf:Description rdf:about="http://purl.org/vra/Work"/>
-                    <rdf:Description rdf:about="http://rdaregistry.info/Elements/c/C10001"/>
                     <rdf:Description rdf:about="http://www.cidoc-crm.org/rdfs/cidoc-crm#E89_Propositional_Object"/>
                     <rdf:Description rdf:about="http://www.ebu.ch/metadata/ontologies/ebucoreplus#EditorialWork"/>
-                    <rdf:Description rdf:about="https://w3id.org/lio/v1#Image"/>
                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#Record"/>
                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
                     <rdf:Description rdf:about="https://www.ica.org/standards/RiC/ontology#RecordSet"/>

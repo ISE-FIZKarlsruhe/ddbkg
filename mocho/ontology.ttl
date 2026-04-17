@@ -42978,7 +42978,7 @@ vra:Image rdf:type owl:Class ;
           rdfs:subClassOf <http://schema.org/CreativeWork> ;
           rdfs:comment "A Image" ;
           rdfs:isDefinedBy vra:Image ;
-          rdfs:label "Image" .
+          rdfs:label "vra:Image" .
 
 
 ###  http://purl.org/vra/Inscription
@@ -43992,6 +43992,29 @@ foaf:Person rdf:type owl:Class .
                                                         rdfs:label "mocho:Family"@en .
 
 
+###  https://ise-fizkarlsruhe.github.io/ddbkg/mocho#ImageObject
+<https://ise-fizkarlsruhe.github.io/ddbkg/mocho#ImageObject> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Manifestation> ;
+                                                             rdfs:comment "A digital image carrier at Manifestation level: a scan, online image file, or digital reproduction."@en ;
+                                                             rdfs:label "mocho:ImageObject"@en .
+
+
+###  https://ise-fizkarlsruhe.github.io/ddbkg/mocho#ImageWork
+<https://ise-fizkarlsruhe.github.io/ddbkg/mocho#ImageWork> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Work> ;
+                                                           rdfs:comment """A photographic or visual image artifact treated as a Work-level entity: the photograph, slide, negative, or postcard is itself the creative artifact collected and described. 
+
+Distinct from vra:Image (used for documentation images of artworks) in that mocho:ImageWork makes the Work-level WEMI commitment explicit via its subClassOf chain."""@en ;
+                                                           rdfs:label "mocho:ImageWork"@en .
+
+
+###  https://ise-fizkarlsruhe.github.io/ddbkg/mocho#ImmovableWork
+<https://ise-fizkarlsruhe.github.io/ddbkg/mocho#ImmovableWork> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Work> ;
+                                                               rdfs:comment "A cultural heritage object fixed in the built environment: buildings, monuments, memorials, and architectural sites. Distinct from moveable built objects (furniture, stage sets) which remain vra:Work. Analogous to CIDOC-CRM crm:E25 Human-Made Feature."@en ;
+                                                               rdfs:label "mocho:ImmovableWork"@en .
+
+
 ###  https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Item
 <https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Item> rdf:type owl:Class ;
                                                       rdfs:subClassOf [ rdf:type owl:Class ;
@@ -44015,7 +44038,6 @@ foaf:Person rdf:type owl:Class .
                                                                                  owl:unionOf ( mo:MusicalManifestation
                                                                                                mo:Record
                                                                                                frbr:Manifestation
-                                                                                               vra:Image
                                                                                                rda:C10007
                                                                                                ec:MediaResource
                                                                                                aco:AudioManifestation
@@ -44056,11 +44078,10 @@ foaf:Person rdf:type owl:Class .
                                                                         owl:unionOf ( mo:MusicalWork
                                                                                       frbr:Work
                                                                                       vra:Collection
+                                                                                      vra:Image
                                                                                       vra:Work
-                                                                                      rda:C10001
                                                                                       crm:E89_Propositional_Object
                                                                                       ec:EditorialWork
-                                                                                      lio:Image
                                                                                       rico:Record
                                                                                       rico:RecordResource
                                                                                       rico:RecordSet

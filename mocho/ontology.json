@@ -955,7 +955,7 @@
       }
     }, {
       "id" : "http://purl.org/vra/Image",
-      "lbl" : "Image",
+      "lbl" : "vra:Image",
       "type" : "CLASS",
       "meta" : {
         "comments" : [ "A Image" ],
@@ -2246,6 +2246,27 @@
       "id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Family",
       "lbl" : "mocho:Family",
       "type" : "CLASS"
+    }, {
+      "id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#ImageObject",
+      "lbl" : "mocho:ImageObject",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "A digital image carrier at Manifestation level: a scan, online image file, or digital reproduction." ]
+      }
+    }, {
+      "id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#ImageWork",
+      "lbl" : "mocho:ImageWork",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "A photographic or visual image artifact treated as a Work-level entity: the photograph, slide, negative, or postcard is itself the creative artifact collected and described. \n\nDistinct from vra:Image (used for documentation images of artworks) in that mocho:ImageWork makes the Work-level WEMI commitment explicit via its subClassOf chain." ]
+      }
+    }, {
+      "id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#ImmovableWork",
+      "lbl" : "mocho:ImmovableWork",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "A cultural heritage object fixed in the built environment: buildings, monuments, memorials, and architectural sites. Distinct from moveable built objects (furniture, stage sets) which remain vra:Work. Analogous to CIDOC-CRM crm:E25 Human-Made Feature." ]
+      }
     }, {
       "id" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Item",
       "lbl" : "mocho:Item",
@@ -6324,10 +6345,10 @@
           "val" : "http://www.image.ntua.gr/~tzouvaras/"
         }, {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
-          "val" : "_:genid2147484087"
+          "val" : "_:genid2147484085"
         }, {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
-          "val" : "_:genid2147484089"
+          "val" : "_:genid2147484087"
         }, {
           "pred" : "http://purl.org/dc/elements/1.1/creator",
           "val" : "http://data.semanticweb.org/person/antoine-isaac"
@@ -71148,9 +71169,9 @@
         } ]
       }
     }, {
-      "id" : "_:genid2147484087"
+      "id" : "_:genid2147484085"
     }, {
-      "id" : "_:genid2147484089"
+      "id" : "_:genid2147484087"
     } ],
     "edges" : [ {
       "sub" : "http://purl.org/net/lio#Image",
@@ -71841,6 +71862,18 @@
       "pred" : "is_a",
       "obj" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#CollectiveAgent"
     }, {
+      "sub" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#ImageObject",
+      "pred" : "is_a",
+      "obj" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Manifestation"
+    }, {
+      "sub" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#ImageWork",
+      "pred" : "is_a",
+      "obj" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Work"
+    }, {
+      "sub" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#ImmovableWork",
+      "pred" : "is_a",
+      "obj" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Work"
+    }, {
       "sub" : "https://ise-fizkarlsruhe.github.io/ddbkg/mocho#Person",
       "pred" : "is_a",
       "obj" : "http://purl.org/vocab/frbr/core#Person"
@@ -72253,11 +72286,11 @@
       "pred" : "type",
       "obj" : "https://www.ica.org/standards/RiC/ontology#RecordSetType"
     }, {
-      "sub" : "_:genid2147484087",
+      "sub" : "_:genid2147484085",
       "pred" : "type",
       "obj" : "http://xmlns.com/foaf/0.1/Organization"
     }, {
-      "sub" : "_:genid2147484089",
+      "sub" : "_:genid2147484087",
       "pred" : "type",
       "obj" : "http://xmlns.com/foaf/0.1/Person"
     }, {

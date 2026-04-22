@@ -23,12 +23,12 @@
      xmlns:schema="http://schema.org/"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://github.com/anntanp/mocho-odk/mocho/mocho-full.owl">
-        <owl:versionIRI rdf:resource="https://github.com/anntanp/mocho-odk/mocho/releases/2026-03-11/mocho-full.owl"/>
+        <owl:versionIRI rdf:resource="https://github.com/anntanp/mocho-odk/mocho/releases/1.0/mocho-full.owl"/>
         <dcterms:description>A middle ontology bridging the Europeana Data Model (EDM) as top-level ontology with domain ontologies: RDA, Records in Contexts Ontology (RiC-O), Music Ontology, Audio Commons Ontology (ACO), and CIDOC CRM via LRMoo/FRBRoo. The WEMI model (Work, Expression, Manifestation, Item) serves as the central conceptual framework, with RDA entity classes as the canonical middle-layer.
 </dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/deed.en"/>
         <dcterms:title xml:lang="en">Middle Ontology for Cultural Heritage Objects (MOCHO)</dcterms:title>
-        <owl:versionInfo>2026-03-11</owl:versionInfo>
+        <owl:versionInfo>1.0</owl:versionInfo>
     </owl:Ontology>
     
 

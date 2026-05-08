@@ -80,6 +80,16 @@ wget https://gemea.ise.fiz-karlsruhe.de/downloads/goethe-faust/goethe-faust.nq
 cp config.env.example config.env   # set NQ_INPUT_DIR, INDEX_DIR, and ports
 ```
 
+**Before running**
+- [ ] `NQ_INPUT_DIR` exists and contains `goethe-faust.nq`
+- [ ] `INDEX_DIR` exists and the Docker user (UID 1000) has write access — if not:
+  ```bash
+  sudo chmod 777 $INDEX_DIR
+  # or, to take ownership instead:
+  sudo chown $USER $INDEX_DIR && chmod 755 $INDEX_DIR
+  ```
+- [ ] Ports `QLEVER_PORT` and `SHMARQL_PORT` are free on the host
+
 **3. Start QLever + SHMARQL**
 ```bash
 docker compose --env-file config.env -f docker-compose.qlever.yml up -d
@@ -92,6 +102,34 @@ Requires Ollama. Two options:
 
 - **Option A — script/API** (`ollama-mcp-bridge`): follow [`ollama-mcp/README.md`](ollama-mcp/README.md).
 - **Option B — browser chat** (OpenWebUI + MCPO): the `mcpo` service is included in `docker-compose.qlever.yml`; point OpenWebUI's Tools URL at `http://<qlever-host>:8001`. See [`notes/ollama-qlever-mcp-plan.md`](notes/ollama-qlever-mcp-plan.md) for full config.
+
+## Troubleshooting
+
+**T1. Check container logs**
+```bash
+docker compose --env-file config.env -f docker-compose.qlever.yml logs qlever-goethe-faust
+```
+
+**T2. `invalid spec: :/input:ro: empty section between colons`**
+`NQ_INPUT_DIR` is not set. Check that `config.env` contains a valid `NQ_INPUT_DIR` path.
+
+**T3. `Permission denied` writing to `/data`**
+The Docker user cannot write to `INDEX_DIR`. The compose file runs QLever as root (`user: "0"`); if the error persists, check that `INDEX_DIR` exists on the host:
+```bash
+mkdir -p $INDEX_DIR
+```
+
+**T4. `ERROR: no files matched /input/*.nq`**
+No `.nq` file found in `NQ_INPUT_DIR`. Confirm `goethe-faust.nq` is in that directory, or override the glob in `config.env`:
+```env
+NQ_INPUT_GLOB=*.nq
+```
+
+**T5. Port already in use**
+Change `QLEVER_PORT`, `SHMARQL_PORT`, or `MCPO_PORT` in `config.env` to a free port.
+
+**T6. `dependency qlever-goethe-faust failed to start`**
+`shmarql` and `mcpo` wait for QLever to be healthy. The root cause is always in the QLever logs — run **T1** first.
 
 ## Caveats
 

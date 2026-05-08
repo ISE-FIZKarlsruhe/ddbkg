@@ -14,6 +14,7 @@
 services:
   qlever-goethe-faust:
     image: docker.io/adfreiburg/qlever:latest
+    user: "0"
     ports:
       - "${QLEVER_PORT:-7030}:7019"
     volumes:

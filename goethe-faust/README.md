@@ -100,8 +100,21 @@ SPARQL endpoint: `http://localhost:7030` · SHMARQL browser: `http://localhost:7
 
 Requires Ollama. Two options:
 
-- **Option A — script/API** (`ollama-mcp-bridge`): follow [`ollama-mcp/README.md`](ollama-mcp/README.md).
-- **Option B — browser chat** (OpenWebUI + MCPO): the `mcpo` service is included in `docker-compose.qlever.yml`; point OpenWebUI's Tools URL at `http://<qlever-host>:8001`. See [`notes/ollama-qlever-mcp-plan.md`](notes/ollama-qlever-mcp-plan.md) for full config.
+- **Option A — Claude Code**: add an entry to `.claude/settings.json` in your project:
+  ```json
+  {
+    "mcpServers": {
+      "goethe-faust-qlever": {
+        "command": "docker",
+        "args": ["run", "--rm", "-i",
+                 "ghcr.io/xorwell/mcp-server-qlever:latest",
+                 "-e", "http://<qlever-host>:<QLEVER_PORT>"]
+      }
+    }
+  }
+  ```
+- **Option B — script/API** (`ollama-mcp-bridge`): follow [`ollama-mcp/README.md`](ollama-mcp/README.md).
+- **Option C — browser chat** (OpenWebUI + MCPO): the `mcpo` service is included in `docker-compose.qlever.yml`; point OpenWebUI's Tools URL at `http://<qlever-host>:8001`. See [`notes/ollama-qlever-mcp-plan.md`](notes/ollama-qlever-mcp-plan.md) for full config.
 
 ## Troubleshooting
 

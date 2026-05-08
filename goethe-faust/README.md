@@ -66,6 +66,33 @@ Run scripts in order. All scripts use project-relative paths and can be run from
 
 See [`scripts/README.md`](https://github.com/ISE-FIZKarlsruhe/ddbkg/blob/main/goethe-faust/scripts/README.md) for full per-script documentation.
 
+## Self-hosting
+
+The corpus is available as an N-Quads dump.
+
+**1. Download**
+```bash
+wget https://gemea.ise.fiz-karlsruhe.de/downloads/goethe-faust/goethe-faust.nq
+```
+
+**2. Configure**
+```bash
+cp config.env.example config.env   # set NQ_INPUT_DIR, INDEX_DIR, and ports
+```
+
+**3. Start QLever + SHMARQL**
+```bash
+docker compose --env-file config.env -f docker-compose.qlever.yml up -d
+```
+SPARQL endpoint: `http://localhost:7030` · SHMARQL browser: `http://localhost:7032` (defaults; adjust in `config.env`).
+
+**4. Natural-language querying (optional)**
+
+Requires Ollama. Two options:
+
+- **Option A — script/API** (`ollama-mcp-bridge`): follow [`ollama-mcp/README.md`](ollama-mcp/README.md).
+- **Option B — browser chat** (OpenWebUI + MCPO): the `mcpo` service is included in `docker-compose.qlever.yml`; point OpenWebUI's Tools URL at `http://<qlever-host>:8001`. See [`notes/ollama-qlever-mcp-plan.md`](notes/ollama-qlever-mcp-plan.md) for full config.
+
 ## Caveats
 
 - The 2000–2024 temporal bucket is dominated by Goethe-Universität Frankfurt institutional records (theses, working papers) rather than cultural-heritage items about Goethe or *Faust*.
